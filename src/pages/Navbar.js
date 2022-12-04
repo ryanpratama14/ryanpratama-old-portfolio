@@ -42,7 +42,16 @@ const Navbar = () => {
                   navigate("/appform");
                 }}
               >
-                #2: Join FaoTech
+                #2: Form App
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  navigate("/zikir-app");
+                }}
+              >
+                #3: Zikir App
               </a>
             </li>
             <li>

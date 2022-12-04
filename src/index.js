@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Navbar from "./pages/Navbar";
-
 import Footer from "./pages/Footer";
 import Testimonial from "./pages/Testimonial";
 // import reportWebVitals from "./reportWebVitals";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Cards from "./pages/Cards";
 import Appform from "./pages/Appform";
+import Zikirapp from "./pages/Zikirapp";
 
 export default function Routing() {
   return (
@@ -17,7 +17,7 @@ export default function Routing() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<App />} />
-
+        <Route path="/zikir-app" element={<Zikirapp />} />
         <Route path="/reviews" element={<Testimonial />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/appform" element={<Appform />} />
