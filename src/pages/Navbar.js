@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div class="navbar bg-gray-800 dark:bg-base-300 text-white font-mono">
+    <div class="navbar font-mono bg-gray-800 dark:bg-base-300 text-white dark:text-white">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">

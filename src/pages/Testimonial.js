@@ -45,7 +45,7 @@ const Testimonial = () => {
         </div>
       </section>
 
-      <section class="bg-gray-600 dark:bg-base-400 text-white" id="reviews">
+      <section class="bg-slate-600 text-white" id="reviews">
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:py-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">

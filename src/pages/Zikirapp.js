@@ -22,14 +22,16 @@ function Zikirapp() {
     <header className="App-header font-mono">
       <Toaster />
       <div class="max-w-[800px] text-center">
-        <h2 className="text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">
+        <h2 className="text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">
           Welcome to Zikir App!
           <br />
-          <span className="text-blue-300 ">Pray, Pray, Pray.</span>
+          <span className="text-blue-300 dark:text-blue-300">
+            Pray, Pray, Pray.
+          </span>
         </h2>
       </div>
-      <p class="mb-2">{num}</p>
-      <p class="text-5xl">{doa}</p>
+      <p class="mb-2 text-white dark:text-white">{num}</p>
+      <p class="text-5xl text-white dark:text-white">{doa}</p>
       <button
         onClick={() => {
           setTotalNum(totalNum + 1);

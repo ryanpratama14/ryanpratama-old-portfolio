@@ -8,7 +8,7 @@ function Cards() {
   const [data, setData] = useState([{ name: "Ryan", age: 22 }]);
 
   return (
-    <div className="App font-mono text-center min-h-screen App-header">
+    <div className="App font-mono text-center min-h-screen App-header text-black dark:text-white">
       {data?.map((element) => {
         return (
           <div className="mt-4 ">

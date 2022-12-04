@@ -22,13 +22,13 @@ const Declare = () => {
       <Toaster />
       <header className="App-header ">
         <div class="max-w-[800px] text-center">
-          <h2 className="text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">
+          <h2 className=" text-white dark:text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">
             Declare your Shahada
             <br />
           </h2>
         </div>
-        <p class="text-2xl mb-6">repeat:</p>
-        <p class="text-3xl text-center">{word}</p>
+        <p class="text-2xl mb-6  text-white dark:text-white">repeat:</p>
+        <p class="text-3xl text-center text-white dark:text-white">{word}</p>
         <button
           onClick={() => {
             if (word === "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ") {
@@ -48,7 +48,7 @@ const Declare = () => {
               onClick={() => {
                 navigate("/zikir-app");
               }}
-              className="text-blue-300 "
+              className="text-blue-300 dark:text-blue-300"
             >
               Back to Zikir App
             </span>
