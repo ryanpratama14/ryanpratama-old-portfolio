@@ -57,6 +57,15 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => {
+                  navigate("/todoapp");
+                }}
+              >
+                #4: To Do App
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
                   navigate("/reviews");
                 }}
               >
@@ -112,7 +121,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact<span class="badge">Telegram</span>
+                Text Me<span class="badge">Telegram</span>
               </a>
             </li>
           </ul>
