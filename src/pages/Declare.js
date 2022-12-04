@@ -38,7 +38,7 @@ const Declare = () => {
               notifySuccess2();
             }
           }}
-          class="btn mt-6 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center dark:bg-violet-600 dark:hover:bg-violet-500"
+          class="btn mt-5 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-500 dark:hover:bg-indigo-500"
         >
           {button}
         </button>
@@ -48,7 +48,7 @@ const Declare = () => {
               onClick={() => {
                 navigate("/zikir-app");
               }}
-              className="text-sky-300 "
+              className="text-blue-300 "
             >
               Back to Zikir App
             </span>

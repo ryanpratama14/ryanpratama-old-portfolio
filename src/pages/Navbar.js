@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div class="navbar bg-base-300 dark:bg-base-300 text-white font-mono">
+    <div class="navbar bg-gray-800 dark:bg-base-300 text-white font-mono">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -25,7 +25,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-900 dark:bg-base-100 rounded-box w-52"
           >
             <li>
               <a
@@ -85,7 +85,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+            class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-gray-900 dark:bg-base-100 rounded-box w-52"
           >
             <li>
               <a

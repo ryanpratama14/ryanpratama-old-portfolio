@@ -51,7 +51,7 @@ function Zikirapp() {
             notifySuccess2();
           }
         }}
-        class="btn mt-6 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-500"
+        class="btn mt-5 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-500 dark:hover:bg-indigo-500"
       >
         {zikir}
       </button>
@@ -63,12 +63,12 @@ function Zikirapp() {
           setZikir("Start");
           setDoa("سُـبْحانَ الله");
         }}
-        class="btn mt-2 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center dark:bg-violet-600 dark:hover:bg-violet-500"
+        class="btn mt-5 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-500 dark:hover:bg-violet-500"
       >
         Reset
       </button>
       <div class="max-w-[800px] text-center">
-        <h2 className="text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mt-12">
+        <h2 className="text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mt-36">
           <span className="text-white ">
             Declare your faith{" "}
             <span
