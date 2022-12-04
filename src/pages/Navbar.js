@@ -73,7 +73,7 @@ const Navbar = () => {
           }}
           class="btn btn-ghost normal-case text-xl"
         >
-          FaoTech: Homepage
+          Homepage
         </a>
       </div>
       <div class="navbar-end">
@@ -112,7 +112,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact <span class="badge">Telegram</span>
+                Contact<span class="badge">Telegram</span>
               </a>
             </li>
           </ul>

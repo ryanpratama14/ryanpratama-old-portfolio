@@ -10,6 +10,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Cards from "./pages/Cards";
 import Appform from "./pages/Appform";
 import Zikirapp from "./pages/Zikirapp";
+import Declare from "./pages/Declare";
 
 export default function Routing() {
   return (
@@ -18,6 +19,7 @@ export default function Routing() {
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="/zikir-app" element={<Zikirapp />} />
+        <Route path="/zikir-app/declare" element={<Declare />} />
         <Route path="/reviews" element={<Testimonial />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/appform" element={<Appform />} />
