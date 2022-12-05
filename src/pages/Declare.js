@@ -21,43 +21,58 @@ const Declare = () => {
     });
 
   return (
-    <div className="App font-mono">
+    <div class="font-mono ">
       <Toaster />
-      <header className="App-header ">
-        <div class="max-w-[800px] text-center">
-          <h2 className=" text-white dark:text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">
-            Declare your Shahada
-            <br />
-          </h2>
-        </div>
-        <p class="text-2xl mb-6  text-white dark:text-white">repeat:</p>
-        <p class="text-3xl text-center text-white dark:text-white">{word}</p>
-        <button
-          onClick={() => {
-            if (word === "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ") {
-              setWord("وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ ٱللَّٰ");
-              setButton("Finish");
-            } else {
-              notifySuccess2();
-            }
-          }}
-          class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
-        >
-          {button}
-        </button>
-        <div class="max-w-[800px] text-center">
-          <h2 className="text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mt-12">
-            <span
+      <section class=" text-white reviews min-h-screen" id="ceo">
+        <div class="px-8 py-12 sm:px-6  lg:px-8">
+          <div class="mx-auto max-w-xl text-center mt-12 mb-27">
+            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+              Declare your <span class="text-red-300">Shahada</span>
+              <br />
+            </h2>
+          </div>
+          <div class="text-center mt-32">
+            <p class="text-2xl mb-6  text-white dark:text-white">repeat:</p>
+            <p class="text-3xl text-white dark:text-white">{word}</p>
+          </div>
+          <div class="flex flex-col flex-wrap justify-center items-center text-center">
+            <button
               onClick={() => {
-                navigate("/zikir-app");
+                if (word === "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ") {
+                  setWord("وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ ٱللَّٰ");
+                  setButton("Finish");
+                } else {
+                  notifySuccess2();
+                }
               }}
-              className="text-blue-300 dark:text-blue-300"
+              class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
             >
-              Back to Zikir App
-            </span>
-          </h2>
+              {button}
+            </button>
+          </div>
+          <div class="mx-auto max-w-xl text-center mt-32 mb-27">
+            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+              <span
+                onClick={() => {
+                  navigate("/zikir-app");
+                }}
+                className="text-white"
+              >
+                Back to
+              </span>
+              <span
+                onClick={() => {
+                  navigate("/zikir-app");
+                }}
+                className="text-blue-300 dark:text-blue-300"
+              >
+                {" "}
+                Zikir App
+              </span>
+            </h2>
+          </div>
         </div>
-      </header>
+      </section>
     </div>
   );
 };

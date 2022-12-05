@@ -77,7 +77,7 @@ function Appform() {
       <div className="App-header">
         {/* This is Title */}
         <div class="max-w-[800px]">
-          <h2 className="text-center text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-14 mt-14">
+          <h2 class=" text-center text-4xl font-bold tracking-tight sm:text-5xl mt-20 mb-12">
             Passionate about programming?
             <br />
             <span className="text-blue-300 ">join FaoTech, </span>

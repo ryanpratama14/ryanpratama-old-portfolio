@@ -22,73 +22,81 @@ function Zikirapp() {
     });
 
   return (
-    <header className="App-header font-mono">
-      <Toaster />
-      <div class="max-w-[800px] text-center">
-        <h2 className="text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">
-          Welcome to Zikir App!
-          <br />
-          <span className="text-blue-300">
-            Pray, <span class="text-red-300">Pray, </span>
-            Pray.
-          </span>
-        </h2>
-      </div>
-      <p class="mb-2 text-white dark:text-white">{num}</p>
-      <p class="text-5xl text-white dark:text-white">{doa}</p>
-      <button
-        onClick={() => {
-          setTotalNum(totalNum + 1);
-          setNum(num + 1);
-          setZikir("Keep praying...");
-          if (num === 33) {
-            setNum(1);
-            if (doa === "سُـبْحانَ الله") {
-              setDoa("ٱلْحَمْدُ لِلَّٰهِ");
-            } else if (doa === "ٱلْحَمْدُ لِلَّٰهِ") {
-              setDoa("الله أكبر");
-            } else if (doa === "الله أكبر") {
-              setDoa("سُـبْحانَ الله");
-            }
-          }
-          if (totalNum === 33 - 1) {
-            notifySuccess();
-          } else if (totalNum === 99 - 1) {
-            notifySuccess2();
-          }
-        }}
-        class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
-      >
-        {zikir}
-      </button>
-
-      <button
-        onClick={() => {
-          setNum(0);
-          setTotalNum(0);
-          setZikir("Start");
-          setDoa("سُـبْحانَ الله");
-        }}
-        class="btn mt-3 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
-      >
-        Reset
-      </button>
-      <div class="max-w-[800px] text-center">
-        <h2 className="text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mt-36">
-          <span className="text-white ">
-            Declare your faith{" "}
-            <span
+    <div class="font-mono ">
+      <section class=" text-white reviews" id="ceo">
+        <div class="px-8 py-12 sm:px-6  lg:px-8">
+          <div class="mx-auto max-w-2xl text-center mt-12">
+            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+              Welcome to Zikir App!
+              <br />
+              <span className="text-blue-300">
+                Pray, <span class="text-red-300">Pray, </span>
+                Pray.
+              </span>
+            </h2>
+          </div>
+          <div class="text-center mt-20">
+            <p class="mb-2 text-white dark:text-white">{num}</p>
+            <p class="text-5xl text-white dark:text-white">{doa}</p>
+          </div>
+          <div class="flex flex-col flex-wrap justify-center items-center text-center">
+            <button
               onClick={() => {
-                navigate("declare");
+                setTotalNum(totalNum + 1);
+                setNum(num + 1);
+                setZikir("Keep praying...");
+                if (num === 33) {
+                  setNum(1);
+                  if (doa === "سُـبْحانَ الله") {
+                    setDoa("ٱلْحَمْدُ لِلَّٰهِ");
+                  } else if (doa === "ٱلْحَمْدُ لِلَّٰهِ") {
+                    setDoa("الله أكبر");
+                  } else if (doa === "الله أكبر") {
+                    setDoa("سُـبْحانَ الله");
+                  }
+                }
+                if (totalNum === 33 - 1) {
+                  notifySuccess();
+                } else if (totalNum === 99 - 1) {
+                  notifySuccess2();
+                }
               }}
-              className="text-blue-300 "
+              class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
             >
-              here.{" "}
-            </span>
-          </span>
-        </h2>
-      </div>
-    </header>
+              {zikir}
+            </button>
+
+            <button
+              onClick={() => {
+                setNum(0);
+                setTotalNum(0);
+                setZikir("Start");
+                setDoa("سُـبْحانَ الله");
+              }}
+              class="btn mt-3 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
+            >
+              Reset
+            </button>
+          </div>
+
+          <div class="mx-auto max-w-xl text-center mt-12">
+            <h2 className="text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
+              <span className="text-white ">
+                Declare your faith{" "}
+                <span
+                  onClick={() => {
+                    navigate("declare");
+                  }}
+                  className="text-blue-300 "
+                >
+                  here.{" "}
+                </span>
+              </span>
+            </h2>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
