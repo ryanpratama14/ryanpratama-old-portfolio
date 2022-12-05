@@ -108,29 +108,32 @@ const Navbar = () => {
           >
             <li>
               <a
+                class="justify-between"
                 href="mailto:ru.ryanpratama@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                Email
+                Email <span class="badge">@</span>
               </a>
             </li>
             <li>
               <a
+                class="justify-between"
                 href="https://www.linkedin.com/in/ryanpratama14"
                 target="_blank"
                 rel="noreferrer"
               >
-                Linkedin
+                Linkedin <span class="badge">in</span>
               </a>
             </li>
             <li>
               <a
+                class="justify-between"
                 href="https://www.instagram.com/ryanpratama14"
                 target="_blank"
                 rel="noreferrer"
               >
-                Instagram
+                Instagram<span class="badge">ig</span>
               </a>
             </li>
             <li>
@@ -140,7 +143,27 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact<span class="badge">Telegram</span>
+                Telegram<span class="badge">tg</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="justify-between"
+                href="https://wa.me/+79961005202"
+                target="_blank"
+                rel="noreferrer"
+              >
+                WhatsApp<span class="badge">wa</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="justify-between"
+                href="https://vk.com/ryanpratama"
+                target="_blank"
+                rel="noreferrer"
+              >
+                VK<span class="badge">vk</span>
               </a>
             </li>
           </ul>
