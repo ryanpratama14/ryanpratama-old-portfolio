@@ -6,6 +6,7 @@ function Cards() {
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [data, setData] = useState([{ name: "Ryan", age: 22 }]);
+  const regex = /^[a-zA-Z, ЁёА-я]+$/;
 
   return (
     <div className="App font-mono text-center min-h-screen App-header text-black dark:text-white">
@@ -16,6 +17,7 @@ function Cards() {
           </div>
         );
       })}
+
       <div className=" mt-4">
         <InputField
           valueTyped={(e) => {
@@ -37,7 +39,7 @@ function Cards() {
       </div>
       <button
         onClick={() => {
-          if (age >= 18 && name.length > 0) {
+          if (age >= 18 && name.length > 0 && name.match(regex)) {
             setData([...data, { name, age }]);
           }
         }}

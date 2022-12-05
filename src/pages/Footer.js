@@ -1,8 +1,9 @@
 import React from "react";
+import "./Background.css";
 
 const Footer = () => {
   return (
-    <footer class="footer footer-center p-4 bg-gray-800 dark:bg-base-300 text-white dark:text-base-content font-mono">
+    <footer class="footer footer-center p-4 font-mono">
       <div>
         <p>
           © 2022 FaoTech™. All Rights Reserved. <br />

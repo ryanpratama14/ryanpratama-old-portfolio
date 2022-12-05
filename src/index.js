@@ -12,6 +12,7 @@ import Appform from "./pages/Appform";
 import Zikirapp from "./pages/Zikirapp";
 import Declare from "./pages/Declare";
 import ToDo from "./pages/ToDo";
+import About from "./pages/About";
 
 export default function Routing() {
   return (
@@ -25,6 +26,7 @@ export default function Routing() {
         <Route path="/cards" element={<Cards />} />
         <Route path="/todoapp" element={<ToDo />} />
         <Route path="/appform" element={<Appform />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<App />} />
       </Routes>
       <Footer />

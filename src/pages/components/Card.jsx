@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+
 function Card({ nameProps, ageProps }) {
   const navigate = useNavigate();
+
   return (
     <div className="card w-96 bg-base-100 shadow-xl image-full font-mono mb-16">
       <figure>
@@ -14,7 +16,7 @@ function Card({ nameProps, ageProps }) {
           {nameProps}, {ageProps} years old
         </p>
 
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-center">
           <button
             className="btn btn-primary"
             onClick={() => {

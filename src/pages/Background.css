@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #202224;
+}
+
+.dropdown-content {
+  background-color: #202224;
+  /* background: rgb(32, 34, 36);
+  background: linear-gradient(
+    270deg,
+    rgba(32, 34, 36, 1) 0%,
+    rgba(40, 44, 52, 1) 75%,
+    rgba(51, 36, 84, 1) 95%,
+    rgba(56, 33, 98, 1) 100%
+  ); */
+  /* background: rgb(32, 34, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 34, 36, 1) 0%,
+    rgba(40, 44, 52, 1) 100%
+  ); */
+  /* background: rgb(32, 34, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 34, 36, 1) 50%,
+    rgba(39, 50, 61, 1) 100%
+  ); */
+  color: #bcc4d0;
+}
+
+.footer {
+  color: #bcc4d0;
+  background-color: #382162;
+}
+
+.reviews,
+.ceo {
+  background: rgb(32, 34, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 34, 36, 1) 0%,
+    rgba(40, 44, 52, 1) 75%,
+    rgba(51, 36, 84, 1) 95%,
+    rgba(56, 33, 98, 1) 100%
+  );
+}

@@ -23,7 +23,7 @@ function Appform() {
     toast.error("Something went wrong, please try again");
   let isFilledAll = useRef(false);
   let isSubmitted = 0;
-  const regex = /^[a-zA-Z]+$/;
+  const regex = /^[a-zA-Z, ЁёА-я]+$/;
   const regexNum = /^[0-9]+$/;
   const validRegex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
