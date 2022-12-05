@@ -23,6 +23,7 @@ function Zikirapp() {
 
   return (
     <div class="font-mono ">
+      <Toaster />
       <section class=" text-white reviews" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-2xl text-center mt-12">
