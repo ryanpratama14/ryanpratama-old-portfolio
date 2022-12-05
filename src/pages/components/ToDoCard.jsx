@@ -22,7 +22,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, percentProps }) => {
       <div class="flex items-center justify-between my-2">
         <p class="text-red-600 text-sm">
           {percentProps}%<span class="text-black">/</span>
-          <span class="text-green-600">100%</span>{" "}
+          <span class="text-black">100%</span>{" "}
           <span class="text-black">task completed</span>
         </p>
       </div>

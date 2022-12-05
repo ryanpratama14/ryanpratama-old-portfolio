@@ -25,8 +25,9 @@ function Zikirapp() {
         <h2 className="text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12">
           Welcome to Zikir App!
           <br />
-          <span className="text-blue-300 dark:text-blue-300">
-            Pray, Pray, Pray.
+          <span className="text-blue-300">
+            Pray, <span class="text-red-300">Pray, </span>
+            Pray.
           </span>
         </h2>
       </div>

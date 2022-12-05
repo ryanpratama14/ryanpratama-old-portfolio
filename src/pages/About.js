@@ -10,7 +10,8 @@ const About = () => {
         <div class="mx-auto max-w-screen-xl px-8 py-20 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Meet our CEO
+              Meet <span class="text-blue-300">our</span>{" "}
+              <span class="text-red-300">CEO</span>
             </h2>
           </div>
 
@@ -24,7 +25,8 @@ const About = () => {
 
               <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
                 <p class="text-xl font-bold text-white-700">
-                  Fakhrul Oktavian aka Fao
+                  Fakhrul Oktavian <br />
+                  aka Fao
                 </p>
 
                 <p class="mt-4 text-l text-white-500">

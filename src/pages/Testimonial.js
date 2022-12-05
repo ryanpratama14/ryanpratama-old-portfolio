@@ -9,7 +9,8 @@ const Testimonial = () => {
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Read trusted reviews from our students
+              Read <span class="text-blue-300">trusted</span> reviews from our{" "}
+              <span class="text-red-300">students</span>
             </h2>
           </div>
           <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">

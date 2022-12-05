@@ -27,7 +27,8 @@ const ToDo = () => {
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-sky-300">To Do </span>
+              <span class="text-sky-300">To </span>
+              <span class="text-red-300">Do </span>
               App
             </h2>
           </div>
@@ -72,7 +73,6 @@ const ToDo = () => {
                   setDate(e);
                 }}
                 type="date"
-                placeholderValue="2022-30-12"
               />
             </div>
             <div className=" mt-4">
@@ -82,7 +82,7 @@ const ToDo = () => {
                 }}
                 type="text"
                 lengthMax={2}
-                placeholderValue="75"
+                placeholderValue="Progress in percent"
               />
             </div>
             <button
