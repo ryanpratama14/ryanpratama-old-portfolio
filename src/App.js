@@ -7,7 +7,7 @@ function App() {
     document.title = "Ryan's React Apps";
   }, []);
   return (
-    <div className="h-screen flex flex-col flex-wrap justify-center items-center">
+    <div className="h-screen flex flex-col flex-wrap justify-center items-center ceo">
       <Homepage />
       <Homepage />
       <Homepage />
