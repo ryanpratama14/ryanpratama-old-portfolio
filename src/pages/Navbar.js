@@ -1,10 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./Background.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div class="navbar bg-base-100 text-white font-mono">
+    <div class="navbar font-mono text-white dark:text-white">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -25,7 +26,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1"
           >
             <li>
               <a
@@ -33,7 +34,7 @@ const Navbar = () => {
                   navigate("/cards");
                 }}
               >
-                #1: Your Card
+                #1: Member Card
               </a>
             </li>
             <li>
@@ -42,7 +43,25 @@ const Navbar = () => {
                   navigate("/appform");
                 }}
               >
-                #2: Join FaoTech
+                #2: Form App
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  navigate("/zikir-app");
+                }}
+              >
+                #3: Zikir App
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  navigate("/todoapp");
+                }}
+              >
+                #4: To Do App
               </a>
             </li>
             <li>
@@ -51,7 +70,16 @@ const Navbar = () => {
                   navigate("/reviews");
                 }}
               >
-                About/Reviews
+                Reviews
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  navigate("/about");
+                }}
+              >
+                About
               </a>
             </li>
           </ul>
@@ -64,20 +92,29 @@ const Navbar = () => {
           }}
           class="btn btn-ghost normal-case text-xl"
         >
-          FaoTech: Homepage
+          Homepage
         </a>
       </div>
       <div class="navbar-end">
         <div class="dropdown dropdown-end ml-4">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full">
-              <img src="https://sun9-37.userapi.com/impf/c849420/v849420304/17cfc5/nfKSzS-gsDk.jpg?size=1104x1472&quality=96&sign=920e9e16cb4e493063fd89da83965365&type=album" />
+              <img src="https://sun9-61.userapi.com/impg/WRTTQu00rB8FiNpm2WpRZLzu0U0zzWlvjaDDqg/HtZweihYsKo.jpg?size=2160x2160&quality=96&sign=88c8dc5b5f04b0ff17f0a1ca5d7e0a54&type=album" />
             </div>
           </label>
           <ul
             tabindex="0"
-            class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+            class="mt-3 p-2 shadow menu menu-compact dropdown-content  rounded-box w-52 drop-2"
           >
+            <li>
+              <a
+                href="mailto:ru.ryanpratama@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Email
+              </a>
+            </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/ryanpratama14"
@@ -93,7 +130,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                My Instagram
+                Instagram
               </a>
             </li>
             <li>
@@ -103,7 +140,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact <span class="badge">Telegram</span>
+                Contact<span class="badge">Telegram</span>
               </a>
             </li>
           </ul>
