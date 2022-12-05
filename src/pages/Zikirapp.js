@@ -65,7 +65,7 @@ function Zikirapp() {
           setZikir("Start");
           setDoa("سُـبْحانَ الله");
         }}
-        class="btn mt-5 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-500 dark:hover:bg-violet-500"
+        class="btn mt-3 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-500 dark:hover:bg-violet-500"
       >
         Reset
       </button>

@@ -13,6 +13,7 @@ import Zikirapp from "./pages/Zikirapp";
 import Declare from "./pages/Declare";
 import ToDo from "./pages/ToDo";
 import About from "./pages/About";
+import Instagram from "./pages/components/Instagram";
 
 export default function Routing() {
   return (
@@ -29,6 +30,7 @@ export default function Routing() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<App />} />
       </Routes>
+      <Instagram />
       <Footer />
     </HashRouter>
   );
