@@ -2,9 +2,10 @@ import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React from "react";
 import "./Background.css";
 import InputField from "./components/InputField";
-import ToDoCard from "./components/ToDoCard";
+
 import { useState } from "react";
 import { createContext, useEffect } from "react";
+import ToDoCard from "./ToDoCard";
 
 const ToDo = () => {
   useEffect(() => {
@@ -14,14 +15,15 @@ const ToDo = () => {
   const [name, setName] = useState("");
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
-  const [totalTask, setTotalTask] = useState(0);
+  const [time, setTime] = useState("");
+
   const regex = /^[a-zA-Z, ЁёА-я]+$/;
   const [data, setData] = useState([
     {
       name: "Ryan",
       task: "Mastering Tailwind CSS",
       date: "2022-30-12",
-      totalTask: 5,
+      time: "22:45 ",
     },
   ]);
 
@@ -45,7 +47,7 @@ const ToDo = () => {
                     nameProps={e.name}
                     taskProps={e.task}
                     dateProps={e.date}
-                    totalTaskProps={e.totalTask}
+                    timeProps={e.time}
                   />
                 </div>
               );
@@ -72,21 +74,22 @@ const ToDo = () => {
                 placeholderValue="English lesson chapter 37"
               />
             </div>
-            <div className=" mt-4">
-              <InputField
-                valueTyped={(e) => {
-                  setTotalTask(e);
-                }}
-                type="number"
-                placeholderValue="32 tasks"
-              />
-            </div>
+
             <div className=" mt-4">
               <InputField
                 valueTyped={(e) => {
                   setDate(e);
                 }}
                 type="date"
+              />
+            </div>
+            <div className=" mt-4">
+              <InputField
+                valueTyped={(e) => {
+                  setTime(e);
+                }}
+                type="time"
+                placeholderValue="12:45 PM"
               />
             </div>
             <button
@@ -96,9 +99,9 @@ const ToDo = () => {
                   name.match(regex) &&
                   task.length > 0 &&
                   date.length > 0 &&
-                  totalTask > 0
+                  time.length > 0
                 ) {
-                  setData([...data, { name, task, date, totalTask }]);
+                  setData([...data, { name, task, date, time }]);
                 }
               }}
               className="btn btn-primary mt-4 mb-4 w-72"
