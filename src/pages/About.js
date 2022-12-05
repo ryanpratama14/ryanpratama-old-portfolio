@@ -40,7 +40,7 @@ const About = () => {
                 </p>
 
                 <a
-                  class="btn mt-5 text-white font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-500 dark:hover:bg-violet-500"
+                  class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
                   href="https://www.instagram.com/fao30/"
                   target="_blank"
                   rel="noreferrer"

@@ -33,7 +33,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
       </div>
       <div className="card-actions justify-between mt-2">
         <button
-          class="btn  text-white font-medium rounded-lg text-sm  text-center bg-gray-700 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-500"
+          class="btn border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm  text-center bg-gray-700 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-900"
           onClick={() => {
             if (word === "You're up 🙌") {
               setCounter(0);
@@ -45,7 +45,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
           Undo
         </button>
         <button
-          class="btn  text-white font-medium rounded-lg text-sm  text-center bg-green-700 dark:bg-green-700 hover:bg-green-500 dark:hover:bg-green-500"
+          class="btn border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm  text-center bg-green-700 dark:bg-green-700 hover:bg-green-900 dark:hover:bg-green-900"
           onClick={(event) => {
             setCounter(count + 1);
             if (count === 1 - 1) {

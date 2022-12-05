@@ -41,7 +41,7 @@ const Declare = () => {
               notifySuccess2();
             }
           }}
-          class="btn mt-5 text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-500 dark:hover:bg-indigo-500"
+          class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
         >
           {button}
         </button>
