@@ -1,13 +1,7 @@
 import { React, useState, createContext, useContext } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-const ToDoCard = ({
-  nameProps,
-  taskProps,
-  dateProps,
-  totalTaskProps,
-  timeProps,
-}) => {
+const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
   const notifySuccess = () => toast.success("Marked as done");
   const [count, setCounter] = useState(0);
   const [isDone, setIsDone] = useState("DONE ONE TASK");
@@ -27,15 +21,19 @@ const ToDoCard = ({
         </div>
       </div>
       <div class="w-full">
-        <p class="text-gray-800 text-sm font-medium mb-2">Working On:</p>
-        <p class="text-gray-800 text-xl font-medium mb-2">{taskProps}</p>
-        <p class="text-gray-800 text-l font-bold mb-2">Due: {dateProps}</p>
-        <p class="text-gray-800 text-l font-bold mb-2">{timeProps}</p>
+        <p class="text-gray-800 text-sm font-medium">Working On:</p>
+        <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black">
+          {taskProps}
+        </p>
+        <p class="text-gray-800 text-l font-bold mb-2 tracking-tighter">
+          Due: {timeProps}// {dateProps}
+        </p>
+
         <p class="text-stone-900 text-sm">{word}</p>
       </div>
       <div className="card-actions justify-between mt-2">
         <button
-          className="btn btn-primary"
+          class="btn  text-white font-medium rounded-lg text-sm  text-center bg-gray-700 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-500"
           onClick={() => {
             if (word === "You're up 🙌") {
               setCounter(0);
@@ -47,7 +45,7 @@ const ToDoCard = ({
           Undo
         </button>
         <button
-          className="btn btn-primary"
+          class="btn  text-white font-medium rounded-lg text-sm  text-center bg-green-700 dark:bg-green-700 hover:bg-green-500 dark:hover:bg-green-500"
           onClick={(event) => {
             setCounter(count + 1);
             if (count === 1 - 1) {
