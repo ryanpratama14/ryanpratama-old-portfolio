@@ -60,7 +60,9 @@ const Testimonial = () => {
                 />
 
                 <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                  <p class="text-2xl font-bold text-white-700">Ryan Pratama</p>
+                  <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                    Ryan Pratama
+                  </p>
                   <p class="mt-1 text-xs font-medium text-white-500">
                     FaoTech Student
                   </p>

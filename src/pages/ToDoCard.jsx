@@ -4,7 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
   const notifySuccess = () => toast.success("Marked as done");
   const [count, setCounter] = useState(0);
-  const [isDone, setIsDone] = useState("DONE ONE TASK");
+  const [isDone, setIsDone] = useState("MARK AS DONE");
   const [word, setWord] = useState("On progress...");
 
   return (
@@ -37,7 +37,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
           onClick={() => {
             if (word === "You're up 🙌") {
               setCounter(0);
-              setIsDone("DONE ONE TASK");
+              setIsDone("MARK AS DONE");
               setWord("On progress...");
             }
           }}
