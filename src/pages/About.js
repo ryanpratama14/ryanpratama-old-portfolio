@@ -1,11 +1,13 @@
 import React from "react";
 import "./Background.css";
 
+// py-44
+
 const About = () => {
   return (
     <div class="font-mono">
-      <section class="bg-gray-700 text-white ceo py-44" id="ceo">
-        <div class="mx-auto max-w-screen-xl px-4 py-80 sm:px-6 sm:py-24 lg:px-8">
+      <section class=" text-white ceo" id="ceo">
+        <div class="mx-auto max-w-screen-xl px-8 py-20 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Meet our CEO
