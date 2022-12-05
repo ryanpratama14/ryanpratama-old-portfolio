@@ -17,11 +17,13 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
           src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png"
         />
         <div class="pl-3">
-          <div class="font-medium text-black">{nameProps}</div>
+          <div class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-gray-700 to-black tracking-tighter">
+            {nameProps}
+          </div>
         </div>
       </div>
       <div class="w-full">
-        <p class="text-gray-800 text-sm font-medium">Working On:</p>
+        <p class="text-gray-800 text-sm font-medium">Working on:</p>
         <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black">
           {taskProps}
         </p>
@@ -29,7 +31,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
           Due: {timeProps}// {dateProps}
         </p>
 
-        <p class="text-stone-900 text-sm">{word}</p>
+        <p class="text-stone-900 text-sm text-right">{word}</p>
       </div>
       <div className="card-actions justify-between mt-2">
         <button

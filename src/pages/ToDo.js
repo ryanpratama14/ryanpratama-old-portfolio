@@ -16,11 +16,9 @@ const ToDo = () => {
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-
-  const regex = /^[a-zA-Z, ЁёА-я]+$/;
   const [data, setData] = useState([
     {
-      name: "Ryan",
+      name: "👨‍💻 Full-Stack Web Development at FaoTech",
       task: "Mastering Tailwind CSS",
       date: "2022-30-12",
       time: "22:45 ",
@@ -61,7 +59,7 @@ const ToDo = () => {
                 }}
                 type="text"
                 lengthMax={20}
-                placeholderValue="Your Name"
+                placeholderValue="Field"
               />
             </div>
             <div className=" mt-4">
@@ -71,7 +69,7 @@ const ToDo = () => {
                 }}
                 type="text"
                 lengthMax={360}
-                placeholderValue="English lesson chapter 37"
+                placeholderValue="Task"
               />
             </div>
 
@@ -96,7 +94,6 @@ const ToDo = () => {
               onClick={() => {
                 if (
                   name.length > 0 &&
-                  name.match(regex) &&
                   task.length > 0 &&
                   date.length > 0 &&
                   time.length > 0
