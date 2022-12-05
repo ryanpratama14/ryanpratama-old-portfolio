@@ -90,7 +90,7 @@ const Navbar = () => {
           onClick={() => {
             navigate("/");
           }}
-          class="btn btn-ghost normal-case text-xl"
+          class="btn btn-ghost normal-case text-xl "
         >
           Homepage
         </a>
