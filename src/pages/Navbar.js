@@ -163,7 +163,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                VK<span class="badge">vk</span>
+                ВКонтакте<span class="badge">vk</span>
               </a>
             </li>
           </ul>

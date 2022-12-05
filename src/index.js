@@ -20,7 +20,7 @@ export default function Routing() {
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<App title="Homepage" />} />
+        <Route exact path="/" element={<App />} />
         <Route path="/zikir-app" element={<Zikirapp />} />
         <Route path="/zikir-app/declare" element={<Declare />} />
         <Route path="/reviews" element={<Testimonial />} />

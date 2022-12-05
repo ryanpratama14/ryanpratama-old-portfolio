@@ -7,7 +7,8 @@ const Footer = () => {
       <div>
         <p>
           © 2022 FaoTech™. All Rights Reserved. <br />
-          Made by Ryan
+          Made by Ryan <br />
+          Special thanks to daisyUI
         </p>
       </div>
     </footer>
