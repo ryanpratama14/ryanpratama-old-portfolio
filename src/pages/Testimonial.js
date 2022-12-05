@@ -1,8 +1,11 @@
-import React from "react";
+import { React, useEffect } from "react";
 import "./Background.css";
 import Review from "./components/Review";
 
 const Testimonial = () => {
+  useEffect(() => {
+    document.title = "FaoTech: Reviews";
+  }, []);
   return (
     <div class="font-mono">
       <section class=" text-white reviews" id="ceo">

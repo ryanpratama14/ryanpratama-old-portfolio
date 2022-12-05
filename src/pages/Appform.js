@@ -8,6 +8,9 @@ import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 // import Testimonial from "./Testimonial";
 
 function Appform() {
+  useEffect(() => {
+    document.title = "#2: App Form";
+  }, []);
   const [word, setWord] = useState("Note: valid answers only");
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");

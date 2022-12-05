@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Background.css";
 
 // py-44
 
 const About = () => {
+  useEffect(() => {
+    document.title = "FaoTech: About";
+  }, []);
   return (
     <div class="font-mono">
       <section class=" text-white ceo" id="ceo">

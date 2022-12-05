@@ -1,9 +1,12 @@
 import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const Declare = () => {
+  useEffect(() => {
+    document.title = "#3 Declare Your Shahada";
+  }, []);
   const [word, setWord] = useState("أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ");
   const [button, setButton] = useState("Next");
   const openInNewTab = (url) => {
