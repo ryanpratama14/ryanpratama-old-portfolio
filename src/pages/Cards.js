@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "./components/Card";
 import InputField from "./components/InputField";
 
@@ -7,6 +7,10 @@ function Cards() {
   const [age, setAge] = useState(0);
   const [data, setData] = useState([{ name: "Ryan", age: 22 }]);
   const regex = /^[a-zA-Z, ЁёА-я]+$/;
+
+  useEffect(() => {
+    document.title = "#1: Member Card";
+  }, []);
 
   return (
     <div className="App font-mono text-center min-h-screen App-header text-black dark:text-white">

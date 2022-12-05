@@ -1,15 +1,19 @@
-import React from "react";
+import { React, useEffect } from "react";
 import "./Background.css";
 import Review from "./components/Review";
 
 const Testimonial = () => {
+  useEffect(() => {
+    document.title = "FaoTech: Reviews";
+  }, []);
   return (
     <div class="font-mono">
       <section class=" text-white reviews" id="ceo">
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Read trusted reviews from our students
+              Read <span class="text-blue-300">trusted</span> reviews from our{" "}
+              <span class="text-red-300">students</span>
             </h2>
           </div>
           <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">
@@ -26,7 +30,7 @@ const Testimonial = () => {
             <Review
               nameProps={"Anas Firly"}
               occupationProps={"FaoTech Student"}
-              quoteProps={"Great experience, learned so much from here."}
+              quoteProps={"Great experience, 👨‍💻learned so much from here."}
               linkProps={"https://www.instagram.com/anasfirly_"}
               pictureProps={
                 "https://sun9-81.userapi.com/impf/c850136/v850136517/506d3/9mPlOfTeHus.jpg?size=640x1136&quality=96&sign=f69986d1718e3b68c1c1ec32da6c29e1&type=album"
@@ -56,7 +60,9 @@ const Testimonial = () => {
                 />
 
                 <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                  <p class="text-2xl font-bold text-white-700">Ryan Pratama</p>
+                  <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                    Ryan Pratama
+                  </p>
                   <p class="mt-1 text-xs font-medium text-white-500">
                     FaoTech Student
                   </p>
@@ -65,7 +71,7 @@ const Testimonial = () => {
                     "Choosing FaoTech was one of the best <br />
                     career decision I've ever made. <br />
                     The program prepped me with necessary skills. <br />
-                    Highly recommend!"
+                    Highly recommend!" 🙌
                   </p>
                   <div class="mt-4 flex justify-center gap-0.5 text-yellow-500">
                     <svg
@@ -111,7 +117,7 @@ const Testimonial = () => {
                   </div>
 
                   <a
-                    class="btn mt-5 text-white font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-500 dark:hover:bg-violet-500"
+                    class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
                     href="https://www.instagram.com/ryanpratama14/"
                     target="_blank"
                     rel="noreferrer"

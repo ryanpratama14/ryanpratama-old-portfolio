@@ -90,7 +90,7 @@ const Navbar = () => {
           onClick={() => {
             navigate("/");
           }}
-          class="btn btn-ghost normal-case text-xl"
+          class="btn btn-ghost normal-case text-xl "
         >
           Homepage
         </a>
@@ -163,7 +163,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                VK<span class="badge">vk</span>
+                ВКонтакте<span class="badge">vk</span>
               </a>
             </li>
           </ul>
