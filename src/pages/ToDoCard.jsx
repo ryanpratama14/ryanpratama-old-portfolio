@@ -8,7 +8,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
   const [word, setWord] = useState("on progress...💪");
 
   return (
-    <div class=" mx-10 my-6  shadow-lg rounded-xl w-80 md:w-96 p-4 bg-white overflow-hidden">
+    <div class=" mx-10 my-6  shadow-lg rounded-xl w-80 md:w-96 py-6 px-6 bg-white overflow-hidden">
       <Toaster />
       <div class="flex items-center border-b-2 mb-2 py-2">
         <img
@@ -27,8 +27,10 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
         <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black">
           {taskProps}
         </p>
-        <p class="text-gray-800 text-l font-bold mb-2 tracking-tighter">
-          ⏰ {timeProps} // {dateProps}
+        <p class="text-gray-800 text-l font-bold tracking-tighter">
+          ⏰ {timeProps}
+          <br />
+          📆 {dateProps}
         </p>
 
         <p class="text-stone-900 text-sm text-right">{word}</p>
