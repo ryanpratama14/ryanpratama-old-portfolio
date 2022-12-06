@@ -59,7 +59,7 @@ const ToDo = () => {
                   setName(e);
                 }}
                 type="text"
-                lengthMax={20}
+                lengthMax={256}
                 placeholderValue="Field"
               />
             </div>
@@ -69,7 +69,7 @@ const ToDo = () => {
                   setTask(e);
                 }}
                 type="text"
-                lengthMax={360}
+                lengthMax={256}
                 placeholderValue="Task"
               />
             </div>
