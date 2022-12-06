@@ -2,6 +2,7 @@ import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React from "react";
 import "./Background.css";
 import InputField from "./components/InputField";
+import toast, { Toaster } from "react-hot-toast";
 
 import { useState } from "react";
 import { createContext, useEffect } from "react";
@@ -22,11 +23,25 @@ const ToDo = () => {
       task: "Mastering Tailwind CSS",
       date: "2022-30-12",
       time: "22:45",
+      isDone: false,
     },
   ]);
 
+  const markTodo = (index) => {
+    const newData = [...data];
+    newData[index].isDone = true;
+    setData(newData);
+  };
+
+  const removeTodo = (index) => {
+    const newData = [...data];
+    newData.splice(index, 1);
+    setData(newData);
+  };
+
   return (
     <div class="font-mono ">
+      <Toaster />
       <section class=" text-white reviews" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-xl text-center mb-12">
@@ -38,17 +53,18 @@ const ToDo = () => {
             </h2>
           </div>
           <div class="flex flex-wrap justify-center">
-            {data?.map((e, index) => {
-              // console.log("EHEHEH");
+            {data?.map((todo, index) => {
               return (
-                <div>
-                  <ToDoCard
-                    nameProps={e.name}
-                    taskProps={e.task}
-                    dateProps={e.date}
-                    timeProps={e.time}
-                  />
-                </div>
+                <ToDoCard
+                  nameProps={todo.name}
+                  taskProps={todo.task}
+                  dateProps={todo.date}
+                  timeProps={todo.time}
+                  index={index}
+                  todo={todo}
+                  markTodo={markTodo}
+                  removeTodo={removeTodo}
+                />
               );
             })}
           </div>
@@ -100,6 +116,7 @@ const ToDo = () => {
                   time.length > 0
                 ) {
                   setData([...data, { name, task, date, time }]);
+                  toast.success("Added");
                 }
               }}
               className="btn btn-primary mt-4 mb-4 w-72"
