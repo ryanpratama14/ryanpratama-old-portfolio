@@ -5,7 +5,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
   const notifySuccess = () => toast.success("Marked as done");
   const [count, setCounter] = useState(0);
   const [isDone, setIsDone] = useState("MARK AS DONE");
-  const [word, setWord] = useState("On progress...💪");
+  const [word, setWord] = useState("on progress...💪");
 
   return (
     <div class=" mx-10 my-6  shadow-lg rounded-xl w-80 md:w-96 p-4 bg-white overflow-hidden">
@@ -23,12 +23,12 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
         </div>
       </div>
       <div class="w-full">
-        <p class="text-gray-800 text-sm font-medium">Working on:</p>
+        <p class="text-gray-800 text-sm font-medium">working on:</p>
         <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black">
           {taskProps}
         </p>
         <p class="text-gray-800 text-l font-bold mb-2 tracking-tighter">
-          Due: {timeProps} // {dateProps}
+          ⏰ {timeProps} // {dateProps}
         </p>
 
         <p class="text-stone-900 text-sm text-right">{word}</p>
@@ -51,7 +51,7 @@ const ToDoCard = ({ nameProps, taskProps, dateProps, timeProps }) => {
           onClick={(event) => {
             setCounter(count + 1);
             if (count === 1 - 1) {
-              setWord("You're up 🙌");
+              setWord("you're up 🙌");
               notifySuccess();
               setIsDone("TASK COMPLETED");
             } else if (count === 1) {
