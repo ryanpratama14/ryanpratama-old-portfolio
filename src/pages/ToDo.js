@@ -18,7 +18,7 @@ const ToDo = () => {
   const [time, setTime] = useState("");
   const [data, setData] = useState([
     {
-      name: "👨‍💻 Full-Stack Web Development at FaoTech",
+      name: "Full-Stack Web Development at FaoTech",
       task: "Mastering Tailwind CSS",
       date: "2022-30-12",
       time: "22:45",
@@ -39,7 +39,7 @@ const ToDo = () => {
           </div>
           <div class="flex flex-wrap justify-center">
             {data?.map((e, index) => {
-              console.log("EHEHEH");
+              // console.log("EHEHEH");
               return (
                 <div>
                   <ToDoCard
