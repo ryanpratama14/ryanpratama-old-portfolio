@@ -17,9 +17,9 @@ const ToDoCard = ({
   const [word, setWord] = useState("on progress...💪");
 
   return (
-    <div class=" mx-10 my-6  shadow-lg rounded-xl w-80 md:w-96 py-6 px-6 bg-white overflow-hidden">
+    <div class=" mx-2 my-6  shadow-lg rounded-xl w-96 md:w-96 py-6 px-6 bg-white overflow-hidden">
       <Toaster />
-      <div class="flex items-center border-b-2 mb-2 py-2">
+      <div class="flex items-center border-b-2 mb-2 pb-2">
         <img
           class="w-10 h-10 object-cover "
           alt="tasks"
@@ -72,6 +72,10 @@ const ToDoCard = ({
               notifySuccess();
               setIsDone2("TASK COMPLETED");
             } else if (count === 1) {
+              toast("You've done it! Good job", {
+                icon: "👋",
+              });
+            } else if (count > 1) {
               event.preventDefault();
             }
           }}
