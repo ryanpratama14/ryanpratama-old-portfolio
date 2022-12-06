@@ -11,7 +11,6 @@ const ToDoCard = ({
   todo,
   markTodo,
 }) => {
-  const notifySuccess = () => toast.success("Marked as done");
   const [count, setCounter] = useState(0);
   const [isDone2, setIsDone2] = useState("MARK AS DONE");
   const [word, setWord] = useState("on progress...💪");
@@ -58,6 +57,7 @@ const ToDoCard = ({
             toast("Deleted", {
               icon: "⛔️",
             });
+            setCounter(0);
           }}
         >
           Delete
@@ -69,13 +69,14 @@ const ToDoCard = ({
             setCounter(count + 1);
             if (count === 1 - 1) {
               setWord("you're up 🙌");
-              notifySuccess();
+              toast.success("Marked as done");
               setIsDone2("TASK COMPLETED");
             } else if (count === 1) {
               toast("You've done it! Good job", {
                 icon: "👋",
               });
             } else if (count > 1) {
+              setCounter(0);
               event.preventDefault();
             }
           }}
