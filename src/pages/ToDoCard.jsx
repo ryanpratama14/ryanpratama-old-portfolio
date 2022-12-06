@@ -76,7 +76,7 @@ const ToDoCard = ({
                 icon: "👋",
               });
             } else if (count > 1) {
-              setCounter(0);
+              // setCounter(0);
               event.preventDefault();
             }
           }}
