@@ -21,7 +21,7 @@ const ToDo = () => {
       name: "👨‍💻 Full-Stack Web Development at FaoTech",
       task: "Mastering Tailwind CSS",
       date: "2022-30-12",
-      time: "22:45 ",
+      time: "22:45",
     },
   ]);
 
@@ -38,7 +38,7 @@ const ToDo = () => {
             </h2>
           </div>
           <div class="flex flex-wrap justify-center">
-            {data?.map((e) => {
+            {data?.map((e, index) => {
               console.log("EHEHEH");
               return (
                 <div>
