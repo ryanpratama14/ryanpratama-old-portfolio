@@ -39,6 +39,7 @@ const ToDo = () => {
           </div>
           <div class="flex flex-wrap justify-center">
             {data?.map((e) => {
+              console.log("EHEHEH");
               return (
                 <div>
                   <ToDoCard
