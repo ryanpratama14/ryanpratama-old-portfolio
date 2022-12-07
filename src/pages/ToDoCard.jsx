@@ -31,19 +31,15 @@ const ToDoCard = ({
         </div>
       </div>
       <div class="w-full">
-        <p
-          style={{ textDecoration: todo.isDone ? "line-through" : "" }}
-          class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black"
-        >
+        <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black mb-2">
           {taskProps}
         </p>
         <p
           style={{ textDecoration: todo.isDone ? "line-through" : "" }}
           class="text-gray-800 text-l font-bold tracking-tighter"
         >
-          ⏰ {timeProps}
-          <br />
           📆 {dateProps}
+          <br />⏰ {timeProps}
         </p>
 
         <p class="text-stone-900 text-sm text-left mt-2">{word}</p>

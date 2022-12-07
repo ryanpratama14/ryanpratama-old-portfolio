@@ -67,6 +67,15 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => {
+                  navigate("/expense-tracker");
+                }}
+              >
+                #5: Expense Tracker App
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
                   navigate("/reviews");
                 }}
               >
@@ -90,7 +99,7 @@ const Navbar = () => {
           onClick={() => {
             navigate("/");
           }}
-          class="btn btn-ghost normal-case text-xl "
+          class="btn btn-ghost normal-case text-2xl "
         >
           Homepage
         </a>
