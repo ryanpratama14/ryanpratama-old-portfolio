@@ -83,7 +83,7 @@ function Appform() {
             </h2>
             <br />
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              <span class="text-sky-300">Join FaoTech,</span>
+              <span class="text-sky-300">Join FaoTech, </span>
               <span class="text-red-300">NOW.</span>
             </h2>
 
