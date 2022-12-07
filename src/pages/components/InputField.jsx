@@ -7,7 +7,7 @@ export default function InputField({
 }) {
   return (
     <div class="flex items-center justify-center">
-      <div class="text-center text-black dark:text-white w-96 items-center">
+      <div class="text-center text-black dark:text-white w-full items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
         <div class="mt-4">
           <label class="block mb-2 text-sm font-medium text-left text-white dark:text-white">
             {fieldProps}
