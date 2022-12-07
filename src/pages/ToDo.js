@@ -68,7 +68,7 @@ const ToDo = () => {
               );
             })}
           </div>
-          <div class="flex flex-col justify-center items-center w-full">
+          <div class="flex flex-col justify-center items-center w-full text-cente">
             <InputFieldCenter
               fieldProps={"Field"}
               valueTyped={(e) => {
@@ -106,25 +106,27 @@ const ToDo = () => {
               placeholderValue="12:45 PM"
             />
           </div>
-          <div class="text-center">
-            <button
-              onClick={() => {
-                if (
-                  name.length > 0 &&
-                  task.length > 0 &&
-                  date.length > 0 &&
-                  time.length > 0
-                ) {
-                  setData([...data, { name, task, date, time }]);
-                  toast.success("Added");
-                } else {
-                  toast.error("All fields are required");
-                }
-              }}
-              className="btn btn-primary mt-6 mb-4 w-48"
-            >
-              Add new task
-            </button>
+          <div class="text-center text-black dark:text-white w-full items-center">
+            <div class="mt-4">
+              <button
+                onClick={() => {
+                  if (
+                    name.length > 0 &&
+                    task.length > 0 &&
+                    date.length > 0 &&
+                    time.length > 0
+                  ) {
+                    setData([...data, { name, task, date, time }]);
+                    toast.success("Added");
+                  } else {
+                    toast.error("All fields are required");
+                  }
+                }}
+                className="btn btn-primary mt-6 mb-4 w-48"
+              >
+                Add new task
+              </button>
+            </div>
           </div>
         </div>
       </section>

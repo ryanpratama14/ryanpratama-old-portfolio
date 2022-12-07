@@ -69,7 +69,7 @@ const About = () => {
                     />
                   </a>
                 </div>
-                <p class="mt-4 text-l text-white-500">
+                <p class="mt-4 text-lg text-white-500">
                   "For me, it matters that we drive tech as an equalizing force,{" "}
                   <br />
                   as an enabler for everyone around the world. <br /> Feel free

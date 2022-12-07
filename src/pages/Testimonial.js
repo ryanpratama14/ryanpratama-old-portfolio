@@ -40,7 +40,7 @@ const Testimonial = () => {
               instagramProps={"https://www.instagram.com/anasfirly_"}
               telegramProps={"https://t.me/anasfirly20"}
               occupationProps={"FaoTech Student"}
-              quoteProps={"Great experience, 👨‍💻learned so much from here."}
+              quoteProps={"Great experience, learned so much from here."}
               linkProps={"https://www.instagram.com/anasfirly_"}
               pictureProps={
                 "https://sun9-81.userapi.com/impf/c850136/v850136517/506d3/9mPlOfTeHus.jpg?size=640x1136&quality=96&sign=f69986d1718e3b68c1c1ec32da6c29e1&type=album"
@@ -120,7 +120,7 @@ const Testimonial = () => {
                     "Choosing FaoTech was one of the best <br />
                     career decision I've ever made. <br />
                     The program prepped me with necessary skills.
-                    <br /> Highly recommend!" 🙌
+                    <br /> Highly recommended!" 🙌
                   </p>
                   <div class="mt-4 flex justify-center gap-0.5 text-yellow-500">
                     <svg
