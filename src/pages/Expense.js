@@ -1,11 +1,20 @@
 import { React, useEffect, useState } from "react";
-import Table from "./components/Table";
+import ExpenseCard from "./components/ExpenseCard";
 import InputField from "./components/InputField";
 
 const Expense = () => {
   useEffect(() => {
     document.title = "#5: Expense Tracker App";
   }, []);
+
+  const ruble = "₽";
+  const [data, setData] = useState([
+    {
+      expenseTitle: 320,
+      currency: "$",
+      date: "2022-30-12",
+    },
+  ]);
 
   return (
     <div className="ceo font-mono">
@@ -19,6 +28,9 @@ const Expense = () => {
               <span class="text-red-300">Tracker </span>App!
             </h2>
           </div>
+          <section class="flex flex-wrap justify-around items-center w-full">
+            <ExpenseCard />
+          </section>
         </div>
       </section>
     </div>

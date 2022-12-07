@@ -121,7 +121,7 @@ const ToDo = () => {
                   toast.error("All fields are required");
                 }
               }}
-              className="btn btn-primary mt-8 mb-4 w-48"
+              className="btn btn-primary mt-8 mb-4 w-48 "
             >
               Add new task
             </button>

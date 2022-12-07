@@ -47,7 +47,7 @@ const ToDoCard = ({
 
       <div className="card-actions justify-between mt-2">
         <button
-          class="btn border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm  text-center bg-red-700 dark:bg-red-700 hover:bg-red-900 dark:hover:bg-red-900"
+          class="btn border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-red-700 dark:bg-red-700 hover:bg-red-900 dark:hover:bg-red-900"
           onClick={() => {
             removeTodo(index);
             toast("Deleted", {
@@ -59,7 +59,7 @@ const ToDoCard = ({
           Delete
         </button>
         <button
-          class="btn border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm  text-center bg-green-700 dark:bg-green-700 hover:bg-green-900 dark:hover:bg-green-900"
+          class="btn border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-green-700 dark:bg-green-700 hover:bg-green-900 dark:hover:bg-green-900"
           onClick={(event) => {
             markTodo(index);
             setCounter(count + 1);
