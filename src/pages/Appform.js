@@ -92,7 +92,7 @@ function Appform() {
             <div class="w-full text-left mt-16">
               <div class="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
-                  <label class="block mb-2 text-sm font-medium  :text-white dark:text-white">
+                  <label class="block mb-2 text-m font-medium  :text-white dark:text-white">
                     First Name
                   </label>
                   <input
@@ -104,7 +104,7 @@ function Appform() {
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
                     Last Name
                   </label>
                   <input
@@ -116,7 +116,7 @@ function Appform() {
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
                     Age
                   </label>
                   <input
@@ -128,7 +128,7 @@ function Appform() {
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
                     Phone Number
                   </label>
                   <input
@@ -141,7 +141,7 @@ function Appform() {
                 </div>
               </div>
               <div class="mb-6">
-                <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label class="block mb-2 text-m font-medium text-white dark:text-white">
                   Instagram Username
                 </label>
                 <input
@@ -153,7 +153,7 @@ function Appform() {
                 />
               </div>
               <div class="mb-6">
-                <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label class="block mb-2 text-m font-medium text-white dark:text-white">
                   Email Address
                 </label>
                 <input
@@ -167,7 +167,7 @@ function Appform() {
 
               <div class="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
-                  <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
                     Country
                   </label>
 
@@ -178,7 +178,7 @@ function Appform() {
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
                     Region
                   </label>
 
@@ -192,7 +192,7 @@ function Appform() {
               </div>
 
               <div class="mb-6">
-                <label class="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label class="block mb-2 text-m font-medium text-white dark:text-white">
                   Address
                 </label>
                 <input

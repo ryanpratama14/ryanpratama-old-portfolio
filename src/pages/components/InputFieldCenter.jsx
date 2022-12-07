@@ -1,4 +1,4 @@
-export default function InputField({
+export default function InputFieldCenter({
   placeholderValue,
   type,
   valueTyped,
@@ -8,7 +8,7 @@ export default function InputField({
   return (
     <div class="text-center text-black dark:text-white w-full items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
       <div class="mt-4">
-        <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+        <label class="block mb-2 text-m font-medium text-center text-white dark:text-white">
           {fieldProps}
         </label>
         <input
@@ -16,7 +16,7 @@ export default function InputField({
           maxLength={lengthMax}
           type={type}
           placeholder={placeholderValue}
-          className="input input-bordered w-full"
+          className="input input-bordered w-full text-center"
           onChange={(e) => {
             valueTyped(e.target.value);
           }}

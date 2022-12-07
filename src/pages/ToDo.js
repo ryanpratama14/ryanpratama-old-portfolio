@@ -1,7 +1,7 @@
 import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React from "react";
 import "./Background.css";
-import InputField from "./components/InputField";
+import InputFieldCenter from "./components/InputFieldCenter";
 import toast, { Toaster } from "react-hot-toast";
 
 import { useState } from "react";
@@ -69,7 +69,7 @@ const ToDo = () => {
             })}
           </div>
           <div class="flex flex-col justify-center items-center w-full">
-            <InputField
+            <InputFieldCenter
               fieldProps={"Field"}
               valueTyped={(e) => {
                 setName(e);
@@ -79,7 +79,7 @@ const ToDo = () => {
               placeholderValue="Japanese lesson"
             />
 
-            <InputField
+            <InputFieldCenter
               fieldProps={"Task"}
               valueTyped={(e) => {
                 setTask(e);
@@ -89,7 +89,7 @@ const ToDo = () => {
               placeholderValue="Listening chapter 26"
             />
 
-            <InputField
+            <InputFieldCenter
               fieldProps={"Date"}
               valueTyped={(e) => {
                 setDate(e);
@@ -97,7 +97,7 @@ const ToDo = () => {
               type="date"
             />
 
-            <InputField
+            <InputFieldCenter
               fieldProps={"Time"}
               valueTyped={(e) => {
                 setTime(e);
