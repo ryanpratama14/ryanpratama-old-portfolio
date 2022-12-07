@@ -4,47 +4,80 @@ const AddTransactionView = (props) => {
   const [amount, setAmount] = useState();
   const [desc, setDesc] = useState();
   const [type, setType] = useState("EXPENSE");
-
+  const [date, setDate] = useState();
+  const [data, setData] = useState([
+    {
+      amount: 2990,
+      date: "2022-30-12",
+      desc: "The 1975 concert",
+      type: "EXPENSE",
+      id: Date.now(),
+    },
+  ]);
   return (
     <div class="flex flex-col justify-cen ter items-center w-full text-left">
       <div class="text-center text-black dark:text-white w-full items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
-        <div class="mt-4 " isAddTxnVisible={props.isAddTxnVisible}>
-          <input
-            placeholder="Amount"
-            className="input input-bordered w-64"
-            type="number"
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
-          />
-          <input
-            placeholder="Description"
-            className="input input-bordered w-64"
-            value={desc}
-            onChange={(e) => setDesc(e.target.value)}
-          />
-          <div class="mt-4 flex justify-center">
+        <div>
+          <div
+            class="flex flex-col justify-center items-center w-full text-center"
+            isAddTxnVisible={props.isAddTxnVisible}
+          >
+            <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+              Amount
+            </label>
             <input
-              type="radio"
-              id="expense"
-              name="type"
-              class="radio radio-success"
-              value="EXPENSE"
-              checked={type === "EXPENSE"}
-              onChange={(e) => setType(e.target.value)}
+              placeholder="890"
+              className="input input-bordered w-64 mb-4"
+              type="number"
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
             />
-            <label htmlFor="expense">Expense</label>
+            <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+              Date
+            </label>
             <input
-              type="radio"
-              id="income"
-              name="type"
-              class="radio radio-success"
-              value="INCOME"
-              checked={type === "INCOME"}
-              onChange={(e) => setType(e.target.value)}
+              placeholder="12/10/2023"
+              className="input input-bordered w-64 mb-4"
+              value={date}
+              type="date"
+              onChange={(e) => setDate(e.target.value)}
             />
-            <label htmlFor="Expense">Income</label>
+            <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+              Description
+            </label>
+            <input
+              placeholder="Ticket to Tokyo"
+              className="input input-bordered w-64"
+              value={desc}
+              onChange={(e) => setDesc(e.target.value)}
+            />
+            <div class="mt-4  flex justify-center">
+              <input
+                type="radio"
+                id="expense"
+                name="type"
+                class="radio radio-error text"
+                value="EXPENSE"
+                checked={type === "EXPENSE"}
+                onChange={(e) => setType(e.target.value)}
+              />
+              <label class="text-s font-bold mx-2" htmlFor="expense">
+                Expense
+              </label>
+              <input
+                type="radio"
+                id="income"
+                name="type"
+                class="radio radio-success"
+                value="INCOME"
+                checked={type === "INCOME"}
+                onChange={(e) => setType(e.target.value)}
+              />
+              <label class="text-s font-bold mx-2" htmlFor="Expense">
+                Income
+              </label>
+            </div>
           </div>
-
           <button
             onClick={() =>
               props.addTransaction({
@@ -52,9 +85,10 @@ const AddTransactionView = (props) => {
                 amount: Number(amount),
                 desc,
                 type,
+                date,
               })
             }
-            class="w-32 btn border-transparent mt-4 hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-indigo-700 dark:bg-indigo-700 hover:bg-indigo-900 dark:hover:bg-indigo-900"
+            class="w-64 btn border-transparent mt-4 hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-indigo-700 dark:bg-indigo-700 hover:bg-indigo-900 dark:hover:bg-indigo-900"
           >
             Add Transaction
           </button>
@@ -119,10 +153,10 @@ const OverViewComponent = (props) => {
                         isIncome={true}
                         class=" text-xl font-semibold text-emerald-400"
                       >
-                        INI INCOME{props.income}
+                        ${props.income}
                       </div>
                       <div class=" text-xl font-semibold text-red-400">
-                        INI EXPENSE{props.expense}
+                        ${props.expense}
                       </div>
                     </div>
                     <div class="flex justify-end items-end mb- mt-2">
