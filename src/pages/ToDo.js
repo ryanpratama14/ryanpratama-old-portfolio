@@ -43,7 +43,7 @@ const ToDo = () => {
     <div class="font-mono">
       <Toaster />
       <section class=" text-white reviews" id="ceo">
-        <div class="px-12 py-12 sm:px-6  lg:px-8">
+        <div class="px-12 py-12">
           <div class="mx-auto max-w-xl text-center mb-12">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
