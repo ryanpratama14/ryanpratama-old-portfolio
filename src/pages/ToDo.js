@@ -17,15 +17,17 @@ const ToDo = () => {
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [data, setData] = useState([
-    {
-      name: "Full-Stack Web Development at FaoTech",
-      task: "Mastering Tailwind CSS",
-      date: "2022-30-12",
-      time: "22:45",
-      isDone: false,
-    },
-  ]);
+  const [data, setData] = useState(
+    JSON.parse(localStorage.getItem("data")) || [
+      {
+        name: "Full-Stack Web Development at FaoTech",
+        task: "Mastering Tailwind CSS",
+        date: "2022-30-12",
+        time: "22:45",
+        isDone: false,
+      },
+    ]
+  );
 
   const markTodo = (index) => {
     const newData = [...data];
