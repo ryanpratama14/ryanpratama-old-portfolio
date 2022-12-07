@@ -9,15 +9,15 @@ const Expense = () => {
   }, []);
   const [expenseName, setExpenseName] = useState("");
   const [transaction, setTransaction] = useState();
-  let [balance, setBalance] = useState(0);
   let [income, setIncome] = useState(0);
   let [expense, setExpense] = useState(0);
+  let [balance, setBalance] = useState(0);
   const [date, setDate] = useState("");
   let [data, setData] = useState([
     {
-      expenseName,
-      transaction,
-      date,
+      expenseName: "World cup ticket",
+      transaction: -1290,
+      date: "12/12/2022",
     },
   ]);
 
@@ -41,10 +41,10 @@ const Expense = () => {
           </div>
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
-              <div class=" w-96 mx-2 my-2">
+              <div class="w-96 my-2">
                 <div class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white mb-4 text-right">
-                    Balance: {balance} USD
+                    Balance: ${balance}
                   </h3>
                   <div
                     className="font-extrabold mt-4 border-b-2 mb-2 pb-2 border-indigo-600 flex flex-wrap justify-between items-center w-full
