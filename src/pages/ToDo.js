@@ -69,44 +69,39 @@ const ToDo = () => {
             })}
           </div>
           <div class="text-center text-black dark:text-white">
-            <div className=" mt-4">
-              <InputField
-                valueTyped={(e) => {
-                  setName(e);
-                }}
-                type="text"
-                lengthMax={256}
-                placeholderValue="Field"
-              />
-            </div>
-            <div className=" mt-4">
-              <InputField
-                valueTyped={(e) => {
-                  setTask(e);
-                }}
-                type="text"
-                lengthMax={256}
-                placeholderValue="Task"
-              />
-            </div>
+            <InputField
+              valueTyped={(e) => {
+                setName(e);
+              }}
+              type="text"
+              lengthMax={256}
+              placeholderValue="Field"
+            />
 
-            <div className=" mt-4">
-              <InputField
-                valueTyped={(e) => {
-                  setDate(e);
-                }}
-                type="date"
-              />
-            </div>
-            <div className=" mt-4">
-              <InputField
-                valueTyped={(e) => {
-                  setTime(e);
-                }}
-                type="time"
-                placeholderValue="12:45 PM"
-              />
-            </div>
+            <InputField
+              valueTyped={(e) => {
+                setTask(e);
+              }}
+              type="text"
+              lengthMax={256}
+              placeholderValue="Task"
+            />
+
+            <InputField
+              valueTyped={(e) => {
+                setDate(e);
+              }}
+              type="date"
+            />
+
+            <InputField
+              valueTyped={(e) => {
+                setTime(e);
+              }}
+              type="time"
+              placeholderValue="12:45 PM"
+            />
+
             <button
               onClick={() => {
                 if (

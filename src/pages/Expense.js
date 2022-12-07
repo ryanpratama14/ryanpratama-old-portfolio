@@ -1,4 +1,6 @@
 import { React, useEffect, useState } from "react";
+import Table from "./components/Table";
+import inputField from "./components/InputField";
 
 const Expense = () => {
   useEffect(() => {

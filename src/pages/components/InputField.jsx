@@ -5,7 +5,7 @@ export default function InputField({
   lengthMax,
 }) {
   return (
-    <div>
+    <div class="mt-4">
       <input
         required
         maxLength={lengthMax}
