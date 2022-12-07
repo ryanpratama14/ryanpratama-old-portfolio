@@ -19,6 +19,11 @@ const Testimonial = () => {
           <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">
             <Review
               nameProps={"Alvin Pratama"}
+              linkedinProps={
+                "https://www.linkedin.com/in/alvin-pratama-1a046424b/"
+              }
+              instagramProps={"https://www.instagram.com/alvinjustkidding/"}
+              telegramProps={"https://t.me/palveeen"}
               occupationProps={"FaoTech Student"}
               quoteProps={"First coffee then coding. Join FaoTech now."}
               linkProps={"https://www.instagram.com/alvinjustkidding"}
@@ -29,6 +34,11 @@ const Testimonial = () => {
 
             <Review
               nameProps={"Anas Firly"}
+              linkedinProps={
+                "https://www.linkedin.com/in/muhammad-anasfirly-3b3948147/"
+              }
+              instagramProps={"https://www.instagram.com/anasfirly_"}
+              telegramProps={"https://t.me/anasfirly20"}
               occupationProps={"FaoTech Student"}
               quoteProps={"Great experience, 👨‍💻learned so much from here."}
               linkProps={"https://www.instagram.com/anasfirly_"}
@@ -38,6 +48,11 @@ const Testimonial = () => {
             ></Review>
             <Review
               nameProps={"Ilham Akbar"}
+              linkedinProps={
+                "https://www.linkedin.com/in/muhammad-ilham-akbar-380372166/"
+              }
+              instagramProps={"https://www.instagram.com/ilham.akbar6"}
+              telegramProps={"https://t.me/ilham_akbar6"}
               occupationProps={"FaoTech Student"}
               quoteProps={
                 "Started at stage zero. Alhamdulillah, now I know how to code well."
@@ -49,7 +64,7 @@ const Testimonial = () => {
             ></Review>
           </div>
         </div>
-        <section class=" text-white pb-20" id="ceo">
+        <section class=" -mt-12 text-white pb-20" id="ceo">
           <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex justify-center mt-8 min-w-screen">
               <div>
@@ -60,13 +75,47 @@ const Testimonial = () => {
                 />
 
                 <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                  <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                  <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
                     Ryan Pratama
                   </p>
-                  <p class="mt-1 text-xs font-medium text-white-500">
+                  <p class="mt-1 text-xs font-medium text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
                     FaoTech Student
                   </p>
-
+                  <div class="flex items-center justify-center mt-2">
+                    <a
+                      title="Follow me on Instagram"
+                      href="https://www.instagram.com/ryanpratama14/"
+                      target="_blank"
+                      class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+                    >
+                      <img
+                        class=" object-cover object-center w-full h-full rounded-full"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                      />
+                    </a>
+                    <a
+                      title="Follow me on Linkedin"
+                      href="https://www.linkedin.com/in/ryanpratama14/"
+                      target="_blank"
+                      class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+                    >
+                      <img
+                        class=" object-cover object-center w-full h-full rounded-full"
+                        src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                      />
+                    </a>
+                    <a
+                      title="Text me on Telegram"
+                      href="https://t.me/ryanpratama14"
+                      target="_blank"
+                      class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+                    >
+                      <img
+                        class=" object-cover object-center w-full h-full rounded-full"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
+                      />
+                    </a>
+                  </div>
                   <p class="mt-4 text-lg text-white-500">
                     "Choosing FaoTech was one of the best <br />
                     career decision I've ever made. <br />

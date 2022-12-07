@@ -6,6 +6,9 @@ const Review = ({
   quoteProps,
   linkProps,
   pictureProps,
+  telegramProps,
+  instagramProps,
+  linkedinProps,
 }) => {
   return (
     <div>
@@ -15,11 +18,51 @@ const Review = ({
       />
 
       <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-        <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-white to-gray-400">
+        <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
           {nameProps}
         </p>
-        <p class="mt-1 text-xs font-medium text-white-500">{occupationProps}</p>
-        <p class="mt-4 text-lg text-white-500">"{quoteProps}"</p>
+
+        <p class="mt-1 text-xs font-medium text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
+          {occupationProps}
+        </p>
+        {/* Social Media */}
+        <div class="flex items-center justify-center mt-2">
+          <a
+            title="Follow me on Instagram"
+            href={instagramProps}
+            target="_blank"
+            class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+          >
+            <img
+              class=" object-cover object-center w-full h-full rounded-full"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+            />
+          </a>
+          <a
+            title="Follow me on Linkedin"
+            href={linkedinProps}
+            target="_blank"
+            class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+          >
+            <img
+              class=" object-cover object-center w-full h-full rounded-full"
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+            />
+          </a>
+          <a
+            title="Text me on Telegram"
+            href={telegramProps}
+            target="_blank"
+            class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+          >
+            <img
+              class=" object-cover object-center w-full h-full rounded-full"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
+            />
+          </a>
+        </div>
+        {/* End of social media */}
+        <p class="mt-4 text-lg text-white">"{quoteProps}"</p>
 
         <div class="mt-4 flex justify-center gap-0.5 text-yellow-500">
           <svg

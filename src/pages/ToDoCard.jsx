@@ -25,7 +25,7 @@ const ToDoCard = ({
           src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png"
         />
         <div class="pl-3">
-          <div class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-gray-700 to-black tracking-tighter">
+          <div class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-gray-600 to-black tracking-tighter">
             {nameProps}
           </div>
         </div>
