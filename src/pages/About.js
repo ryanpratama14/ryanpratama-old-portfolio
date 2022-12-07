@@ -18,11 +18,11 @@ const About = () => {
             </h2>
           </div>
 
-          <div class="flex justify-center mt-8 min-w-screen">
+          <div class="flex justify-center mt-16 min-w-screen">
             <div>
               <img
                 src={require("./ceo.png")}
-                class="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"
+                class="mx-auto h-32 w-32 rounded-full object-cover shadow-xl"
                 alt="CEO"
               />
 
