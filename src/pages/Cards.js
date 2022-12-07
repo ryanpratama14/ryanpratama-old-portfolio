@@ -22,7 +22,7 @@ function Cards() {
         );
       })}
 
-      <div className=" mt-4">
+      <div>
         <InputField
           valueTyped={(e) => {
             setName(e);
@@ -32,7 +32,7 @@ function Cards() {
           placeholderValue="Your Name"
         />
       </div>
-      <div className=" mt-4">
+      <div>
         <InputField
           valueTyped={(e) => {
             setAge(e);
@@ -47,7 +47,7 @@ function Cards() {
             setData([...data, { name, age }]);
           }
         }}
-        className="btn btn-primary mt-4 mb-4 w-72"
+        className="btn btn-primary mt-6 mb-4 w-72"
       >
         Add new card
       </button>
