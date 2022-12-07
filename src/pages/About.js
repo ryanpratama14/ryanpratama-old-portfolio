@@ -22,15 +22,16 @@ const About = () => {
             <div>
               <img
                 src={require("./ceo.png")}
-                class="mx-auto h-48 w-48 rounded-full object-cover shadow-xl"
+                class="mx-auto h-48 w- rounded-full object-cover shadow-xl"
                 alt="CEO"
               />
 
               <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
                 <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
-                  Fakhrul Oktavian <br />
-                  <span class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-red-300 to-white">
-                    aka Fao
+                  Fakhrul Oktavian
+                  <br />
+                  <span class="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-red-300 to-white">
+                    Instructor
                   </span>
                 </p>
                 <div class="flex items-center justify-center mt-2">

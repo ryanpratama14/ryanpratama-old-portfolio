@@ -22,7 +22,7 @@ const Review = ({
           {nameProps}
         </p>
 
-        <p class="mt-1 text-xs font-medium text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
+        <p class="mt-0.5 text-s  font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
           {occupationProps}
         </p>
         {/* Social Media */}
