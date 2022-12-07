@@ -40,10 +40,10 @@ const ToDo = () => {
   };
 
   return (
-    <div class="font-mono ">
+    <div class="font-mono">
       <Toaster />
       <section class=" text-white reviews" id="ceo">
-        <div class="px-8 py-12 sm:px-6  lg:px-8">
+        <div class="px-12 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-xl text-center mb-12">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
@@ -68,26 +68,29 @@ const ToDo = () => {
               );
             })}
           </div>
-          <div class="text-center text-black dark:text-white">
+          <div>
             <InputField
+              fieldProps={"Field"}
               valueTyped={(e) => {
                 setName(e);
               }}
               type="text"
               lengthMax={256}
-              placeholderValue="Field"
+              placeholderValue="Japanese lesson"
             />
 
             <InputField
+              fieldProps={"Task"}
               valueTyped={(e) => {
                 setTask(e);
               }}
               type="text"
               lengthMax={256}
-              placeholderValue="Task"
+              placeholderValue="Listening chapter 26"
             />
 
             <InputField
+              fieldProps={"Date"}
               valueTyped={(e) => {
                 setDate(e);
               }}
@@ -95,13 +98,15 @@ const ToDo = () => {
             />
 
             <InputField
+              fieldProps={"Time"}
               valueTyped={(e) => {
                 setTime(e);
               }}
               type="time"
               placeholderValue="12:45 PM"
             />
-
+          </div>
+          <div class="text-center">
             <button
               onClick={() => {
                 if (
@@ -116,7 +121,7 @@ const ToDo = () => {
                   toast.error("All fields are required");
                 }
               }}
-              className="btn btn-primary mt-4 mb-4 w-72"
+              className="btn btn-primary mt-6 mb-4 w-48"
             >
               Add new task
             </button>
