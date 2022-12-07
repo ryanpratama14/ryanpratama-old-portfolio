@@ -107,26 +107,24 @@ const ToDo = () => {
             />
           </div>
           <div class="text-center text-black dark:text-white w-full items-center">
-            <div class="mt-4">
-              <button
-                onClick={() => {
-                  if (
-                    name.length > 0 &&
-                    task.length > 0 &&
-                    date.length > 0 &&
-                    time.length > 0
-                  ) {
-                    setData([...data, { name, task, date, time }]);
-                    toast.success("Added");
-                  } else {
-                    toast.error("All fields are required");
-                  }
-                }}
-                className="btn btn-primary mt-6 mb-4 w-48"
-              >
-                Add new task
-              </button>
-            </div>
+            <button
+              onClick={() => {
+                if (
+                  name.length > 0 &&
+                  task.length > 0 &&
+                  date.length > 0 &&
+                  time.length > 0
+                ) {
+                  setData([...data, { name, task, date, time }]);
+                  toast.success("Added");
+                } else {
+                  toast.error("All fields are required");
+                }
+              }}
+              className="btn btn-primary mt-8 mb-4 w-48"
+            >
+              Add new task
+            </button>
           </div>
         </div>
       </section>
