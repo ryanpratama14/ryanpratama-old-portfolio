@@ -78,7 +78,7 @@ const Testimonial = () => {
                   <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
                     Ryan Pratama
                   </p>
-                  <p class="mt-1 text-xs font-medium text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
+                  <p class="mt-0.5 text-s  font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
                     FaoTech Student
                   </p>
                   <div class="flex items-center justify-center mt-2">
