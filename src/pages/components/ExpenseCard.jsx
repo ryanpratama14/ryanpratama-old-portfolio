@@ -21,7 +21,7 @@ const ExpenseCard = ({
                 </p>
               </div>
               <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                {transactionProps} USD
+                {transactionProps}
               </div>
             </div>
           </li>

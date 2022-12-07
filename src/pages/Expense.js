@@ -8,23 +8,16 @@ const Expense = () => {
     document.title = "#5: Expense Tracker App";
   }, []);
   const [expenseName, setExpenseName] = useState("");
-  const [transaction, setTransaction] = useState(0);
+  const [transaction, setTransaction] = useState();
   let [balance, setBalance] = useState(0);
   let [income, setIncome] = useState(0);
   let [expense, setExpense] = useState(0);
   const [date, setDate] = useState("");
   let [data, setData] = useState([
     {
-      expenseName: "World Cup match ticket",
-      transaction: -9.5,
-      date: "2022-30-12",
-      id: 0,
-    },
-    {
-      expenseName: "Monthly salary",
-      transaction: 2390,
-      date: "2022-30-12",
-      id: 0,
+      expenseName,
+      transaction,
+      date,
     },
   ]);
 
@@ -65,14 +58,12 @@ const Expense = () => {
                     className="mt-1 mb-6 flex flex-wrap justify-between items-center w-full
 "
                   >
-                    <p class=" text-base font-semibold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-white">
-                      {income} USD
+                    <p class=" text-xl font-semibold text-emerald-400">
+                      +{income}
                     </p>
-                    <p class=" text-base font-semibold text-transparent bg-clip-text bg-gradient-to-l from-amber-600 to-white">
-                      {expense} USD
-                    </p>
+                    <p class=" text-xl font-semibold text-red-400">{expense}</p>
                   </div>
-                  <div class="flex justify-between items-center mb- mt-2">
+                  <div class="flex justify-end items-end mb- mt-2">
                     <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
                       History
                     </h3>
@@ -87,7 +78,6 @@ const Expense = () => {
                         index={index}
                         expense={expense}
                         removeExpense={removeExpense}
-                        balance={balance}
                       />
                     );
                   })}
@@ -107,7 +97,7 @@ const Expense = () => {
             />
 
             <InputFieldInt
-              fieldProps={"Amount"}
+              fieldProps={"Amount (+ or -)"}
               valueTyped={(e) => {
                 setTransaction(e);
               }}
