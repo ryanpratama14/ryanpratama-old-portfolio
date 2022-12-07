@@ -16,7 +16,7 @@ const ToDoCard = ({
   const [word, setWord] = useState("on progress...💪");
 
   return (
-    <div class="my-6  shadow-lg rounded-xl w-96 md:w-96 py-6 px-6 bg-white overflow-hidden">
+    <div class=" mx-4 my-4  shadow-lg rounded-xl w-96 md:w-96 py-6 px-6 bg-white overflow-hidden">
       <Toaster />
       <div class="flex items-center border-b-2 mb-2 pb-2">
         <img
