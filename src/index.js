@@ -14,7 +14,7 @@ import Declare from "./pages/Declare";
 import ToDo from "./pages/ToDo";
 import About from "./pages/About";
 import Instagram from "./pages/components/Instagram";
-import Expense from "./pages/Expense";
+import ExpenseApp from "./pages/ExpenseApp";
 
 export default function Routing() {
   return (
@@ -29,7 +29,7 @@ export default function Routing() {
         <Route path="/todoapp" element={<ToDo />} />
         <Route path="/appform" element={<Appform />} />
         <Route path="/about" element={<About />} />
-        <Route path="/expense-tracker" element={<Expense />} />
+        <Route path="/expense-tracker" element={<ExpenseApp />} />
         <Route path="*" element={<App />} />
       </Routes>
       <Instagram />

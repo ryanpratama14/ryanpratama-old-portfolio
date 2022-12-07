@@ -21,7 +21,7 @@ const About = () => {
           <div class="flex justify-center mt-16 min-w-screen">
             <div>
               <img
-                src={require("./ceo.png")}
+                src={require("./components/ceo.png")}
                 class="mx-auto h-48 w- rounded-full object-cover shadow-xl"
                 alt="CEO"
               />
