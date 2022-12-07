@@ -14,7 +14,7 @@ const Review = ({
     <div>
       <img
         src={pictureProps}
-        class="mx-auto h-32 w-32 rounded-full object-cover shadow-xl"
+        class="mx-auto h-36 w-36 rounded-full object-cover shadow-xl"
       />
 
       <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">

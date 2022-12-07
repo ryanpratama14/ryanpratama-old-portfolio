@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div class="font-mono">
       <section class=" text-white ceo" id="ceo">
-        <div class="mx-auto max-w-screen-xl px-8 py-20 sm:px-6 sm:pb-24 lg:px-8">
+        <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Meet <span class="text-blue-300">our</span>{" "}
@@ -22,7 +22,7 @@ const About = () => {
             <div>
               <img
                 src={require("./ceo.png")}
-                class="mx-auto h-32 w-32 rounded-full object-cover shadow-xl"
+                class="mx-auto h-48 w-48 rounded-full object-cover shadow-xl"
                 alt="CEO"
               />
 

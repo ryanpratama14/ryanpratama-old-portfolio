@@ -70,7 +70,7 @@ const Testimonial = () => {
               <div>
                 <img
                   src="https://sun9-81.userapi.com/impg/zpEQaT8EDrgYfk-HwzfkWMBYa3S_XIFSGJKpVg/Im_5Ubn6QSc.jpg?size=1728x2160&quality=96&sign=6d0560491c579c4a6ae0a36d0b5ad4e7&type=album"
-                  class="mx-auto h-32 w-32 rounded-full object-cover shadow-xl"
+                  class="mx-auto h-36 w-36 rounded-full object-cover shadow-xl"
                   alt="CEO"
                 />
 
