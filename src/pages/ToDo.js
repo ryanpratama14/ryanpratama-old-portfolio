@@ -117,6 +117,8 @@ const ToDo = () => {
                 ) {
                   setData([...data, { name, task, date, time }]);
                   toast.success("Added");
+                } else {
+                  toast.error("All fields are required");
                 }
               }}
               className="btn btn-primary mt-4 mb-4 w-72"
