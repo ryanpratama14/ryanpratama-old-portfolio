@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import ExpenseCard from "./components/ExpenseCard";
+import ExpenseCard from "./ExpenseCard";
 import InputField from "./components/InputField";
 import InputFieldInt from "./components/InputFieldInt";
 
