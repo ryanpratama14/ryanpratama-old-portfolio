@@ -119,8 +119,8 @@ const Testimonial = () => {
                   <p class="mt-4 text-lg text-white-500">
                     "Choosing FaoTech was one of the best <br />
                     career decision I've ever made. <br />
-                    The program prepped me with necessary skills. <br />
-                    Highly recommend!" 🙌
+                    The program prepped me with necessary skills.
+                    <br /> Highly recommend!" 🙌
                   </p>
                   <div class="mt-4 flex justify-center gap-0.5 text-yellow-500">
                     <svg

@@ -82,7 +82,7 @@ function Zikirapp() {
           </div>
 
           <div class="mx-auto max-w-xl text-center mt-12">
-            <h2 className="text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
+            <h2 className="text-white text-4xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
               <span className="text-white ">
                 Declare your faith{" "}
                 <span
