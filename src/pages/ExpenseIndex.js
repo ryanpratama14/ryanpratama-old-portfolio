@@ -32,11 +32,7 @@ const HomeComponent = (props) => {
         income={income}
         addTransaction={addTransaction}
       />
-      {transactions?.length ? (
-        <TransactionsComponent transactions={transactions} />
-      ) : (
-        ""
-      )}
+      <TransactionsComponent />
     </div>
   );
 };
