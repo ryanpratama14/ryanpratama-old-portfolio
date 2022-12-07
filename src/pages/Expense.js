@@ -1,22 +1,30 @@
 import { React, useEffect, useState } from "react";
 import ExpenseCard from "./components/ExpenseCard";
 import InputField from "./components/InputField";
+import InputFieldInt from "./components/InputFieldInt";
 
 const Expense = () => {
   useEffect(() => {
     document.title = "#5: Expense Tracker App";
   }, []);
   const [expenseName, setExpenseName] = useState("");
-  const [transaction, setTransaction] = useState(Math.round(0));
-  const [balance, setBalance] = useState(0);
-  const [income, setIncome] = useState(0);
-  const [expense, setExpense] = useState(0);
+  const [transaction, setTransaction] = useState(0);
+  let [balance, setBalance] = useState(0);
+  let [income, setIncome] = useState(0);
+  let [expense, setExpense] = useState(0);
   const [date, setDate] = useState("");
-  const [data, setData] = useState([
+  let [data, setData] = useState([
     {
-      expenseName: "Transportation",
-      transaction: 2,
+      expenseName: "World Cup match ticket",
+      transaction: -9.5,
       date: "2022-30-12",
+      id: 0,
+    },
+    {
+      expenseName: "Monthly salary",
+      transaction: 2390,
+      date: "2022-30-12",
+      id: 0,
     },
   ]);
 
@@ -25,12 +33,6 @@ const Expense = () => {
     newData.splice(index, 1);
     setData(newData);
   };
-
-  useEffect(() => {
-    setBalance(balance + transaction);
-  });
-
-  // const sign = transaction.amount < 0 ? "-" : "+";
 
   return (
     <div className="ceo font-mono">
@@ -46,29 +48,34 @@ const Expense = () => {
           </div>
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
-              <div class="w-96 mx-2 my-2">
+              <div class=" w-96 mx-2 my-2">
                 <div class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-                  <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white mb-4">
-                    BALANCE: ${balance}
+                  <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white mb-4 text-right">
+                    Balance: {balance} USD
                   </h3>
-                  <div class="flex justify-between items-center mb-4">
+                  <div
+                    className="font-extrabold mt-4 border-b-2 mb-2 pb-2 border-indigo-600 flex flex-wrap justify-between items-center w-full
+"
+                  >
+                    <p>💸 Income</p>
+                    <p>🛍️ Expense</p>
+                  </div>
+
+                  <div
+                    className="mt-1 mb-6 flex flex-wrap justify-between items-center w-full
+"
+                  >
+                    <p class=" text-base font-semibold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-white">
+                      {income} USD
+                    </p>
+                    <p class=" text-base font-semibold text-transparent bg-clip-text bg-gradient-to-l from-amber-600 to-white">
+                      {expense} USD
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center mb- mt-2">
                     <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
                       History
                     </h3>
-                  </div>
-                  <div
-                    className="mt-4 border-b-2 mb-2 pb-2 flex flex-wrap justify-around items-center w-full
-"
-                  >
-                    <p>Income</p>
-                    <p>Expense</p>
-                  </div>
-                  <div
-                    className="mt-1 flex flex-wrap justify-around items-center w-full
-"
-                  >
-                    <p>{income}</p>
-                    <p>{expense}</p>
                   </div>
                   {data?.map((expense, index) => {
                     return (
@@ -80,6 +87,7 @@ const Expense = () => {
                         index={index}
                         expense={expense}
                         removeExpense={removeExpense}
+                        balance={balance}
                       />
                     );
                   })}
@@ -89,22 +97,22 @@ const Expense = () => {
           </section>
           <div class="flex flex-col justify-center items-center w-full text-left">
             <InputField
-              fieldProps={"What expense"}
+              fieldProps={"Income / Expense"}
               valueTyped={(e) => {
                 setExpenseName(e);
               }}
               type="text"
               lengthMax={256}
-              placeholderValue="Housing"
+              placeholderValue="BTS Concert"
             />
 
-            <InputField
+            <InputFieldInt
               fieldProps={"Amount"}
               valueTyped={(e) => {
                 setTransaction(e);
               }}
               type="number"
-              placeholderValue="250"
+              placeholderValue="-2490"
             />
 
             <InputField
@@ -124,9 +132,17 @@ const Expense = () => {
                   transaction > 0 &&
                   date.length > 0
                 ) {
-                  setBalance(balance + transaction);
-                  console.log(balance);
                   setData([...data, { expenseName, transaction, date }]);
+                  setBalance((balance += transaction));
+                  setIncome((income += transaction));
+                } else if (
+                  expenseName.length > 0 &&
+                  transaction < 0 &&
+                  date.length > 0
+                ) {
+                  setData([...data, { expenseName, transaction, date }]);
+                  setBalance((balance += transaction));
+                  setExpense((expense += transaction));
                 }
               }}
             >
