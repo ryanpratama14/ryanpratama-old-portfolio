@@ -68,7 +68,7 @@ const ToDo = () => {
               );
             })}
           </div>
-          <div>
+          <div class="flex flex-col justify-center items-center w-full">
             <InputField
               fieldProps={"Field"}
               valueTyped={(e) => {
