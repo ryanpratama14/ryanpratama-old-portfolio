@@ -24,9 +24,9 @@ const ExpenseCard = ({
                   removeExpense();
                   toast.error("Deleted");
                 }}
-                class="btn-primary bg-gray-700 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-900 w-10 h-6 text-xs font-extrabold rounded-lg"
+                class="btn-primary bg-gray-700 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-900 w-6 h-6 text-l font-extrabold rounded-lg"
               >
-                DEL
+                ⛔️
               </button>
               <p class="ml-2 text-s font-extrabold text-white truncate dark:text-white">
                 {descProps}
