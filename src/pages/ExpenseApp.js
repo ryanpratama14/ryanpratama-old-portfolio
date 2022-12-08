@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from "react";
 import ExpenseCard from "./ExpenseCard";
 import toast, { Toaster } from "react-hot-toast";
+import useLocalStrorage from "./LocalStorage";
 
 const Expense = () => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const Expense = () => {
   const [desc, setDesc] = useState();
   const [date, setDate] = useState();
   const [type, setType] = useState("EXPENSE");
-  const [data, setData] = useState([
+  const [data, setData] = useLocalStrorage("financial-tracker", [
     {
       amount: 2210,
       desc: "Ticket to Tokyo",
