@@ -69,7 +69,7 @@ const Expense = (props) => {
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-sky-300">Financial </span>
+              <span class="text-blue-300">Financial </span>
               <span class="text-red-300">Tracker </span>App!
             </h2>
           </div>
