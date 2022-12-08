@@ -73,7 +73,7 @@ const Expense = () => {
               <div class="md:w-96 w-80 mx-2 my-2 mb-16">
                 <div class="p-4 max-w-md rounded-lg border shadow-md sm:p-8 bg-gray-800 border-gray-600">
                   <div class="flex justify-between items-center">
-                    <h3 class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-200 to-white tracking-tighter">
+                    <h3 class="font-extrabold  text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white tracking-tighter">
                       BALANCE
                       <br />${income - expense}
                     </h3>
@@ -187,11 +187,11 @@ const Expense = () => {
                     </div>
                   )}
                   <div
-                    className="font-extrabold mt-4 border-b-2 mb-2 pb-2 border-indigo-600 flex flex-wrap justify-between items-center w-full
+                    className="font-extrabold mt-4 border-b-4 mb-2 pb-2 border-indigo-600 flex flex-wrap justify-between items-center w-full
 "
                   >
                     <p>💸 Income</p>
-                    <p>🛍️ Expense</p>
+                    <p>Expense 🛍️</p>
                   </div>
 
                   <div
@@ -205,7 +205,7 @@ const Expense = () => {
                       -${expense}
                     </p>
                   </div>
-                  <div class="flex justify-between items-center mt-2">
+                  <div class="flex justify-end items-center mt-2">
                     <h3 class="text-xl font-bold leading-none text-white dark:text-white">
                       History
                     </h3>

@@ -25,16 +25,16 @@ const ExpenseCard = ({
                   removeExpense(index);
                   toast.error("Deleted");
                 }}
-                class="btn-primary bg-gray-700 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-900 w-6 h-6 text-s font-extrabold rounded-lg items-center"
+                class="btn-primary btn-ghost w-6 h-6 text-s font-extrabold rounded-lg items-center"
               >
                 ⛔️
               </button>
-              <p class="ml-2 text-s font-extrabold text-white truncate dark:text-white">
+              <p class="ml-0.5 text-s font-extrabold text-white truncate">
                 {descProps}
               </p>
             </div>
 
-            <div class="flex items-center space-x-4 border-white border-b-2">
+            <div class="flex items-center space-x-4 border-gray-400 border-b-2">
               <div class="flex-1 min-w-0">
                 <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                   {dateProps}
