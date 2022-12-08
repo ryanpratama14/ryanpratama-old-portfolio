@@ -27,6 +27,7 @@ const Expense = () => {
       id: 0,
     },
   ]);
+  const [isAddTxnVisible, toggleAddTXn] = useState(false);
 
   const removeExpense = (index) => {
     const newData = [...data];
@@ -50,9 +51,12 @@ const Expense = () => {
             <div>
               <div class=" w-96 mx-2 my-2">
                 <div class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-                  <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white mb-4 text-right">
-                    Balance: {balance} USD
-                  </h3>
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white text-right">
+                      Balance: ${balance}
+                    </h3>
+                    <button className="btn btn-primary">ADD</button>
+                  </div>
                   <div
                     className="font-extrabold mt-4 border-b-2 mb-2 pb-2 border-indigo-600 flex flex-wrap justify-between items-center w-full
 "
@@ -65,10 +69,10 @@ const Expense = () => {
                     className="mt-1 mb-6 flex flex-wrap justify-between items-center w-full
 "
                   >
-                    <p class=" text-base font-semibold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-white">
+                    <p class=" text-xl font-semibold text-emerald-400">
                       {income} USD
                     </p>
-                    <p class=" text-base font-semibold text-transparent bg-clip-text bg-gradient-to-l from-amber-600 to-white">
+                    <p class=" text-xl font-semibold text-red-400">
                       {expense} USD
                     </p>
                   </div>
@@ -77,6 +81,11 @@ const Expense = () => {
                       History
                     </h3>
                   </div>
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    class="input input-bordered input-sm w-full mt-4"
+                  />
                   {data?.map((expense, index) => {
                     return (
                       <ExpenseCard
