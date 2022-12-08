@@ -61,7 +61,7 @@ const Expense = (props) => {
   };
 
   return (
-    <div className="ceo font-mono">
+    <div className="ceo font-mono ">
       <Toaster />
       <section class=" text-white reviews" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
@@ -75,7 +75,7 @@ const Expense = (props) => {
           </div>
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
-              <div class="md:w-96 w-80 mx-2 my-2">
+              <div class="md:w-96 w-80 mx-2 my-2 mb-16">
                 <div class="p-4 max-w-md rounded-lg border shadow-md sm:p-8 bg-gray-800 border-gray-600">
                   <div class="flex justify-between items-center">
                     <h3 class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-200 to-white tracking-tighter">
@@ -179,7 +179,10 @@ const Expense = (props) => {
                             setAmount(0);
                             setDesc("");
                             setDate("");
-                            console.log(typeof amount);
+                          } else {
+                            toast.error(
+                              "Something went wrong, please try again"
+                            );
                           }
                         }}
                       >
