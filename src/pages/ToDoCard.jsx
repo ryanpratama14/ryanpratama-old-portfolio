@@ -50,9 +50,7 @@ const ToDoCard = ({
           class="btn border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-red-700 dark:bg-red-700 hover:bg-red-900 dark:hover:bg-red-900"
           onClick={() => {
             removeTodo(index);
-            toast("Deleted", {
-              icon: "⛔️",
-            });
+            toast.error("Deleted");
             setCounter(0);
           }}
         >
