@@ -61,7 +61,16 @@ const Navbar = () => {
                   navigate("/todoapp");
                 }}
               >
-                #4: To Do App
+                #4: To Do List App
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  navigate("/financial-tracker");
+                }}
+              >
+                #5: Financial Tracker App
               </a>
             </li>
             <li>
@@ -90,7 +99,7 @@ const Navbar = () => {
           onClick={() => {
             navigate("/");
           }}
-          class="btn btn-ghost normal-case text-xl "
+          class="btn btn-ghost normal-case text-2xl "
         >
           Homepage
         </a>

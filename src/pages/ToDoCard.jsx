@@ -16,7 +16,7 @@ const ToDoCard = ({
   const [word, setWord] = useState("on progress...💪");
 
   return (
-    <div class=" mx-2 my-6  shadow-lg rounded-xl w-96 md:w-96 py-6 px-6 bg-white overflow-hidden">
+    <div class="mt-2 mb-6 shadow-lg rounded-xl w-96 md:w-96 md:mx-6 md:my-6 py-6 px-6 bg-white overflow-hidden">
       <Toaster />
       <div class="flex items-center border-b-2 mb-2 pb-2">
         <img
@@ -25,25 +25,21 @@ const ToDoCard = ({
           src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png"
         />
         <div class="pl-3">
-          <div class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-gray-700 to-black tracking-tighter">
+          <div class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-gray-600 to-black tracking-tighter">
             {nameProps}
           </div>
         </div>
       </div>
       <div class="w-full">
-        <p
-          style={{ textDecoration: todo.isDone ? "line-through" : "" }}
-          class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black"
-        >
+        <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black mb-2">
           {taskProps}
         </p>
         <p
           style={{ textDecoration: todo.isDone ? "line-through" : "" }}
           class="text-gray-800 text-l font-bold tracking-tighter"
         >
-          ⏰ {timeProps}
-          <br />
           📆 {dateProps}
+          <br />⏰ {timeProps}
         </p>
 
         <p class="text-stone-900 text-sm text-left mt-2">{word}</p>
@@ -51,24 +47,22 @@ const ToDoCard = ({
 
       <div className="card-actions justify-between mt-2">
         <button
-          class="btn border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm  text-center bg-red-700 dark:bg-red-700 hover:bg-red-900 dark:hover:bg-red-900"
+          class="btn border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-red-700 dark:bg-red-700 hover:bg-red-900 dark:hover:bg-red-900"
           onClick={() => {
             removeTodo(index);
-            toast("Deleted", {
-              icon: "⛔️",
-            });
+            toast.error("Deleted");
             setCounter(0);
           }}
         >
           Delete
         </button>
         <button
-          class="btn border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm  text-center bg-green-700 dark:bg-green-700 hover:bg-green-900 dark:hover:bg-green-900"
+          class="btn border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-green-700 dark:bg-green-700 hover:bg-green-900 dark:hover:bg-green-900"
           onClick={(event) => {
             markTodo(index);
             setCounter(count + 1);
             if (count === 1 - 1) {
-              setWord("you're up 🙌");
+              setWord("you're doing great 🙌");
               toast.success("Marked as done");
               setIsDone2("TASK COMPLETED");
             } else if (count === 1) {

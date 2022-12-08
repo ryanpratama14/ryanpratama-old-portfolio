@@ -74,157 +74,168 @@ function Appform() {
   return (
     <div className="App font-mono text-white">
       <Toaster />
-      <div className="App-header">
+      <div className="ceo">
         {/* This is Title */}
-        <div class="max-w-[800px]">
-          <h2 class=" text-center text-4xl font-bold tracking-tight sm:text-5xl mt-20 mb-12">
-            Passionate about programming?
+        <div class="px-12 py-12 sm:px-6  lg:px-8">
+          <div class="mx-auto max-w-xl text-center mb-12">
+            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+              Passionate about programming?
+            </h2>
             <br />
-            <span className="text-blue-300 ">join FaoTech, </span>
-            <span className="text-red-300">NOW.</span>
-          </h2>
+            <h2 class="text-3xl font-bold tracking-tight sm:text-5xl">
+              <span class="text-blue-300">Join FaoTech</span>,
+              <span class="text-red-300"> NOW</span>.
+            </h2>
+
+            {/* This is end of Title */}
+            {/* This is Form */}
+            <div class="w-full text-left mt-16">
+              <div class="grid gap-6 mb-6 md:grid-cols-2">
+                <div>
+                  <label class="block mb-2 text-m font-medium  :text-white dark:text-white">
+                    First Name
+                  </label>
+                  <input
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Ryan"
+                    required
+                    maxLength={20}
+                    onChange={(e) => setFName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                    Last Name
+                  </label>
+                  <input
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Pratama"
+                    required
+                    maxLength={20}
+                    onChange={(e) => setLName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                    Age
+                  </label>
+                  <input
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="18+ only"
+                    required
+                    maxLength={2}
+                    onChange={(e) => setAge(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                    Phone Number
+                  </label>
+                  <input
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="8 996 100 52 02"
+                    required
+                    maxLength={16}
+                    onChange={(e) => setTelephoneNum(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div class="mb-6">
+                <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                  Instagram Username
+                </label>
+                <input
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="@ryanpratama14"
+                  required
+                  maxLength={30}
+                  onChange={(e) => setInstagram(e.target.value)}
+                />
+              </div>
+              <div class="mb-6">
+                <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                  Email Address
+                </label>
+                <input
+                  maxLength={30}
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="partnership@faotech.com"
+                  required
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+
+              <div class="grid gap-6 mb-6 md:grid-cols-2">
+                <div>
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                    Country
+                  </label>
+
+                  <CountryDropdown
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    value={country}
+                    onChange={(val) => setCountry(val)}
+                  />
+                </div>
+                <div>
+                  <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                    Region
+                  </label>
+
+                  <RegionDropdown
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    country={country}
+                    value={region}
+                    onChange={(val) => setRegion(val)}
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label class="block mb-2 text-m font-medium text-white dark:text-white">
+                  Address
+                </label>
+                <input
+                  maxLength={50}
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Jackson Street 91"
+                  required
+                  onChange={(e) => setAddress(e.target.value)}
+                />
+              </div>
+              <div class="text-center">
+                <button
+                  onClick={(event) => {
+                    isSubmitted = isSubmitted + 1;
+                    if (isFilledAll.current === true && isSubmitted === 1) {
+                      notifySuccess();
+                    } else if (
+                      isFilledAll.current === true &&
+                      isSubmitted === 2
+                    ) {
+                      toast("Already submitted, thank you", {
+                        icon: "🙌",
+                      });
+                    } else if (
+                      isFilledAll.current === true &&
+                      isSubmitted > 2
+                    ) {
+                      event.preventDefault();
+                    } else {
+                      notifyError();
+                    }
+                  }}
+                  type="submit"
+                  class=" btn btn-primary"
+                >
+                  Submit
+                </button>
+              </div>
+              <p class="text-red-200 text-xs mt-3 mb-8 text-center">{word}</p>
+            </div>
+            {/* This is end of Form */}
+          </div>
         </div>
-        {/* This is end of Title */}
-        {/* This is Form */}
-        <div class="w-96">
-          <div class="grid gap-6 mb-6 md:grid-cols-2">
-            <div>
-              <label class="block mb-2 text-sm font-medium  :text-white dark:text-white">
-                First Name
-              </label>
-              <input
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Ryan"
-                required
-                maxLength={20}
-                onChange={(e) => setFName(e.target.value)}
-              />
-            </div>
-            <div>
-              <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-                Last Name
-              </label>
-              <input
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Pratama"
-                required
-                maxLength={20}
-                onChange={(e) => setLName(e.target.value)}
-              />
-            </div>
-            <div>
-              <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-                Age
-              </label>
-              <input
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="18+ only"
-                required
-                maxLength={2}
-                onChange={(e) => setAge(e.target.value)}
-              />
-            </div>
-            <div>
-              <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-                Phone Number
-              </label>
-              <input
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="8 996 100 52 02"
-                required
-                maxLength={16}
-                onChange={(e) => setTelephoneNum(e.target.value)}
-              />
-            </div>
-          </div>
-          <div class="mb-6">
-            <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-              Instagram Username
-            </label>
-            <input
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="@ryanpratama14"
-              required
-              maxLength={30}
-              onChange={(e) => setInstagram(e.target.value)}
-            />
-          </div>
-          <div class="mb-6">
-            <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-              Email Address
-            </label>
-            <input
-              maxLength={30}
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="partnership@faotech.com"
-              required
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-
-          <div class="grid gap-6 mb-6 md:grid-cols-2">
-            <div>
-              <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-                Country
-              </label>
-
-              <CountryDropdown
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                value={country}
-                onChange={(val) => setCountry(val)}
-              />
-            </div>
-            <div>
-              <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-                Region
-              </label>
-
-              <RegionDropdown
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                country={country}
-                value={region}
-                onChange={(val) => setRegion(val)}
-              />
-            </div>
-          </div>
-
-          <div class="mb-6">
-            <label class="block mb-2 text-sm font-medium text-white dark:text-white">
-              Address
-            </label>
-            <input
-              maxLength={50}
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Jackson Street 91"
-              required
-              onChange={(e) => setAddress(e.target.value)}
-            />
-          </div>
-          <div class="text-center">
-            <button
-              onClick={(event) => {
-                isSubmitted = isSubmitted + 1;
-                if (isFilledAll.current === true && isSubmitted === 1) {
-                  notifySuccess();
-                } else if (isFilledAll.current === true && isSubmitted === 2) {
-                  toast("Already submitted, thank you", {
-                    icon: "🙌",
-                  });
-                } else if (isFilledAll.current === true && isSubmitted > 2) {
-                  event.preventDefault();
-                } else {
-                  notifyError();
-                }
-              }}
-              type="submit"
-              class=" btn btn-primary"
-            >
-              Submit
-            </button>
-          </div>
-          <p class="text-red-200 text-xs mt-3 mb-8 text-center">{word}</p>
-        </div>
-        {/* This is end of Form */}
       </div>
     </div>
   );

@@ -26,10 +26,11 @@ function Zikirapp() {
       <Toaster />
       <section class=" text-white reviews" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
-          <div class="mx-auto max-w-2xl text-center mt-12">
+          <div class="mx-auto max-w-2xl text-center mb-12">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to Zikir App!
-              <br />
+            </h2>
+            <h2 class=" font-bold mt-2 text-3xl sm:text-4xl lg:text-4xl xl:text-4xl">
               <span className="text-blue-300">
                 Pray, <span class="text-red-300">Pray, </span>
                 Pray.
@@ -62,7 +63,7 @@ function Zikirapp() {
                   notifySuccess2();
                 }
               }}
-              class="btn mt-5 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
+              class="btn mt-5 border-transparent hover:border-transparent text-white font-semibold rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
             >
               {zikir}
             </button>
@@ -74,14 +75,14 @@ function Zikirapp() {
                 setZikir("Start");
                 setDoa("سُـبْحانَ الله");
               }}
-              class="btn mt-3 border-transparent hover:border-transparent text-white font-medium rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
+              class="font-semibold  btn mt-3 border-transparent hover:border-transparent text-white rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
             >
               Reset
             </button>
           </div>
 
           <div class="mx-auto max-w-xl text-center mt-12">
-            <h2 className="text-white text-3xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
+            <h2 className="text-white text-4xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
               <span className="text-white ">
                 Declare your faith{" "}
                 <span

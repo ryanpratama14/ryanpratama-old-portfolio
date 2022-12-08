@@ -1,4 +1,4 @@
-export default function InputField({
+export default function InputFieldInt({
   placeholderValue,
   type,
   valueTyped,
@@ -18,7 +18,7 @@ export default function InputField({
           placeholder={placeholderValue}
           className="input input-bordered w-full"
           onChange={(e) => {
-            valueTyped(e.target.value);
+            valueTyped(parseInt(e.target.value));
           }}
         />
       </div>

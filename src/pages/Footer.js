@@ -13,11 +13,20 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
             class="font-extrabold"
+            href="https://tailwindcss.com/ "
+          >
+            tailwindcss
+          </a>{" "}
+          &
+          <a
+            target="_blank"
+            rel="noreferrer"
+            class="font-extrabold"
             href="https://www.daisyui.com "
           >
-            daisy
+            {" "}
+            daisyUI
           </a>
-          UI
         </a>
       </div>
     </footer>
