@@ -48,7 +48,7 @@ const ToDo = () => {
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-sky-300">To </span>
+              <span class="text-blue-300">To </span>
               <span class="text-red-300">Do </span>App!
             </h2>
           </div>
