@@ -15,15 +15,27 @@ const Expense = (props) => {
   const [data, setData] = useState([
     {
       amount: 2210,
-      desc: "Tiket to Tokyo",
-      date: "2022-30-12",
+      desc: "Ticket to Tokyo",
+      date: "2023-01-01",
       type: "EXPENSE",
     },
     {
-      amount: 4990,
+      amount: 5020,
       desc: "Monthly salary",
-      date: "2023-01-12",
+      date: "2023-02-01",
       type: "INCOME",
+    },
+    {
+      amount: 290,
+      desc: "Holiday gifts",
+      date: "2023-03-01",
+      type: "EXPENSE",
+    },
+    {
+      amount: 140,
+      desc: "Utilities",
+      date: "2023-04-01",
+      type: "EXPENSE",
     },
   ]);
   const [isAddTxnVisible, toggleAddTXn] = useState(false);
@@ -43,6 +55,12 @@ const Expense = (props) => {
   };
   useEffect(() => calculateBalance(), [data]);
 
+  const removeExpense = (index) => {
+    const newData = [...data];
+    newData.splice(index, 1);
+    setData(newData);
+  };
+
   return (
     <div className="ceo font-mono">
       <Toaster />
@@ -59,11 +77,12 @@ const Expense = (props) => {
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
               <div class="md:w-96 w-80 mx-2 my-2">
-                <div class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-4 max-w-md rounded-lg border shadow-md sm:p-8 bg-gray-800 border-gray-600">
                   <div class="flex justify-between items-center">
-                    <h3 class="font-extrabold text-xl text-white">
+                    <h3 class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-200 to-white tracking-tighter">
                       BALANCE: ${income - expense}
                     </h3>
+
                     <button
                       className="btn btn-primary"
                       onClick={() => toggleAddTXn((isVisible) => !isVisible)}
@@ -72,10 +91,7 @@ const Expense = (props) => {
                     </button>
                   </div>
                   {isAddTxnVisible && (
-                    <div
-                      // isAddTxnVisible={isAddTxnVisible}
-                      class="text-center text-black dark:text-white w-full items-center"
-                    >
+                    <div class="text-center text-black dark:text-white w-full items-center">
                       <div class="mt-4">
                         <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
                           Amount
@@ -124,13 +140,15 @@ const Expense = (props) => {
                           id="expense"
                           name="type"
                           value="EXPENSE"
-                          className="radio radio-error mx-2"
+                          className="radio radio-error mx-2 "
                           checked={type === "EXPENSE"}
                           onChange={(e) => {
                             setType(e.target.value);
                           }}
                         />
-                        <label htmlFor="expense">Expense</label>
+                        <label htmlFor="expense" class="text-white">
+                          Expense
+                        </label>
                         <input
                           type="radio"
                           id="income"
@@ -142,7 +160,9 @@ const Expense = (props) => {
                             setType(e.target.value);
                           }}
                         />
-                        <label htmlFor="Expense">Income</label>
+                        <label htmlFor="Expense" class="text-white">
+                          Income
+                        </label>
                       </div>
                       <button
                         class="btn btn-primary mt-4"
@@ -156,6 +176,10 @@ const Expense = (props) => {
                             setData([...data, { amount, desc, date, type }]);
                             toast.success("Added");
                             toggleAddTXn(false);
+                            setAmount(0);
+                            setDesc("");
+                            setDate("");
+                            setType("EXPENSE");
                           }
                         }}
                       >
@@ -183,14 +207,14 @@ const Expense = (props) => {
                     </p>
                   </div>
                   <div class="flex justify-between items-center mt-2">
-                    <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
+                    <h3 class="text-xl font-bold leading-none text-white dark:text-white">
                       History
                     </h3>
                   </div>
-                  <input
+                  {/* <input
                     placeholder="Search..."
                     class="input input-bordered input-sm w-full mt-4"
-                  />
+                  /> */}
                   {data?.map((payload, index) => {
                     return (
                       <ExpenseCard
@@ -200,6 +224,7 @@ const Expense = (props) => {
                         typeProps={payload.type}
                         index={index}
                         payload={payload}
+                        removeExpense={removeExpense}
                       />
                     );
                   })}
