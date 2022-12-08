@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from "react";
 import ExpenseCard from "./ExpenseCard";
-import InputField from "./components/InputField";
-import InputFieldInt from "./components/InputFieldInt";
+import toast, { Toaster } from "react-hot-toast";
 
 const Expense = (props) => {
   useEffect(() => {
@@ -11,6 +10,7 @@ const Expense = (props) => {
   const [amount, setAmount] = useState();
   const [desc, setDesc] = useState();
   const [date, setDate] = useState();
+  const [sign, setSign] = useState("");
   const [type, setType] = useState("EXPENSE");
   const [data, setData] = useState([
     {
@@ -45,6 +45,7 @@ const Expense = (props) => {
 
   return (
     <div className="ceo font-mono">
+      <Toaster />
       <section class=" text-white reviews" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-xl text-center mb-12">
@@ -60,7 +61,7 @@ const Expense = (props) => {
               <div class="md:w-96 w-80 mx-2 my-2">
                 <div class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="flex justify-between items-center">
-                    <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white text-right">
+                    <h3 class="font-extrabold text-xl text-white">
                       BALANCE: ${income - expense}
                     </h3>
                     <button
@@ -72,7 +73,7 @@ const Expense = (props) => {
                   </div>
                   {isAddTxnVisible && (
                     <div
-                      isAddTxnVisible={isAddTxnVisible}
+                      // isAddTxnVisible={isAddTxnVisible}
                       class="text-center text-black dark:text-white w-full items-center"
                     >
                       <div class="mt-4">
@@ -82,7 +83,7 @@ const Expense = (props) => {
                         <input
                           required
                           type="number"
-                          placeholder="2990"
+                          placeholder="$3450"
                           className="input input-bordered w-full"
                           onChange={(e) => {
                             setAmount(parseInt(e.target.value));
@@ -110,7 +111,7 @@ const Expense = (props) => {
                         <input
                           required
                           type="text"
-                          placeholder="Ticket to Tokyo"
+                          placeholder="BTS Concert"
                           className="input input-bordered w-full"
                           onChange={(e) => {
                             setDesc(e.target.value);
@@ -125,7 +126,9 @@ const Expense = (props) => {
                           value="EXPENSE"
                           className="radio radio-error mx-2"
                           checked={type === "EXPENSE"}
-                          onChange={(e) => setType(e.target.value)}
+                          onChange={(e) => {
+                            setType(e.target.value);
+                          }}
                         />
                         <label htmlFor="expense">Expense</label>
                         <input
@@ -135,7 +138,9 @@ const Expense = (props) => {
                           value="INCOME"
                           className="radio radio-success mx-2"
                           checked={type === "INCOME"}
-                          onChange={(e) => setType(e.target.value)}
+                          onChange={(e) => {
+                            setType(e.target.value);
+                          }}
                         />
                         <label htmlFor="Expense">Income</label>
                       </div>
@@ -149,6 +154,8 @@ const Expense = (props) => {
                             type === "INCOME"
                           ) {
                             setData([...data, { amount, desc, date, type }]);
+                            toast.success("Added");
+                            toggleAddTXn(false);
                           }
                         }}
                       >
@@ -169,10 +176,10 @@ const Expense = (props) => {
 "
                   >
                     <p class=" text-xl font-semibold text-emerald-400">
-                      ${income}
+                      +${income}
                     </p>
                     <p class=" text-xl font-semibold text-red-400">
-                      ${expense}
+                      -${expense}
                     </p>
                   </div>
                   <div class="flex justify-between items-center mt-2">
@@ -181,24 +188,21 @@ const Expense = (props) => {
                     </h3>
                   </div>
                   <input
-                    type="text"
                     placeholder="Search..."
                     class="input input-bordered input-sm w-full mt-4"
                   />
-                  <div>
-                    {data?.map((payload, index) => {
-                      return (
-                        <ExpenseCard
-                          descProps={payload.desc}
-                          amountProps={payload.amount}
-                          dateProps={payload.date}
-                          typeProps={payload.type}
-                          index={index}
-                          payload={payload}
-                        />
-                      );
-                    })}
-                  </div>
+                  {data?.map((payload, index) => {
+                    return (
+                      <ExpenseCard
+                        descProps={payload.desc}
+                        amountProps={payload.amount}
+                        dateProps={payload.date}
+                        typeProps={payload.type}
+                        index={index}
+                        payload={payload}
+                      />
+                    );
+                  })}
                 </div>
               </div>
             </div>

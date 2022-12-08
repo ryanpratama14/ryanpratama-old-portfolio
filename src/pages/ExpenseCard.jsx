@@ -1,14 +1,6 @@
 import { useEffect, useState, React } from "react";
 
-const ExpenseCard = ({
-  descProps,
-  dateProps,
-  amountProps,
-  typeProps,
-  payload,
-  sign,
-  props,
-}) => {
+const ExpenseCard = ({ descProps, dateProps, amountProps, payload, sign }) => {
   return (
     <div>
       <div class="flow-root mt-2">
@@ -24,25 +16,19 @@ const ExpenseCard = ({
                   {dateProps}
                 </p>
               </div>
+
               <div
                 style={{
                   color: payload.type === "EXPENSE" ? "#f87171" : "#34d399",
                 }}
                 class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
               >
-                ${amountProps}
+                {sign}${amountProps}
               </div>
             </div>
           </li>
         </ul>
-        {/* <div class="flex justify-start items-center mt-2">
-          <button
-            class="btn w-12 h-12 border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-red-700 dark:bg-red-700 hover:bg-red-900 dark:hover:bg-red-900"
-            onClick={() => {}}
-          >
-            DELETE
-          </button>
-        </div> */}
+        <div class="flex justify-start items-center mt-2"></div>
       </div>
     </div>
   );
