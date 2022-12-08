@@ -107,7 +107,7 @@ const Review = ({
           </svg>
         </div>
         <a
-          class="btn mt-5 border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
+          class="btn mt-5 border-transparent hover:border-transparent text-white font-semibold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
           href={linkProps}
           target="_blank"
           rel="noreferrer"

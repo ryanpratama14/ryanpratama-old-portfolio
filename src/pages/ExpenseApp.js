@@ -15,13 +15,13 @@ const Expense = () => {
   const [data, setData] = useLocalStrorage("financial-tracker", [
     {
       amount: 2210,
-      desc: "Ticket to Tokyo",
+      desc: "The 1975 concert",
       date: "2023-01-01",
       type: "EXPENSE",
     },
     {
       amount: 5020,
-      desc: "Monthly salary",
+      desc: "Salary",
       date: "2023-02-01",
       type: "INCOME",
     },
@@ -29,12 +29,6 @@ const Expense = () => {
       amount: 290,
       desc: "Holiday gifts",
       date: "2023-03-01",
-      type: "EXPENSE",
-    },
-    {
-      amount: 140,
-      desc: "Utilities",
-      date: "2023-04-01",
       type: "EXPENSE",
     },
   ]);
