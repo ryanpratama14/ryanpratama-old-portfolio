@@ -10,7 +10,6 @@ const Expense = (props) => {
   const [amount, setAmount] = useState();
   const [desc, setDesc] = useState();
   const [date, setDate] = useState();
-  const [sign, setSign] = useState("");
   const [type, setType] = useState("EXPENSE");
   const [data, setData] = useState([
     {
@@ -170,6 +169,7 @@ const Expense = (props) => {
                           if (
                             (desc.length > 0 &&
                               date.length > 0 &&
+                              amount > 0 &&
                               type === "EXPENSE") ||
                             type === "INCOME"
                           ) {
@@ -179,7 +179,7 @@ const Expense = (props) => {
                             setAmount(0);
                             setDesc("");
                             setDate("");
-                            setType("EXPENSE");
+                            console.log(typeof amount);
                           }
                         }}
                       >
