@@ -19,13 +19,13 @@ const ExpenseCard = ({
             class="py-2
           "
           >
-            <div class="flex justify-start">
+            <div class="flex justify-start items-center">
               <button
                 onClick={() => {
                   removeExpense(index);
                   toast.error("Deleted");
                 }}
-                class="btn-primary bg-gray-700 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-900 w-6 h-6 text-l font-extrabold rounded-lg"
+                class="btn-primary bg-gray-700 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-900 w-6 h-6 text-s font-extrabold rounded-lg items-center"
               >
                 ⛔️
               </button>
