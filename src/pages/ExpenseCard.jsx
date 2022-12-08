@@ -8,6 +8,7 @@ const ExpenseCard = ({
   payload,
   sign,
   removeExpense,
+  index,
 }) => {
   return (
     <div>
@@ -21,7 +22,7 @@ const ExpenseCard = ({
             <div class="flex justify-start">
               <button
                 onClick={() => {
-                  removeExpense();
+                  removeExpense(index);
                   toast.error("Deleted");
                 }}
                 class="btn-primary bg-gray-700 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-900 w-6 h-6 text-l font-extrabold rounded-lg"

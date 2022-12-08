@@ -220,6 +220,7 @@ const Expense = () => {
                     class="input input-bordered input-sm w-full mt-4"
                   /> */}
                   {data?.map((payload, index) => {
+                    console.log(index);
                     return (
                       <ExpenseCard
                         descProps={payload.desc}
