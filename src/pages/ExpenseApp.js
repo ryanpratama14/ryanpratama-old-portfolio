@@ -79,7 +79,8 @@ const Expense = () => {
                 <div class="p-4 max-w-md rounded-lg border shadow-md sm:p-8 bg-gray-800 border-gray-600">
                   <div class="flex justify-between items-center">
                     <h3 class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-200 to-white tracking-tighter">
-                      BALANCE: ${income - expense}
+                      BALANCE
+                      <br />${income - expense}
                     </h3>
 
                     <button
