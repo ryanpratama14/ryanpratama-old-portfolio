@@ -7,17 +7,18 @@ import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import { createContext, useEffect } from "react";
 import ToDoCard from "./ToDoCard";
+import useLocalStrorage from "./LocalStorage";
 
 const ToDo = () => {
   useEffect(() => {
-    document.title = "#4: To Do App";
+    document.title = "#4: To Do List App";
   }, []);
   const UserContext = createContext();
   const [name, setName] = useState("");
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [data, setData] = useState([
+  const [data, setData] = useLocalStrorage("todo-app", [
     {
       name: "Full-Stack Web Development at FaoTech",
       task: "Mastering Tailwind CSS",
@@ -48,8 +49,8 @@ const ToDo = () => {
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-blue-300">To </span>
-              <span class="text-red-300">Do </span>App!
+              <span class="text-blue-300">To Do </span>
+              <span class="text-red-300">List </span>App!
             </h2>
           </div>
           <div class="flex flex-wrap justify-center">

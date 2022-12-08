@@ -61,7 +61,7 @@ const Navbar = () => {
                   navigate("/todoapp");
                 }}
               >
-                #4: To Do App
+                #4: To Do List App
               </a>
             </li>
             <li>
