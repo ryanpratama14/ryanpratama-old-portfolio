@@ -29,7 +29,7 @@ export default function Routing() {
         <Route path="/todoapp" element={<ToDo />} />
         <Route path="/appform" element={<Appform />} />
         <Route path="/about" element={<About />} />
-        <Route path="/expense-tracker" element={<ExpenseApp />} />
+        <Route path="/financial-tracker" element={<ExpenseApp />} />
         <Route path="*" element={<App />} />
       </Routes>
       <Instagram />

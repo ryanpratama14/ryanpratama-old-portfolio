@@ -67,10 +67,10 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => {
-                  navigate("/expense-tracker");
+                  navigate("/financial-tracker");
                 }}
               >
-                #5: Expense Tracker App
+                #5: Financial Tracker App
               </a>
             </li>
             <li>
