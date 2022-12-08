@@ -2,9 +2,9 @@ import { React, useEffect, useState } from "react";
 import ExpenseCard from "./ExpenseCard";
 import toast, { Toaster } from "react-hot-toast";
 
-const Expense = (props) => {
+const Expense = () => {
   useEffect(() => {
-    document.title = "#5: Expense Tracker App";
+    document.title = "#5: Financial Tracker App";
   }, []);
 
   const [amount, setAmount] = useState();
