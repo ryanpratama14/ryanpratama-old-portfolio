@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import Card from "./components/Card";
 import InputField from "./components/InputField";
+import useLocalStrorage from "./LocalStorage";
 
 function Cards() {
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
-  const [data, setData] = useState([{ name: "Ryan", age: 22 }]);
+  const [data, setData] = useLocalStrorage("membercard", [
+    { name: "Ryan", age: 22 },
+  ]);
   const regex = /^[a-zA-Z, ЁёА-я]+$/;
 
   useEffect(() => {
