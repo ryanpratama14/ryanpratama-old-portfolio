@@ -7,33 +7,6 @@ const Expense = () => {
   useEffect(() => {
     document.title = "#5: Expense Tracker App";
   }, []);
-  const [expenseName, setExpenseName] = useState("");
-  const [transaction, setTransaction] = useState(0);
-  let [balance, setBalance] = useState(0);
-  let [income, setIncome] = useState(0);
-  let [expense, setExpense] = useState(0);
-  const [date, setDate] = useState("");
-  let [data, setData] = useState([
-    {
-      expenseName: "World Cup match ticket",
-      transaction: -9.5,
-      date: "2022-30-12",
-      id: 0,
-    },
-    {
-      expenseName: "Monthly salary",
-      transaction: 2390,
-      date: "2022-30-12",
-      id: 0,
-    },
-  ]);
-  const [isAddTxnVisible, toggleAddTXn] = useState(false);
-
-  const removeExpense = (index) => {
-    const newData = [...data];
-    newData.splice(index, 1);
-    setData(newData);
-  };
 
   return (
     <div className="ceo font-mono">
@@ -49,11 +22,11 @@ const Expense = () => {
           </div>
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
-              <div class=" w-96 mx-2 my-2">
+              <div class="md:w-96 w-80 mx-2 my-2">
                 <div class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="flex justify-between items-center">
                     <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white text-right">
-                      Balance: ${balance}
+                      BALANCE HERE: $
                     </h3>
                     <button className="btn btn-primary">ADD</button>
                   </div>
@@ -70,10 +43,10 @@ const Expense = () => {
 "
                   >
                     <p class=" text-xl font-semibold text-emerald-400">
-                      {income} USD
+                      INCOME HERE
                     </p>
                     <p class=" text-xl font-semibold text-red-400">
-                      {expense} USD
+                      EXPENSE HERE
                     </p>
                   </div>
                   <div class="flex justify-between items-center mb- mt-2">
@@ -86,7 +59,8 @@ const Expense = () => {
                     placeholder="Search..."
                     class="input input-bordered input-sm w-full mt-4"
                   />
-                  {data?.map((expense, index) => {
+                  <ExpenseCard />
+                  {/* {data?.map((expense, index) => {
                     return (
                       <ExpenseCard
                         expenseNameProps={expense.expenseName}
@@ -99,65 +73,11 @@ const Expense = () => {
                         balance={balance}
                       />
                     );
-                  })}
+                  })} */}
                 </div>
               </div>
             </div>
           </section>
-          <div class="flex flex-col justify-center items-center w-full text-left">
-            <InputField
-              fieldProps={"Income / Expense"}
-              valueTyped={(e) => {
-                setExpenseName(e);
-              }}
-              type="text"
-              lengthMax={256}
-              placeholderValue="BTS Concert"
-            />
-
-            <InputFieldInt
-              fieldProps={"Amount"}
-              valueTyped={(e) => {
-                setTransaction(e);
-              }}
-              type="number"
-              placeholderValue="-2490"
-            />
-
-            <InputField
-              fieldProps={"Date"}
-              valueTyped={(e) => {
-                setDate(e);
-              }}
-              type="date"
-            />
-          </div>
-          <div class="flex justify-center items-center mt-6">
-            <button
-              class="btn border-transparent hover:border-transparent text-white font-extrabold rounded-lg text-sm  text-center bg-indigo-700 dark:bg-indigo-700 hover:bg-indigo-900 dark:hover:bg-indigo-900"
-              onClick={() => {
-                if (
-                  expenseName.length > 0 &&
-                  transaction > 0 &&
-                  date.length > 0
-                ) {
-                  setData([...data, { expenseName, transaction, date }]);
-                  setBalance((balance += transaction));
-                  setIncome((income += transaction));
-                } else if (
-                  expenseName.length > 0 &&
-                  transaction < 0 &&
-                  date.length > 0
-                ) {
-                  setData([...data, { expenseName, transaction, date }]);
-                  setBalance((balance += transaction));
-                  setExpense((expense += transaction));
-                }
-              }}
-            >
-              ADD TO LIST
-            </button>
-          </div>
         </div>
       </section>
     </div>

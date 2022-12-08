@@ -11,17 +11,17 @@ const ExpenseCard = ({
       <div class="flow-root">
         <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
           <li class="py-3">
-            <p class="text-sm font-extrabold text-gray-900 truncate dark:text-white">
-              {expenseNameProps}
+            <p class="text-s font-extrabold text-gray-900 truncate dark:text-white">
+              TEXT
             </p>
             <div class="flex items-center space-x-4 border-purple-600 border-b-2 mb-2 pb-2 mt-1">
               <div class="flex-1 min-w-0">
                 <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                  {dateProps}
+                  DATE
                 </p>
               </div>
               <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                {transactionProps}
+                MONEYMONYE
               </div>
             </div>
           </li>
