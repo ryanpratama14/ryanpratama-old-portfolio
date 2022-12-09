@@ -174,8 +174,9 @@ const Expense = () => {
                             toast.success("Added");
                             toggleAddTXn(false);
                             setAmount(0);
-                            setDesc("");
                             setDate("");
+                            setDesc("");
+                            setType("EXPENSE");
                           } else {
                             toast.error(
                               "Something went wrong, please try again"
