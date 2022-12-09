@@ -188,7 +188,7 @@ const Expense = () => {
                     </div>
                   )}
                   <div
-                    className="font-extrabold mt-4 border-b-4 mb-2 pb-2 border-indigo-600 flex flex-wrap justify-between items-center w-full
+                    className="font-extrabold mt-4  pb-2  flex flex-wrap justify-between items-center w-full
 "
                   >
                     <p>💸 Income</p>
@@ -196,7 +196,7 @@ const Expense = () => {
                   </div>
 
                   <div
-                    className="mt-1 mb-6 flex flex-wrap justify-between items-center w-full
+                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-indigo-600
 "
                   >
                     <p class=" text-xl font-semibold text-emerald-400">
