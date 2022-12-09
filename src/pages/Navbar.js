@@ -49,10 +49,10 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => {
-                  navigate("/zikir-app");
+                  navigate("/zikrapp");
                 }}
               >
-                #3: Zikir App
+                #3: Zikr App
               </a>
             </li>
             <li>

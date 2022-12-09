@@ -62,12 +62,12 @@ const Declare = () => {
               </span>
               <span
                 onClick={() => {
-                  navigate("/zikir-app");
+                  navigate("/zikrapp");
                 }}
                 className="text-blue-300 dark:text-blue-300"
               >
                 {" "}
-                Zikir App
+                Zikr App
               </span>
             </h2>
           </div>

@@ -22,8 +22,8 @@ export default function Routing() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route path="/zikir-app" element={<Zikirapp />} />
-        <Route path="/zikir-app/declare" element={<Declare />} />
+        <Route path="/zikrapp" element={<Zikirapp />} />
+        <Route path="/zikrapp/declare" element={<Declare />} />
         <Route path="/reviews" element={<Testimonial />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/todoapp" element={<ToDo />} />
