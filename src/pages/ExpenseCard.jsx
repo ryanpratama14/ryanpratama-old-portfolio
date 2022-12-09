@@ -14,13 +14,14 @@ const ExpenseCard = ({
     <div>
       <Toaster />
       <div class="flow-root mt-2">
-        <ul role="list" class="divide-y divide-gray-700 dark:divide-gray-700">
+        <ul class="divide-y divide-gray-700 dark:divide-gray-700">
           <li
             class="py-2
           "
           >
             <div class="flex justify-start items-center">
               <button
+                title="Delete transaction"
                 onClick={() => {
                   removeExpense(index);
                   toast.error("Deleted");

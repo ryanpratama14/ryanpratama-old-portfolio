@@ -5,7 +5,7 @@ import InputFieldCenter from "./components/InputFieldCenter";
 import toast, { Toaster } from "react-hot-toast";
 
 import { useState } from "react";
-import { createContext, useEffect } from "react";
+import { useEffect } from "react";
 import ToDoCard from "./ToDoCard";
 import useLocalStrorage from "./LocalStorage";
 
@@ -13,7 +13,6 @@ const ToDo = () => {
   useEffect(() => {
     document.title = "#4: To Do List App";
   }, []);
-  const UserContext = createContext();
   const [name, setName] = useState("");
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
@@ -162,5 +161,4 @@ const ToDo = () => {
   );
 };
 
-// export default ToDo = React.createContext(data[0].totalTask);
 export default ToDo;
