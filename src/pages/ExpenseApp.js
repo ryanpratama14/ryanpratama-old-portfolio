@@ -232,7 +232,7 @@ const Expense = () => {
                     </h3>
                   </div>
                   <input
-                    placeholder="Search..."
+                    placeholder="Search transaction..."
                     class="input input-bordered input-sm w-full mt-4"
                     onChange={(e) => {
                       updateSearchText(e.target.value);

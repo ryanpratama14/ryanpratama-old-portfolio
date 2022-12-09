@@ -40,6 +40,25 @@ const ToDo = () => {
     setData(newData);
   };
 
+  const [searchText, updateSearchText] = useState("");
+  const [filteredTransaction, updateTxn] = useState(data);
+
+  const filterData = (searchText) => {
+    if (!searchText || !searchText.trim().length) {
+      updateTxn(data);
+      return;
+    }
+    let txn = [...data];
+    txn = txn.filter((todo) =>
+      todo.name.toLowerCase().includes(searchText.toLowerCase().trim())
+    );
+    updateTxn(txn);
+  };
+
+  useEffect(() => {
+    filterData(searchText);
+  }, [data]);
+
   return (
     <div class="font-mono">
       <Toaster />
@@ -53,8 +72,18 @@ const ToDo = () => {
               <span class="text-red-300">List </span>App!
             </h2>
           </div>
+          <div class="flex justify-center">
+            <input
+              placeholder="Search task..."
+              class="input input-bordered input-sm w-96 mt-4 mb-3"
+              onChange={(e) => {
+                updateSearchText(e.target.value);
+                filterData(e.target.value);
+              }}
+            />
+          </div>
           <div class="flex flex-wrap justify-center">
-            {data?.map((todo, index) => {
+            {filteredTransaction?.map((todo, index) => {
               return (
                 <ToDoCard
                   nameProps={todo.name}
