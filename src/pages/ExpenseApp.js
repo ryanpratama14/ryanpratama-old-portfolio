@@ -75,7 +75,8 @@ const Expense = () => {
                   <div class="flex justify-between items-center">
                     <h3 class="font-extrabold  text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white tracking-tighter">
                       BALANCE
-                      <br />${income - expense}
+                      <br />
+                      {income - expense} USD
                     </h3>
 
                     <button
@@ -199,10 +200,10 @@ const Expense = () => {
 "
                   >
                     <p class=" text-xl font-semibold text-emerald-400">
-                      +${income}
+                      ${income}
                     </p>
                     <p class=" text-xl font-semibold text-red-400">
-                      -${expense}
+                      ${expense}
                     </p>
                   </div>
                   <div class="flex justify-end items-center mt-2">

@@ -47,7 +47,7 @@ const ExpenseCard = ({
                 }}
                 class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
               >
-                {sign}${amountProps}
+                {payload.type === "EXPENSE" ? "-" : "+"}${amountProps}
               </div>
             </div>
           </li>
