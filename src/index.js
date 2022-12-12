@@ -5,7 +5,6 @@ import App from "./App";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import Testimonial from "./pages/Testimonial";
-// import reportWebVitals from "./reportWebVitals";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Cards from "./pages/Cards";
 import Appform from "./pages/Appform";
@@ -15,6 +14,7 @@ import ToDo from "./pages/ToDo";
 import About from "./pages/About";
 import Instagram from "./pages/components/Instagram";
 import ExpenseApp from "./pages/ExpenseApp";
+import CurrencyConverter from "./pages/CurrencyConverter";
 
 export default function Routing() {
   return (
@@ -30,6 +30,7 @@ export default function Routing() {
         <Route path="/appform" element={<Appform />} />
         <Route path="/about" element={<About />} />
         <Route path="/financial-tracker" element={<ExpenseApp />} />
+        <Route path="/currency-converter" element={<CurrencyConverter />} />
         <Route path="*" element={<App />} />
       </Routes>
       <Instagram />

@@ -76,6 +76,15 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => {
+                  navigate("/currency-converter");
+                }}
+              >
+                #6: Currency Converter
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
                   navigate("/reviews");
                 }}
               >

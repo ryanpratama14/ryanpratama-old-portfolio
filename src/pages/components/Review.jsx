@@ -18,7 +18,7 @@ const Review = ({
       />
 
       <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-        <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
+        <p class="font-bold  text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">
           {nameProps}
         </p>
 
