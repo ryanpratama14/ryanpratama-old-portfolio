@@ -18,7 +18,7 @@ const ToDoCard = ({
   return (
     <div class="mt-2 mb-6 shadow-lg rounded-xl w-96 md:w-96 md:mx-6 md:my-6 py-6 px-6 bg-white overflow-hidden">
       <Toaster />
-      <div class="flex items-center border-b-2 mb-2 pb-2">
+      <div class="flex items-center border-gray-400 border-b-2 mb-2 pb-2">
         <img
           class="w-14 h-14 object-cover "
           alt="tasks"
@@ -31,7 +31,7 @@ const ToDoCard = ({
         </div>
       </div>
       <div class="w-full">
-        <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-800 to-black mb-2">
+        <p class="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-indigo-600 to-black mb-2">
           {taskProps}
         </p>
         <p
