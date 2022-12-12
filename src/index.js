@@ -14,7 +14,6 @@ import ToDo from "./pages/ToDo";
 import About from "./pages/About";
 import Instagram from "./pages/components/Instagram";
 import ExpenseApp from "./pages/ExpenseApp";
-import CurrencyConverter from "./pages/CurrencyConverter";
 
 export default function Routing() {
   return (
@@ -30,7 +29,6 @@ export default function Routing() {
         <Route path="/appform" element={<Appform />} />
         <Route path="/about" element={<About />} />
         <Route path="/financial-tracker" element={<ExpenseApp />} />
-        <Route path="/currency-converter" element={<CurrencyConverter />} />
         <Route path="*" element={<App />} />
       </Routes>
       <Instagram />
