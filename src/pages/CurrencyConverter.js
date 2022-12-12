@@ -37,7 +37,7 @@ const CurrencyConverter = () => {
         ]);
         setFromCurrency(data.base_code);
         setToCurrency(firstCurrency);
-        setExchangeRate(data.conversion_rates[firstCurrency]);
+        // setExchangeRate(data.conversion_rates[firstCurrency]);
       });
   }, []);
 
@@ -81,10 +81,13 @@ const CurrencyConverter = () => {
               onChangeAmount={handleFromAmountChange}
               amount={fromAmount}
             />
-            <div class="mr-56">
+            <div class="flex justify-between items-center w-80">
               <h2 class="text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-white">
                 equals
               </h2>
+              {/* <button class="btn btn-primary" onClick={() => {}}>
+                SWAP
+              </button> */}
             </div>
             <CurrencyRow
               currencyOptions={currencyOptions}

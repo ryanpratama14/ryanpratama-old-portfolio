@@ -20,9 +20,9 @@ const ToDoCard = ({
       <Toaster />
       <div class="flex items-center border-b-2 mb-2 pb-2">
         <img
-          class="w-10 h-10 object-cover "
+          class="w-14 h-14 object-cover "
           alt="tasks"
-          src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png"
+          src="https://www.pngkit.com/png/detail/924-9245281_todo-list-icon-do-list-icon-png.png"
         />
         <div class="pl-3">
           <div class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-gray-600 to-black tracking-tighter">
