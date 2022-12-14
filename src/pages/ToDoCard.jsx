@@ -20,9 +20,9 @@ const ToDoCard = ({
       <Toaster />
       <div class="flex items-center border-gray-400 border-b-2 mb-2 pb-2">
         <img
-          class="w-14 h-14 object-cover "
+          class="w-12 h-12 relative object-cover"
           alt="tasks"
-          src="https://www.pngkit.com/png/detail/924-9245281_todo-list-icon-do-list-icon-png.png"
+          src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png"
         />
         <div class="pl-3">
           <div class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-gray-600 to-black tracking-tighter">
@@ -61,7 +61,7 @@ const ToDoCard = ({
           onClick={(event) => {
             markTodo(index);
             setCounter(count + 1);
-            if (count === 1 - 1) {
+            if (count === 0) {
               setWord("you're doing great 🙌");
               toast.success("Marked as done");
               setIsDone2("TASK COMPLETED");
