@@ -9,10 +9,10 @@ const Declare = () => {
   }, []);
   const [word, setWord] = useState("أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ");
   const [button, setButton] = useState("Next");
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
+  // const openInNewTab = (url) => {
+  //   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  //   if (newWindow) newWindow.opener = null;
+  // };
 
   const navigate = useNavigate();
   const notifySuccess2 = () =>

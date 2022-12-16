@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer class="footer footer-center p-4 font-mono">
       <div>
-        <a>
+        <p>
           © 2022 FaoTech™. All Rights Reserved. <br />
           Made by Ryan <br />
           Special thanks to{" "}
@@ -27,7 +27,7 @@ const Footer = () => {
             {" "}
             daisyUI
           </a>
-        </a>
+        </p>
       </div>
     </footer>
   );

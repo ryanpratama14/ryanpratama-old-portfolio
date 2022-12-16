@@ -39,9 +39,11 @@ const About = () => {
                     title="Follow me on Instagram"
                     href="https://www.instagram.com/fao30/"
                     target="_blank"
+                    rel="noreferrer"
                     class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
                   >
                     <img
+                      alt="instagram"
                       class=" object-cover object-center w-full h-full rounded-full"
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
                     />
@@ -50,9 +52,11 @@ const About = () => {
                     title="Follow me on Linkedin"
                     href="https://www.linkedin.com/in/fakhrul-arifin/"
                     target="_blank"
+                    rel="noreferrer"
                     class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
                   >
                     <img
+                      alt="linkedin"
                       class=" object-cover object-center w-full h-full rounded-full"
                       src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
                     />
@@ -61,9 +65,11 @@ const About = () => {
                     title="Text me on Telegram"
                     href="https://t.me/faofao"
                     target="_blank"
+                    rel="noreferrer"
                     class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
                   >
                     <img
+                      alt="telegram"
                       class=" object-cover object-center w-full h-full rounded-full"
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
                     />

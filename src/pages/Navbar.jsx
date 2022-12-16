@@ -30,6 +30,7 @@ const Navbar = () => {
           >
             <li>
               <a
+                href
                 onClick={() => {
                   navigate("/cards");
                 }}
@@ -39,6 +40,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href
                 onClick={() => {
                   navigate("/appform");
                 }}
@@ -48,6 +50,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href
                 onClick={() => {
                   navigate("/zikrapp");
                 }}
@@ -57,6 +60,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href
                 onClick={() => {
                   navigate("/todoapp");
                 }}
@@ -66,6 +70,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href
                 onClick={() => {
                   navigate("/financial-tracker");
                 }}
@@ -75,6 +80,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href
                 onClick={() => {
                   navigate("/reviews");
                 }}
@@ -84,6 +90,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href
                 onClick={() => {
                   navigate("/about");
                 }}
@@ -96,6 +103,7 @@ const Navbar = () => {
       </div>
       <div class="navbar-center">
         <a
+          href
           onClick={() => {
             navigate("/");
           }}
@@ -108,7 +116,10 @@ const Navbar = () => {
         <div class="dropdown dropdown-end ml-4">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full">
-              <img src="https://sun9-61.userapi.com/impg/WRTTQu00rB8FiNpm2WpRZLzu0U0zzWlvjaDDqg/HtZweihYsKo.jpg?size=2160x2160&quality=96&sign=88c8dc5b5f04b0ff17f0a1ca5d7e0a54&type=album" />
+              <img
+                alt="ryan display profile"
+                src="https://sun9-61.userapi.com/impg/WRTTQu00rB8FiNpm2WpRZLzu0U0zzWlvjaDDqg/HtZweihYsKo.jpg?size=2160x2160&quality=96&sign=88c8dc5b5f04b0ff17f0a1ca5d7e0a54&type=album"
+              />
             </div>
           </label>
           <ul

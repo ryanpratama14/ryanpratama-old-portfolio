@@ -86,10 +86,12 @@ const Testimonial = () => {
                       title="Follow me on Instagram"
                       href="https://www.instagram.com/ryanpratama14/"
                       target="_blank"
+                      rel="noreferrer"
                       class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
                     >
                       <img
                         class=" object-cover object-center w-full h-full rounded-full"
+                        alt="instagram"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
                       />
                     </a>
@@ -97,10 +99,12 @@ const Testimonial = () => {
                       title="Follow me on Linkedin"
                       href="https://www.linkedin.com/in/ryanpratama14/"
                       target="_blank"
+                      rel="noreferrer"
                       class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
                     >
                       <img
                         class=" object-cover object-center w-full h-full rounded-full"
+                        alt="linkedin"
                         src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
                       />
                     </a>
@@ -108,10 +112,12 @@ const Testimonial = () => {
                       title="Text me on Telegram"
                       href="https://t.me/ryanpratama14"
                       target="_blank"
+                      rel="noreferrer"
                       class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
                     >
                       <img
                         class=" object-cover object-center w-full h-full rounded-full"
+                        alt="telegram"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
                       />
                     </a>
