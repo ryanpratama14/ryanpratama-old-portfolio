@@ -5,15 +5,14 @@ import InputFieldCenter from "./components/InputFieldCenter";
 import toast, { Toaster } from "react-hot-toast";
 
 import { useState } from "react";
-import { createContext, useEffect } from "react";
-import ToDoCard from "./ToDoCard";
+import { useEffect } from "react";
 import useLocalStrorage from "./LocalStorage";
+import ToDoCard from "./components/ToDoCard";
 
 const ToDo = () => {
   useEffect(() => {
     document.title = "#4: To Do List App";
   }, []);
-  const UserContext = createContext();
   const [name, setName] = useState("");
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
@@ -40,6 +39,25 @@ const ToDo = () => {
     setData(newData);
   };
 
+  const [searchText, updateSearchText] = useState("");
+  const [filteredTransaction, updateTxn] = useState(data);
+
+  const filterData = (searchText) => {
+    if (!searchText || !searchText.trim().length) {
+      updateTxn(data);
+      return;
+    }
+    let txn = [...data];
+    txn = txn.filter((todo) =>
+      todo.name.toLowerCase().includes(searchText.toLowerCase().trim())
+    );
+    updateTxn(txn);
+  };
+
+  useEffect(() => {
+    filterData(searchText);
+  }, [data]);
+
   return (
     <div class="font-mono">
       <Toaster />
@@ -53,8 +71,18 @@ const ToDo = () => {
               <span class="text-red-300">List </span>App!
             </h2>
           </div>
+          <div class="flex justify-center">
+            <input
+              placeholder="Search task..."
+              class="input input-bordered input-sm w-96 mt-4 mb-3"
+              onChange={(e) => {
+                updateSearchText(e.target.value);
+                filterData(e.target.value);
+              }}
+            />
+          </div>
           <div class="flex flex-wrap justify-center">
-            {data?.map((todo, index) => {
+            {filteredTransaction?.map((todo, index) => {
               return (
                 <ToDoCard
                   nameProps={todo.name}
@@ -133,5 +161,4 @@ const ToDo = () => {
   );
 };
 
-// export default ToDo = React.createContext(data[0].totalTask);
 export default ToDo;

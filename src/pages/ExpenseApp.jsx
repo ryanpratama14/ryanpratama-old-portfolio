@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
-import ExpenseCard from "./ExpenseCard";
 import toast, { Toaster } from "react-hot-toast";
+import ExpenseCard from "./components/ExpenseCard";
 import useLocalStrorage from "./LocalStorage";
 
 const Expense = () => {
@@ -55,6 +55,25 @@ const Expense = () => {
     setData(newData);
   };
 
+  const [searchText, updateSearchText] = useState("");
+  const [filteredTransaction, updateTxn] = useState(data);
+
+  const filterData = (searchText) => {
+    if (!searchText || !searchText.trim().length) {
+      updateTxn(data);
+      return;
+    }
+    let txn = [...data];
+    txn = txn.filter((payload) =>
+      payload.desc.toLowerCase().includes(searchText.toLowerCase().trim())
+    );
+    updateTxn(txn);
+  };
+
+  useEffect(() => {
+    filterData(searchText);
+  }, [data]);
+
   return (
     <div className="ceo font-mono ">
       <Toaster />
@@ -75,7 +94,8 @@ const Expense = () => {
                   <div class="flex justify-between items-center">
                     <h3 class="font-extrabold  text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white tracking-tighter">
                       BALANCE
-                      <br />${income - expense}
+                      <br />
+                      {income - expense} USD
                     </h3>
 
                     <button
@@ -173,8 +193,9 @@ const Expense = () => {
                             toast.success("Added");
                             toggleAddTXn(false);
                             setAmount(0);
-                            setDesc("");
                             setDate("");
+                            setDesc("");
+                            setType("EXPENSE");
                           } else {
                             toast.error(
                               "Something went wrong, please try again"
@@ -187,7 +208,7 @@ const Expense = () => {
                     </div>
                   )}
                   <div
-                    className="font-extrabold mt-4 border-b-4 mb-2 pb-2 border-indigo-600 flex flex-wrap justify-between items-center w-full
+                    className="font-extrabold mt-4  pb-2  flex flex-wrap justify-between items-center w-full
 "
                   >
                     <p>💸 Income</p>
@@ -195,14 +216,14 @@ const Expense = () => {
                   </div>
 
                   <div
-                    className="mt-1 mb-6 flex flex-wrap justify-between items-center w-full
+                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-indigo-600
 "
                   >
                     <p class=" text-xl font-semibold text-emerald-400">
-                      +${income}
+                      ${income}
                     </p>
                     <p class=" text-xl font-semibold text-red-400">
-                      -${expense}
+                      ${expense}
                     </p>
                   </div>
                   <div class="flex justify-end items-center mt-2">
@@ -210,11 +231,26 @@ const Expense = () => {
                       History
                     </h3>
                   </div>
-                  {/* <input
-                    placeholder="Search..."
+                  <input
+                    placeholder="Search transaction..."
                     class="input input-bordered input-sm w-full mt-4"
-                  /> */}
-                  {data?.map((payload, index) => {
+                    onChange={(e) => {
+                      updateSearchText(e.target.value);
+                      filterData(e.target.value);
+                    }}
+                  />
+                  {filteredTransaction?.map((payload, index) => (
+                    <ExpenseCard
+                      descProps={payload.desc}
+                      amountProps={payload.amount}
+                      dateProps={payload.date}
+                      typeProps={payload.type}
+                      index={index}
+                      payload={payload}
+                      removeExpense={removeExpense}
+                    />
+                  ))}
+                  {/* {data?.map((payload, index) => {
                     console.log(index);
                     return (
                       <ExpenseCard
@@ -227,7 +263,7 @@ const Expense = () => {
                         removeExpense={removeExpense}
                       />
                     );
-                  })}
+                  })} */}
                 </div>
               </div>
             </div>

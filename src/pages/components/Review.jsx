@@ -15,10 +15,11 @@ const Review = ({
       <img
         src={pictureProps}
         class="mx-auto h-36 w-36 rounded-full object-cover shadow-xl"
+        alt="profile"
       />
 
       <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-        <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
+        <p class="font-bold  text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">
           {nameProps}
         </p>
 
@@ -31,9 +32,11 @@ const Review = ({
             title="Follow me on Instagram"
             href={instagramProps}
             target="_blank"
+            rel="noreferrer"
             class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
           >
             <img
+              alt="instagram"
               class=" object-cover object-center w-full h-full rounded-full"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
             />
@@ -42,9 +45,11 @@ const Review = ({
             title="Follow me on Linkedin"
             href={linkedinProps}
             target="_blank"
+            rel="noreferrer"
             class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
           >
             <img
+              alt="linkedin"
               class=" object-cover object-center w-full h-full rounded-full"
               src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
             />
@@ -53,9 +58,11 @@ const Review = ({
             title="Text me on Telegram"
             href={telegramProps}
             target="_blank"
+            rel="noreferrer"
             class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
           >
             <img
+              alt="telegram"
               class=" object-cover object-center w-full h-full rounded-full"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
             />
