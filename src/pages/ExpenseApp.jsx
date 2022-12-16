@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
-import ExpenseCard from "./ExpenseCard";
 import toast, { Toaster } from "react-hot-toast";
+import ExpenseCard from "./components/ExpenseCard";
 import useLocalStrorage from "./LocalStorage";
 
 const Expense = () => {

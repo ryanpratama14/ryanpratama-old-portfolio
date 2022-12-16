@@ -6,8 +6,8 @@ import toast, { Toaster } from "react-hot-toast";
 
 import { useState } from "react";
 import { useEffect } from "react";
-import ToDoCard from "./ToDoCard";
 import useLocalStrorage from "./LocalStorage";
+import ToDoCard from "./components/ToDoCard";
 
 const ToDo = () => {
   useEffect(() => {
