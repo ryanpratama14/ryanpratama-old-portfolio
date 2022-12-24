@@ -49,7 +49,7 @@ const About = () => {
                     />
                   </a>
                   <a
-                    title="Follow me on Linkedin"
+                    title="Follow me on LinkedIn"
                     href="https://www.linkedin.com/in/fakhrul-arifin/"
                     target="_blank"
                     rel="noreferrer"

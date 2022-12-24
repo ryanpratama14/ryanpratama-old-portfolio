@@ -42,7 +42,7 @@ const Review = ({
             />
           </a>
           <a
-            title="Follow me on Linkedin"
+            title="Follow me on LinkedIn"
             href={linkedinProps}
             target="_blank"
             rel="noreferrer"
