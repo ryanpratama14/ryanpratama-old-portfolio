@@ -96,7 +96,7 @@ const Testimonial = () => {
                       />
                     </a>
                     <a
-                      title="Follow me on Linkedin"
+                      title="Follow me on LinkedIn"
                       href="https://www.linkedin.com/in/ryanpratama14/"
                       target="_blank"
                       rel="noreferrer"

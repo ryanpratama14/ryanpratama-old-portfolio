@@ -4,32 +4,12 @@
 
 .dropdown-content {
   background-color: #202224;
-  /* background: rgb(32, 34, 36);
-  background: linear-gradient(
-    270deg,
-    rgba(32, 34, 36, 1) 0%,
-    rgba(40, 44, 52, 1) 75%,
-    rgba(51, 36, 84, 1) 95%,
-    rgba(56, 33, 98, 1) 100%
-  ); */
-  /* background: rgb(32, 34, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(32, 34, 36, 1) 0%,
-    rgba(40, 44, 52, 1) 100%
-  ); */
-  /* background: rgb(32, 34, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(32, 34, 36, 1) 50%,
-    rgba(39, 50, 61, 1) 100%
-  ); */
   color: #cdd2d8;
 }
 
 .footer {
   color: #cdd2d8;
-  background-color: #382162;
+  background-color: #173b66;
 }
 
 .reviews,
@@ -39,7 +19,7 @@
     180deg,
     rgba(32, 34, 36, 1) 0%,
     rgba(40, 44, 52, 1) 75%,
-    rgba(51, 36, 84, 1) 95%,
-    rgba(56, 33, 98, 1) 100%
+    rgba(32, 61, 97, 1) 95%,
+    rgba(23, 59, 102, 1) 100%
   );
 }

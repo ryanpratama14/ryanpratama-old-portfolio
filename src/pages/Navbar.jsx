@@ -143,7 +143,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Linkedin <span class="badge">in</span>
+                LinkedIn <span class="badge">in</span>
               </a>
             </li>
             <li>
