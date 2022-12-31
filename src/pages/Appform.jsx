@@ -226,7 +226,9 @@ function Appform() {
                   Submit
                 </button>
               </div>
-              <p class=" text-xs mt-3 mb-8 text-center">{word}</p>
+              <p class=" text-xs mt-3 mb-8 text-center text-base-content">
+                {word}
+              </p>
             </div>
             {/* This is end of Form */}
           </div>
