@@ -1,12 +1,8 @@
 import "./App.css";
-import { React, useEffect } from "react";
+import { React } from "react";
 import Homepage from "./pages/Homepage";
-import { themeChange } from "theme-change";
 
 function App() {
-  useEffect(() => {
-    themeChange(false);
-  }, [themeChange]);
   useEffect(() => {
     document.title = "Ryan's React Apps";
   }, []);
