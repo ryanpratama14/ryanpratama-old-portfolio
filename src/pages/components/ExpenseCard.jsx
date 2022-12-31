@@ -35,7 +35,7 @@ const ExpenseCard = ({
               </p>
             </div>
 
-            <div class="flex items-center space-x-4 border-gray-400 border-b-2">
+            <div class="flex items-center space-x-4 border-neutral border-b-2">
               <div class="flex-1 min-w-0">
                 <p class="text-sm text-base-content truncate">{dateProps}</p>
               </div>
@@ -44,7 +44,7 @@ const ExpenseCard = ({
                 style={{
                   color: payload.type === "EXPENSE" ? "#f87171" : "#34d399",
                 }}
-                class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                class="inline-flex items-center text-base font-semibold"
               >
                 {payload.type === "EXPENSE" ? "-" : "+"}${amountProps}
               </div>

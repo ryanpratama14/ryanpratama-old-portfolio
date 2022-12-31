@@ -6,7 +6,7 @@ const Testimonial = () => {
     document.title = "FaoTech: Reviews";
   }, []);
   return (
-    <div className="pt-32 font-mono from-primary to-secondary text-base-content bg-gradient-to-b">
+    <div className="pt-32 font-mono from-primary to-base-200 text-base-content bg-gradient-to-b">
       <section>
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
@@ -119,13 +119,13 @@ const Testimonial = () => {
                       />
                     </a>
                   </div>
-                  <p class="mt-4 text-lg text-white-500">
+                  <p class="mt-4 text-lg text-primary-content">
                     "Choosing FaoTech was one of the best <br />
                     career decision I've ever made. <br />
                     The program prepped me with necessary skills.
                     <br /> Highly recommended!" 🙌
                   </p>
-                  <div class="mt-4 flex justify-center gap-0.5 text-yellow-500">
+                  <div class="mt-4 flex justify-center gap-0.5 text-accent-focus">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6"
@@ -169,7 +169,7 @@ const Testimonial = () => {
                   </div>
 
                   <a
-                    class="btn mt-5 btn-info"
+                    class="btn mt-5 btn-secondary"
                     href="https://www.instagram.com/ryanpratama14/"
                     target="_blank"
                     rel="noreferrer"

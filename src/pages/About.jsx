@@ -5,7 +5,7 @@ const About = () => {
     document.title = "FaoTech: About";
   }, []);
   return (
-    <div className="pt-32 font-mono from-primary to-secondary text-base-content bg-gradient-to-b">
+    <div className="pt-32 font-mono from-primary to-base-200 text-base-content bg-gradient-to-b">
       <section>
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
@@ -24,7 +24,7 @@ const About = () => {
               />
 
               <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p class="font-bold  text-2xl text-base-content">
+                <p class="font-bold  text-2xl text-primary-content">
                   Fakhrul Oktavian
                   <br />
                   <span class="font-bold  text-xl text-base-content">
@@ -80,7 +80,7 @@ const About = () => {
                 </p>
 
                 <a
-                  class="btn mt-5 btn-info"
+                  class="btn mt-5 btn-secondary"
                   href="https://www.instagram.com/fao30/"
                   target="_blank"
                   rel="noreferrer"

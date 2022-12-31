@@ -22,7 +22,7 @@ function Zikirapp() {
     });
 
   return (
-    <div class="pt-32 font-mono from-primary to-secondary text-primary-content bg-gradient-to-b">
+    <div class="pt-32 font-mono from-primary to-base-200 text-primary-content bg-gradient-to-b">
       <Toaster />
       <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">

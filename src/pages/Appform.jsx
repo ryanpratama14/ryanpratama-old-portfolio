@@ -67,7 +67,7 @@ function Appform() {
   ]);
 
   return (
-    <div className=" pt-32 App from-primary to-secondary text-primary-content bg-gradient-to-b font-mono">
+    <div className=" pt-32 App from-primary to-base-200 text-primary-content bg-gradient-to-b font-mono">
       <Toaster />
       <div className="ceo">
         {/* This is Title */}
@@ -221,7 +221,7 @@ function Appform() {
                     }
                   }}
                   type="submit"
-                  class=" btn btn-primary"
+                  class=" btn btn-secondary"
                 >
                   Submit
                 </button>

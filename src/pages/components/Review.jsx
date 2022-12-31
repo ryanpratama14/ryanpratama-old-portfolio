@@ -65,9 +65,9 @@ const Review = ({
           </a>
         </div>
         {/* End of social media */}
-        <p class="mt-4 text-lg ">"{quoteProps}"</p>
+        <p class="mt-4 text-lg text-primary-content">"{quoteProps}"</p>
 
-        <div class="mt-4 flex justify-center gap-0.5 text-yellow-500">
+        <div class="mt-4 flex justify-center gap-0.5 text-accent-focus">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -110,7 +110,7 @@ const Review = ({
           </svg>
         </div>
         <a
-          class="btn mt-5 btn-info"
+          class="btn mt-5 btn-secondary"
           href={linkProps}
           target="_blank"
           rel="noreferrer"

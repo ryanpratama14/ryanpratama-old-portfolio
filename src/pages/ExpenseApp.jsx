@@ -75,7 +75,7 @@ const Expense = () => {
   }, [data]);
 
   return (
-    <div className="pt-32 font-mono from-primary to-secondary text-primary-content bg-gradient-to-b">
+    <div className="pt-32 font-mono from-primary to-base-200 text-primary-content bg-gradient-to-b">
       <Toaster />
       <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
@@ -90,7 +90,7 @@ const Expense = () => {
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
               <div class="md:w-96 w-80 mx-2 my-2 mb-16">
-                <div class="p-4 max-w-md rounded-lg border shadow-md sm:p-8 bg-base-200">
+                <div class="p-4 max-w-md rounded-lg border shadow-lg sm:p-8 bg-base-100">
                   <div class="flex justify-between items-center">
                     <h3 class="font-extrabold  text-2xl text-base-content tracking-tighter">
                       BALANCE
@@ -99,7 +99,7 @@ const Expense = () => {
                     </h3>
 
                     <button
-                      className="btn btn-primary"
+                      className="btn btn-secondary"
                       onClick={() => toggleAddTXn((isVisible) => !isVisible)}
                     >
                       {isAddTxnVisible ? "CANCEL" : "ADD"}
@@ -149,7 +149,7 @@ const Expense = () => {
                           }}
                         />
                       </div>
-                      <div class="flex justify-center items-center mt-4">
+                      <div class="flex justify-center items-center mt-4 text-base-content">
                         <input
                           type="radio"
                           id="expense"
@@ -176,7 +176,7 @@ const Expense = () => {
                         <label htmlFor="Expense">Income</label>
                       </div>
                       <button
-                        class="btn btn-primary mt-4"
+                        class="btn btn-secondary mt-4"
                         onClick={() => {
                           if (
                             (desc.length > 0 &&
@@ -212,7 +212,7 @@ const Expense = () => {
                   </div>
 
                   <div
-                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-indigo-600
+                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-secondary
 "
                   >
                     <p class=" text-xl font-semibold text-success">${income}</p>
