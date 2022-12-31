@@ -75,24 +75,24 @@ const Expense = () => {
   }, [data]);
 
   return (
-    <div className="ceo font-mono ">
+    <div className="pt-32 font-mono from-primary to-secondary text-primary-content bg-gradient-to-b">
       <Toaster />
-      <section class=" text-white reviews" id="ceo">
+      <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-xl text-center mb-12">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-blue-300">Financial </span>
-              <span class="text-red-300">Tracker </span>App!
+              <span class="text-base-content">Financial </span>
+              <span class="text-base-content">Tracker </span>App!
             </h2>
           </div>
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
               <div class="md:w-96 w-80 mx-2 my-2 mb-16">
-                <div class="p-4 max-w-md rounded-lg border shadow-md sm:p-8 bg-gray-800 border-gray-600">
+                <div class="p-4 max-w-md rounded-lg border shadow-md sm:p-8 bg-base-200">
                   <div class="flex justify-between items-center">
-                    <h3 class="font-extrabold  text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white tracking-tighter">
+                    <h3 class="font-extrabold  text-2xl text-base-content tracking-tighter">
                       BALANCE
                       <br />
                       {income - expense} USD
@@ -106,9 +106,9 @@ const Expense = () => {
                     </button>
                   </div>
                   {isAddTxnVisible && (
-                    <div class="text-center text-black dark:text-white w-full items-center">
+                    <div class="text-center w-full items-center">
                       <div class="mt-4">
-                        <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+                        <label class="block mb-2 text-m font-medium text-left text-base-content">
                           Amount
                         </label>
                         <input
@@ -122,7 +122,7 @@ const Expense = () => {
                         />
                       </div>
                       <div class="mt-4">
-                        <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+                        <label class="block mb-2 text-m font-medium text-left text-base-content">
                           Date
                         </label>
                         <input
@@ -136,7 +136,7 @@ const Expense = () => {
                         />
                       </div>
                       <div class="mt-4">
-                        <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+                        <label class="block mb-2 text-m font-medium text-left text-base-content">
                           Description
                         </label>
                         <input
@@ -161,9 +161,7 @@ const Expense = () => {
                             setType(e.target.value);
                           }}
                         />
-                        <label htmlFor="expense" class="text-white">
-                          Expense
-                        </label>
+                        <label htmlFor="expense">Expense</label>
                         <input
                           type="radio"
                           id="income"
@@ -175,9 +173,7 @@ const Expense = () => {
                             setType(e.target.value);
                           }}
                         />
-                        <label htmlFor="Expense" class="text-white">
-                          Income
-                        </label>
+                        <label htmlFor="Expense">Income</label>
                       </div>
                       <button
                         class="btn btn-primary mt-4"
@@ -209,7 +205,7 @@ const Expense = () => {
                   )}
                   <div
                     className="font-extrabold mt-4  pb-2  flex flex-wrap justify-between items-center w-full
-"
+ text-base-content"
                   >
                     <p>💸 Income</p>
                     <p>Expense 🛍️</p>
@@ -219,15 +215,11 @@ const Expense = () => {
                     className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-indigo-600
 "
                   >
-                    <p class=" text-xl font-semibold text-emerald-400">
-                      ${income}
-                    </p>
-                    <p class=" text-xl font-semibold text-red-400">
-                      ${expense}
-                    </p>
+                    <p class=" text-xl font-semibold text-success">${income}</p>
+                    <p class=" text-xl font-semibold text-error">${expense}</p>
                   </div>
                   <div class="flex justify-end items-center mt-2">
-                    <h3 class="text-xl font-bold leading-none text-white dark:text-white">
+                    <h3 class="text-xl font-bold leading-none text-base-content">
                       History
                     </h3>
                   </div>

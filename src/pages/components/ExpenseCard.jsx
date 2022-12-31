@@ -30,16 +30,14 @@ const ExpenseCard = ({
               >
                 ⛔️
               </button>
-              <p class="ml-0.5 text-s font-extrabold text-white truncate">
+              <p class="ml-0.5 text-s font-extrabold text-base-content truncate">
                 {descProps}
               </p>
             </div>
 
             <div class="flex items-center space-x-4 border-gray-400 border-b-2">
               <div class="flex-1 min-w-0">
-                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                  {dateProps}
-                </p>
+                <p class="text-sm text-base-content truncate">{dateProps}</p>
               </div>
 
               <div

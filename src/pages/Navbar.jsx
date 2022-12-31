@@ -1,11 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Background.css";
+import ThemeChanger from "./components/ThemeChanger";
 
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div class="navbar font-mono text-white dark:text-white">
+    <div
+      class="navbar font-mono     sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 
+    text-primary-content shadow -mt-[5rem]
+    "
+    >
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -26,7 +30,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
           >
             <li>
               <a
@@ -113,7 +117,8 @@ const Navbar = () => {
         </a>
       </div>
       <div class="navbar-end">
-        <div class="dropdown dropdown-end ml-4">
+        <ThemeChanger />
+        <div class="dropdown dropdown-end ml-0.5">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full">
               <img
@@ -124,7 +129,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="mt-3 p-2 shadow menu menu-compact dropdown-content  rounded-box w-52 drop-2"
+            class="mt-3 p-2 bg-base-300 shadow menu menu-compact dropdown-content  rounded-box w-52 drop-2"
           >
             <li>
               <a

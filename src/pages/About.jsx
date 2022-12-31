@@ -1,20 +1,17 @@
 import React, { useEffect } from "react";
-import "./Background.css";
-
-// py-44
 
 const About = () => {
   useEffect(() => {
     document.title = "FaoTech: About";
   }, []);
   return (
-    <div class="font-mono">
-      <section class=" text-white ceo" id="ceo">
+    <div className="pt-32 font-mono from-primary to-secondary text-base-content bg-gradient-to-b">
+      <section>
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
-            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Meet <span class="text-blue-300">our</span>{" "}
-              <span class="text-red-300">CEO</span>
+            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl text-primary-content">
+              Meet <span class="text-primary-content">our</span>{" "}
+              <span class="text-base-content">CEO</span>
             </h2>
           </div>
 
@@ -27,10 +24,10 @@ const About = () => {
               />
 
               <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
+                <p class="font-bold text-transparent text-2xl text-base-content">
                   Fakhrul Oktavian
                   <br />
-                  <span class="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-red-300 to-white">
+                  <span class="font-bold text-transparent text-xl text-base-content">
                     Instructor
                   </span>
                 </p>
@@ -75,7 +72,7 @@ const About = () => {
                     />
                   </a>
                 </div>
-                <p class="mt-4 text-lg text-white-500">
+                <p class="mt-4 text-lg">
                   "For me, it matters that we drive tech as an equalizing force,{" "}
                   <br />
                   as an enabler for everyone around the world. <br /> Feel free
@@ -83,7 +80,7 @@ const About = () => {
                 </p>
 
                 <a
-                  class="btn mt-5 border-transparent hover:border-transparent text-white font-semibold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
+                  class="btn mt-5 btn-success"
                   href="https://www.instagram.com/fao30/"
                   target="_blank"
                   rel="noreferrer"

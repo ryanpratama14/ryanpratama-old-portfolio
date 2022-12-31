@@ -1,4 +1,3 @@
-import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
@@ -21,13 +20,13 @@ const Declare = () => {
     });
 
   return (
-    <div class="font-mono ">
+    <div class="pt-32 font-mono from-primary to-secondary text-primary-content bg-gradient-to-b">
       <Toaster />
-      <section class=" text-white reviews min-h-screen" id="ceo">
+      <section class="  reviews min-h-screen">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-xl text-center mt-12 mb-27">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Declare your <span class="text-red-300">Shahada</span>
+              Declare your <span class="text-base-content">Shahada</span>
               <br />
             </h2>
           </div>
@@ -45,7 +44,7 @@ const Declare = () => {
                   notifySuccess2();
                 }
               }}
-              class="btn mt-5 border-transparent hover:border-transparent text-white font-semibold  rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
+              class="btn mt-5  btn-error  w-44 px-5 py-2.5"
             >
               {button}
             </button>
@@ -56,7 +55,6 @@ const Declare = () => {
                 onClick={() => {
                   navigate("/zikir-app");
                 }}
-                className="text-white"
               >
                 Back to
               </span>
@@ -64,7 +62,7 @@ const Declare = () => {
                 onClick={() => {
                   navigate("/zikrapp");
                 }}
-                className="text-blue-300 dark:text-blue-300"
+                className="text-base-content"
               >
                 {" "}
                 Zikr App

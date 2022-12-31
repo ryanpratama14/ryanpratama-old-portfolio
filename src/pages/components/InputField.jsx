@@ -6,9 +6,9 @@ export default function InputField({
   fieldProps,
 }) {
   return (
-    <div class="text-center text-black dark:text-white w-full items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
+    <div class="text-center text-base-content w-full items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
       <div class="mt-4">
-        <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+        <label class="block mb-2 text-m font-medium text-left text-base-content">
           {fieldProps}
         </label>
         <input

@@ -1,5 +1,4 @@
 import { React, useEffect } from "react";
-import "./Background.css";
 import Review from "./components/Review";
 
 const Testimonial = () => {
@@ -7,13 +6,13 @@ const Testimonial = () => {
     document.title = "FaoTech: Reviews";
   }, []);
   return (
-    <div class="font-mono">
-      <section class=" text-white reviews" id="ceo">
+    <div className="pt-32 font-mono from-primary to-secondary text-base-content bg-gradient-to-b">
+      <section>
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Read <span class="text-blue-300">trusted</span> reviews from our{" "}
-              <span class="text-red-300">students</span>
+              Read <span class="text-primary-content">trusted</span> reviews
+              from our <span>students</span>
             </h2>
           </div>
           <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">
@@ -64,7 +63,7 @@ const Testimonial = () => {
             ></Review>
           </div>
         </div>
-        <section class=" -mt-12 text-white pb-20" id="ceo">
+        <section class=" -mt-12 text-base-content pb-20" id="ceo">
           <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex justify-center mt-8 min-w-screen">
               <div>
@@ -75,12 +74,10 @@ const Testimonial = () => {
                 />
 
                 <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                  <p class="font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-300 to-white">
+                  <p class="font-bold text-2xl text-primary-content">
                     Ryan Pratama
                   </p>
-                  <p class="mt-0.5 text-s  font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
-                    FaoTech Student
-                  </p>
+                  <p class="mt-0.5 text-s  font-bold ">FaoTech Student</p>
                   <div class="flex items-center justify-center mt-2">
                     <a
                       title="Follow me on Instagram"
@@ -172,7 +169,7 @@ const Testimonial = () => {
                   </div>
 
                   <a
-                    class="btn mt-5 border-transparent hover:border-transparent text-white font-semibold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
+                    class="btn mt-5 btn-success"
                     href="https://www.instagram.com/ryanpratama14/"
                     target="_blank"
                     rel="noreferrer"

@@ -17,7 +17,7 @@ function Cards() {
   }, []);
 
   return (
-    <div className="App font-mono text-center min-h-screen App-header text-black dark:text-white">
+    <div class="pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b App App-header font-mono">
       {data?.map((element) => {
         return (
           <div className="mt-4 ">
@@ -56,7 +56,7 @@ function Cards() {
             toast.error("All fields are required");
           }
         }}
-        className="btn btn-primary mt-6 mb-4 w-72"
+        className="btn btn-info mt-6 mb-4 w-72"
       >
         Add new card
       </button>

@@ -1,6 +1,4 @@
-import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React from "react";
-import "./Background.css";
 import InputFieldCenter from "./components/InputFieldCenter";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -59,16 +57,16 @@ const ToDo = () => {
   }, [data]);
 
   return (
-    <div class="font-mono">
+    <div class="font-mono pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
       <Toaster />
-      <section class=" text-white reviews" id="ceo">
+      <section>
         <div class="px-12 py-12">
           <div class="mx-auto max-w-xl text-center mb-12">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-blue-300">To Do </span>
-              <span class="text-red-300">List </span>App!
+              <span class="text-base-content">To Do </span>
+              <span class="text-base-content">List </span>App!
             </h2>
           </div>
           <div class="flex justify-center">
@@ -135,7 +133,7 @@ const ToDo = () => {
               placeholderValue="12:45 PM"
             />
           </div>
-          <div class="text-center text-black dark:text-white w-full items-center">
+          <div class="text-center text-base-content w-full items-center">
             <button
               onClick={() => {
                 if (
