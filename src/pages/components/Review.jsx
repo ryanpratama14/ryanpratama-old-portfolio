@@ -110,7 +110,7 @@ const Review = ({
           </svg>
         </div>
         <a
-          class="btn mt-5 btn-success font-bold"
+          class="btn mt-5 btn-info"
           href={linkProps}
           target="_blank"
           rel="noreferrer"

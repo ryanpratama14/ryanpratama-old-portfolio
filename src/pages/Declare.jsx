@@ -31,8 +31,8 @@ const Declare = () => {
             </h2>
           </div>
           <div class="text-center mt-32">
-            <p class="text-2xl mb-6  text-white dark:text-white">repeat:</p>
-            <p class="text-3xl text-white dark:text-white">{word}</p>
+            <p class="text-2xl mb-6 text-primary-content">repeat:</p>
+            <p class="text-3xl text-base-content">{word}</p>
           </div>
           <div class="flex flex-col flex-wrap justify-center items-center text-center">
             <button

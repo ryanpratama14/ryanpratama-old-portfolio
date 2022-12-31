@@ -24,10 +24,10 @@ const About = () => {
               />
 
               <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p class="font-bold text-transparent text-2xl text-base-content">
+                <p class="font-bold  text-2xl text-base-content">
                   Fakhrul Oktavian
                   <br />
-                  <span class="font-bold text-transparent text-xl text-base-content">
+                  <span class="font-bold  text-xl text-base-content">
                     Instructor
                   </span>
                 </p>
@@ -80,7 +80,7 @@ const About = () => {
                 </p>
 
                 <a
-                  class="btn mt-5 btn-success"
+                  class="btn mt-5 btn-info"
                   href="https://www.instagram.com/fao30/"
                   target="_blank"
                   rel="noreferrer"

@@ -18,7 +18,7 @@ function Card({ nameProps, ageProps }) {
 
         <div className="card-actions justify-center">
           <button
-            className="btn btn-info"
+            className="btn btn-primary"
             onClick={() => {
               navigate("/appform");
             }}

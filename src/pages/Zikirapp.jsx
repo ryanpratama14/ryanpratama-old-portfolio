@@ -38,8 +38,8 @@ function Zikirapp() {
             </h2>
           </div>
           <div class="text-center mt-20">
-            <p class="mb-2 text-white dark:text-white">{num}</p>
-            <p class="text-5xl text-white dark:text-white">{doa}</p>
+            <p class="mb-2 text-primary-content">{num}</p>
+            <p class="text-5xl text-base-content">{doa}</p>
           </div>
           <div class="flex flex-col flex-wrap justify-center items-center text-center">
             <button

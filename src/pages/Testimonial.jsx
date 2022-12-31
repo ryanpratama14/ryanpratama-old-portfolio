@@ -169,7 +169,7 @@ const Testimonial = () => {
                   </div>
 
                   <a
-                    class="btn mt-5 btn-success"
+                    class="btn mt-5 btn-info"
                     href="https://www.instagram.com/ryanpratama14/"
                     target="_blank"
                     rel="noreferrer"

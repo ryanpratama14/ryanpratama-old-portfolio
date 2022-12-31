@@ -56,7 +56,7 @@ function Cards() {
             toast.error("All fields are required");
           }
         }}
-        className="btn btn-info mt-6 mb-4 w-72"
+        className="btn btn-primary mt-6 mb-4 w-72"
       >
         Add new card
       </button>
