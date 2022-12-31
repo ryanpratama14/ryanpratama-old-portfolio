@@ -2,7 +2,10 @@ import React from "react";
 
 const ThemeChanger = () => {
   return (
-    <div title="Change Theme" className="dropdown dropdown-end">
+    <div
+      title="Change Theme"
+      className="dropdown dropdown-end text-base-content"
+    >
       <div tabIndex="0" class="btn gap-1 btn-ghost" data-choose-theme>
         <svg
           width="20"
@@ -77,6 +80,7 @@ const ThemeChanger = () => {
               </div>
             </div>
           </div>
+
           <div
             class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
             data-set-theme="valentine"
@@ -143,6 +147,7 @@ const ThemeChanger = () => {
               </div>
             </div>
           </div>
+
           <div
             class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
             data-set-theme="synthwave"

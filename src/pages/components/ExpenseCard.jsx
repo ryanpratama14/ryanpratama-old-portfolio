@@ -35,7 +35,7 @@ const ExpenseCard = ({
               </p>
             </div>
 
-            <div class="flex items-center space-x-4 border-neutral border-b-2">
+            <div class="flex items-center space-x-4 border-secondary border-b-2">
               <div class="flex-1 min-w-0">
                 <p class="text-sm text-base-content truncate">{dateProps}</p>
               </div>

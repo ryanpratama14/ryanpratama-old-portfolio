@@ -19,9 +19,11 @@ const Review = ({
       />
 
       <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-        <p class="font-bold  text-2xl text-primary-content">{nameProps}</p>
+        <p class="font-bold  text-2xl  text-base-content">{nameProps}</p>
 
-        <p class="mt-0.5 text-s  font-bold ">{occupationProps}</p>
+        <p class="mt-0.5 text-s  text-base-content font-bold ">
+          {occupationProps}
+        </p>
         {/* Social Media */}
         <div class="flex items-center justify-center mt-2">
           <a
@@ -65,9 +67,9 @@ const Review = ({
           </a>
         </div>
         {/* End of social media */}
-        <p class="mt-4 text-lg text-primary-content">"{quoteProps}"</p>
+        <p class="mt-4 text-lg text-base-content">"{quoteProps}"</p>
 
-        <div class="mt-4 flex justify-center gap-0.5 text-accent-focus">
+        <div class="mt-4 flex justify-center gap-0.5 text-secondary-focus">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"

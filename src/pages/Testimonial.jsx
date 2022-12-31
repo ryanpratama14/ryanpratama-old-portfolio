@@ -74,10 +74,12 @@ const Testimonial = () => {
                 />
 
                 <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                  <p class="font-bold text-2xl text-primary-content">
+                  <p class="font-bold text-2xl text-base-content">
                     Ryan Pratama
                   </p>
-                  <p class="mt-0.5 text-s  font-bold ">FaoTech Student</p>
+                  <p class="mt-0.5 text-s text-base-content font-bold ">
+                    FaoTech Student
+                  </p>
                   <div class="flex items-center justify-center mt-2">
                     <a
                       title="Follow me on Instagram"
@@ -119,13 +121,13 @@ const Testimonial = () => {
                       />
                     </a>
                   </div>
-                  <p class="mt-4 text-lg text-primary-content">
+                  <p class="mt-4 text-lg text-base-content">
                     "Choosing FaoTech was one of the best <br />
                     career decision I've ever made. <br />
                     The program prepped me with necessary skills.
                     <br /> Highly recommended!" 🙌
                   </p>
-                  <div class="mt-4 flex justify-center gap-0.5 text-accent-focus">
+                  <div class="mt-4 flex justify-center gap-0.5  text-secondary-focus">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6"

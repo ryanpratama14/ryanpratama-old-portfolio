@@ -10,7 +10,7 @@ const Navbar = () => {
     text-primary-content shadow -mt-[5rem]
     "
     >
-      <div class="navbar-start">
+      <div class="navbar-start text-base-content">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">
             <svg
@@ -111,7 +111,7 @@ const Navbar = () => {
           onClick={() => {
             navigate("/");
           }}
-          class="btn btn-ghost normal-case text-2xl "
+          class="btn btn-ghost normal-case text-base-content text-2xl "
         >
           Homepage
         </a>
@@ -129,7 +129,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="mt-3 p-2 bg-base-300 shadow menu menu-compact dropdown-content  rounded-box w-52 drop-2"
+            class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content text-base-content rounded-box w-52 drop-2"
           >
             <li>
               <a

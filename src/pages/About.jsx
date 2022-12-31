@@ -24,7 +24,7 @@ const About = () => {
               />
 
               <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p class="font-bold  text-2xl text-primary-content">
+                <p class="font-bold  text-2xl text-base-content">
                   Fakhrul Oktavian
                   <br />
                   <span class="font-bold  text-xl text-base-content">
