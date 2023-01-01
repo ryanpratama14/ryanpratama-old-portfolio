@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import useLocalStrorage from "../LocalStorage";
+import useLocalStrorage from "../../LocalStorage";
 
 const ToDoCard = ({
   nameProps,
@@ -46,7 +46,13 @@ const ToDoCard = ({
         </p>
       </div>
 
-      <div className="card-actions justify-between mt-2">
+      <div
+        className={`${
+          todo.isDone
+            ? "card-actions justify-between mt-9"
+            : "card-actions justify-between mt-2"
+        }`}
+      >
         <button
           class="btn border-transparent btn-error"
           onClick={() => {

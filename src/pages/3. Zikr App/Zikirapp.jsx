@@ -2,7 +2,7 @@ import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-import useLocalStrorage from "./LocalStorage";
+import useLocalStrorage from "../LocalStorage";
 
 function Zikirapp() {
   useEffect(() => {

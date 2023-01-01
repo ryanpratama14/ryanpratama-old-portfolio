@@ -1,13 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ThemeChanger from "./components/ThemeChanger";
-import useReadingProgress from "./components/UseReadingProgress";
-
-/*  */
-
-/*  */
-
-/*  */
+import ThemeChanger from "./ThemeChanger";
+import useReadingProgress from "./UseReadingProgress";
 
 const Navbar = () => {
   const navigate = useNavigate();

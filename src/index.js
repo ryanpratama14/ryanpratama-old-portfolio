@@ -2,18 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Navbar from "./pages/Navbar";
-import Footer from "./pages/Footer";
-import Testimonial from "./pages/Testimonial";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Cards from "./pages/Cards";
-import Appform from "./pages/Appform";
-import Zikirapp from "./pages/Zikirapp";
-import Declare from "./pages/Declare";
-import ToDo from "./pages/ToDo";
-import About from "./pages/About";
-import Instagram from "./pages/components/Instagram";
-import ExpenseApp from "./pages/ExpenseApp";
+import ToDo from "./pages/4. To Do/ToDo";
+import About from "./pages/About/About";
+import Instagram from "./components/Instagram";
+import ExpenseApp from "./pages/5. Fin Tracker/ExpenseApp";
+import Testimonial from "./pages/Testimonials/Testimonial";
+import Cards from "./pages/1. Member Card/Cards";
+import Appform from "./pages/2. Form App/Appform";
+import Zikirapp from "./pages/3. Zikr App/Zikirapp";
+import Declare from "./pages/3. Zikr App/Declare";
 
 export default function Routing() {
   return (

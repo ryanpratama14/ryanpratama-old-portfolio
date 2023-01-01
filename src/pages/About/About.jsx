@@ -18,7 +18,7 @@ const About = () => {
           <div class="flex justify-center mt-16 min-w-screen">
             <div>
               <img
-                src={require("./components/ceo.png")}
+                src={require("./photos/ceo.png")}
                 class="mx-auto h-48 w- rounded-full object-cover shadow-xl"
                 alt="CEO"
               />
@@ -72,11 +72,10 @@ const About = () => {
                     />
                   </a>
                 </div>
-                <p class="mt-4 text-lg">
-                  "For me, it matters that we drive tech as an equalizing force,{" "}
-                  <br />
-                  as an enabler for everyone around the world. <br /> Feel free
-                  to join."
+                <p class="mt-4 text-lg text-base-content lg:w-96 md:w-96 sm:w-96">
+                  "For me, it matters that we drive tech as an equalizing force,
+                  as an enabler for everyone around the world. Feel free to
+                  join."
                 </p>
 
                 <a

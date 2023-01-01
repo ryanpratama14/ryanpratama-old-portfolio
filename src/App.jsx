@@ -1,6 +1,6 @@
 import "./App.css";
 import { React, useEffect } from "react";
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/Home/Homepage";
 
 function App() {
   useEffect(() => {

@@ -121,10 +121,9 @@ const Testimonial = () => {
                       />
                     </a>
                   </div>
-                  <p class="mt-4 text-lg text-base-content">
-                    "Choosing FaoTech was one of the best <br />
-                    career decision I've ever made. <br />
-                    The program prepped me with necessary skills.
+                  <p class="mt-4 text-lg text-base-content lg:w-96 md:w-96 sm:w-96">
+                    "Choosing FaoTech was one of the best career decision I've
+                    ever made. The program prepped me with necessary skills.
                     <br /> Highly recommended!" 🙌
                   </p>
                   <div class="mt-4 flex justify-center gap-0.5  text-secondary-focus">

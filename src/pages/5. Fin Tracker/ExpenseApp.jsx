@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import ExpenseCard from "./components/ExpenseCard";
-import useLocalStrorage from "./LocalStorage";
+import useLocalStrorage from "../LocalStorage";
 
 const Expense = () => {
   useEffect(() => {
@@ -212,7 +212,7 @@ const Expense = () => {
                   </div>
 
                   <div
-                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-secondary
+                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-secondary-focus
 "
                   >
                     <p class=" text-xl font-semibold text-success">${income}</p>

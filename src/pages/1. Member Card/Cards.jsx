@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Card from "./components/Card";
 import InputField from "./components/InputField";
-import useLocalStrorage from "./LocalStorage";
 import toast, { Toaster } from "react-hot-toast";
+import useLocalStrorage from "../LocalStorage";
 
 function Cards() {
   const [name, setName] = useState("");

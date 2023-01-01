@@ -1,11 +1,10 @@
 import React from "react";
-import InputFieldCenter from "./4. To Do/components/InputFieldCenter";
+import InputFieldCenter from "./components/InputFieldCenter";
 import toast, { Toaster } from "react-hot-toast";
-
 import { useState } from "react";
 import { useEffect } from "react";
-import useLocalStrorage from "./LocalStorage";
-import ToDoCard from "./4. To Do/components/ToDoCard";
+import useLocalStrorage from "../LocalStorage";
+import ToDoCard from "./components/ToDoCard";
 
 const ToDo = () => {
   useEffect(() => {
@@ -17,7 +16,7 @@ const ToDo = () => {
   const [time, setTime] = useState("");
   const [data, setData] = useLocalStrorage("todo-app", [
     {
-      name: "Full-Stack Web Development at FaoTech",
+      name: "Full-Stack Engineer",
       task: "Mastering Tailwind CSS",
       date: "2022-30-12",
       time: "22:45",
