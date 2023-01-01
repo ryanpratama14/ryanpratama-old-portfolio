@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import useLocalStrorage from "../LocalStorage";
 
@@ -12,10 +12,6 @@ const ToDoCard = ({
   todo,
   markTodo,
 }) => {
-  const [count, setCounter] = useState(0);
-  const [isDone2, setIsDone2] = useState("MARK AS DONE");
-  const [word, setWord] = useState("on progress...💪");
-
   return (
     <div class="mt-2 mb-6 shadow-2xl rounded-xl w-96 md:w-96 md:mx-6 md:my-6 py-6 px-6 overflow-hidden from-white to-primary text-primary-content bg-gradient-to-br">
       <Toaster />
@@ -32,7 +28,7 @@ const ToDoCard = ({
         </div>
       </div>
       <div class="w-full">
-        <p class="font-extrabold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary-content to-neutral mb-2">
+        <p class="font-extrabold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary-content to-black mb-2">
           {taskProps}
         </p>
         <p
@@ -43,7 +39,10 @@ const ToDoCard = ({
           <br />⏰ {timeProps}
         </p>
 
-        <p class="text-stone-900 text-sm text-left mt-2">{word}</p>
+        <p class="text-stone-900 text-sm text-left mt-2">
+          {" "}
+          {todo.isDone ? "you're doing great 🙌" : "on progress...💪"}
+        </p>
       </div>
 
       <div className="card-actions justify-between mt-2">
@@ -52,7 +51,6 @@ const ToDoCard = ({
           onClick={() => {
             removeTodo(index);
             toast.error("Deleted");
-            setCounter(0);
           }}
         >
           Delete
@@ -61,22 +59,10 @@ const ToDoCard = ({
           class="btn btn-success"
           onClick={(event) => {
             markTodo(index);
-            setCounter(count + 1);
-            if (count === 0) {
-              setWord("you're doing great 🙌");
-              toast.success("Marked as done");
-              setIsDone2("TASK COMPLETED");
-            } else if (count === 1) {
-              toast("You've done it! Good job", {
-                icon: "👋",
-              });
-            } else if (count > 1) {
-              // setCounter(0);
-              event.preventDefault();
-            }
+            toast.success("Marked as done");
           }}
         >
-          {isDone2}
+          {todo.isDone ? "Task Completed" : "Mark as Done"}
         </button>
       </div>
     </div>

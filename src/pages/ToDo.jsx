@@ -23,6 +23,13 @@ const ToDo = () => {
       time: "22:45",
       isDone: false,
     },
+    {
+      name: "World Cup 2022 Final",
+      task: "France vs. Argentina",
+      date: "2022-18-12",
+      time: "22:00",
+      isDone: false,
+    },
   ]);
 
   const markTodo = (index) => {
