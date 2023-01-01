@@ -1,16 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ThemeChanger from "./ThemeChanger";
-import useReadingProgress from "./UseReadingProgress";
+// import useReadingProgress from "./UseReadingProgress";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const completion = useReadingProgress();
+  // const completion = useReadingProgress();
   return (
     <div
       class="
     sticky top-0 z-30  h-16 bg-opacity-90 backdrop-blur duration-100 
-    text-primary-content shadow font-mono 
+    text-base-content shadow font-mono 
     "
     >
       <div class="navbar flex justify-center">
@@ -34,7 +34,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
+              class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
             >
               <li>
                 <a
@@ -133,7 +133,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-52 drop-2"
+              class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-52 drop-2 text-base-content font-bold"
             >
               <li>
                 <a
@@ -198,10 +198,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <span
+        {/* <span
           style={{ transform: `translateX(${completion - 100}%)` }}
           class="absolute bg-base-content h-1 w-full bottom-0"
-        />
+        /> */}
       </div>
     </div>
   );

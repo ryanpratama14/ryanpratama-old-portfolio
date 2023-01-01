@@ -38,17 +38,17 @@ const ThemeChanger = () => {
       <div class="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] w-52 overflow-y-auto shadow-2xl mt-16">
         <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
           <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2"
-            data-set-theme="cupcake"
+            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
+            data-set-theme="pastel"
             data-act-class="outline"
           >
             <div
-              data-theme="cupcake"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              data-theme="pastel"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">cupcake</div>
+                  <div class="flex-grow text-sm font-bold">pastel</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
                     <div class="bg-primary w-2 rounded"></div>
                     <div class="bg-secondary w-2 rounded"></div>
@@ -60,17 +60,17 @@ const ThemeChanger = () => {
             </div>
           </div>
           <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
-            data-set-theme="pastel"
+            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2"
+            data-set-theme="cupcake"
             data-act-class="outline"
           >
             <div
-              data-theme="pastel"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              data-theme="cupcake"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">pastel</div>
+                  <div class="flex-grow text-sm font-bold">cupcake</div>
                   <div class="flex flex-shrink-0 flex-wrap gap-1">
                     <div class="bg-primary w-2 rounded"></div>
                     <div class="bg-secondary w-2 rounded"></div>
@@ -88,7 +88,7 @@ const ThemeChanger = () => {
           >
             <div
               data-theme="valentine"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
@@ -110,7 +110,7 @@ const ThemeChanger = () => {
           >
             <div
               data-theme="retro"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
@@ -132,7 +132,7 @@ const ThemeChanger = () => {
           >
             <div
               data-theme="night"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
@@ -154,7 +154,7 @@ const ThemeChanger = () => {
           >
             <div
               data-theme="dracula"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
@@ -177,7 +177,7 @@ const ThemeChanger = () => {
           >
             <div
               data-theme="synthwave"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
@@ -199,7 +199,7 @@ const ThemeChanger = () => {
           >
             <div
               data-theme="cyberpunk"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
             >
               <div class="grid grid-cols-5 grid-rows-3">
                 <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
