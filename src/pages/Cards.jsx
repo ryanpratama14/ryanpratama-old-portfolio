@@ -17,7 +17,7 @@ function Cards() {
   }, []);
 
   return (
-    <div class="pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b App App-header font-mono">
+    <div class="pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b App App-header font-mono -mt-[5rem]">
       {data?.map((element) => {
         return (
           <div className="mt-4 ">

@@ -12,6 +12,7 @@ const ToDoCard = ({
   todo,
   markTodo,
 }) => {
+  const [counter, setCounter] = useState(0);
   return (
     <div class="mt-2 mb-6 shadow-2xl rounded-xl w-96 md:w-96 md:mx-6 md:my-6 py-6 px-6 overflow-hidden from-white to-primary text-primary-content bg-gradient-to-br">
       <Toaster />
@@ -41,7 +42,7 @@ const ToDoCard = ({
 
         <p class="text-stone-900 text-sm text-left mt-2">
           {" "}
-          {todo.isDone ? "you're doing great 🙌" : "on progress...💪"}
+          {todo.isDone ? "" : "on progress...💪"}
         </p>
       </div>
 
@@ -59,7 +60,16 @@ const ToDoCard = ({
           class="btn btn-success"
           onClick={(event) => {
             markTodo(index);
-            toast.success("Marked as done");
+            setCounter(counter + 1);
+            if (counter === 0) {
+              toast.success("Marked as done");
+            } else if (counter === 1) {
+              toast(`You're doing great`, {
+                icon: "🙌",
+              });
+            } else {
+              event.preventDefault();
+            }
           }}
         >
           {todo.isDone ? "Task Completed" : "Mark as Done"}

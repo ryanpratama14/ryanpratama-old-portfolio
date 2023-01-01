@@ -2,15 +2,16 @@ import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import useLocalStrorage from "./LocalStorage";
 
 function Zikirapp() {
   useEffect(() => {
     document.title = "#3: Zikr App";
   }, []);
-  const [num, setNum] = useState(0);
-  const [doa, setDoa] = useState("سُـبْحانَ الله");
-  const [totalNum, setTotalNum] = useState(0);
-  const [zikir, setZikir] = useState("Start");
+  const [num, setNum] = useLocalStrorage("zikirNum", 0);
+  const [doa, setDoa] = useLocalStrorage("zikirDoa", "سُـبْحانَ الله");
+  const [totalNum, setTotalNum] = useLocalStrorage("zikirTotalNum", 0);
+  const [zikir, setZikir] = useLocalStrorage("zikirStatus", "Start");
   const navigate = useNavigate();
   const notifySuccess = () =>
     toast("The holy gate is near...", {
@@ -22,7 +23,7 @@ function Zikirapp() {
     });
 
   return (
-    <div class="pt-32 font-mono from-primary to-base-200 text-primary-content bg-gradient-to-b">
+    <div class="-mt-[5rem] pt-32 font-mono from-primary to-base-200 text-primary-content bg-gradient-to-b">
       <Toaster />
       <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
@@ -89,7 +90,7 @@ function Zikirapp() {
                   onClick={() => {
                     navigate("declare");
                   }}
-                  className="text-base-content "
+                  className="text-base-content hover:cursor-pointer"
                 >
                   here.{" "}
                 </span>
