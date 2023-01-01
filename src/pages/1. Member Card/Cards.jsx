@@ -17,16 +17,25 @@ function Cards() {
   }, []);
 
   return (
-    <div class="pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b App App-header font-mono -mt-[5rem]">
-      {data?.map((element) => {
-        return (
-          <div className="mt-4 ">
-            <Card nameProps={element.name} ageProps={element.age} />
-          </div>
-        );
-      })}
+    <div class="pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b font-mono -mt-[5rem] pb-20">
+      <div class="px-12 py-12 mx-auto max-w-xl text-center">
+        <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+          FaoTech
+          <br />
+          <span class="text-base-content">Member Card</span>
+        </h2>
+      </div>
+      <div className="flex flex-wrap justify-center items-center">
+        {data?.map((element) => {
+          return (
+            <div className="mt-4 ">
+              <Card nameProps={element.name} ageProps={element.age} />
+            </div>
+          );
+        })}
+      </div>
       <Toaster />
-      <div>
+      <div className="flex justify-center items-center flex-wrap flex-col">
         <InputField
           valueTyped={(e) => {
             setName(e);
@@ -35,8 +44,6 @@ function Cards() {
           lengthMax={20}
           placeholderValue="Your Name"
         />
-      </div>
-      <div>
         <InputField
           valueTyped={(e) => {
             setAge(e);
@@ -44,22 +51,22 @@ function Cards() {
           lengthMax={2}
           placeholderValue="18+"
         />
+        <button
+          onClick={() => {
+            if (age >= 18 && name.length > 0 && name.match(regex)) {
+              setData([...data, { name, age }]);
+              toast.success("Added");
+            } else if (name.length > 0 && name.match(regex) && age < 18) {
+              toast.error("You are underage");
+            } else {
+              toast.error("All fields are required");
+            }
+          }}
+          className="btn btn-secondary mt-6 mb-4 w-72"
+        >
+          Add new card
+        </button>
       </div>
-      <button
-        onClick={() => {
-          if (age >= 18 && name.length > 0 && name.match(regex)) {
-            setData([...data, { name, age }]);
-            toast.success("Added");
-          } else if (name.length > 0 && name.match(regex) && age < 18) {
-            toast.error("You are underage");
-          } else {
-            toast.error("All fields are required");
-          }
-        }}
-        className="btn btn-secondary mt-6 mb-4 w-72"
-      >
-        Add new card
-      </button>
     </div>
   );
 }

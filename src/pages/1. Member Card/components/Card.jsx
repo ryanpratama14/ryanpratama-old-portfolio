@@ -4,7 +4,7 @@ function Card({ nameProps, ageProps }) {
   const navigate = useNavigate();
 
   return (
-    <div className="card w-96  image-full font-mono mb-16 px-6">
+    <div className="card w-96 image-full font-mono mb-6 px-6">
       <figure>
         <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
       </figure>
