@@ -6,7 +6,7 @@ const Footer = () => {
       <footer class="footer footer-center p-4 font-mono">
         <div>
           <p class="text-base-content">
-            © 2023 FaoTech™. All Rights Reserved. <br />
+            © 2023 FaoTech. All Rights Reserved. <br />
             Made by Ryan <br />
             Special thanks to{" "}
             <a
