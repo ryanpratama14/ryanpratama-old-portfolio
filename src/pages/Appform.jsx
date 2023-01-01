@@ -167,7 +167,7 @@ function Appform() {
                   </label>
 
                   <CountryDropdown
-                    class="  input text-base-content input-bordered w-full text-base-content"
+                    class="  input input-bordered w-full text-base-content"
                     value={country}
                     onChange={(val) => setCountry(val)}
                   />
@@ -178,7 +178,7 @@ function Appform() {
                   </label>
 
                   <RegionDropdown
-                    class="  input text-base-content input-bordered w-full text-base-content"
+                    class="  input input-bordered w-full text-base-content"
                     country={country}
                     value={region}
                     onChange={(val) => setRegion(val)}
