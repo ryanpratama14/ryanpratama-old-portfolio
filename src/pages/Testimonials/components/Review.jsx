@@ -19,11 +19,9 @@ const Review = ({
       />
 
       <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-        <p class="font-bold  text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">
-          {nameProps}
-        </p>
+        <p class="font-bold  text-2xl  text-base-content">{nameProps}</p>
 
-        <p class="mt-0.5 text-s  font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-white">
+        <p class="mt-0.5 text-s  text-base-content font-bold ">
           {occupationProps}
         </p>
         {/* Social Media */}
@@ -69,9 +67,9 @@ const Review = ({
           </a>
         </div>
         {/* End of social media */}
-        <p class="mt-4 text-lg text-white">"{quoteProps}"</p>
+        <p class="mt-4 text-lg text-base-content">"{quoteProps}"</p>
 
-        <div class="mt-4 flex justify-center gap-0.5 text-yellow-500">
+        <div class="mt-4 flex justify-center gap-0.5 text-secondary-focus">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -114,7 +112,7 @@ const Review = ({
           </svg>
         </div>
         <a
-          class="btn mt-5 border-transparent hover:border-transparent text-white font-semibold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
+          class="btn mt-5 btn-secondary"
           href={linkProps}
           target="_blank"
           rel="noreferrer"

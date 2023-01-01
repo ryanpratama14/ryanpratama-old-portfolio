@@ -2,15 +2,16 @@ import "/Users/ryanpratama/Desktop/faotech-projects-app/src/App.css";
 import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import useLocalStrorage from "../LocalStorage";
 
 function Zikirapp() {
   useEffect(() => {
     document.title = "#3: Zikr App";
   }, []);
-  const [num, setNum] = useState(0);
-  const [doa, setDoa] = useState("سُـبْحانَ الله");
-  const [totalNum, setTotalNum] = useState(0);
-  const [zikir, setZikir] = useState("Start");
+  const [num, setNum] = useLocalStrorage("zikirNum", 0);
+  const [doa, setDoa] = useLocalStrorage("zikirDoa", "سُـبْحانَ الله");
+  const [totalNum, setTotalNum] = useLocalStrorage("zikirTotalNum", 0);
+  const [zikir, setZikir] = useLocalStrorage("zikirStatus", "Start");
   const navigate = useNavigate();
   const notifySuccess = () =>
     toast("The holy gate is near...", {
@@ -22,24 +23,24 @@ function Zikirapp() {
     });
 
   return (
-    <div class="font-mono ">
+    <div class="-mt-[5rem] pt-32 font-mono from-primary to-base-200 text-primary-content bg-gradient-to-b">
       <Toaster />
-      <section class=" text-white reviews" id="ceo">
+      <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-2xl text-center mb-12">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to Zikr App!
             </h2>
             <h2 class=" font-bold mt-2 text-3xl sm:text-4xl lg:text-4xl xl:text-4xl">
-              <span className="text-blue-300">
-                Pray, <span class="text-red-300">Pray, </span>
+              <span className="text-base-content">
+                Pray, <span class="text-base-content">Pray, </span>
                 Pray.
               </span>
             </h2>
           </div>
           <div class="text-center mt-20">
-            <p class="mb-2 text-white dark:text-white">{num}</p>
-            <p class="text-5xl text-white dark:text-white">{doa}</p>
+            <p class="mb-2 text-primary-content">{num}</p>
+            <p class="text-5xl text-base-content">{doa}</p>
           </div>
           <div class="flex flex-col flex-wrap justify-center items-center text-center">
             <button
@@ -63,7 +64,7 @@ function Zikirapp() {
                   notifySuccess2();
                 }
               }}
-              class="btn mt-5 border-transparent hover:border-transparent text-white font-semibold rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-indigo-600 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-700"
+              class="btn mt-6  btn-success  w-44 px-5 py-2.5"
             >
               {zikir}
             </button>
@@ -75,21 +76,21 @@ function Zikirapp() {
                 setZikir("Start");
                 setDoa("سُـبْحانَ الله");
               }}
-              class="font-semibold  btn mt-3 border-transparent hover:border-transparent text-white rounded-lg text-sm w-44 px-5 py-2.5 text-center bg-violet-600 dark:bg-violet-600 hover:bg-violet-700 dark:hover:bg-violet-700"
+              class="btn mt-3  btn-error  w-44 px-5 py-2.5"
             >
               Reset
             </button>
           </div>
 
           <div class="mx-auto max-w-xl text-center mt-12">
-            <h2 className="text-white text-4xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
-              <span className="text-white ">
+            <h2 className="text-4xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
+              <span className=" ">
                 Declare your faith{" "}
                 <span
                   onClick={() => {
                     navigate("declare");
                   }}
-                  className="text-blue-300 "
+                  className="text-base-content hover:cursor-pointer"
                 >
                   here.{" "}
                 </span>

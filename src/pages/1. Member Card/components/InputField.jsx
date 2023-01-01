@@ -1,4 +1,4 @@
-export default function InputFieldInt({
+export default function InputField({
   placeholderValue,
   type,
   valueTyped,
@@ -6,9 +6,9 @@ export default function InputFieldInt({
   fieldProps,
 }) {
   return (
-    <div class="text-center text-black dark:text-white w-full items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
+    <div class="text-center text-base-content w-96 items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
       <div class="mt-4">
-        <label class="block mb-2 text-m font-medium text-left text-white dark:text-white">
+        <label class="block mb-2 text-m font-medium text-left text-base-content">
           {fieldProps}
         </label>
         <input
@@ -18,7 +18,7 @@ export default function InputFieldInt({
           placeholder={placeholderValue}
           className="input input-bordered w-full"
           onChange={(e) => {
-            valueTyped(parseInt(e.target.value));
+            valueTyped(e.target.value);
           }}
         />
       </div>
