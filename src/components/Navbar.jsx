@@ -1,11 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import ThemeChanger from "./ThemeChanger";
 // import useReadingProgress from "./UseReadingProgress";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   // const completion = useReadingProgress();
+  let activeClassName = "bg-primary my-0.5";
   return (
     <div
       class="
@@ -37,88 +37,89 @@ const Navbar = () => {
               class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
             >
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/cards");
-                  }}
+                <NavLink
+                  to="/cards"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : "my-0.5"
+                  }
                 >
                   #1: Member Card
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/appform");
-                  }}
+                <NavLink
+                  to="/appform"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : "my-0.5"
+                  }
                 >
                   #2: Form App
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/zikrapp");
-                  }}
+                <NavLink
+                  to="/zikirapp"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : "my-0.5"
+                  }
                 >
                   #3: Zikr App
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/todoapp");
-                  }}
+                <NavLink
+                  to="/todoapp"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : "my-0.5"
+                  }
                 >
                   #4: To Do List App
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/financial-tracker");
-                  }}
+                <NavLink
+                  to="/financial-tracker"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : "my-0.5"
+                  }
                 >
                   #5: Financial Tracker App
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/reviews");
-                  }}
+                <NavLink
+                  to="/reviews"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : "my-0.5"
+                  }
                 >
                   Reviews
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/about");
-                  }}
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : "my-0.5"
+                  }
                 >
                   About
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
         </div>
         <div class="navbar-center">
-          <a
-            href
-            onClick={() => {
-              navigate("/");
-            }}
-            class="btn btn-ghost normal-case text-2xl "
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "btn btn-ghost normal-case text-2xl"
+                : "btn btn-ghost normal-case text-2xl"
+            }
           >
             Homepage
-          </a>
+          </NavLink>
         </div>
         <div class="navbar-end ">
           <ThemeChanger />
