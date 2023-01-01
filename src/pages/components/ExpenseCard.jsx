@@ -41,10 +41,9 @@ const ExpenseCard = ({
               </div>
 
               <div
-                style={{
-                  color: payload.type === "EXPENSE" ? "#f87171" : "#34d399",
-                }}
-                class="inline-flex items-center text-base font-semibold"
+                class={`${
+                  payload.type === "EXPENSE" ? "text-error" : "text-success"
+                } inline-flex items-center text-base font-semibold`}
               >
                 {payload.type === "EXPENSE" ? "-" : "+"}${amountProps}
               </div>

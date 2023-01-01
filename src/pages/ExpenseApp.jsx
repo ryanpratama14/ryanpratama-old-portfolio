@@ -90,7 +90,7 @@ const Expense = () => {
           <section class="flex flex-wrap justify-around items-center w-full">
             <div>
               <div class="md:w-96 w-80 mx-2 my-2 mb-16">
-                <div class="p-4 max-w-md rounded-lg border shadow-lg sm:p-8 bg-base-100">
+                <div class="p-4 max-w-md rounded-lg  shadow-2xl sm:p-8 bg-base-100">
                   <div class="flex justify-between items-center">
                     <h3 class="font-extrabold  text-2xl text-base-content tracking-tighter">
                       BALANCE
@@ -115,7 +115,7 @@ const Expense = () => {
                           required
                           type="number"
                           placeholder="$3450"
-                          className="input input-bordered w-full"
+                          className="input input-bordered w-full text-base-content"
                           onChange={(e) => {
                             setAmount(parseInt(e.target.value));
                           }}
@@ -129,7 +129,7 @@ const Expense = () => {
                           required
                           type="date"
                           placeholder="12/12/2023"
-                          className="input input-bordered w-full"
+                          className="input input-bordered w-full text-base-content"
                           onChange={(e) => {
                             setDate(e.target.value);
                           }}
@@ -143,7 +143,7 @@ const Expense = () => {
                           required
                           type="text"
                           placeholder="BTS Concert"
-                          className="input input-bordered w-full"
+                          className="input input-bordered w-full text-base-content"
                           onChange={(e) => {
                             setDesc(e.target.value);
                           }}
@@ -212,7 +212,7 @@ const Expense = () => {
                   </div>
 
                   <div
-                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-secondary-focus
+                    className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-secondary
 "
                   >
                     <p class=" text-xl font-semibold text-success">${income}</p>
@@ -225,7 +225,7 @@ const Expense = () => {
                   </div>
                   <input
                     placeholder="Search transaction..."
-                    class="input input-bordered input-sm w-full mt-4"
+                    class="input input-bordered border-base-content input-sm w-full mt-4 text-base-content"
                     onChange={(e) => {
                       updateSearchText(e.target.value);
                       filterData(e.target.value);

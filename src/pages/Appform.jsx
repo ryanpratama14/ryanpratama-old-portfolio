@@ -87,11 +87,11 @@ function Appform() {
             <div class="w-full text-left mt-16">
               <div class="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
-                  <label class="block mb-2 text-m font-medium  text-base-content">
+                  <label class="block mb-2 text-m font-medium text-base-content">
                     First Name
                   </label>
                   <input
-                    class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                    class=" input text-base-content input-bordered w-full"
                     placeholder="Ryan"
                     required
                     maxLength={20}
@@ -103,7 +103,7 @@ function Appform() {
                     Last Name
                   </label>
                   <input
-                    class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                    class=" border input text-base-content input-bordered w-full"
                     placeholder="Pratama"
                     required
                     maxLength={20}
@@ -115,7 +115,7 @@ function Appform() {
                     Age
                   </label>
                   <input
-                    class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                    class=" border input text-base-content input-bordered w-full"
                     placeholder="18+ only"
                     required
                     maxLength={2}
@@ -127,7 +127,7 @@ function Appform() {
                     Phone Number
                   </label>
                   <input
-                    class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                    class=" border input text-base-content input-bordered w-full"
                     placeholder="8 996 100 52 02"
                     required
                     maxLength={16}
@@ -140,7 +140,7 @@ function Appform() {
                   Instagram Username
                 </label>
                 <input
-                  class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                  class=" border input text-base-content input-bordered w-full"
                   placeholder="@ryanpratama14"
                   required
                   maxLength={30}
@@ -153,7 +153,7 @@ function Appform() {
                 </label>
                 <input
                   maxLength={30}
-                  class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                  class=" border input text-base-content input-bordered w-full"
                   placeholder="partnership@faotech.com"
                   required
                   onChange={(e) => setEmail(e.target.value)}
@@ -167,7 +167,7 @@ function Appform() {
                   </label>
 
                   <CountryDropdown
-                    class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                    class="  input text-base-content input-bordered w-full text-base-content"
                     value={country}
                     onChange={(val) => setCountry(val)}
                   />
@@ -178,7 +178,7 @@ function Appform() {
                   </label>
 
                   <RegionDropdown
-                    class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                    class="  input text-base-content input-bordered w-full text-base-content"
                     country={country}
                     value={region}
                     onChange={(val) => setRegion(val)}
@@ -192,7 +192,7 @@ function Appform() {
                 </label>
                 <input
                   maxLength={50}
-                  class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-base-100"
+                  class="input text-base-content input-bordered w-full"
                   placeholder="Jackson Street 91"
                   required
                   onChange={(e) => setAddress(e.target.value)}

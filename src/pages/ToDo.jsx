@@ -72,7 +72,7 @@ const ToDo = () => {
           <div class="flex justify-center">
             <input
               placeholder="Search task..."
-              class="input input-bordered input-sm w-96 mt-4 mb-3"
+              class="input input-bordered input-sm w-96 mt-4 mb-3 text-base-content"
               onChange={(e) => {
                 updateSearchText(e.target.value);
                 filterData(e.target.value);
