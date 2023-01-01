@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ThemeChanger from "./ThemeChanger";
-import useReadingProgress from "./UseReadingProgress";
+// import useReadingProgress from "./UseReadingProgress";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const completion = useReadingProgress();
+  // const completion = useReadingProgress();
   return (
     <div
       class="
@@ -198,10 +198,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <span
+        {/* <span
           style={{ transform: `translateX(${completion - 100}%)` }}
           class="absolute bg-base-content h-1 w-full bottom-0"
-        />
+        /> */}
       </div>
     </div>
   );
