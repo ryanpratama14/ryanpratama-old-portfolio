@@ -44,7 +44,7 @@ const Declare = () => {
                   notifySuccess2();
                 }
               }}
-              class="btn mt-5  btn-error  w-44 px-5 py-2.5"
+              class="btn mt-5 btn-success w-44 px-5 py-2.5"
             >
               {button}
             </button>
