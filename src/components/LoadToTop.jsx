@@ -26,13 +26,14 @@ const LoadToTop = () => {
     <div
       class={
         visible
-          ? "flex items-end justify-end fixed bottom-0 right-0 mb-16 mr-4 z-10"
+          ? "flex justify-center items-center fixed bottom-0 right-0 mb-16 z-10 transition-all transform scale-120 btn btn-ghost hover:bg-transparent"
           : "hidden"
       }
     >
       <div>
         <a
           href
+          rel="noreferrer"
           onClick={scrollToTop}
           class="block transition-all transform hover:scale-110 hover:-translate-y-2 duration-400 cursor-pointer "
         >

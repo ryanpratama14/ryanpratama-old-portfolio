@@ -8,6 +8,7 @@ const Instagram = () => {
         <a
           title="Follow me on Instagram"
           href="https://www.instagram.com/ryanpratama14"
+          rel="noreferrer"
           target="_blank"
           class="block transition-all transform hover:scale-110  duration-400 "
         >
