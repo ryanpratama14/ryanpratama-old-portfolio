@@ -26,7 +26,7 @@ export const linkSocial = [
   },
   {
     linkSocial: "https://vk.com/ryanpratama",
-    socialMedia: "ВКонтактке",
+    socialMedia: "VKontakte",
     label: "vk",
   },
 ];
