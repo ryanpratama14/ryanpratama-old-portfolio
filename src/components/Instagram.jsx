@@ -8,7 +8,7 @@ const Instagram = () => {
           title="Follow me on Instagram"
           href="https://www.instagram.com/ryanpratama14"
           target="_blank"
-          class="block w-10 h-10 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+          class="block w-10 h-10 rounded-full  shadow hover:shadow-lg transition-all transform hover:scale-110 hover:rotate-12"
         >
           <img
             class="object-cover object-center w-full h-full rounded-full"

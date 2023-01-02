@@ -15,6 +15,7 @@ import Appform from "./pages/2. Form App/Appform";
 import Zikirapp from "./pages/3. Zikr App/Zikirapp";
 import Declare from "./pages/3. Zikr App/Declare";
 import { motion } from "framer-motion";
+import LoadToTop from "./components/LoadToTop";
 
 export default function Routing() {
   return (
@@ -38,6 +39,7 @@ export default function Routing() {
           <Route path="*" element={<App />} />
         </Routes>
         <Instagram />
+        <LoadToTop />
         <Footer />
       </motion.div>
     </HashRouter>

@@ -7,6 +7,12 @@ import { linkSocial } from "../store/helper/NavbarSocial";
 
 const Navbar = () => {
   // const completion = useReadingProgress();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   let activeClassName = "bg-primary my-0.5";
   return (
     <div
@@ -46,6 +52,9 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         isActive ? activeClassName : "my-0.5"
                       }
+                      onClick={() => {
+                        scrollToTop();
+                      }}
                     >
                       {e.label}
                     </NavLink>
@@ -63,6 +72,9 @@ const Navbar = () => {
                 ? "btn btn-ghost normal-case text-2xl"
                 : "btn btn-ghost normal-case text-2xl"
             }
+            onClick={() => {
+              scrollToTop();
+            }}
           >
             Homepage
           </NavLink>
