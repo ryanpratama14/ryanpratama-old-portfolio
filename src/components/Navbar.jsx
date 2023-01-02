@@ -13,7 +13,7 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
-  let activeClassName = "bg-primary my-0.5";
+  let activeClassName = "bg-primary active:bg-primary-focus my-0.5";
   return (
     <div
       class="
@@ -92,18 +92,18 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-52 drop-2 text-base-content font-bold"
+              class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
             >
               <li>
                 {linkSocial.map((e) => {
                   return (
                     <a
-                      class="justify-between"
+                      class="justify-between items-center active:bg-primary-focus hover:bg-primary"
                       target="_blank"
                       rel="noreferrer"
                       href={e.linkSocial}
                     >
-                      {e.socialMedia} <span class="badge">{e.label}</span>
+                      {e.socialMedia} <span>{e.label}</span>
                     </a>
                   );
                 })}

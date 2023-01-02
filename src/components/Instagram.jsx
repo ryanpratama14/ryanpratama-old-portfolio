@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 
 const Instagram = () => {
   return (
@@ -8,11 +9,13 @@ const Instagram = () => {
           title="Follow me on Instagram"
           href="https://www.instagram.com/ryanpratama14"
           target="_blank"
-          class="block w-10 h-10 rounded-full  shadow hover:shadow-lg transition-all transform hover:scale-110 hover:rotate-12"
+          class="block transition-all transform hover:scale-110 hover:-translate-y-2 duration-400 "
         >
-          <img
-            class="object-cover object-center w-full h-full rounded-full"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+          <Icon
+            icon="mdi:instagram"
+            width="40"
+            class="text-primary"
+            height="40"
           />
         </a>
       </div>

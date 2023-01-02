@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -16,32 +16,48 @@ import Zikirapp from "./pages/3. Zikr App/Zikirapp";
 import Declare from "./pages/3. Zikr App/Declare";
 import { motion } from "framer-motion";
 import LoadToTop from "./components/LoadToTop";
+import Loading from "react-fullscreen-loading";
+import { themeChange } from "theme-change";
 
 export default function Routing() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    themeChange(false);
+  }, []);
+  useEffect(() => {
+    let loadingTimer = setTimeout(() => setLoading(true), 1.1 * 1000);
+    return () => {
+      clearTimeout(loadingTimer);
+    };
+  }, []);
   return (
     <HashRouter>
-      <motion.div
-        initial={{ opacity: 0.5 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<App />} />
-          <Route path="/zikrapp" element={<Zikirapp />} />
-          <Route path="/zikrapp/declare" element={<Declare />} />
-          <Route path="/reviews" element={<Testimonial />} />
-          <Route path="/cards" element={<Cards />} />
-          <Route path="/todoapp" element={<ToDo />} />
-          <Route path="/appform" element={<Appform />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/financial-tracker" element={<ExpenseApp />} />
-          <Route path="*" element={<App />} />
-        </Routes>
-        <Instagram />
-        <LoadToTop />
-        <Footer />
-      </motion.div>
+      {loading ? (
+        <motion.div
+          initial={{ opacity: 0.5 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<App />} />
+            <Route path="/zikrapp" element={<Zikirapp />} />
+            <Route path="/zikrapp/declare" element={<Declare />} />
+            <Route path="/reviews" element={<Testimonial />} />
+            <Route path="/cards" element={<Cards />} />
+            <Route path="/todoapp" element={<ToDo />} />
+            <Route path="/appform" element={<Appform />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/financial-tracker" element={<ExpenseApp />} />
+            <Route path="*" element={<App />} />
+          </Routes>
+          <Instagram />
+          <LoadToTop />
+          <Footer />
+        </motion.div>
+      ) : (
+        <Loading loading background="bg-primary"></Loading>
+      )}
     </HashRouter>
   );
 }
