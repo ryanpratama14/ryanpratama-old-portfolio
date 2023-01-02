@@ -1,11 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import ThemeChanger from "./ThemeChanger";
 // import useReadingProgress from "./UseReadingProgress";
+import { NavLink } from "react-router-dom";
+import { navbarOptions } from "../store/helper/NavbarOptions";
+import { linkSocial } from "../store/helper/NavbarSocial";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   // const completion = useReadingProgress();
+  let activeClassName = "bg-primary my-0.5";
   return (
     <div
       class="
@@ -37,88 +39,33 @@ const Navbar = () => {
               class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
             >
               <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/cards");
-                  }}
-                >
-                  #1: Member Card
-                </a>
-              </li>
-              <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/appform");
-                  }}
-                >
-                  #2: Form App
-                </a>
-              </li>
-              <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/zikrapp");
-                  }}
-                >
-                  #3: Zikr App
-                </a>
-              </li>
-              <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/todoapp");
-                  }}
-                >
-                  #4: To Do List App
-                </a>
-              </li>
-              <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/financial-tracker");
-                  }}
-                >
-                  #5: Financial Tracker App
-                </a>
-              </li>
-              <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/reviews");
-                  }}
-                >
-                  Reviews
-                </a>
-              </li>
-              <li>
-                <a
-                  href
-                  onClick={() => {
-                    navigate("/about");
-                  }}
-                >
-                  About
-                </a>
+                {navbarOptions.map((e) => {
+                  return (
+                    <NavLink
+                      to={e.to}
+                      className={({ isActive }) =>
+                        isActive ? activeClassName : "my-0.5"
+                      }
+                    >
+                      {e.label}
+                    </NavLink>
+                  );
+                })}
               </li>
             </ul>
           </div>
         </div>
         <div class="navbar-center">
-          <a
-            href
-            onClick={() => {
-              navigate("/");
-            }}
-            class="btn btn-ghost normal-case text-2xl "
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "btn btn-ghost normal-case text-2xl"
+                : "btn btn-ghost normal-case text-2xl"
+            }
           >
             Homepage
-          </a>
+          </NavLink>
         </div>
         <div class="navbar-end ">
           <ThemeChanger />
@@ -136,64 +83,18 @@ const Navbar = () => {
               class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-52 drop-2 text-base-content font-bold"
             >
               <li>
-                <a
-                  class="justify-between"
-                  href="mailto:ru.ryanpratama@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Email <span class="badge">@</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://www.linkedin.com/in/ryanpratama14"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn <span class="badge">in</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://www.instagram.com/ryanpratama14"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Instagram<span class="badge">ig</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://t.me/ryanpratama14"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Telegram<span class="badge">tg</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://wa.me/+79961005202"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  WhatsApp<span class="badge">wa</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://vk.com/ryanpratama"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ВКонтакте<span class="badge">vk</span>
-                </a>
+                {linkSocial.map((e) => {
+                  return (
+                    <a
+                      class="justify-between"
+                      target="_blank"
+                      rel="noreferrer"
+                      href={e.linkSocial}
+                    >
+                      {e.socialMedia} <span class="badge">{e.label}</span>
+                    </a>
+                  );
+                })}
               </li>
             </ul>
           </div>
