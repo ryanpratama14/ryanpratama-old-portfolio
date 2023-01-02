@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { themeChange } from "theme-change";
+import { dataTheme } from "../store/DataTheme";
 
 const ThemeChanger = () => {
   useEffect(() => {
@@ -34,186 +35,34 @@ const ThemeChanger = () => {
           <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
         </svg>
       </div>
-
       <div class="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] w-52 overflow-y-auto shadow-2xl mt-16">
         <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
-            data-set-theme="pastel"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="pastel"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">pastel</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
+          {dataTheme.map((e) => {
+            return (
+              <div
+                class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
+                data-set-theme={e.theme}
+                data-act-class="outline"
+              >
+                <div
+                  data-theme={e.theme}
+                  class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
+                >
+                  <div class="grid grid-cols-5 grid-rows-3">
+                    <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
+                      <div class="flex-grow text-sm font-bold">{e.theme}</div>
+                      <div class="flex flex-shrink-0 flex-wrap gap-1">
+                        <div class="bg-primary w-2 rounded"></div>
+                        <div class="bg-secondary w-2 rounded"></div>
+                        <div class="bg-accent w-2 rounded"></div>
+                        <div class="bg-neutral w-2 rounded"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2"
-            data-set-theme="cupcake"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="cupcake"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">cupcake</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
-            data-set-theme="valentine"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="valentine"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">valentine</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2"
-            data-set-theme="retro"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="retro"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">retro</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
-            data-set-theme="night"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="night"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">night</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
-            data-set-theme="dracula"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="dracula"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">dracula</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2 outline"
-            data-set-theme="synthwave"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="synthwave"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">synthwave</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2"
-            data-set-theme="cyberpunk"
-            data-act-class="outline"
-          >
-            <div
-              data-theme="cyberpunk"
-              class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
-            >
-              <div class="grid grid-cols-5 grid-rows-3">
-                <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                  <div class="flex-grow text-sm font-bold">cyberpunk</div>
-                  <div class="flex flex-shrink-0 flex-wrap gap-1">
-                    <div class="bg-primary w-2 rounded"></div>
-                    <div class="bg-secondary w-2 rounded"></div>
-                    <div class="bg-accent w-2 rounded"></div>
-                    <div class="bg-neutral w-2 rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>

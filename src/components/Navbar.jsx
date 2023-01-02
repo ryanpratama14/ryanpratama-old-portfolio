@@ -2,6 +2,8 @@ import React from "react";
 import ThemeChanger from "./ThemeChanger";
 // import useReadingProgress from "./UseReadingProgress";
 import { NavLink } from "react-router-dom";
+import { navbarOptions } from "../store/helper/NavbarOptions";
+import { linkSocial } from "../store/helper/NavbarSocial";
 
 const Navbar = () => {
   // const completion = useReadingProgress();
@@ -37,74 +39,18 @@ const Navbar = () => {
               class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
             >
               <li>
-                <NavLink
-                  to="/cards"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : "my-0.5"
-                  }
-                >
-                  #1: Member Card
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/appform"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : "my-0.5"
-                  }
-                >
-                  #2: Form App
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/zikirapp"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : "my-0.5"
-                  }
-                >
-                  #3: Zikr App
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/todoapp"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : "my-0.5"
-                  }
-                >
-                  #4: To Do List App
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/financial-tracker"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : "my-0.5"
-                  }
-                >
-                  #5: Financial Tracker App
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/reviews"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : "my-0.5"
-                  }
-                >
-                  Reviews
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : "my-0.5"
-                  }
-                >
-                  About
-                </NavLink>
+                {navbarOptions.map((e) => {
+                  return (
+                    <NavLink
+                      to={e.to}
+                      className={({ isActive }) =>
+                        isActive ? activeClassName : "my-0.5"
+                      }
+                    >
+                      {e.label}
+                    </NavLink>
+                  );
+                })}
               </li>
             </ul>
           </div>
@@ -137,64 +83,18 @@ const Navbar = () => {
               class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-52 drop-2 text-base-content font-bold"
             >
               <li>
-                <a
-                  class="justify-between"
-                  href="mailto:ru.ryanpratama@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Email <span class="badge">@</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://www.linkedin.com/in/ryanpratama14"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn <span class="badge">in</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://www.instagram.com/ryanpratama14"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Instagram<span class="badge">ig</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://t.me/ryanpratama14"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Telegram<span class="badge">tg</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://wa.me/+79961005202"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  WhatsApp<span class="badge">wa</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="justify-between"
-                  href="https://vk.com/ryanpratama"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ВКонтакте<span class="badge">vk</span>
-                </a>
+                {linkSocial.map((e) => {
+                  return (
+                    <a
+                      class="justify-between"
+                      target="_blank"
+                      rel="noreferrer"
+                      href={e.linkSocial}
+                    >
+                      {e.socialMedia} <span class="badge">{e.label}</span>
+                    </a>
+                  );
+                })}
               </li>
             </ul>
           </div>
