@@ -9,7 +9,7 @@ const Instagram = () => {
           title="Follow me on Instagram"
           href="https://www.instagram.com/ryanpratama14"
           target="_blank"
-          class="block transition-all transform hover:scale-110 hover:-translate-y-2 duration-400 "
+          class="block transition-all transform hover:scale-110  duration-400 "
         >
           <Icon
             icon="mdi:instagram"

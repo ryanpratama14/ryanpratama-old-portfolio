@@ -26,7 +26,7 @@ const LoadToTop = () => {
     <div
       class={
         visible
-          ? "flex items-end justify-end fixed bottom-0 left-0 mb-4 ml-4 z-10"
+          ? "flex items-end justify-end fixed bottom-0 right-0 mb-16 mr-4 z-10"
           : "hidden"
       }
     >
