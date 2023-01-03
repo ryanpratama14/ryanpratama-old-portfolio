@@ -69,8 +69,8 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "btn btn-ghost normal-case text-2xl"
-                : "btn btn-ghost normal-case text-2xl"
+                ? "btn btn-ghost normal-case font-bold text-2xl"
+                : "btn btn-ghost normal-case font-bold text-2xl"
             }
             onClick={() => {
               scrollToTop();
@@ -111,10 +111,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        {/* <span
+        <span
           style={{ transform: `translateX(${completion - 100}%)` }}
           class="absolute bg-base-content h-1 w-full bottom-0"
-        /> */}
+        />
       </div>
     </div>
   );
