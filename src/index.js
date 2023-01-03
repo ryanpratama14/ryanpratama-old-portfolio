@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { HashRouter, Routes, Route } from "react-router-dom";
 import Instagram from "./components/Instagram";
-import { motion } from "framer-motion";
 import LoadToTop from "./components/LoadToTop";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { motion } from "framer-motion";
 import Loading from "react-fullscreen-loading";
 import { themeChange } from "theme-change";
 import { routeOptions } from "./store/helper/Routes";
@@ -17,7 +17,7 @@ export default function Routing() {
     themeChange(false);
   }, []);
   useEffect(() => {
-    let loadingTimer = setTimeout(() => setLoading(true), 1.1 * 1000);
+    let loadingTimer = setTimeout(() => setLoading(true), 1 * 1000);
     return () => {
       clearTimeout(loadingTimer);
     };
