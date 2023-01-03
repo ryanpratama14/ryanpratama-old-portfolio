@@ -46,7 +46,7 @@ const ThemeChanger = () => {
               >
                 <div
                   data-theme={e.theme}
-                  class="bg-base-100 text-base-content w-full cursor-pointer font-mono"
+                  class="bg-base-100 text-base-content w-full cursor-pointer"
                 >
                   <div class="grid grid-cols-5 grid-rows-3">
                     <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">

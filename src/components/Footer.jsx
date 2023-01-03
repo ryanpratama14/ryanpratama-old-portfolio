@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div class="bg-base-200 text-base-content">
-      <footer class="footer footer-center p-4 font-mono">
+      <footer class="footer footer-center p-4">
         <div>
           <p class="text-base-content">
             © 2023 FaoTech. All Rights Reserved. <br />

@@ -32,7 +32,7 @@ const Declare = () => {
           </div>
           <div class="text-center mt-32">
             <p class="text-2xl mb-6 text-primary-content">repeat:</p>
-            <p class="text-3xl text-base-content">{word}</p>
+            <p class="text-5xl text-base-content">{word}</p>
           </div>
           <div class="flex flex-col flex-wrap justify-center items-center text-center">
             <button
@@ -44,7 +44,7 @@ const Declare = () => {
                   notifySuccess2();
                 }
               }}
-              class="btn mt-5 btn-success w-44 px-5 py-2.5"
+              class="btn mt-10 btn-success w-44 px-5 py-2.5"
             >
               {button}
             </button>

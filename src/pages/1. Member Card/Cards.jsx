@@ -17,7 +17,7 @@ function Cards() {
   }, []);
 
   return (
-    <div class="pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b font-mono -mt-[5rem] pb-20">
+    <div class="pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b -mt-[5rem] pb-20">
       <div class="px-12 py-12 mx-auto max-w-xl text-center">
         <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
           FaoTech

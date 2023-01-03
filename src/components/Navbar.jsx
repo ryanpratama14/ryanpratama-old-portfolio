@@ -18,7 +18,7 @@ const Navbar = () => {
     <div
       class="
     sticky top-0 z-30  h-16 bg-opacity-90 backdrop-blur duration-100 
-    text-base-content shadow font-mono 
+    text-base-content shadow
     "
     >
       <div class="navbar flex justify-center">

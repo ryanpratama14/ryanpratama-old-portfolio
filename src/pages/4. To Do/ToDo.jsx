@@ -63,7 +63,7 @@ const ToDo = () => {
   }, [data]);
 
   return (
-    <div class="-mt-[5rem] pt-32 font-mono from-primary to-base-200 text-primary-content bg-gradient-to-b">
+    <div class="-mt-[5rem] pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b">
       <Toaster />
       <section>
         <div class="px-12 py-12">
