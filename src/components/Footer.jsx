@@ -1,13 +1,15 @@
 import React from "react";
+import BackgroundDaisy from "./BackgroundDaisy";
 
 const Footer = () => {
   return (
-    <div class="bg-base-200 text-base-content">
-      <footer class="footer footer-center p-4 font-mono">
+    <div class="from-secondary to-secondary-focus bg-gradient-to-b text-primary-content ">
+      <footer class="footer footer-center p-4 sm:md:lg:text-base">
         <div>
-          <p class="text-base-content">
-            © 2023 FaoTech. All Rights Reserved. <br />
-            Made by Ryan <br />
+          <p>
+            © 2023 FaoTech. All rights reserved. <br />
+            Made by Ryan 👨‍💻
+            <br />
             Special thanks to{" "}
             <a
               target="_blank"
@@ -30,6 +32,7 @@ const Footer = () => {
           </p>
         </div>
       </footer>
+      <BackgroundDaisy />
     </div>
   );
 };

@@ -1,18 +1,24 @@
 import React from "react";
 import ThemeChanger from "./ThemeChanger";
-// import useReadingProgress from "./UseReadingProgress";
+import useReadingProgress from "./UseReadingProgress";
 import { NavLink } from "react-router-dom";
-import { navbarOptions } from "../store/helper/NavbarOptions";
 import { linkSocial } from "../store/helper/NavbarSocial";
+import { routeNavbarOptions } from "../store/helper/Routes";
 
 const Navbar = () => {
-  // const completion = useReadingProgress();
-  let activeClassName = "bg-primary my-0.5";
+  const completion = useReadingProgress();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  let activeClassName = "bg-primary  text-primary-content my-0.5";
   return (
     <div
       class="
     sticky top-0 z-30  h-16 bg-opacity-90 backdrop-blur duration-100 
-    text-base-content shadow font-mono 
+    text-primary-content shadow
     "
     >
       <div class="navbar flex justify-center">
@@ -39,13 +45,16 @@ const Navbar = () => {
               class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
             >
               <li>
-                {navbarOptions.map((e) => {
+                {routeNavbarOptions.map((e) => {
                   return (
                     <NavLink
-                      to={e.to}
+                      to={e.path}
                       className={({ isActive }) =>
                         isActive ? activeClassName : "my-0.5"
                       }
+                      onClick={() => {
+                        scrollToTop();
+                      }}
                     >
                       {e.label}
                     </NavLink>
@@ -60,9 +69,12 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "btn btn-ghost normal-case text-2xl"
-                : "btn btn-ghost normal-case text-2xl"
+                ? "btn btn-ghost normal-case font-bold text-2xl"
+                : "btn btn-ghost normal-case font-bold text-2xl"
             }
+            onClick={() => {
+              scrollToTop();
+            }}
           >
             Homepage
           </NavLink>
@@ -80,18 +92,18 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-52 drop-2 text-base-content font-bold"
+              class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
             >
               <li>
                 {linkSocial.map((e) => {
                   return (
                     <a
-                      class="justify-between"
+                      class="justify-between items-center active:bg-primary-focus hover:bg-primary"
                       target="_blank"
                       rel="noreferrer"
                       href={e.linkSocial}
                     >
-                      {e.socialMedia} <span class="badge">{e.label}</span>
+                      {e.socialMedia} <span>{e.label}</span>
                     </a>
                   );
                 })}
@@ -99,10 +111,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        {/* <span
+        <span
           style={{ transform: `translateX(${completion - 100}%)` }}
           class="absolute bg-base-content h-1 w-full bottom-0"
-        /> */}
+        />
       </div>
     </div>
   );

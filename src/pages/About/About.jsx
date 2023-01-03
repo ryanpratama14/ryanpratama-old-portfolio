@@ -5,13 +5,13 @@ const About = () => {
     document.title = "FaoTech: About";
   }, []);
   return (
-    <div className="-mt-[5rem] pt-32 font-mono from-primary to-base-200 text-base-content bg-gradient-to-b">
+    <div className="-mt-[5rem] pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
       <section>
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl text-primary-content">
               Meet <span class="text-primary-content">our</span>{" "}
-              <span class="text-base-content">CEO</span>
+              <span class="">CEO</span>
             </h2>
           </div>
 
@@ -24,12 +24,10 @@ const About = () => {
               />
 
               <blockquote class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-                <p class="font-bold  text-2xl text-base-content">
+                <p class="font-bold  text-2xl ">
                   Fakhrul Oktavian
                   <br />
-                  <span class="font-bold  text-xl text-base-content">
-                    Instructor
-                  </span>
+                  <span class="font-bold  text-xl ">Instructor</span>
                 </p>
                 <div class="flex items-center justify-center mt-2">
                   <a
@@ -72,14 +70,14 @@ const About = () => {
                     />
                   </a>
                 </div>
-                <p class="mt-4 text-lg text-base-content lg:w-96 md:w-96 sm:w-96">
+                <p class="mt-4 text-lg  lg:w-96 md:w-96 sm:w-96  font-semibold">
                   "For me, it matters that we drive tech as an equalizing force,
                   as an enabler for everyone around the world. Feel free to
                   join."
                 </p>
 
                 <a
-                  class="btn mt-5 btn-secondary"
+                  class="btn mt-5 btn-secondary-focus"
                   href="https://www.instagram.com/fao30/"
                   target="_blank"
                   rel="noreferrer"

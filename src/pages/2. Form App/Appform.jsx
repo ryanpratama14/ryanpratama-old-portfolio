@@ -4,9 +4,9 @@ import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 
 function Appform() {
   useEffect(() => {
-    document.title = "#2: App Form";
+    document.title = "#2: Form App";
   }, []);
-  const [word, setWord] = useState("Note: valid answers only");
+  const [word, setWord] = useState("valid answers only");
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [telephoneNum, setTelephoneNum] = useState("");
@@ -41,16 +41,16 @@ function Appform() {
       region.length > 0 &&
       address.length > 0
     ) {
-      setWord("All done!");
+      setWord("all done!");
       isFilledAll.current = true;
       // console.log("KEISI SEMUA MANTAPPU JIWA");
     } else {
-      setWord("Note: valid answers only");
+      setWord("valid answers only");
       isFilledAll.current = false;
       // console.log("ISI SEMUA DONG");
     }
     if (age < 18) {
-      setWord("You are underage");
+      setWord("you're underage");
     }
   }, [
     fName,
@@ -67,7 +67,7 @@ function Appform() {
   ]);
 
   return (
-    <div className="-mt-[5rem] pt-32 App from-primary to-base-200 text-primary-content bg-gradient-to-b font-mono">
+    <div className="-mt-[5rem] pt-32 App from-primary to-secondary text-primary-content bg-gradient-to-b">
       <Toaster />
       <div className="ceo">
         {/* This is Title */}
@@ -78,8 +78,8 @@ function Appform() {
             </h2>
             <br />
             <h2 class="text-3xl font-bold tracking-tight sm:text-5xl">
-              <span class="text-base-content">Join FaoTech</span>,
-              <span class="text-base-content"> NOW</span>.
+              <span class="text-primary-content">Join FaoTech</span>,{" "}
+              <span class="text-primary-content"> NOW</span>.
             </h2>
 
             {/* This is end of Title */}
@@ -87,11 +87,11 @@ function Appform() {
             <div class="w-full text-left mt-16">
               <div class="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
-                  <label class="block mb-2 text-m font-medium text-base-content">
+                  <label class="block mb-2 text-m font-medium">
                     First Name
                   </label>
                   <input
-                    class=" input text-base-content input-bordered w-full"
+                    class=" input input-bordered w-full"
                     placeholder="Ryan"
                     required
                     maxLength={20}
@@ -99,11 +99,9 @@ function Appform() {
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-m font-medium text-base-content">
-                    Last Name
-                  </label>
+                  <label class="block mb-2 text-m font-medium">Last Name</label>
                   <input
-                    class=" border input text-base-content input-bordered w-full"
+                    class=" border input input-bordered w-full"
                     placeholder="Pratama"
                     required
                     maxLength={20}
@@ -111,11 +109,9 @@ function Appform() {
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-m font-medium text-base-content">
-                    Age
-                  </label>
+                  <label class="block mb-2 text-m font-medium">Age</label>
                   <input
-                    class=" border input text-base-content input-bordered w-full"
+                    class=" border input input-bordered w-full"
                     placeholder="18+ only"
                     required
                     maxLength={2}
@@ -123,11 +119,11 @@ function Appform() {
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-m font-medium text-base-content">
+                  <label class="block mb-2 text-m font-medium">
                     Phone Number
                   </label>
                   <input
-                    class=" border input text-base-content input-bordered w-full"
+                    class=" border input input-bordered w-full"
                     placeholder="8 996 100 52 02"
                     required
                     maxLength={16}
@@ -136,11 +132,11 @@ function Appform() {
                 </div>
               </div>
               <div class="mb-6">
-                <label class="block mb-2 text-m font-medium text-base-content">
+                <label class="block mb-2 text-m font-medium">
                   Instagram Username
                 </label>
                 <input
-                  class=" border input text-base-content input-bordered w-full"
+                  class=" border input input-bordered w-full"
                   placeholder="@ryanpratama14"
                   required
                   maxLength={30}
@@ -148,12 +144,12 @@ function Appform() {
                 />
               </div>
               <div class="mb-6">
-                <label class="block mb-2 text-m font-medium text-base-content">
+                <label class="block mb-2 text-m font-medium">
                   Email Address
                 </label>
                 <input
                   maxLength={30}
-                  class=" border input text-base-content input-bordered w-full"
+                  class=" border input input-bordered w-full"
                   placeholder="partnership@faotech.com"
                   required
                   onChange={(e) => setEmail(e.target.value)}
@@ -162,23 +158,19 @@ function Appform() {
 
               <div class="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
-                  <label class="block mb-2 text-m font-medium text-base-content">
-                    Country
-                  </label>
+                  <label class="block mb-2 text-m font-medium">Country</label>
 
                   <CountryDropdown
-                    class="  input input-bordered w-full text-base-content"
+                    class="  input input-bordered w-full"
                     value={country}
                     onChange={(val) => setCountry(val)}
                   />
                 </div>
                 <div>
-                  <label class="block mb-2 text-m font-medium text-base-content">
-                    Region
-                  </label>
+                  <label class="block mb-2 text-m font-medium">Region</label>
 
                   <RegionDropdown
-                    class="  input input-bordered w-full text-base-content"
+                    class="  input input-bordered w-full"
                     country={country}
                     value={region}
                     onChange={(val) => setRegion(val)}
@@ -187,12 +179,10 @@ function Appform() {
               </div>
 
               <div class="mb-6">
-                <label class="block mb-2 text-m font-medium text-base-content">
-                  Address
-                </label>
+                <label class="block mb-2 text-m font-medium">Address</label>
                 <input
                   maxLength={50}
-                  class="input text-base-content input-bordered w-full"
+                  class="input input-bordered w-full"
                   placeholder="Jackson Street 91"
                   required
                   onChange={(e) => setAddress(e.target.value)}
@@ -221,14 +211,12 @@ function Appform() {
                     }
                   }}
                   type="submit"
-                  class=" btn btn-secondary"
+                  class=" btn btn-primary-focus"
                 >
                   Submit
                 </button>
               </div>
-              <p class=" text-xs mt-3 mb-8 text-center text-base-content">
-                {word}
-              </p>
+              <p class=" text-l mt-3 mb-8 text-center">{word}</p>
             </div>
             {/* This is end of Form */}
           </div>

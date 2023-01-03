@@ -17,12 +17,12 @@ function Cards() {
   }, []);
 
   return (
-    <div class="pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b font-mono -mt-[5rem] pb-20">
+    <div class="pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b -mt-[5rem] pb-20">
       <div class="px-12 py-12 mx-auto max-w-xl text-center">
         <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
           FaoTech
           <br />
-          <span class="text-base-content">Member Card</span>
+          <span class="text-primary-content">Member Card</span>
         </h2>
       </div>
       <div className="flex flex-wrap justify-center items-center">
@@ -62,7 +62,7 @@ function Cards() {
               toast.error("All fields are required");
             }
           }}
-          className="btn btn-secondary mt-6 mb-4 w-72"
+          className="btn btn-secondary-focus mt-6 mb-4 w-72"
         >
           Add new card
         </button>
