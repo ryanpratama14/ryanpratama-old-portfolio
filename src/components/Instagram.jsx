@@ -10,14 +10,9 @@ const Instagram = () => {
           href="https://www.instagram.com/ryanpratama14"
           rel="noreferrer"
           target="_blank"
-          class="block transition-all transform hover:scale-110  duration-400 "
+          class="text-primary-content block transition-all transform hover:scale-110  duration-400 "
         >
-          <Icon
-            icon="mdi:instagram"
-            width="40"
-            class="text-primary-content"
-            height="40"
-          />
+          <Icon icon="mdi:instagram" width="40" height="40" />
         </a>
       </div>
     </div>
