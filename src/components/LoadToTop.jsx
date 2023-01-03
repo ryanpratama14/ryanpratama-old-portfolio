@@ -35,12 +35,12 @@ const LoadToTop = () => {
           href
           rel="noreferrer"
           onClick={scrollToTop}
-          class="block transition-all transform hover:scale-110 hover:-translate-y-2 duration-400 cursor-pointer "
+          class="text-primary-content block transition-all transform hover:scale-110 hover:-translate-y-2 duration-400 cursor-pointer "
         >
           <Icon
             icon="uil:top-arrow-to-top"
             width="40"
-            class="text-primary-content"
+            // class="text-primary-content"
             height="40"
           />
         </a>

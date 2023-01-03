@@ -64,7 +64,12 @@ const ToDo = () => {
 
   return (
     <div class="-mt-[5rem] pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          className: "font-semibold bg-primary text-primary-content",
+          duration: 1300,
+        }}
+      />
       <section>
         <div class="px-12 py-12">
           <div class="mx-auto max-w-xl text-center mb-12">
