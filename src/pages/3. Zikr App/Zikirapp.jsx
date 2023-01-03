@@ -22,7 +22,7 @@ function Zikirapp() {
     });
 
   return (
-    <div class="-mt-[5rem] pt-32  from-primary to-base-200 text-primary-content bg-gradient-to-b">
+    <div class="-mt-[5rem] pt-32  from-primary to-secondary text-primary-content bg-gradient-to-b">
       <Toaster />
       <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
@@ -31,15 +31,15 @@ function Zikirapp() {
               Welcome to Zikr App!
             </h2>
             <h2 class=" font-bold mt-2 text-3xl sm:text-4xl lg:text-4xl xl:text-4xl">
-              <span className="text-base-content">
-                Pray, <span class="text-base-content">Pray, </span>
+              <span>
+                Pray, <span>Pray, </span>
                 Pray.
               </span>
             </h2>
           </div>
           <div class="text-center mt-20">
             <p class="mb-2 text-primary-content">{num}</p>
-            <p class="text-5xl text-base-content">{doa}</p>
+            <p class="text-5xl text-primary-content">{doa}</p>
           </div>
           <div class="flex flex-col flex-wrap justify-center items-center text-center">
             <button
@@ -89,7 +89,7 @@ function Zikirapp() {
                   onClick={() => {
                     navigate("declare");
                   }}
-                  className="text-base-content hover:cursor-pointer"
+                  className=" hover:cursor-pointer"
                 >
                   here.{" "}
                 </span>

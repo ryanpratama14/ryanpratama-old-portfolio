@@ -1,11 +1,12 @@
 import React from "react";
+import BackgroundDaisy from "./BackgroundDaisy";
 
 const Footer = () => {
   return (
-    <div class="bg-base-200 text-base-content">
+    <div class="from-secondary to-secondary-focus bg-gradient-to-b text-primary-content">
       <footer class="footer footer-center p-4">
         <div>
-          <p class="text-base-content">
+          <p>
             © 2023 FaoTech. All Rights Reserved. <br />
             Made by Ryan <br />
             Special thanks to{" "}
@@ -30,6 +31,7 @@ const Footer = () => {
           </p>
         </div>
       </footer>
+      <BackgroundDaisy />
     </div>
   );
 };

@@ -63,7 +63,7 @@ const ToDo = () => {
   }, [data]);
 
   return (
-    <div class="-mt-[5rem] pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b">
+    <div class="-mt-[5rem] pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
       <Toaster />
       <section>
         <div class="px-12 py-12">
@@ -71,8 +71,8 @@ const ToDo = () => {
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-base-content">To Do </span>
-              <span class="text-base-content">List </span>App!
+              <span class="text-primary-content">To Do </span>
+              <span class="text-primary-content">List </span>App!
             </h2>
           </div>
           <div class="flex justify-center">
@@ -154,7 +154,7 @@ const ToDo = () => {
                   toast.error("All fields are required");
                 }
               }}
-              className="btn btn-secondary mt-8 mb-4 w-48"
+              className="btn btn-secondary-focus mt-8 mb-4 w-48"
             >
               Add new task
             </button>

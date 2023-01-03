@@ -75,7 +75,7 @@ const Expense = () => {
   }, [data]);
 
   return (
-    <div className="-mt-[5rem] pt-32 from-primary to-base-200 text-primary-content bg-gradient-to-b">
+    <div className="-mt-[5rem] pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
       <Toaster />
       <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
@@ -83,8 +83,8 @@ const Expense = () => {
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Welcome to
               <br />
-              <span class="text-base-content">Financial </span>
-              <span class="text-base-content">Tracker </span>App!
+              <span class="text-primary-content">Financial </span>
+              <span class="text-primary-content">Tracker </span>App!
             </h2>
           </div>
           <section class="flex flex-wrap justify-around items-center w-full">
@@ -99,7 +99,7 @@ const Expense = () => {
                     </h3>
 
                     <button
-                      className="btn btn-secondary"
+                      className="btn btn-secondary-focus"
                       onClick={() => toggleAddTXn((isVisible) => !isVisible)}
                     >
                       {isAddTxnVisible ? "CANCEL" : "ADD"}
@@ -176,7 +176,7 @@ const Expense = () => {
                         <label htmlFor="Expense">Income</label>
                       </div>
                       <button
-                        class="btn btn-secondary mt-4"
+                        class="btn btn-secondary-focus mt-4"
                         onClick={() => {
                           if (
                             (desc.length > 0 &&

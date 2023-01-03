@@ -6,7 +6,7 @@ const Testimonial = () => {
     document.title = "FaoTech: Reviews";
   }, []);
   return (
-    <div className="-mt-[5rem] pt-32 from-primary to-base-200 text-base-content bg-gradient-to-b">
+    <div className="-mt-[5rem] pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
       <section>
         <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 sm:pb-24 lg:px-8">
           <div class="mx-auto max-w-xl text-center">

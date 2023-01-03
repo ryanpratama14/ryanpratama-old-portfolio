@@ -2,8 +2,8 @@ import React from "react";
 import ThemeChanger from "./ThemeChanger";
 // import useReadingProgress from "./UseReadingProgress";
 import { NavLink } from "react-router-dom";
-import { navbarOptions } from "../store/helper/NavbarOptions";
 import { linkSocial } from "../store/helper/NavbarSocial";
+import { routeNavbarOptions } from "../store/helper/Routes";
 
 const Navbar = () => {
   // const completion = useReadingProgress();
@@ -13,12 +13,12 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
-  let activeClassName = "bg-primary active:bg-primary-focus my-0.5";
+  let activeClassName = "bg-primary  text-primary-content my-0.5";
   return (
     <div
       class="
     sticky top-0 z-30  h-16 bg-opacity-90 backdrop-blur duration-100 
-    text-base-content shadow
+    text-primary-content shadow
     "
     >
       <div class="navbar flex justify-center">
@@ -45,10 +45,10 @@ const Navbar = () => {
               class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
             >
               <li>
-                {navbarOptions.map((e) => {
+                {routeNavbarOptions.map((e) => {
                   return (
                     <NavLink
-                      to={e.to}
+                      to={e.path}
                       className={({ isActive }) =>
                         isActive ? activeClassName : "my-0.5"
                       }

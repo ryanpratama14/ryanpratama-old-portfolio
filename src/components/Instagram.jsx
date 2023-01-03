@@ -15,7 +15,7 @@ const Instagram = () => {
           <Icon
             icon="mdi:instagram"
             width="40"
-            class="text-primary"
+            class="text-primary-content"
             height="40"
           />
         </a>
