@@ -4,6 +4,7 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Instagram from "./components/Instagram";
+import HireMe from "./components/HireMe";
 import LoadToTop from "./components/LoadToTop";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -36,8 +37,9 @@ export default function Routing() {
               return <Route path={e.path} element={e.element} />;
             })}
           </Routes>
-          <Instagram />
           <LoadToTop />
+          <HireMe />
+          <Instagram />
           <Footer />
         </motion.div>
       ) : (

@@ -6,7 +6,7 @@ import Declare from "../../pages/3. Zikr App/Declare";
 import ToDo from "../../pages/4. To Do/ToDo";
 import Expense from "../../pages/5. Fin Tracker/ExpenseApp";
 import About from "../../pages/About/About";
-import Testimonial from "../../pages/Testimonials/Testimonial";
+import Reviews from "../../pages/Reviews/Reviews";
 
 export const routeOptions = [
   {
@@ -45,7 +45,7 @@ export const routeOptions = [
   },
   {
     path: "/reviews",
-    element: <Testimonial />,
+    element: <Reviews />,
     label: "Reviews",
   },
   { path: "/about", element: <About />, label: "About" },
@@ -75,7 +75,7 @@ export const routeNavbarOptions = [
   },
   {
     path: "/reviews",
-    element: <Testimonial />,
+    element: <Reviews />,
     label: "Reviews",
   },
   { path: "/about", element: <About />, label: "About" },
