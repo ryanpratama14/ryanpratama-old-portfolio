@@ -86,7 +86,7 @@ const Navbar = () => {
               <div class="w-10 rounded-full">
                 <img
                   alt="ryan display profile"
-                  src="https://sun9-61.userapi.com/impg/WRTTQu00rB8FiNpm2WpRZLzu0U0zzWlvjaDDqg/HtZweihYsKo.jpg?size=2160x2160&quality=96&sign=88c8dc5b5f04b0ff17f0a1ca5d7e0a54&type=album"
+                  src={require("./components/ryanpratama.jpeg")}
                 />
               </div>
             </label>

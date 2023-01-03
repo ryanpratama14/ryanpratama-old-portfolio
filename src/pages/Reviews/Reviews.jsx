@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
 import Review from "./components/Review";
 
-const Testimonial = () => {
+const Reviews = () => {
   useEffect(() => {
     document.title = "FaoTech: Reviews";
   }, []);
@@ -26,9 +26,7 @@ const Testimonial = () => {
               occupationProps={"FaoTech Student"}
               quoteProps={"First coffee then coding. Join FaoTech now."}
               linkProps={"https://www.instagram.com/alvinjustkidding"}
-              pictureProps={
-                "https://sun9-66.userapi.com/impg/dG1gdzQ7kkrPJ28sv9BOItZan82ysg4WrRz1GQ/Up3xSN3iPfE.jpg?size=1620x2160&quality=95&sign=767ae0c5eb95f6ef2bf4f6d98796a711&type=album"
-              }
+              pictureProps={require("./components/alvin.jpg")}
             ></Review>
 
             <Review
@@ -41,9 +39,7 @@ const Testimonial = () => {
               occupationProps={"FaoTech Student"}
               quoteProps={"Great experience, learned so much from here."}
               linkProps={"https://www.instagram.com/anasfirly_"}
-              pictureProps={
-                "https://sun9-81.userapi.com/impf/c850136/v850136517/506d3/9mPlOfTeHus.jpg?size=640x1136&quality=96&sign=f69986d1718e3b68c1c1ec32da6c29e1&type=album"
-              }
+              pictureProps={require("./components/firly.jpg")}
             ></Review>
             <Review
               nameProps={"Ilham Akbar"}
@@ -55,9 +51,7 @@ const Testimonial = () => {
               occupationProps={"FaoTech Student"}
               quoteProps={"Started at stage zero. Now I know how to code well."}
               linkProps={"https://www.instagram.com/ilham.akbar6"}
-              pictureProps={
-                "https://sun9-48.userapi.com/impg/K5iH_0zmtUee1gJ7VXDBMDwSoy27TNfhynRuhA/6gX4AL8-HDY.jpg?size=720x1280&quality=96&sign=b81e20923742a7536f1140bcce323db1&type=album"
-              }
+              pictureProps={require("./components/ilham.jpg")}
             ></Review>
             <Review
               nameProps={"Ryan Pratama"}
@@ -69,9 +63,7 @@ const Testimonial = () => {
                 "Best career decision I've ever made. Recommended! 🙌"
               }
               linkProps={"https://www.instagram.com/ryanpratama14"}
-              pictureProps={
-                "https://sun9-81.userapi.com/impg/zpEQaT8EDrgYfk-HwzfkWMBYa3S_XIFSGJKpVg/Im_5Ubn6QSc.jpg?size=1728x2160&quality=96&sign=6d0560491c579c4a6ae0a36d0b5ad4e7&type=albu"
-              }
+              pictureProps={require("./components/ryan.jpg")}
             ></Review>
           </div>
         </div>
@@ -80,4 +72,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default Reviews;
