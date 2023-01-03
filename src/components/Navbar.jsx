@@ -1,12 +1,12 @@
 import React from "react";
 import ThemeChanger from "./ThemeChanger";
-// import useReadingProgress from "./UseReadingProgress";
+import useReadingProgress from "./UseReadingProgress";
 import { NavLink } from "react-router-dom";
 import { linkSocial } from "../store/helper/NavbarSocial";
 import { routeNavbarOptions } from "../store/helper/Routes";
 
 const Navbar = () => {
-  // const completion = useReadingProgress();
+  const completion = useReadingProgress();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

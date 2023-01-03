@@ -4,7 +4,7 @@ import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 
 function Appform() {
   useEffect(() => {
-    document.title = "#2: App Form";
+    document.title = "#2: Form App";
   }, []);
   const [word, setWord] = useState("valid answers only");
   const [fName, setFName] = useState("");
