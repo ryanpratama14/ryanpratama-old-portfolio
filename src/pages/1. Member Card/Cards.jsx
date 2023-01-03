@@ -18,6 +18,12 @@ function Cards() {
 
   return (
     <div class="pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b -mt-[5rem] pb-20">
+      <Toaster
+        toastOptions={{
+          className: "font-semibold bg-primary text-primary-content",
+          duration: 1300,
+        }}
+      />
       <div class="px-12 py-12 mx-auto max-w-xl text-center">
         <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
           FaoTech
@@ -34,7 +40,6 @@ function Cards() {
           );
         })}
       </div>
-      <Toaster />
       <div className="flex justify-center items-center flex-wrap flex-col">
         <InputField
           valueTyped={(e) => {
@@ -51,6 +56,7 @@ function Cards() {
           lengthMax={2}
           placeholderValue="18+"
         />
+
         <button
           onClick={() => {
             if (age >= 18 && name.length > 0 && name.match(regex)) {

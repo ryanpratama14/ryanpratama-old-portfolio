@@ -23,7 +23,12 @@ function Zikirapp() {
 
   return (
     <div class="-mt-[5rem] pt-32  from-primary to-secondary text-primary-content bg-gradient-to-b">
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          className: "font-semibold bg-primary text-primary-content",
+          duration: 1300,
+        }}
+      />
       <section class="" id="ceo">
         <div class="px-8 py-12 sm:px-6  lg:px-8">
           <div class="mx-auto max-w-2xl text-center mb-12">

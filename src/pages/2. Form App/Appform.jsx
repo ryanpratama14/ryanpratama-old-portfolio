@@ -68,7 +68,12 @@ function Appform() {
 
   return (
     <div className="-mt-[5rem] pt-32 App from-primary to-secondary text-primary-content bg-gradient-to-b">
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          className: "font-semibold bg-primary text-primary-content",
+          duration: 1300,
+        }}
+      />
       <div className="ceo">
         {/* This is Title */}
         <div class="px-12 py-12 sm:px-6  lg:px-8">
