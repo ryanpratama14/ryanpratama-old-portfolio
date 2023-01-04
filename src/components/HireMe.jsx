@@ -9,7 +9,7 @@ const Instagram = () => {
           href="mailto:ru.ryanpratama@gmail.com"
           rel="noreferrer"
           target="_blank"
-          class="block transition-all transform hover:scale-110  duration-400 "
+          class="block"
         >
           <img
             alt="hire me"
