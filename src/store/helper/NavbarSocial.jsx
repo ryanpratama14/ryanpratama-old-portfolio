@@ -17,7 +17,7 @@ export const linkSocial = [
   },
 
   {
-    linkSocial: "https://www.instagram.com/ryanpratama14/",
+    linkSocial: "https://t.me/ryanpratama14",
     socialMedia: "Telegram",
     label: <Icon icon="uil:telegram" width="25" height="25" />,
   },
@@ -27,7 +27,7 @@ export const linkSocial = [
     label: <Icon icon="uil:whatsapp-alt" width="25" height="25" />,
   },
   {
-    linkSocial: "https://t.me/ryanpratama14",
+    linkSocial: "https://www.instagram.com/ryanpratama14/",
     socialMedia: "Instagram",
     label: <Icon icon="uil:instagram-alt" width="25" height="25" />,
   },

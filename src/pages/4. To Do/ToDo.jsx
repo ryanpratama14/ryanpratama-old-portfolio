@@ -20,14 +20,14 @@ const ToDo = () => {
       task: "Mastering Tailwind CSS",
       date: "2022-30-12",
       time: "22:45",
-      isDone: false,
+      isDone: true,
     },
     {
       name: "World Cup 2022 Final",
       task: "France vs. Argentina",
       date: "2022-18-12",
       time: "22:00",
-      isDone: false,
+      isDone: true,
     },
   ]);
 
