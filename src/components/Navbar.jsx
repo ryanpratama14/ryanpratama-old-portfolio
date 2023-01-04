@@ -4,6 +4,7 @@ import useReadingProgress from "./UseReadingProgress";
 import { NavLink } from "react-router-dom";
 import { linkSocial } from "../store/helper/NavbarSocial";
 import { routeNavbarOptions } from "../store/helper/Routes";
+import { Icon } from "@iconify/react";
 
 const Navbar = () => {
   const completion = useReadingProgress();
@@ -103,7 +104,10 @@ const Navbar = () => {
                       rel="noreferrer"
                       href={e.linkSocial}
                     >
-                      {e.socialMedia} <span>{e.label}</span>
+                      {e.socialMedia}{" "}
+                      <span>
+                        <Icon icon={e.label} width="25" height="25" />
+                      </span>
                     </a>
                   );
                 })}

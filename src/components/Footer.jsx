@@ -1,6 +1,7 @@
 import React from "react";
 import { linkSocial } from "../store/helper/NavbarSocial";
 import BackgroundDaisy from "./BackgroundDaisy";
+import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
                   rel="noreferrer"
                   class=" transition-all transform hover:scale-125  duration-400 "
                 >
-                  {e.label}
+                  <Icon icon={e.label} width="25" height="25" />
                 </a>
               ))}
             </div>
