@@ -1,4 +1,5 @@
 import React from "react";
+import { linkSocial } from "../store/helper/NavbarSocial";
 import BackgroundDaisy from "./BackgroundDaisy";
 
 const Footer = () => {
@@ -7,9 +8,14 @@ const Footer = () => {
       <footer class="footer footer-center p-4 sm:md:lg:text-base">
         <div>
           <p>
-            © 2023 FaoTech. All rights reserved. <br />
-            Made by Ryan 👨‍💻
-            <br />
+            © 2023 FaoTech. All rights reserved.
+            <div className="flex justify-center gap-2 my-1">
+              {linkSocial.map((e) => (
+                <a href={e.linkSocial} target="break">
+                  {e.label}
+                </a>
+              ))}
+            </div>
             Special thanks to{" "}
             <a
               target="_blank"
