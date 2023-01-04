@@ -1,5 +1,12 @@
 export const dataTheme = [
   {
+    theme: "pastel",
+  },
+  {
+    theme: "cupcake",
+  },
+
+  {
     theme: "retro",
   },
   {
@@ -9,24 +16,14 @@ export const dataTheme = [
     theme: "cyberpunk",
   },
   {
-    theme: "pastel",
-  },
-  {
-    theme: "cupcake",
-  },
-  {
-    theme: "emerald",
-  },
-  {
     theme: "synthwave",
   },
+
   {
     theme: "night",
   },
+
   {
     theme: "dracula",
-  },
-  {
-    theme: "halloween",
   },
 ];

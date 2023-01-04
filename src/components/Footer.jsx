@@ -4,14 +4,14 @@ import BackgroundDaisy from "./BackgroundDaisy";
 
 const Footer = () => {
   return (
-    <div class="from-secondary to-secondary-focus bg-gradient-to-b text-primary-content ">
+    <div class="from-secondary to-secondary-focus bg-gradient-to-b text-secondary-content">
       <footer class="footer footer-center p-4 sm:md:lg:text-base">
         <div>
           <p>
             © 2023 FaoTech. All rights reserved.
-            <div className="flex justify-center gap-2 my-1">
+            <div className="flex justify-center text-secondary-content gap-2 my-1">
               {linkSocial.map((e) => (
-                <a href={e.linkSocial} target="break">
+                <a href={e.linkSocial} target="_blank" rel="noreferrer">
                   {e.label}
                 </a>
               ))}
