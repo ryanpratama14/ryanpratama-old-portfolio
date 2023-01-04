@@ -11,7 +11,12 @@ const Footer = () => {
             © 2023 FaoTech. All rights reserved.
             <div className="flex justify-center text-secondary-content gap-2 my-1">
               {linkSocial.map((e) => (
-                <a href={e.linkSocial} target="_blank" rel="noreferrer">
+                <a
+                  href={e.linkSocial}
+                  target="_blank"
+                  rel="noreferrer"
+                  class=" transition-all transform hover:scale-125  duration-400 "
+                >
                   {e.label}
                 </a>
               ))}
