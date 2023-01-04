@@ -83,7 +83,7 @@ const Navbar = () => {
           <ThemeChanger />
           <div class="dropdown dropdown-end ml-0.5">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
+              <div class="w-16 rounded-full">
                 <img
                   alt="ryan display profile"
                   src={require("./components/ryanpratama.jpeg")}

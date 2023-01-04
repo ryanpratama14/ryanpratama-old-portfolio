@@ -59,9 +59,7 @@ const Reviews = () => {
               instagramProps={"https://www.instagram.com/ryanpratama14"}
               telegramProps={"https://t.me/ryanpratama14/"}
               occupationProps={"FaoTech Student"}
-              quoteProps={
-                "Best career decision I've ever made. Recommended! 🙌"
-              }
+              quoteProps={"Best career decision I've ever made. Recommended!"}
               linkProps={"https://www.instagram.com/ryanpratama14"}
               pictureProps={require("./components/ryan.jpg")}
             ></Review>

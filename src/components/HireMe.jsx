@@ -1,5 +1,4 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 
 const Instagram = () => {
   return (
@@ -13,6 +12,7 @@ const Instagram = () => {
           class="text-primary-content block transition-all transform hover:scale-110  duration-400 "
         >
           <img
+            alt="hire me"
             src={require("./components/hireme.png")}
             class="w-[60px] text-primary"
           />
