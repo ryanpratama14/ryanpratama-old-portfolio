@@ -8,7 +8,7 @@ export default function InputFieldCenter({
   return (
     <div class="text-center text-base-content w-full items-center md:w-96 lg:w-96 xl:w-96 2xl:w-96">
       <div class="mt-4">
-        <label class="block mb-2 text-m font-medium text-center text-base-content">
+        <label class="block mb-2 text-m font-medium text-center text-primary-content">
           {fieldProps}
         </label>
         <input

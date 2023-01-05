@@ -116,7 +116,6 @@ const ToDo = () => {
               lengthMax={256}
               placeholderValue="Japanese lesson"
             />
-
             <InputFieldCenter
               fieldProps={"Task"}
               valueTyped={(e) => {
@@ -126,7 +125,6 @@ const ToDo = () => {
               lengthMax={256}
               placeholderValue="Listening chapter 26"
             />
-
             <InputFieldCenter
               fieldProps={"Date"}
               valueTyped={(e) => {
@@ -134,7 +132,6 @@ const ToDo = () => {
               }}
               type="date"
             />
-
             <InputFieldCenter
               fieldProps={"Time"}
               valueTyped={(e) => {
