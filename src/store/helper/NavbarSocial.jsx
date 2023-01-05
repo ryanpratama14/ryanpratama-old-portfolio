@@ -31,7 +31,7 @@ export const linkSocial = [
     label: "uil:instagram-alt",
   },
   {
-    linkSocial: "https://spotify.com/user/totorogoriorio/",
+    linkSocial: "https://open.spotify.com/user/totorogoriorio/",
     socialMedia: "Spotify",
     label: "mdi:spotify",
   },
