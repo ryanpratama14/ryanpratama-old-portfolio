@@ -58,14 +58,14 @@ const Declare = () => {
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               <span
                 onClick={() => {
-                  navigate("/zikir-app");
+                  navigate("/zikr-app");
                 }}
               >
                 Back to
               </span>
               <span
                 onClick={() => {
-                  navigate("/zikrapp");
+                  navigate("/zikr-app");
                 }}
                 className=" hover:cursor-pointer"
               >
