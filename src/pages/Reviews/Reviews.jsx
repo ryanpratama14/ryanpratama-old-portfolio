@@ -8,7 +8,7 @@ const Reviews = () => {
   return (
     <div className="-mt-[5rem] pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
       <section>
-        <div class="mx-auto max-w-screen-xl px-8 py-12 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-screen-xl px-8 pb-[3.5rem] pt-12 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-xl text-center">
             <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
               Read <span class="text-primary-content">trusted</span> reviews
