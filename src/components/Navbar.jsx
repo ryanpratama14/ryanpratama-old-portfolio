@@ -4,6 +4,7 @@ import useReadingProgress from "./UseReadingProgress";
 import { NavLink } from "react-router-dom";
 import { linkSocial } from "../store/helper/NavbarSocial";
 import { routeNavbarOptions } from "../store/helper/Routes";
+import { Icon } from "@iconify/react";
 
 const Navbar = () => {
   const completion = useReadingProgress();
@@ -83,7 +84,7 @@ const Navbar = () => {
           <ThemeChanger />
           <div class="dropdown dropdown-end ml-0.5">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
+              <div class="w-16 rounded-full">
                 <img
                   alt="ryan display profile"
                   src={require("./components/ryanpratama.jpeg")}
@@ -103,7 +104,10 @@ const Navbar = () => {
                       rel="noreferrer"
                       href={e.linkSocial}
                     >
-                      {e.socialMedia} <span>{e.label}</span>
+                      {e.socialMedia}{" "}
+                      <span>
+                        <Icon icon={e.label} width="25" height="25" />
+                      </span>
                     </a>
                   );
                 })}

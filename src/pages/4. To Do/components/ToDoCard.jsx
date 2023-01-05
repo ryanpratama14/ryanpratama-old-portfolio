@@ -22,18 +22,18 @@ const ToDoCard = ({
           src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png"
         />
         <div class="pl-3">
-          <div class="font-extrabold  text-xl text-primary-content tracking-tighter">
+          <div class="font-extrabold  text-[1.3rem] text-primary-content tracking-tighter">
             {nameProps}
           </div>
         </div>
       </div>
       <div class="w-full">
-        <p class="font-extrabold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-primary-content to-black mb-2">
+        <p class="font-extrabold text-[1.6rem] text-transparent bg-clip-text bg-gradient-to-r from-primary-content to-black mb-2">
           {taskProps}
         </p>
         <p
           style={{ textDecoration: todo.isDone ? "line-through" : "" }}
-          class="text-gray-800 text-l font-bold tracking-tighter"
+          class="text-primary-content text-lg font-bold tracking-tighter"
         >
           📆 {dateProps}
           <br />⏰ {timeProps}

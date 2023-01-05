@@ -1,30 +1,29 @@
 export const dataTheme = [
   {
+    theme: "pastel",
+  },
+  {
+    theme: "cupcake",
+  },
+
+  {
     theme: "retro",
   },
   {
     theme: "valentine",
   },
   {
-    theme: "pastel",
-  },
-  {
-    theme: "cupcake",
-  },
-  {
-    theme: "emerald",
-  },
-
-  {
     theme: "cyberpunk",
   },
   {
+    theme: "synthwave",
+  },
+
+  {
     theme: "night",
   },
+
   {
     theme: "dracula",
-  },
-  {
-    theme: "synthwave",
   },
 ];
