@@ -15,7 +15,6 @@ export const linkSocial = [
     socialMedia: "LinkedIn",
     label: "uil:linkedin",
   },
-
   {
     linkSocial: "https://t.me/ryanpratama14",
     socialMedia: "Telegram",
@@ -31,7 +30,11 @@ export const linkSocial = [
     socialMedia: "Instagram",
     label: "uil:instagram-alt",
   },
-
+  {
+    linkSocial: "https://spotify.com/user/totorogoriorio/",
+    socialMedia: "Spotify",
+    label: "mdi:spotify",
+  },
   {
     linkSocial: "https://vk.com/ryanpratama",
     socialMedia: "VKontakte",
