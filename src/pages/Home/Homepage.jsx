@@ -2,17 +2,26 @@ import React from "react";
 
 const Homepage = () => {
   return (
-    <div>
-      <section>
-        <div class="mx-auto max-w-screen-xl px-8 py-20 sm:px-6 sm:pb-24 lg:px-8">
-          <div class="mx-auto max-w-xl text-center">
-            <h2 class="text-4xl font-bold tracking-tight text-primary-content sm:text-5xl">
-              HI
-            </h2>
-          </div>
-        </div>
-      </section>
-    </div>
+    <section
+      id="homepage"
+      class="w-full px-[4vw] -mt-[4rem] pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b"
+    >
+      <h1 class="text-5xl font-bold text-center py-20 text-primary-content">
+        HI
+      </h1>
+      <h1 class="text-5xl font-bold text-center py-20 text-primary-content">
+        HI
+      </h1>
+      <h1 class="text-5xl font-bold text-center py-20 text-primary-content">
+        HI
+      </h1>
+      <h1 class="text-5xl font-bold text-center py-20 text-primary-content">
+        HI
+      </h1>
+      <h1 class="text-5xl font-bold text-center py-20 text-primary-content">
+        HI
+      </h1>
+    </section>
   );
 };
 

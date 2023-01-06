@@ -33,7 +33,7 @@ const ToDoCard = ({
         </p>
         <p
           style={{ textDecoration: todo.isDone ? "line-through" : "" }}
-          class="text-primary-content text-lg font-bold tracking-tighter"
+          class="text-primary-content text-lg font-bold"
         >
           📆 {dateProps}
           <br />⏰ {timeProps}

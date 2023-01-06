@@ -11,14 +11,14 @@ const Review = ({
   linkedinProps,
 }) => {
   return (
-    <div class="lg:mt-0 md:mt-4 mt-2">
+    <div class="mb-6">
       <img
         src={pictureProps}
         class="mx-auto h-36 w-36 rounded-full object-cover shadow-xl"
         alt="profile"
       />
 
-      <blockquote class="-mt-6 flex flex-col justify-between rounded-lg px-10 py-12 text-center shadow-xl w-[22rem] md:w-72 lg:h-[25rem]">
+      <div class="-mt-6 flex flex-col justify-between rounded-lg px-10 py-12 text-center shadow-xl w-[22rem] md:w-72 lg:h-[25rem]">
         <p class="font-bold  text-2xl ">{nameProps}</p>
         <p class="mt-0.5 text-s  text-primary-content font-bold ">
           {occupationProps}
@@ -120,7 +120,7 @@ const Review = ({
         >
           Ask him anything
         </a>
-      </blockquote>
+      </div>
     </div>
   );
 };

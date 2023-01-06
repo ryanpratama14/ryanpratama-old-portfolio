@@ -22,88 +22,83 @@ function Zikirapp() {
     });
 
   return (
-    <div class="-mt-[5rem] pt-32  from-primary to-secondary text-primary-content bg-gradient-to-b">
+    <section
+      id="zikr-app"
+      class="-mt-[4rem] w-full px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
+    >
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",
           duration: 1300,
         }}
       />
-      <section class="" id="ceo">
-        <div class="px-8 py-12 sm:px-6  lg:px-8">
-          <div class="mx-auto max-w-2xl text-center mb-12">
-            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Welcome to Zikr App!
-            </h2>
-            <h2 class=" font-bold mt-2 text-3xl sm:text-4xl lg:text-4xl xl:text-4xl">
-              <span>
-                Pray, <span>Pray, </span>
-                Pray.
-              </span>
-            </h2>
-          </div>
-          <div class="text-center mt-20">
-            <p class="mb-2 text-primary-content">{num}</p>
-            <p class="text-5xl text-primary-content">{doa}</p>
-          </div>
-          <div class="flex flex-col flex-wrap justify-center items-center text-center">
-            <button
-              onClick={() => {
-                setTotalNum(totalNum + 1);
-                setNum(num + 1);
-                setZikir("Keep praying...");
-                if (num === 33) {
-                  setNum(1);
-                  if (doa === "سُـبْحانَ الله") {
-                    setDoa("ٱلْحَمْدُ لِلَّٰهِ");
-                  } else if (doa === "ٱلْحَمْدُ لِلَّٰهِ") {
-                    setDoa("الله أكبر");
-                  } else if (doa === "الله أكبر") {
-                    setDoa("سُـبْحانَ الله");
-                  }
-                }
-                if (totalNum === 33 - 1) {
-                  notifySuccess();
-                } else if (totalNum === 99 - 1) {
-                  notifySuccess2();
-                }
-              }}
-              class="btn mt-6  btn-success  w-44 px-5 py-2.5"
-            >
-              {zikir}
-            </button>
+      {/* TITLE */}
+      <div class="text-center font-bold text-primary-content text-4xl sm:text-5xl my-20">
+        <h1>
+          Welcome to Zikr App!
+          <h2 class="text-3xl sm:text-4xl">Pray, Pray, Pray. </h2>
+        </h1>
+      </div>
 
-            <button
-              onClick={() => {
-                setNum(0);
-                setTotalNum(0);
-                setZikir("Start");
+      <div class="text-center">
+        <p class="mb-2 text-primary-content">{num}</p>
+        <p class="text-5xl text-primary-content">{doa}</p>
+      </div>
+      {/* BUTTON */}
+      <div class="flex flex-col justify-center items-center">
+        <button
+          onClick={() => {
+            setTotalNum(totalNum + 1);
+            setNum(num + 1);
+            setZikir("Keep praying...");
+            if (num === 33) {
+              setNum(1);
+              if (doa === "سُـبْحانَ الله") {
+                setDoa("ٱلْحَمْدُ لِلَّٰهِ");
+              } else if (doa === "ٱلْحَمْدُ لِلَّٰهِ") {
+                setDoa("الله أكبر");
+              } else if (doa === "الله أكبر") {
                 setDoa("سُـبْحانَ الله");
+              }
+            }
+            if (totalNum === 33 - 1) {
+              notifySuccess();
+            } else if (totalNum === 99 - 1) {
+              notifySuccess2();
+            }
+          }}
+          class="btn btn-success w-64  my-6"
+        >
+          {zikir}
+        </button>
+        <button
+          onClick={() => {
+            setNum(0);
+            setTotalNum(0);
+            setZikir("Start");
+            setDoa("سُـبْحانَ الله");
+          }}
+          class="btn btn-error w-64 mb-6"
+        >
+          Reset
+        </button>
+      </div>
+      <div class="text-center mt-20">
+        <h1 className="font-bold sm:text-5xl text-4xl">
+          <span className=" ">
+            Declare your faith{" "}
+            <span
+              onClick={() => {
+                navigate("declare");
               }}
-              class="btn mt-3  btn-error  w-44 px-5 py-2.5"
+              className=" hover:cursor-pointer"
             >
-              Reset
-            </button>
-          </div>
-
-          <div class="mx-auto max-w-xl text-center mt-12">
-            <h2 className="text-4xl sm:text-6xl md:text-4xl xl:text-5xl font-bold tracking-tight my-32">
-              <span className=" ">
-                Declare your faith{" "}
-                <span
-                  onClick={() => {
-                    navigate("declare");
-                  }}
-                  className=" hover:cursor-pointer"
-                >
-                  here.{" "}
-                </span>
-              </span>
-            </h2>
-          </div>
-        </div>
-      </section>
-    </div>
+              here.{" "}
+            </span>
+          </span>
+        </h1>
+      </div>
+    </section>
   );
 }
 
