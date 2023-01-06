@@ -96,7 +96,7 @@ const Expense = () => {
 
       {/* THE CARD */}
       <div class="w-full flex justify-center">
-        <div class="w-[90%] sm:w-[30rem]">
+        <div class="w-[95%] sm:w-[25rem]">
           <div class="p-4 rounded-lg  shadow-2xl sm:p-8 bg-base-100">
             <div class="flex justify-between items-center">
               <h3 class="font-extrabold  text-2xl text-base-content tracking-tight">
