@@ -96,7 +96,7 @@ const Expense = () => {
 
       {/* THE CARD */}
       <div class="w-full flex justify-center">
-        <div class="w-[95%] sm:w-[25rem]">
+        <div class="w-[25rem]">
           <div class="p-4 rounded-lg  shadow-2xl sm:p-8 bg-base-100">
             <div class="flex justify-between items-center">
               <h3 class="font-extrabold  text-2xl text-base-content tracking-tight">
@@ -113,44 +113,44 @@ const Expense = () => {
               </button>
             </div>
             {isAddTxnVisible && (
-              <div class="text-center w-full">
+              <div class="w-full text-center">
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-base-content">
+                  <label class="block mb-2 text-m font-medium text-base-content text-left">
                     Amount
                   </label>
                   <input
                     required
                     type="number"
                     placeholder="$3450"
-                    className="input input-bordered w-72 text-base-content text-center"
+                    className="input input-bordered w-[21rem] text-base-content text-left"
                     onChange={(e) => {
                       setAmount(parseInt(e.target.value));
                     }}
                   />
                 </div>
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-base-content">
+                  <label class="block mb-2 text-m font-medium text-base-content text-left">
                     Date
                   </label>
                   <input
                     required
                     type="date"
                     placeholder="12/12/2023"
-                    className="input input-bordered w-72 text-base-content text-center"
+                    className="input input-bordered w-[21rem] text-base-content text-left"
                     onChange={(e) => {
                       setDate(e.target.value);
                     }}
                   />
                 </div>
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-base-content">
+                  <label class="block mb-2 text-m font-medium text-base-content text-left">
                     Description
                   </label>
                   <input
                     required
                     type="text"
                     placeholder="BTS Concert"
-                    className="input input-bordered w-72 text-base-content text-center"
+                    className="input input-bordered w-[21rem] text-base-content text-left"
                     onChange={(e) => {
                       setDesc(e.target.value);
                     }}
