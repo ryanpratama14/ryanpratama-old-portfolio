@@ -92,7 +92,9 @@ function Appform() {
         <div class="w-full md:w-[50%] text-left">
           <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
-              <label class="block mb-2 text-m font-medium">First Name</label>
+              <label class="block mb-2 text-m font-medium text-primary-content">
+                First Name
+              </label>
               <input
                 class=" input input-bordered w-full text-base-content"
                 placeholder="Ryan"
@@ -102,7 +104,9 @@ function Appform() {
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium">Last Name</label>
+              <label class="block mb-2 text-m font-medium text-primary-content">
+                Last Name
+              </label>
               <input
                 class=" border input input-bordered w-full text-base-content"
                 placeholder="Pratama"
@@ -112,7 +116,9 @@ function Appform() {
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium">Age</label>
+              <label class="block mb-2 text-m font-medium text-primary-content">
+                Age
+              </label>
               <input
                 class=" border input input-bordered w-full text-base-content"
                 placeholder="18+ only"
@@ -122,7 +128,9 @@ function Appform() {
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium">Phone Number</label>
+              <label class="block mb-2 text-m font-medium text-primary-content">
+                Phone Number
+              </label>
               <input
                 class=" border input input-bordered w-full text-base-content"
                 placeholder="+7 996 100 52 02"
@@ -133,7 +141,7 @@ function Appform() {
             </div>
           </div>
           <div class="mb-6">
-            <label class="block mb-2 text-m font-medium">
+            <label class="block mb-2 text-m font-medium text-primary-content">
               Instagram Username
             </label>
             <input
@@ -145,7 +153,9 @@ function Appform() {
             />
           </div>
           <div class="mb-6">
-            <label class="block mb-2 text-m font-medium">Email Address</label>
+            <label class="block mb-2 text-m font-medium text-primary-content">
+              Email Address
+            </label>
             <input
               maxLength={30}
               class=" border input input-bordered w-full text-base-content"
@@ -157,7 +167,9 @@ function Appform() {
 
           <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
-              <label class="block mb-2 text-m font-medium">Country</label>
+              <label class="block mb-2 text-m font-medium text-primary-content">
+                Country
+              </label>
 
               <CountryDropdown
                 class="  input input-bordered w-full text-base-content"
@@ -166,7 +178,9 @@ function Appform() {
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium">Region</label>
+              <label class="block mb-2 text-m font-medium text-primary-content">
+                Region
+              </label>
 
               <RegionDropdown
                 class="  input input-bordered w-full text-base-content"
@@ -178,7 +192,9 @@ function Appform() {
           </div>
 
           <div class="mb-6">
-            <label class="block mb-2 text-m font-medium">Address</label>
+            <label class="block mb-2 text-m font-medium text-primary-content">
+              Address
+            </label>
             <input
               maxLength={50}
               class="input input-bordered w-full text-base-content"
