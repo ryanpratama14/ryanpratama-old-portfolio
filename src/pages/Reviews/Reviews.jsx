@@ -3,7 +3,7 @@ import Review from "./components/Review";
 
 const Reviews = () => {
   useEffect(() => {
-    document.title = "FaoTech: Reviews";
+    document.title = "faoTech: Reviews";
   }, []);
   return (
     <section
@@ -22,8 +22,8 @@ const Reviews = () => {
           linkedinProps={"https://www.linkedin.com/in/alvin-pratama-1a046424b/"}
           instagramProps={"https://www.instagram.com/alvinjustkidding/"}
           telegramProps={"https://t.me/palveeen"}
-          occupationProps={"FaoTech Student"}
-          quoteProps={"First coffee then coding. Join FaoTech now."}
+          occupationProps={"faoTech Student"}
+          quoteProps={"First coffee then coding. Join faoTech now."}
           linkProps={"https://www.instagram.com/alvinjustkidding"}
           pictureProps={require("./components/alvin.jpg")}
         ></Review>
@@ -34,7 +34,7 @@ const Reviews = () => {
           }
           instagramProps={"https://www.instagram.com/anasfirly_"}
           telegramProps={"https://t.me/anasfirly20"}
-          occupationProps={"FaoTech Student"}
+          occupationProps={"faoTech Student"}
           quoteProps={"Great experience, learned so much from here."}
           linkProps={"https://www.instagram.com/anasfirly_"}
           pictureProps={require("./components/firly.jpg")}
@@ -46,7 +46,7 @@ const Reviews = () => {
           }
           instagramProps={"https://www.instagram.com/ilham.akbar6"}
           telegramProps={"https://t.me/ilham_akbar6"}
-          occupationProps={"FaoTech Student"}
+          occupationProps={"faoTech Student"}
           quoteProps={"Started at stage zero. Now I know how to code well."}
           linkProps={"https://www.instagram.com/ilham.akbar6"}
           pictureProps={require("./components/ilham.jpg")}
@@ -56,7 +56,7 @@ const Reviews = () => {
           linkedinProps={"https://www.linkedin.com/in/ryanpratama14/"}
           instagramProps={"https://www.instagram.com/ryanpratama14"}
           telegramProps={"https://t.me/ryanpratama14/"}
-          occupationProps={"FaoTech Student"}
+          occupationProps={"faoTech Student"}
           quoteProps={"Best career decision I've ever made. Recommended!"}
           linkProps={"https://www.instagram.com/ryanpratama14"}
           pictureProps={require("./components/ryan.jpg")}

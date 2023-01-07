@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    document.title = "FaoTech: About";
+    document.title = "faoTech: About";
   }, []);
   return (
     <section

@@ -30,7 +30,7 @@ function Cards() {
       {/* TITLE  */}
       <div class="my-20 text-center font-bold sm:text-5xl text-4xl text-primary-content">
         <h1>
-          FaoTech
+          faoTech
           <br />
           Member Card
         </h1>

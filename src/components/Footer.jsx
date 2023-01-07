@@ -9,7 +9,7 @@ const Footer = () => {
       <footer class="footer footer-center p-4 sm:md:lg:text-base">
         <div>
           <p>
-            © 2023 FaoTech. All rights reserved.
+            © 2023 faoTech. All rights reserved.
             <div className="flex justify-center text-secondary-content gap-1 my-1">
               {linkSocial.map((e) => (
                 <a
