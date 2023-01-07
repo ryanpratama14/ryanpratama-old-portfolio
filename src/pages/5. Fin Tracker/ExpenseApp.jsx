@@ -115,42 +115,42 @@ const Expense = () => {
             {isAddTxnVisible && (
               <div class="text-center w-full">
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-left text-base-content">
+                  <label class="block mb-2 text-m font-medium text-base-content">
                     Amount
                   </label>
                   <input
                     required
                     type="number"
                     placeholder="$3450"
-                    className="input input-bordered w-[99.9%] text-base-content"
+                    className="input input-bordered w-72 text-base-content text-center"
                     onChange={(e) => {
                       setAmount(parseInt(e.target.value));
                     }}
                   />
                 </div>
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-left text-base-content">
+                  <label class="block mb-2 text-m font-medium text-base-content">
                     Date
                   </label>
                   <input
                     required
                     type="date"
                     placeholder="12/12/2023"
-                    className="input input-bordered w-[99.9%] text-base-content"
+                    className="input input-bordered w-72 text-base-content text-center"
                     onChange={(e) => {
                       setDate(e.target.value);
                     }}
                   />
                 </div>
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-left text-base-content">
+                  <label class="block mb-2 text-m font-medium text-base-content">
                     Description
                   </label>
                   <input
                     required
                     type="text"
                     placeholder="BTS Concert"
-                    className="input input-bordered w-[99.9%] text-base-content"
+                    className="input input-bordered w-72 text-base-content text-center"
                     onChange={(e) => {
                       setDesc(e.target.value);
                     }}
