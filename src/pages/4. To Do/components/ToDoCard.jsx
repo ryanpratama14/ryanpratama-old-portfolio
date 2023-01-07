@@ -14,7 +14,6 @@ const ToDoCard = ({
   const [counter, setCounter] = useState(0);
   return (
     <div class="text-primary-content mt-2 mb-6 shadow-2xl rounded-xl w-96 md:w-96 md:mx-6 md:my-6 py-6 px-6 overflow-hidden from-secondary to-primary bg-gradient-to-t">
-      <Toaster />
       <div class="flex items-center border-neutral border-b-2 mb-2 pb-2">
         <img
           class="w-12 h-12 relative object-cover"

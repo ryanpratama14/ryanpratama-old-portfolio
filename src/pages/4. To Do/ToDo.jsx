@@ -73,7 +73,6 @@ const ToDo = () => {
           duration: 1300,
         }}
       />
-
       {/* TITLE */}
       <div class="text-center font-bold sm:text-5xl text-4xl tracking-tight my-20">
         <h1>
@@ -108,7 +107,7 @@ const ToDo = () => {
           );
         })}
       </div>
-      <div class="flex flex-col justify-center items-center w-full text-center">
+      <div class="flex flex-col justify-center items-center w-full text-left">
         <InputFieldCenter
           fieldProps={"Field"}
           valueTyped={(e) => {

@@ -113,7 +113,7 @@ const Expense = () => {
               </button>
             </div>
             {isAddTxnVisible && (
-              <div class="text-center w-full items-center">
+              <div class="text-center w-full">
                 <div class="mt-4">
                   <label class="block mb-2 text-m font-medium text-left text-base-content">
                     Amount
@@ -122,7 +122,7 @@ const Expense = () => {
                     required
                     type="number"
                     placeholder="$3450"
-                    className="input input-bordered w-full text-base-content"
+                    className="input input-bordered w-[99.9%] text-base-content"
                     onChange={(e) => {
                       setAmount(parseInt(e.target.value));
                     }}
@@ -136,7 +136,7 @@ const Expense = () => {
                     required
                     type="date"
                     placeholder="12/12/2023"
-                    className="input input-bordered w-full text-base-content"
+                    className="input input-bordered w-[99.9%] text-base-content"
                     onChange={(e) => {
                       setDate(e.target.value);
                     }}
@@ -150,7 +150,7 @@ const Expense = () => {
                     required
                     type="text"
                     placeholder="BTS Concert"
-                    className="input input-bordered w-full text-base-content"
+                    className="input input-bordered w-[99.9%] text-base-content"
                     onChange={(e) => {
                       setDesc(e.target.value);
                     }}
