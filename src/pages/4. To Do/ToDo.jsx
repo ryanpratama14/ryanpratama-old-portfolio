@@ -65,7 +65,7 @@ const ToDo = () => {
   return (
     <section
       id="to-do-list-app"
-      class="-mt-[4rem] w-full px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
+      class="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{

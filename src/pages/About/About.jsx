@@ -7,28 +7,25 @@ const About = () => {
   return (
     <section
       id="about"
-      className="-mt-[4rem] px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
+      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
       {/* TITLE */}
-      <div>
-        <h1 class="font-bold sm:text-5xl text-4xl  my-20 text-center">
-          Meet our CEO
-        </h1>
+      <div class="font-bold sm:text-5xl text-4xl  my-20 text-center">
+        <h1>Meet our CEO</h1>
       </div>
-      <div class="flex justify-center mt-16">
+      <div class="flex justify-center items-center">
         <div>
           <img
             src={require("./photos/ceo.png")}
-            class="mx-auto h-48 w- rounded-full object-cover shadow-xl"
-            alt="CEO"
+            class="mx-auto h-36 w-36 rounded-full object-cover shadow-xl"
+            alt="profile"
           />
-
-          <div class="-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl">
-            <p class="font-bold  text-2xl ">
-              Fakhrul Oktavian
-              <br />
-              <span class="font-bold  text-xl ">Instructor</span>
+          <div class="-mt-6 flex flex-col justify-between rounded-lg px-10 py-12 text-center shadow-xl w-full sm:w-[30rem] mx-auto">
+            <p class="font-bold text-2xl md:text-3xl ">Fakhrul Oktavian</p>
+            <p class="mt-0.5 md:text-lg text-primary-content font-bold ">
+              Instructor
             </p>
+            {/* Social Media */}
             <div class="flex items-center justify-center mt-2">
               <a
                 title="Follow me on Instagram"
@@ -70,7 +67,8 @@ const About = () => {
                 />
               </a>
             </div>
-            <p class="mt-4 text-lg  lg:w-96 md:w-96 sm:w-96  font-semibold">
+            {/* End of social media */}
+            <p class="mt-4 text-lg md:text-xl text-primary-content font-semibold">
               "For me, it matters that we drive tech as an equalizing force, as
               an enabler for everyone around the world. Feel free to join."
             </p>

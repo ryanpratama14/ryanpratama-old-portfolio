@@ -7,7 +7,7 @@ export default function InputFieldCenter({
 }) {
   return (
     <div class="mt-4">
-      <label class="block mb-2 text-m font-medium text-left text-primary-content">
+      <label class="block mb-2 text-m font-medium text-left text-secondary-content">
         {fieldProps}
       </label>
       <input
@@ -15,7 +15,7 @@ export default function InputFieldCenter({
         maxLength={lengthMax}
         type={type}
         placeholder={placeholderValue}
-        className="input input-bordered w-72 md:w-96 text-left"
+        className="input input-bordered w-72 md:w-96 text-left text-base-content"
         onChange={(e) => {
           valueTyped(e.target.value);
         }}

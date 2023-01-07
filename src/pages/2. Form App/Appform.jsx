@@ -69,7 +69,7 @@ function Appform() {
   return (
     <section
       id="form-app"
-      className="pb-[20rem] -mt-[4rem] px-[4vw] w-full pt-[4rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
+      className="pb-[20rem] -mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{
@@ -89,7 +89,7 @@ function Appform() {
 
       {/* This is Form */}
       <div class="flex justify-center">
-        <div class="w-[80%] lg:w-[50%] text-left">
+        <div class="w-full md:w-[50%] text-left">
           <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
               <label class="block mb-2 text-m font-medium">First Name</label>
@@ -125,7 +125,7 @@ function Appform() {
               <label class="block mb-2 text-m font-medium">Phone Number</label>
               <input
                 class=" border input input-bordered w-full text-base-content"
-                placeholder="8 996 100 52 02"
+                placeholder="+7 996 100 52 02"
                 required
                 maxLength={16}
                 onChange={(e) => setTelephoneNum(e.target.value)}

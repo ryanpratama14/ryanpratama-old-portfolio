@@ -77,7 +77,7 @@ const Expense = () => {
   return (
     <section
       id="financial-tracker-app"
-      className="-mt-[4rem] px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
+      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{
@@ -96,8 +96,8 @@ const Expense = () => {
 
       {/* THE CARD */}
       <div class="w-full flex justify-center">
-        <div class="w-[25rem]">
-          <div class="p-4 rounded-lg  shadow-2xl sm:p-8 bg-base-100">
+        <div class="w-full sm:w-[25rem]">
+          <div class="p-6 rounded-lg  shadow-2xl bg-base-100">
             <div class="flex justify-between items-center">
               <h3 class="font-extrabold  text-2xl text-base-content tracking-tight">
                 BALANCE
@@ -115,42 +115,42 @@ const Expense = () => {
             {isAddTxnVisible && (
               <div class="w-full text-center">
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-base-content text-left">
+                  <label class="block mb-2 text-m font-medium text-secondary-focus text-center">
                     Amount
                   </label>
                   <input
                     required
                     type="number"
                     placeholder="$3450"
-                    className="input input-bordered w-[21rem] text-base-content text-left"
+                    className="input input-bordered w-56 text-base-content text-center"
                     onChange={(e) => {
                       setAmount(parseInt(e.target.value));
                     }}
                   />
                 </div>
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-base-content text-left">
+                  <label class="block mb-2 text-m font-medium text-secondary-focus text-center">
                     Date
                   </label>
                   <input
                     required
                     type="date"
                     placeholder="12/12/2023"
-                    className="input input-bordered w-[21rem] text-base-content text-left"
+                    className="input input-bordered w-56 text-base-content text-center"
                     onChange={(e) => {
                       setDate(e.target.value);
                     }}
                   />
                 </div>
                 <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-base-content text-left">
+                  <label class="block mb-2 text-m font-medium text-secondary-focus text-center">
                     Description
                   </label>
                   <input
                     required
                     type="text"
                     placeholder="BTS Concert"
-                    className="input input-bordered w-[21rem] text-base-content text-left"
+                    className="input input-bordered w-56 text-base-content text-center"
                     onChange={(e) => {
                       setDesc(e.target.value);
                     }}
@@ -183,7 +183,7 @@ const Expense = () => {
                   <label htmlFor="Expense">Income</label>
                 </div>
                 <button
-                  class="btn btn-secondary-focus mt-4"
+                  class="btn btn-secondary-focus mt-4 w-56"
                   onClick={() => {
                     if (
                       (desc.length > 0 &&

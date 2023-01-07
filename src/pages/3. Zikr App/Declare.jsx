@@ -22,7 +22,7 @@ const Declare = () => {
   return (
     <section
       id="zikr-app/declare"
-      class="-mt-[4rem] w-full pt-[4rem] pb-[20rem] px-[4vw] from-primary to-secondary text-primary-content bg-gradient-to-b"
+      class="-mt-[4rem] w-full pt-[4rem] pb-[20rem] px-[8vw] md:px-[4vw] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{
