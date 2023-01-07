@@ -82,7 +82,7 @@ function Appform() {
         <h1>
           Passionate about programming?
           <br />
-          Join FaoTech, NOW.
+          Join faoTech, NOW.
         </h1>
       </div>
       {/* This is end of Title */}

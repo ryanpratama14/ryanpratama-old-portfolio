@@ -16,18 +16,18 @@ const ToDo = () => {
   const [time, setTime] = useState("");
   const [data, setData] = useLocalStrorage("todo-app", [
     {
-      name: "Full-Stack Engineer",
-      task: "Mastering Tailwind CSS",
-      date: "2022-30-12",
-      time: "22:45",
-      isDone: true,
-    },
-    {
       name: "World Cup 2022 Final",
       task: "France vs. Argentina",
       date: "2022-18-12",
       time: "22:00",
       isDone: true,
+    },
+    {
+      name: "Full-Stack Engineer",
+      task: "Mastering ReactJS",
+      date: "2023-30-01",
+      time: "22:45",
+      isDone: false,
     },
   ]);
 
