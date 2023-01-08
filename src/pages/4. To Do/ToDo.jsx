@@ -16,18 +16,18 @@ const ToDo = () => {
   const [time, setTime] = useState("");
   const [data, setData] = useLocalStrorage("todo-app", [
     {
-      name: "Full-Stack Engineer",
-      task: "Mastering Tailwind CSS",
-      date: "2022-30-12",
-      time: "22:45",
-      isDone: true,
-    },
-    {
       name: "World Cup 2022 Final",
       task: "France vs. Argentina",
       date: "2022-18-12",
       time: "22:00",
       isDone: true,
+    },
+    {
+      name: "Full-Stack Engineer",
+      task: "Mastering ReactJS",
+      date: "2023-30-01",
+      time: "22:45",
+      isDone: false,
     },
   ]);
 
@@ -63,110 +63,106 @@ const ToDo = () => {
   }, [data]);
 
   return (
-    <div class="-mt-[5rem] pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b">
+    <section
+      id="to-do-list-app"
+      class="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
+    >
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",
           duration: 1300,
         }}
       />
-      <section>
-        <div class="px-12 py-12">
-          <div class="mx-auto max-w-xl text-center mb-12">
-            <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-              Welcome to
-              <br />
-              <span class="text-primary-content">To Do </span>
-              <span class="text-primary-content">List </span>App!
-            </h2>
-          </div>
-          <div class="flex justify-center">
-            <input
-              placeholder="Search task..."
-              class="input input-bordered input-sm w-96 mt-4 mb-3 text-base-content"
-              onChange={(e) => {
-                updateSearchText(e.target.value);
-                filterData(e.target.value);
-              }}
+      {/* TITLE */}
+      <div class="text-center font-bold sm:text-5xl text-4xl tracking-tight my-20">
+        <h1>
+          Welcome to
+          <br />
+          To Do List App!
+        </h1>
+      </div>
+      <div class="flex justify-center">
+        <input
+          placeholder="Search task..."
+          class="input input-bordered input-sm w-72 md:w-96 my-6 text-base-content"
+          onChange={(e) => {
+            updateSearchText(e.target.value);
+            filterData(e.target.value);
+          }}
+        />
+      </div>
+      <div class="flex flex-wrap justify-center">
+        {filteredTransaction?.map((todo, index) => {
+          return (
+            <ToDoCard
+              nameProps={todo.name}
+              taskProps={todo.task}
+              dateProps={todo.date}
+              timeProps={todo.time}
+              index={index}
+              todo={todo}
+              markTodo={markTodo}
+              removeTodo={removeTodo}
             />
-          </div>
-          <div class="flex flex-wrap justify-center">
-            {filteredTransaction?.map((todo, index) => {
-              return (
-                <ToDoCard
-                  nameProps={todo.name}
-                  taskProps={todo.task}
-                  dateProps={todo.date}
-                  timeProps={todo.time}
-                  index={index}
-                  todo={todo}
-                  markTodo={markTodo}
-                  removeTodo={removeTodo}
-                />
-              );
-            })}
-          </div>
-          <div class="flex flex-col justify-center items-center w-full text-center">
-            <InputFieldCenter
-              fieldProps={"Field"}
-              valueTyped={(e) => {
-                setName(e);
-              }}
-              type="text"
-              lengthMax={256}
-              placeholderValue="Japanese lesson"
-            />
-
-            <InputFieldCenter
-              fieldProps={"Task"}
-              valueTyped={(e) => {
-                setTask(e);
-              }}
-              type="text"
-              lengthMax={256}
-              placeholderValue="Listening chapter 26"
-            />
-
-            <InputFieldCenter
-              fieldProps={"Date"}
-              valueTyped={(e) => {
-                setDate(e);
-              }}
-              type="date"
-            />
-
-            <InputFieldCenter
-              fieldProps={"Time"}
-              valueTyped={(e) => {
-                setTime(e);
-              }}
-              type="time"
-              placeholderValue="12:45 PM"
-            />
-          </div>
-          <div class="text-center text-base-content w-full items-center">
-            <button
-              onClick={() => {
-                if (
-                  name.length > 0 &&
-                  task.length > 0 &&
-                  date.length > 0 &&
-                  time.length > 0
-                ) {
-                  setData([...data, { name, task, date, time }]);
-                  toast.success("Added");
-                } else {
-                  toast.error("All fields are required");
-                }
-              }}
-              className="btn btn-secondary-focus mt-8 mb-4 w-48"
-            >
-              Add new task
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
+          );
+        })}
+      </div>
+      <div class="flex flex-col justify-center items-center w-full text-left">
+        <InputFieldCenter
+          fieldProps={"Field"}
+          valueTyped={(e) => {
+            setName(e);
+          }}
+          type="text"
+          lengthMax={256}
+          placeholderValue="Japanese lesson"
+        />
+        <InputFieldCenter
+          fieldProps={"Task"}
+          valueTyped={(e) => {
+            setTask(e);
+          }}
+          type="text"
+          lengthMax={256}
+          placeholderValue="Listening chapter 26"
+        />
+        <InputFieldCenter
+          fieldProps={"Date"}
+          valueTyped={(e) => {
+            setDate(e);
+          }}
+          type="date"
+        />
+        <InputFieldCenter
+          fieldProps={"Time"}
+          valueTyped={(e) => {
+            setTime(e);
+          }}
+          type="time"
+          placeholderValue="12:45 PM"
+        />
+      </div>
+      <div class="text-center text-base-content w-full items-center">
+        <button
+          onClick={() => {
+            if (
+              name.length > 0 &&
+              task.length > 0 &&
+              date.length > 0 &&
+              time.length > 0
+            ) {
+              setData([...data, { name, task, date, time }]);
+              toast.success("Added");
+            } else {
+              toast.error("All fields are required");
+            }
+          }}
+          className="btn btn-secondary-focus mt-8 w-72 md:w-96"
+        >
+          Add new task
+        </button>
+      </div>
+    </section>
   );
 };
 

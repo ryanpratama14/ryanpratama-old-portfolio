@@ -2,7 +2,7 @@ import React from "react";
 
 const Instagram = () => {
   return (
-    <div class="flex items-end justify-end fixed top-0 right-0 mt-[4.2rem] mr-1 z-10">
+    <div class="flex items-end justify-end fixed top-0 right-0 mt-[4.5rem] mr-1 z-10">
       <div>
         <a
           title="email: hire me"

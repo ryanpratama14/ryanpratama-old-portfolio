@@ -18,11 +18,11 @@ const Navbar = () => {
   return (
     <div
       class="
-    sticky top-0 z-30  h-16 bg-opacity-90 backdrop-blur duration-100 
+    sticky top-0 z-30  bg-opacity-90 backdrop-blur duration-100 
     text-primary-content shadow
     "
     >
-      <div class="navbar flex justify-center">
+      <div class="navbar flex justify-center items-center">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -43,7 +43,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-200 text-base-content"
+              class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-100 text-base-content"
             >
               <li>
                 {routeNavbarOptions.map((e) => {
@@ -80,10 +80,13 @@ const Navbar = () => {
             Homepage
           </NavLink>
         </div>
-        <div class="navbar-end ">
+        <div class="navbar-end">
           <ThemeChanger />
-          <div class="dropdown dropdown-end ml-0.5">
-            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="dropdown dropdown-end ml-1">
+            <label
+              tabindex="0"
+              class="btn btn-ghost btn-circle avatar flex items-center"
+            >
               <div class="w-16 rounded-full">
                 <img
                   alt="ryan display profile"
@@ -93,7 +96,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="mt-3 p-2 bg-base-200 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
+              class="mt-3 p-2 bg-base-100 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
             >
               <li>
                 {linkSocial.map((e) => {

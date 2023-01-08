@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const ToDoCard = ({
   nameProps,
@@ -13,8 +13,7 @@ const ToDoCard = ({
 }) => {
   const [counter, setCounter] = useState(0);
   return (
-    <div class="text-primary-content mt-2 mb-6 shadow-2xl rounded-xl w-96 md:w-96 md:mx-6 md:my-6 py-6 px-6 overflow-hidden from-secondary to-primary bg-gradient-to-t">
-      <Toaster />
+    <div class="text-primary-content shadow-2xl rounded-xl w-96 my-3 md:m-3 p-6 overflow-hidden from-primary via-secondary to-accent bg-gradient-to-br background-animation">
       <div class="flex items-center border-neutral border-b-2 mb-2 pb-2">
         <img
           class="w-12 h-12 relative object-cover"
@@ -22,24 +21,22 @@ const ToDoCard = ({
           src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png"
         />
         <div class="pl-3">
-          <div class="font-extrabold  text-[1.3rem] text-primary-content tracking-tighter">
+          <div class="font-extrabold  text-[1.3rem]  tracking-tighter">
             {nameProps}
           </div>
         </div>
       </div>
       <div class="w-full">
-        <p class="font-extrabold text-[1.6rem] text-transparent bg-clip-text bg-gradient-to-r from-primary-content to-black mb-2">
-          {taskProps}
-        </p>
+        <p class="font-extrabold text-[1.6rem] mb-2">{taskProps}</p>
         <p
           style={{ textDecoration: todo.isDone ? "line-through" : "" }}
-          class="text-primary-content text-lg font-bold tracking-tighter"
+          class=" text-lg font-bold"
         >
           📆 {dateProps}
           <br />⏰ {timeProps}
         </p>
 
-        <p class="text-stone-900 text-sm text-left mt-2">
+        <p class=" text-sm text-left mt-2">
           {" "}
           {todo.isDone ? "" : "on progress...💪"}
         </p>

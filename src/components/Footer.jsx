@@ -5,18 +5,18 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <div class="from-secondary to-secondary-focus bg-gradient-to-b text-secondary-content">
+    <div class="from-accent to-accent-focus bg-gradient-to-b text-secondary-content">
       <footer class="footer footer-center p-4 sm:md:lg:text-base">
         <div>
           <p>
-            © 2023 FaoTech. All rights reserved.
-            <div className="flex justify-center text-secondary-content gap-2 my-1">
+            © 2023 faoTech. All rights reserved.
+            <div className="flex justify-center text-secondary-content gap-1 my-1">
               {linkSocial.map((e) => (
                 <a
                   href={e.linkSocial}
                   target="_blank"
                   rel="noreferrer"
-                  class=" transition-all transform hover:scale-125  duration-400 "
+                  class=" transition-all transform hover:scale-125 duration-400 "
                 >
                   <Icon icon={e.label} width="25" height="25" />
                 </a>

@@ -17,29 +17,31 @@ function Cards() {
   }, []);
 
   return (
-    <div class="pt-32 from-primary to-secondary text-primary-content bg-gradient-to-b -mt-[5rem] pb-20">
+    <section
+      id="cards"
+      class="pb-[20rem] -mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
+    >
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",
           duration: 1300,
         }}
       />
-      <div class="px-12 py-12 mx-auto max-w-xl text-center">
-        <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-          FaoTech
+      {/* TITLE  */}
+      <div class="my-20 text-center font-bold sm:text-5xl text-4xl text-primary-content">
+        <h1>
+          faoTech
           <br />
-          <span class="text-primary-content">Member Card</span>
-        </h2>
+          Member Card
+        </h1>
       </div>
+      {/* CARDS */}
       <div className="flex flex-wrap justify-center items-center">
         {data?.map((element) => {
-          return (
-            <div className="mt-4 ">
-              <Card nameProps={element.name} ageProps={element.age} />
-            </div>
-          );
+          return <Card nameProps={element.name} ageProps={element.age} />;
         })}
       </div>
+      {/* INPUT FIELD */}
       <div className="flex justify-center items-center flex-wrap flex-col">
         <InputField
           valueTyped={(e) => {
@@ -56,7 +58,7 @@ function Cards() {
           lengthMax={2}
           placeholderValue="18+"
         />
-
+        {/* BUTTON */}
         <button
           onClick={() => {
             if (age >= 18 && name.length > 0 && name.match(regex)) {
@@ -68,12 +70,12 @@ function Cards() {
               toast.error("All fields are required");
             }
           }}
-          className="btn btn-secondary-focus mt-6 mb-4 w-72"
+          className="btn btn-secondary-focus mt-6 w-72"
         >
-          Add new card
+          Add New Card
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 

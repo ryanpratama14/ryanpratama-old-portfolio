@@ -1,5 +1,5 @@
 import { React } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const ExpenseCard = ({
   descProps,
@@ -12,7 +12,6 @@ const ExpenseCard = ({
 }) => {
   return (
     <div>
-      <Toaster />
       <div class="flow-root mt-2">
         <ul class="divide-y divide-gray-700 dark:divide-gray-700">
           <li
