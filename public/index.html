@@ -13,5 +13,22 @@
   <body>
     <noscript>You need to enable JavaScript dude...</noscript>
     <div id="root"></div>
+    <style>
+      .background-animation {
+        background-size: 400% 400%;
+        animation: bg-animation 3s infinite ease-in-out;
+      }
+      @keyframes bg-animation {
+        0% {
+          background-position: 0 30%;
+        }
+        30% {
+          background-position: 80% 80%;
+        }
+        100% {
+          background-position: 0% 30%;
+        }
+      }
+    </style>
   </body>
 </html>

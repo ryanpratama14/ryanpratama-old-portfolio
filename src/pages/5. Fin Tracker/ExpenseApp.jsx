@@ -77,7 +77,7 @@ const Expense = () => {
   return (
     <section
       id="financial-tracker-app"
-      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
+      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{
@@ -97,7 +97,7 @@ const Expense = () => {
       {/* THE CARD */}
       <div class="w-full flex justify-center">
         <div class="w-full sm:w-[25rem]">
-          <div class="p-6 rounded-lg  shadow-2xl bg-base-100">
+          <div class="p-6 rounded-lg shadow-2xl from-base-100 via-base-200 to-base-300 bg-gradient-to-tl background-animation">
             <div class="flex justify-between items-center">
               <h3 class="font-extrabold  text-2xl text-base-content tracking-tight">
                 BALANCE
