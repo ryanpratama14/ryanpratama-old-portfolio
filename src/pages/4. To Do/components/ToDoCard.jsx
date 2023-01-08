@@ -21,34 +21,25 @@ const ToDoCard = ({
           src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png"
         />
         <div class="pl-3">
-          <div class="font-extrabold  text-[1.3rem]  tracking-tighter">
+          <div class="font-extrabold  text-2xl  tracking-tighter">
             {nameProps}
           </div>
         </div>
       </div>
       <div class="w-full">
-        <p class="font-extrabold text-[1.6rem] mb-2">{taskProps}</p>
+        <p class="font-extrabold text-2xl mb-2">{taskProps}</p>
         <p
           style={{ textDecoration: todo.isDone ? "line-through" : "" }}
-          class=" text-lg font-bold"
+          class="text-lg font-bold"
         >
           📆 {dateProps}
           <br />⏰ {timeProps}
         </p>
-
-        <p class=" text-sm text-left mt-2">
-          {" "}
-          {todo.isDone ? "" : "on progress...💪"}
+        <p class="text-left text-lg">
+          {todo.isDone ? "🙌" : "💪 on progress..."}
         </p>
       </div>
-
-      <div
-        className={`${
-          todo.isDone
-            ? "card-actions justify-between mt-9"
-            : "card-actions justify-between mt-2"
-        }`}
-      >
+      <div className="card-actions justify-between mt-4">
         <button
           class="btn border-transparent btn-error"
           onClick={() => {
@@ -74,7 +65,7 @@ const ToDoCard = ({
             }
           }}
         >
-          {todo.isDone ? "Task Completed" : "Mark as Done"}
+          {todo.isDone ? "Marked as Done" : "Mark as Done"}
         </button>
       </div>
     </div>
