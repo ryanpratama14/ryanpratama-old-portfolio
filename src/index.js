@@ -38,7 +38,7 @@ export default function Routing() {
             })}
           </Routes>
           <LoadToTop />
-          <HireMe />
+          {/* <HireMe /> */}
           <Instagram />
           <Footer />
         </motion.div>
