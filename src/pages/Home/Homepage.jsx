@@ -14,7 +14,7 @@ const Homepage = () => {
         I'm Ryan
       </h1>
 
-      <div class="w-full flex justify-between flex-wrap px-[4vw] lg:px-[5vw]">
+      <div class="w-full flex justify-between flex-wrap lg:px-[5vw]">
         <div class="w-full lg:w-[55%]">
           <motion.div
             initial="hidden"
@@ -37,8 +37,8 @@ const Homepage = () => {
             viewport={{ once: true, amount: 1 }}
             transition={{ delay: 0.25, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <h2 class="text-xl md:text-2xl mt-6 text-primary-content w-full md:w-[70%]">
@@ -46,13 +46,13 @@ const Homepage = () => {
               websites and web applications.
             </h2>
           </motion.div>
-          <div class="w-full flex justify-between mt-12 md:mt-20">
+          <div class="w-full flex justify-between mt-12 md:mt-20 text-primary-content">
             <div class="w-[45%]">
               <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 1 }}
-                transition={{ delay: 0.25, duration: 0.5 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
                 variants={{
                   hidden: { opacity: 0, y: 50 },
                   visible: { opacity: 1, y: 0 },
@@ -67,11 +67,11 @@ const Homepage = () => {
             </div>
             <div class="w-[45%]">
               <motion.div
-                class="flex h-full items-end justify-between flex-col flex-wrap"
+                class="flex h-full w-full items-end justify-between flex-col flex-wrap"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 1 }}
-                transition={{ delay: 0.25, duration: 0.5 }}
+                transition={{ delay: 0.75, duration: 0.5 }}
                 variants={{
                   hidden: { opacity: 0, y: 50 },
                   visible: { opacity: 1, y: 0 },
@@ -85,7 +85,7 @@ const Homepage = () => {
                   href="https://t.me/ryanpratama14"
                   target="_blank"
                   rel="noreferrer"
-                  class="btn btn-primary w-36"
+                  class="btn btn-primary w-full sm:w-[60%] lg:w-[50%] sm:mt-6 md:mt-0"
                 >
                   Contact Me
                 </a>
