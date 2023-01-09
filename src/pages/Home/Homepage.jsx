@@ -8,23 +8,12 @@ const Homepage = () => {
       id="homepage"
       class="w-full  items-center px-[8vw] md:px-[4vw] -mt-[4rem] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent bg-gradient-to-b"
     >
-      <motion.div
-        class="flex justify-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 1 }}
-        transition={{ delay: 0.25, duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0.5, scale: 0.5 },
-          visible: { opacity: 1, scale: 1 },
-        }}
-      >
-        <h1 class=" sm:text-5xl text-4xl   font-bold text-center py-20 text-primary-content">
-          Hi! 👋
-          <br />
-          I'm Ryan
-        </h1>
-      </motion.div>
+      <h1 class=" sm:text-5xl text-4xl   font-bold text-center py-20 text-primary-content">
+        Hi! 👋
+        <br />
+        I'm Ryan
+      </h1>
+
       <div class="w-full flex justify-between flex-wrap px-[4vw] lg:px-[5vw]">
         <div class="w-full lg:w-[55%]">
           <motion.div
@@ -57,16 +46,37 @@ const Homepage = () => {
               websites and web applications.
             </h2>
           </motion.div>
-          <div class="w-full flex justify-between mt-12">
+          <div class="w-full flex justify-between mt-12 md:mt-20">
             <div class="w-[45%]">
-              <h3 class="md:text-lg">
-                I have had the opportunity to work on a variety of projects and
-                have gained valuable experience collaborating with designers and
-                back end developers.
-              </h3>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 1 }}
+                transition={{ delay: 0.25, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+              >
+                <h3 class="md:text-lg">
+                  I have had the opportunity to work on a variety of projects
+                  and have gained valuable experience collaborating with
+                  designers and back end developers.
+                </h3>
+              </motion.div>
             </div>
             <div class="w-[45%]">
-              <div class="flex h-full items-end justify-between flex-col flex-wrap">
+              <motion.div
+                class="flex h-full items-end justify-between flex-col flex-wrap"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 1 }}
+                transition={{ delay: 0.25, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+              >
                 <h3 class="md:text-lg">
                   I am excited to continue growing and learning in my career as
                   a front-end developer.
@@ -79,7 +89,7 @@ const Homepage = () => {
                 >
                   Contact Me
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
