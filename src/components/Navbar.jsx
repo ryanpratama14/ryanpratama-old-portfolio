@@ -102,7 +102,7 @@ const Navbar = () => {
                 {linkSocial.map((e) => {
                   return (
                     <a
-                      class="justify-between items-center active:bg-primary-focus hover:bg-primary"
+                      class="justify-between items-center active:bg-primary-focus hover:bg-primary hover:text-primary-content"
                       target="_blank"
                       rel="noreferrer"
                       href={e.linkSocial}

@@ -14,7 +14,7 @@ const Homepage = () => {
         I'm Ryan
       </h1>
 
-      <div class="w-full flex justify-between flex-wrap lg:px-[5vw]">
+      <div class="w-full flex justify-between flex-wrap md:px-[5vw]">
         <div class="w-full lg:w-[55%]">
           <motion.div
             initial="hidden"
