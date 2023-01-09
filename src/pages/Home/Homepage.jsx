@@ -14,7 +14,7 @@ const Homepage = () => {
         I'm Ryan
       </h1>
 
-      <div class="w-full flex justify-between flex-wrap md:px-[5vw]">
+      <div class="w-full flex justify-between items-center flex-wrap md:px-[5vw]">
         <div class="w-full lg:w-[55%]">
           <motion.div
             initial="hidden"
@@ -26,9 +26,10 @@ const Homepage = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <h1 class="background-animation text-5xl md:text-6xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-primary-content to-secondary-focus">
+            <h1 class="background-animation text-5xl sm:text-6xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-primary-content to-secondary-focus">
               Front-end
-              <br /> developer<span class="text-primary-content">.</span>
+              <br />
+              developer<span class="text-primary-content">.</span>
             </h1>
           </motion.div>
           <motion.div
@@ -41,12 +42,12 @@ const Homepage = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <h2 class="text-xl md:text-2xl mt-6 text-primary-content w-full md:w-[70%]">
+            <h2 class="text-xl sm:text-2xl mt-6 text-primary-content w-full sm:w-[70%]">
               I have a passion for creating visually appealing and user-friendly
               websites and web applications.
             </h2>
           </motion.div>
-          <div class="w-full flex justify-between mt-12 md:mt-20 text-primary-content">
+          <div class="w-full flex justify-between mt-12 text-primary-content">
             <div class="w-[45%]">
               <motion.div
                 initial="hidden"
@@ -58,7 +59,7 @@ const Homepage = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
               >
-                <h3 class="md:text-lg">
+                <h3 class="sm:text-lg">
                   I have had the opportunity to work on a variety of projects
                   and have gained valuable experience collaborating with
                   designers and back end developers.
@@ -77,7 +78,7 @@ const Homepage = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
               >
-                <h3 class="md:text-lg">
+                <h3 class="sm:text-lg">
                   I am excited to continue growing and learning in my career as
                   a front-end developer.
                 </h3>
@@ -85,7 +86,7 @@ const Homepage = () => {
                   href="https://t.me/ryanpratama14"
                   target="_blank"
                   rel="noreferrer"
-                  class="btn btn-primary w-full sm:w-[60%] lg:w-[50%] sm:mt-6 md:mt-0"
+                  class="btn btn-primary w-full sm:w-[70%] lg:w-[60%] mt-6 sm:mt-6 md:mt-0"
                 >
                   Contact Me
                 </a>
