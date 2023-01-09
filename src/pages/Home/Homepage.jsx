@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import React from "react";
 import CarouselItem from "./components/CarouselItem";
@@ -32,6 +33,7 @@ const Homepage = () => {
               developer<span class="text-primary-content">.</span>
             </h1>
           </motion.div>
+          {/* i have a passion.. */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -47,6 +49,7 @@ const Homepage = () => {
               websites and web applications.
             </h2>
           </motion.div>
+          {/* DETAILS */}
           <div class="w-full flex justify-between mt-12 text-primary-content">
             <div class="w-[45%]">
               <motion.div
@@ -86,14 +89,28 @@ const Homepage = () => {
                   href="https://t.me/ryanpratama14"
                   target="_blank"
                   rel="noreferrer"
-                  class="btn btn-primary w-full sm:w-[70%] lg:w-[60%] mt-6 sm:mt-6 md:mt-0"
+                  class="btn btn-primary w-full sm:w-[70%] lg:w-[60%] mt-6 sm:mt-6 md:mt-0 relative group overflow-hidden"
+                  //                   class="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group
+                  // relative items-center overflow-hidden"
                 >
-                  Contact Me
+                  <span class="relative  group-hover:-translate-x-3 ease duration-300 group-hover:transform text-primary-content">
+                    Contact Me
+                  </span>
+                  <span class="absolute right-0 flex items-center justify-start  w-6 h-6 duration-300 transform translate-x-full group-hover:-translate-x-8 ease">
+                    {" "}
+                    <Icon
+                      icon="mdi:greeting-outline"
+                      width="24"
+                      height="24"
+                      class="text-primary-content"
+                    />
+                  </span>
                 </a>
               </motion.div>
             </div>
           </div>
         </div>
+        {/* CAROUSEL */}
         {/* <div class="w-full lg:w-[45%] transition-all transform hover:scale-110 hover:cursor-ew-resize">
           <div class="carousel carousel-center rounded-box space-x-4">
           
