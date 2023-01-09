@@ -27,7 +27,7 @@ const Homepage = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <h1 class="background-animation text-5xl sm:text-6xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-primary-content to-secondary-focus">
+            <h1 class="background-animation text-5xl sm:text-6xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-primary-content to-secondary-focus drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">
               Front-end
               <br />
               developer<span class="text-primary-content">.</span>
@@ -89,7 +89,7 @@ const Homepage = () => {
                   href="https://t.me/ryanpratama14"
                   target="_blank"
                   rel="noreferrer"
-                  class="btn btn-primary w-full sm:w-[70%] lg:w-[60%] mt-6 sm:mt-6 md:mt-0 relative group overflow-hidden"
+                  class="shadow-xl btn btn-primary w-full sm:w-[70%] lg:w-[60%] mt-6 sm:mt-6 md:mt-0 relative group overflow-hidden"
                   //                   class="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group
                   // relative items-center overflow-hidden"
                 >
