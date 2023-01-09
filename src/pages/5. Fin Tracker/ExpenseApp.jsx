@@ -5,7 +5,7 @@ import useLocalStrorage from "../LocalStorage";
 
 const Expense = () => {
   useEffect(() => {
-    document.title = "#5: Financial Tracker App";
+    document.title = "Financial Tracker App";
   }, []);
 
   const [amount, setAmount] = useState();

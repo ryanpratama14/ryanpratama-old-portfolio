@@ -8,7 +8,7 @@ import ToDoCard from "./components/ToDoCard";
 
 const ToDo = () => {
   useEffect(() => {
-    document.title = "#4: To Do List App";
+    document.title = "To Do List App";
   }, []);
   const [name, setName] = useState("");
   const [task, setTask] = useState("");

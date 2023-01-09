@@ -5,7 +5,7 @@ import useLocalStrorage from "../LocalStorage";
 
 function Zikirapp() {
   useEffect(() => {
-    document.title = "#3: Zikr App";
+    document.title = "Zikr App";
   }, []);
   const [num, setNum] = useLocalStrorage("zikirNum", 0);
   const [doa, setDoa] = useLocalStrorage("zikirDoa", "سُـبْحانَ الله");
