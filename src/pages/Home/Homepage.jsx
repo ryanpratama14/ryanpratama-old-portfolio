@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import React from "react";
 import Marquee from "react-fast-marquee";
@@ -9,16 +8,26 @@ const Homepage = () => {
   return (
     <section
       id="homepage"
-      class="w-full  items-center px-[8vw] md:px-[4vw] -mt-[4rem] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent bg-gradient-to-b"
+      class="w-full px-[8vw] md:px-[4vw] -mt-[4rem] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent bg-gradient-to-b"
     >
-      <h1 class=" sm:text-5xl text-4xl   font-bold text-center py-20 text-primary-content">
-        Hi! 👋
-        <br />
-        I'm Ryan
-      </h1>
-
       <div class="w-full flex justify-between items-center flex-wrap md:px-[5vw]">
         <div class="w-full lg:w-[55%]">
+          <h1 class=" sm:text-5xl text-4xl  font-bold text-center sm:text-left pb-12 pt-20 text-primary-content">
+            {/* <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 1 }}
+              transition={{ delay: 0.25, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            > */}
+            Hi! 👋
+            {/* </motion.div> */}
+            <br />
+            I'm Ryan
+          </h1>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -101,7 +110,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <Marquee speed={150} gradient={false}>
+        <Marquee speed={100} gradient={false}>
           <Skills />
         </Marquee>
         {/* CAROUSEL */}
