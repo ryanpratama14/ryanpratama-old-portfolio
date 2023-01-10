@@ -89,22 +89,11 @@ const Homepage = () => {
                   href="https://t.me/ryanpratama14"
                   target="_blank"
                   rel="noreferrer"
-                  class="shadow-xl btn btn-primary w-full sm:w-[70%] lg:w-[60%] mt-6 sm:mt-6 md:mt-0 relative group overflow-hidden"
+                  class="shadow-xl btn btn-primary w-full sm:w-[70%] lg:w-[65%] mt-6 sm:mt-6 md:mt-0 relative group overflow-hidden"
                   //                   class="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group
                   // relative items-center overflow-hidden"
                 >
-                  <span class="relative group-hover:-translate-x-3 ease duration-300 group-hover:transform text-primary-content">
-                    Contact Me
-                  </span>
-                  <span class="absolute right-0 flex items-center justify-start duration-300 transform translate-x-full group-hover:-translate-x-5 ease">
-                    {" "}
-                    <Icon
-                      icon="mdi:greeting-outline"
-                      width="20"
-                      height="20"
-                      class="text-primary-content"
-                    />
-                  </span>
+                  Contact Me
                 </a>
               </motion.div>
             </div>
