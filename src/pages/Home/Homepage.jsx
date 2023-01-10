@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import React from "react";
+import Marquee from "react-fast-marquee";
+import Skills from "../../store/helper/Skills";
 import CarouselItem from "./components/CarouselItem";
 
 const Homepage = () => {
@@ -99,6 +101,9 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+        <Marquee speed={150} gradient={false}>
+          <Skills />
+        </Marquee>
         {/* CAROUSEL */}
         {/* <div class="w-full lg:w-[45%] transition-all transform hover:scale-110 hover:cursor-ew-resize">
           <div class="carousel carousel-center rounded-box space-x-4">

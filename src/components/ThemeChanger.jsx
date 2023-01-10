@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { themeChange } from "theme-change";
-import { dataTheme } from "../store/DataTheme";
+import { dataTheme } from "../store/helper/DataTheme";
 
 const ThemeChanger = () => {
   useEffect(() => {
