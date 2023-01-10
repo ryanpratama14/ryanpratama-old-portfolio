@@ -93,15 +93,15 @@ const Homepage = () => {
                   //                   class="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group
                   // relative items-center overflow-hidden"
                 >
-                  <span class="relative  group-hover:-translate-x-3 ease duration-300 group-hover:transform text-primary-content">
+                  <span class="relative group-hover:-translate-x-3 ease duration-300 group-hover:transform text-primary-content">
                     Contact Me
                   </span>
-                  <span class="absolute right-0 flex items-center justify-start  w-6 h-6 duration-300 transform translate-x-full group-hover:-translate-x-8 ease">
+                  <span class="absolute right-0 flex items-center justify-start duration-300 transform translate-x-full group-hover:-translate-x-5 ease">
                     {" "}
                     <Icon
                       icon="mdi:greeting-outline"
-                      width="24"
-                      height="24"
+                      width="20"
+                      height="20"
                       class="text-primary-content"
                     />
                   </span>
