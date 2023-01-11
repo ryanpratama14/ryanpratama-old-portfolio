@@ -101,7 +101,7 @@ const Homepage = () => {
                   target="_blank"
                   rel="noreferrer"
                   className="shadow-xl btn btn-primary w-full sm:w-[70%] lg:w-[65%] mt-6 sm:mt-6 md:mt-0 relative group overflow-hidden"
-                  //                   className="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group
+                  //               className="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group
                   // relative items-center overflow-hidden"
                 >
                   Contact Me

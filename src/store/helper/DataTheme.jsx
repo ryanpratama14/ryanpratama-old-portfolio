@@ -5,7 +5,6 @@ export const dataTheme = [
   {
     theme: "cupcake",
   },
-
   {
     theme: "retro",
   },
@@ -18,11 +17,9 @@ export const dataTheme = [
   {
     theme: "synthwave",
   },
-
   {
     theme: "night",
   },
-
   {
     theme: "dracula",
   },
