@@ -65,7 +65,7 @@ const ToDo = () => {
   return (
     <section
       id="to-do-list-app"
-      class="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
+      className="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{
@@ -74,24 +74,24 @@ const ToDo = () => {
         }}
       />
       {/* TITLE */}
-      <div class="text-center font-bold sm:text-5xl text-4xl tracking-tight my-20">
+      <div className="text-center font-bold sm:text-5xl text-4xl tracking-tight my-20">
         <h1>
           Welcome to
           <br />
           To Do List App!
         </h1>
       </div>
-      <div class="flex justify-center">
+      <div className="flex justify-center">
         <input
           placeholder="Search task..."
-          class="input input-bordered input-sm w-72 md:w-96 my-6 text-base-content"
+          className="input input-bordered input-sm w-72 md:w-96 my-6 text-base-content"
           onChange={(e) => {
             updateSearchText(e.target.value);
             filterData(e.target.value);
           }}
         />
       </div>
-      <div class="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center">
         {filteredTransaction?.map((todo, index) => {
           return (
             <ToDoCard
@@ -107,7 +107,7 @@ const ToDo = () => {
           );
         })}
       </div>
-      <div class="flex flex-col justify-center items-center w-full text-left">
+      <div className="flex flex-col justify-center items-center w-full text-left">
         <InputFieldCenter
           fieldProps={"Field"}
           valueTyped={(e) => {
@@ -142,7 +142,7 @@ const ToDo = () => {
           placeholderValue="12:45 PM"
         />
       </div>
-      <div class="text-center text-base-content w-full items-center">
+      <div className="text-center text-base-content w-full items-center">
         <button
           onClick={() => {
             if (

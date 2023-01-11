@@ -10,13 +10,13 @@ const Reviews = () => {
       id="reviews"
       className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
     >
-      <div class="font-bold sm:text-5xl text-4xl my-20 text-center">
-        <h1 class="text-4xl font-bold sm:text-5xl">
+      <div className="font-bold sm:text-5xl text-4xl my-20 text-center">
+        <h1 className="text-4xl font-bold sm:text-5xl">
           Read trusted reviews <br /> from our students
         </h1>
       </div>
 
-      <div class="gap-6 flex justify-center items-center flex-wrap">
+      <div className="gap-6 flex justify-center items-center flex-wrap">
         <Review
           nameProps={"Alvin Pratama"}
           linkedinProps={"https://www.linkedin.com/in/alvin-pratama-1a046424b/"}

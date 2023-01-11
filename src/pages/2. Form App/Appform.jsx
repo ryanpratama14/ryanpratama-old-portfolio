@@ -78,7 +78,7 @@ function Appform() {
         }}
       />
       {/* This is Title */}
-      <div class="font-bold sm:text-5xl text-4xl text-primary-content my-20 text-center">
+      <div className="font-bold sm:text-5xl text-4xl text-primary-content my-20 text-center">
         <h1>
           Passionate about programming?
           <br />
@@ -88,15 +88,15 @@ function Appform() {
       {/* This is end of Title */}
 
       {/* This is Form */}
-      <div class="flex justify-center">
-        <div class="w-full md:w-[50%] text-left">
-          <div class="grid gap-6 mb-6 md:grid-cols-2">
+      <div className="flex justify-center">
+        <div className="w-full md:w-[50%] text-left">
+          <div className="grid gap-6 mb-6 md:grid-cols-2">
             <div>
-              <label class="block mb-2 text-m font-medium text-primary-content">
+              <label className="block mb-2 text-m font-medium text-primary-content">
                 First Name
               </label>
               <input
-                class=" input input-bordered w-full text-base-content"
+                className=" input input-bordered w-full text-base-content"
                 placeholder="Ryan"
                 required
                 maxLength={20}
@@ -104,11 +104,11 @@ function Appform() {
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium text-primary-content">
+              <label className="block mb-2 text-m font-medium text-primary-content">
                 Last Name
               </label>
               <input
-                class=" border input input-bordered w-full text-base-content"
+                className=" border input input-bordered w-full text-base-content"
                 placeholder="Pratama"
                 required
                 maxLength={20}
@@ -116,11 +116,11 @@ function Appform() {
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium text-primary-content">
+              <label className="block mb-2 text-m font-medium text-primary-content">
                 Age
               </label>
               <input
-                class=" border input input-bordered w-full text-base-content"
+                className=" border input input-bordered w-full text-base-content"
                 placeholder="18+ only"
                 required
                 maxLength={2}
@@ -128,11 +128,11 @@ function Appform() {
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium text-primary-content">
+              <label className="block mb-2 text-m font-medium text-primary-content">
                 Phone Number
               </label>
               <input
-                class=" border input input-bordered w-full text-base-content"
+                className=" border input input-bordered w-full text-base-content"
                 placeholder="+7 996 100 52 02"
                 required
                 maxLength={16}
@@ -140,50 +140,50 @@ function Appform() {
               />
             </div>
           </div>
-          <div class="mb-6">
-            <label class="block mb-2 text-m font-medium text-primary-content">
+          <div className="mb-6">
+            <label className="block mb-2 text-m font-medium text-primary-content">
               Instagram Username
             </label>
             <input
-              class=" border input input-bordered w-full text-base-content"
+              className=" border input input-bordered w-full text-base-content"
               placeholder="@ryanpratama14"
               required
               maxLength={30}
               onChange={(e) => setInstagram(e.target.value)}
             />
           </div>
-          <div class="mb-6">
-            <label class="block mb-2 text-m font-medium text-primary-content">
+          <div className="mb-6">
+            <label className="block mb-2 text-m font-medium text-primary-content">
               Email Address
             </label>
             <input
               maxLength={30}
-              class=" border input input-bordered w-full text-base-content"
+              className=" border input input-bordered w-full text-base-content"
               placeholder="partnership@faotech.com"
               required
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
-          <div class="grid gap-6 mb-6 md:grid-cols-2">
+          <div className="grid gap-6 mb-6 md:grid-cols-2">
             <div>
-              <label class="block mb-2 text-m font-medium text-primary-content">
+              <label className="block mb-2 text-m font-medium text-primary-content">
                 Country
               </label>
 
               <CountryDropdown
-                class="  input input-bordered w-full text-base-content"
+                className="  input input-bordered w-full text-base-content"
                 value={country}
                 onChange={(val) => setCountry(val)}
               />
             </div>
             <div>
-              <label class="block mb-2 text-m font-medium text-primary-content">
+              <label className="block mb-2 text-m font-medium text-primary-content">
                 Region
               </label>
 
               <RegionDropdown
-                class="  input input-bordered w-full text-base-content"
+                className="  input input-bordered w-full text-base-content"
                 country={country}
                 value={region}
                 onChange={(val) => setRegion(val)}
@@ -191,13 +191,13 @@ function Appform() {
             </div>
           </div>
 
-          <div class="mb-6">
-            <label class="block mb-2 text-m font-medium text-primary-content">
+          <div className="mb-6">
+            <label className="block mb-2 text-m font-medium text-primary-content">
               Address
             </label>
             <input
               maxLength={50}
-              class="input input-bordered w-full text-base-content"
+              className="input input-bordered w-full text-base-content"
               placeholder="Jackson Street 91"
               required
               onChange={(e) => setAddress(e.target.value)}
@@ -205,7 +205,7 @@ function Appform() {
           </div>
         </div>
       </div>
-      <div class="text-center">
+      <div className="text-center">
         <button
           onClick={(event) => {
             isSubmitted = isSubmitted + 1;
@@ -222,12 +222,12 @@ function Appform() {
             }
           }}
           type="submit"
-          class=" btn btn-primary-focus w-36 md:w-64"
+          className=" btn btn-primary-focus w-36 md:w-64"
         >
           Submit
         </button>
       </div>
-      <p class=" text-l mt-3 text-center">{word}</p>
+      <p className=" text-l mt-3 text-center">{word}</p>
 
       {/* This is end of Form */}
     </section>

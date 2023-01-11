@@ -5,8 +5,8 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <div class="from-accent to-accent-focus bg-gradient-to-b text-secondary-content">
-      <footer class="footer footer-center p-4 sm:md:lg:text-base">
+    <div className="from-accent to-accent-focus bg-gradient-to-b text-secondary-content">
+      <footer className="footer footer-center p-4 sm:md:lg:text-base">
         <div>
           <p>
             © 2023{" "}
@@ -25,7 +25,7 @@ const Footer = () => {
                   href={e.linkSocial}
                   target="_blank"
                   rel="noreferrer"
-                  class=" transition-all transform hover:scale-125 duration-400 "
+                  className=" transition-all transform hover:scale-125 duration-400 "
                 >
                   <Icon icon={e.label} width="25" height="25" />
                 </a>
@@ -35,7 +35,7 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              class="font-extrabold"
+              className="font-extrabold"
               href="https://tailwindcss.com/ "
             >
               tailwindcss
@@ -44,7 +44,7 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              class="font-extrabold"
+              className="font-extrabold"
               href="https://www.daisyui.com "
             >
               {" "}
