@@ -12,7 +12,7 @@ function Card({ nameProps, ageProps }) {
         <h2 className="  text-center text-white text-2xl font-bold ">
           FaoTech's member
         </h2>
-        <p class="text-xl text-center text-white">
+        <p className="text-xl text-center text-white">
           {nameProps}, {ageProps} years old
         </p>
 

@@ -5,7 +5,7 @@ import useLocalStrorage from "../LocalStorage";
 
 const Expense = () => {
   useEffect(() => {
-    document.title = "#5: Financial Tracker App";
+    document.title = "Financial Tracker App";
   }, []);
 
   const [amount, setAmount] = useState();
@@ -86,7 +86,7 @@ const Expense = () => {
         }}
       />
       {/* TITLE */}
-      <div class="text-center my-20 font-bold sm:text-5xl text-4xl text-primary-content">
+      <div className="text-center my-20 font-bold sm:text-5xl text-4xl text-primary-content">
         <h1>
           Welcome to
           <br />
@@ -95,11 +95,11 @@ const Expense = () => {
       </div>
 
       {/* THE CARD */}
-      <div class="w-full flex justify-center">
-        <div class="w-full sm:w-[25rem]">
-          <div class="p-6 rounded-lg shadow-2xl from-base-100 via-base-200 to-base-300 bg-gradient-to-tl background-animation">
-            <div class="flex justify-between items-center">
-              <h3 class="font-extrabold  text-2xl text-base-content tracking-tight">
+      <div className="w-full flex justify-center">
+        <div className="w-full sm:w-[25rem]">
+          <div className="p-6 rounded-lg shadow-2xl from-base-100 via-base-200 to-base-300 bg-gradient-to-tl background-animation">
+            <div className="flex justify-between items-center">
+              <h3 className="font-extrabold  text-2xl text-base-content tracking-tight">
                 BALANCE
                 <br />
                 {income - expense} USD
@@ -113,9 +113,9 @@ const Expense = () => {
               </button>
             </div>
             {isAddTxnVisible && (
-              <div class="w-full text-center">
-                <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-secondary-focus text-center">
+              <div className="w-full text-center">
+                <div className="mt-4">
+                  <label className="block mb-2 text-m font-medium text-secondary-focus text-center">
                     Amount
                   </label>
                   <input
@@ -128,8 +128,8 @@ const Expense = () => {
                     }}
                   />
                 </div>
-                <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-secondary-focus text-center">
+                <div className="mt-4">
+                  <label className="block mb-2 text-m font-medium text-secondary-focus text-center">
                     Date
                   </label>
                   <input
@@ -142,8 +142,8 @@ const Expense = () => {
                     }}
                   />
                 </div>
-                <div class="mt-4">
-                  <label class="block mb-2 text-m font-medium text-secondary-focus text-center">
+                <div className="mt-4">
+                  <label className="block mb-2 text-m font-medium text-secondary-focus text-center">
                     Description
                   </label>
                   <input
@@ -156,7 +156,7 @@ const Expense = () => {
                     }}
                   />
                 </div>
-                <div class="flex justify-center items-center mt-4 text-base-content">
+                <div className="flex justify-center items-center mt-4 text-base-content">
                   <input
                     type="radio"
                     id="expense"
@@ -183,7 +183,7 @@ const Expense = () => {
                   <label htmlFor="Expense">Income</label>
                 </div>
                 <button
-                  class="btn btn-secondary-focus mt-4 w-56"
+                  className="btn btn-secondary-focus mt-4 w-56"
                   onClick={() => {
                     if (
                       (desc.length > 0 &&
@@ -220,17 +220,17 @@ const Expense = () => {
               className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-secondary-focus
 "
             >
-              <p class=" text-xl font-semibold text-success">${income}</p>
-              <p class=" text-xl font-semibold text-error">${expense}</p>
+              <p className=" text-xl font-semibold text-success">${income}</p>
+              <p className=" text-xl font-semibold text-error">${expense}</p>
             </div>
-            <div class="flex justify-end items-center mt-2">
-              <h3 class="text-xl font-bold leading-none text-base-content">
+            <div className="flex justify-end items-center mt-2">
+              <h3 className="text-xl font-bold leading-none text-base-content">
                 History
               </h3>
             </div>
             <input
               placeholder="Search transaction..."
-              class="input input-bordered border-base-content input-sm w-full mt-4 text-base-content"
+              className="input input-bordered border-base-content input-sm w-full mt-4 text-base-content"
               onChange={(e) => {
                 updateSearchText(e.target.value);
                 filterData(e.target.value);

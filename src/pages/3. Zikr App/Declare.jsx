@@ -22,7 +22,7 @@ const Declare = () => {
   return (
     <section
       id="zikr-app/declare"
-      class="-mt-[4rem] w-full pt-[4rem] pb-[20rem] px-[8vw] md:px-[4vw] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
+      className="-mt-[4rem] w-full pt-[4rem] pb-[20rem] px-[8vw] md:px-[4vw] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{
@@ -31,18 +31,18 @@ const Declare = () => {
         }}
       />
 
-      <div class="font-bold sm:text-5xl text-4xl text-center my-20">
+      <div className="font-bold sm:text-5xl text-4xl text-center my-20">
         <h1>
           Declare your <span>Shahada</span>
         </h1>
       </div>
 
       <div>
-        <div class="text-center mt-32">
-          <p class="text-2xl mb-6 text-primary-content">repeat:</p>
-          <p class="text-5xl text-primary-content">{word}</p>
+        <div className="text-center mt-32">
+          <p className="text-2xl mb-6 text-primary-content">repeat:</p>
+          <p className="text-5xl text-primary-content">{word}</p>
         </div>
-        <div class="flex flex-col flex-wrap justify-center items-center text-center">
+        <div className="flex flex-col flex-wrap justify-center items-center text-center">
           <button
             onClick={() => {
               if (word === "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ") {
@@ -52,14 +52,14 @@ const Declare = () => {
                 notifySuccess2();
               }
             }}
-            class="btn mt-10 btn-success w-64"
+            className="btn mt-10 btn-success w-64"
           >
             {button}
           </button>
         </div>
       </div>
-      <div class="text-center mt-32">
-        <h2 class="text-4xl font-bold sm:text-5xl">
+      <div className="text-center mt-32">
+        <h2 className="text-4xl font-bold sm:text-5xl">
           <span
             onClick={() => {
               navigate("/zikr-app");

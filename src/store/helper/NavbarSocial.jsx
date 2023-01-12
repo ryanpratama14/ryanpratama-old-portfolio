@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 export const linkSocial = [
   {
     linkSocial: "mailto:ru.ryanpratama@gmail.com",

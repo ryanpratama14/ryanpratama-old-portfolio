@@ -11,30 +11,30 @@ const Review = ({
   linkedinProps,
 }) => {
   return (
-    <div class="mb-6">
+    <div className="mb-6">
       <img
         src={pictureProps}
-        class="mx-auto h-36 w-36 rounded-full object-cover shadow-xl"
+        className="mx-auto h-36 w-36 rounded-full object-cover shadow-xl"
         alt="profile"
       />
 
-      <div class="-mt-6 flex flex-col justify-between rounded-lg px-10 py-12 text-center shadow-xl w-full md:w-72 lg:h-[25rem]">
-        <p class="font-bold  text-2xl ">{nameProps}</p>
-        <p class="mt-0.5 text-s  text-primary-content font-bold ">
+      <div className="-mt-6 flex flex-col justify-between rounded-lg px-10 py-12 text-center shadow-xl w-full md:w-72 lg:h-[25rem]">
+        <p className="font-bold  text-2xl ">{nameProps}</p>
+        <p className="mt-0.5 text-s  text-primary-content font-bold ">
           {occupationProps}
         </p>
         {/* Social Media */}
-        <div class="flex items-center justify-center mt-2">
+        <div className="flex items-center justify-center mt-2">
           <a
             title="Follow me on Instagram"
             href={instagramProps}
             target="_blank"
             rel="noreferrer"
-            class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+            className="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
           >
             <img
               alt="instagram"
-              class=" object-cover object-center w-full h-full rounded-full"
+              className=" object-cover object-center w-full h-full rounded-full"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
             />
           </a>
@@ -43,11 +43,11 @@ const Review = ({
             href={linkedinProps}
             target="_blank"
             rel="noreferrer"
-            class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+            className="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
           >
             <img
               alt="linkedin"
-              class=" object-cover object-center w-full h-full rounded-full"
+              className=" object-cover object-center w-full h-full rounded-full"
               src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
             />
           </a>
@@ -56,24 +56,24 @@ const Review = ({
             href={telegramProps}
             target="_blank"
             rel="noreferrer"
-            class="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+            className="mx-1 block w-6 h-6 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
           >
             <img
               alt="telegram"
-              class=" object-cover object-center w-full h-full rounded-full"
+              className=" object-cover object-center w-full h-full rounded-full"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
             />
           </a>
         </div>
         {/* End of social media */}
-        <p class="mt-4 text-lg text-primary-content font-semibold">
+        <p className="mt-4 text-lg text-primary-content font-semibold">
           "{quoteProps}"
         </p>
 
-        <div class="mt-4 flex justify-center gap-0.5 text-base-content">
+        <div className="mt-4 flex justify-center gap-0.5 text-base-content">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -81,7 +81,7 @@ const Review = ({
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -89,7 +89,7 @@ const Review = ({
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -97,7 +97,7 @@ const Review = ({
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -105,7 +105,7 @@ const Review = ({
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -113,7 +113,7 @@ const Review = ({
           </svg>
         </div>
         <a
-          class="btn mt-5 btn-secondary-focus"
+          className="btn mt-5 btn-secondary-focus"
           href={linkProps}
           target="_blank"
           rel="noreferrer"

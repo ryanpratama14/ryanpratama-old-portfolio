@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { themeChange } from "theme-change";
-import { dataTheme } from "../store/DataTheme";
+import { dataTheme } from "../store/helper/DataTheme";
 
 const ThemeChanger = () => {
   useEffect(() => {
     themeChange(false);
   }, []);
   return (
-    <div title="Change Theme" className="dropdown dropdown-end">
+    <div title="Change Theme" class="dropdown dropdown-end">
       <div tabIndex="0" class="btn gap-1 btn-ghost" data-choose-theme>
         <svg
           width="20"

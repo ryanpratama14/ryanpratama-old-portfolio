@@ -17,18 +17,18 @@ const Navbar = () => {
   let activeClassName = "bg-primary  text-primary-content my-0.5";
   return (
     <div
-      class="
+      className="
     sticky top-0 z-30  bg-opacity-90 backdrop-blur duration-100 
     text-primary-content shadow
     "
     >
-      <div class="navbar flex justify-center items-center">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
+      <div className="navbar flex justify-center items-center">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label tabindex="0" className="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -43,7 +43,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-100 text-base-content"
+              className="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-100 text-base-content"
             >
               <li>
                 {routeNavbarOptions.map((e) => {
@@ -65,7 +65,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div class="navbar-center">
+        <div className="navbar-center">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -80,14 +80,14 @@ const Navbar = () => {
             Homepage
           </NavLink>
         </div>
-        <div class="navbar-end">
+        <div className="navbar-end">
           <ThemeChanger />
-          <div class="dropdown dropdown-end ml-1">
+          <div className="dropdown dropdown-end ml-1">
             <label
               tabindex="0"
-              class="btn btn-ghost btn-circle avatar flex items-center"
+              className="btn btn-ghost btn-circle avatar flex items-center"
             >
-              <div class="w-16 rounded-full">
+              <div className="w-16 rounded-full">
                 <img
                   alt="ryan display profile"
                   src={require("./components/ryanpratama.jpeg")}
@@ -96,13 +96,13 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="mt-3 p-2 bg-base-100 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
+              className="mt-3 p-2 bg-base-100 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
             >
               <li>
                 {linkSocial.map((e) => {
                   return (
                     <a
-                      class="justify-between items-center active:bg-primary-focus hover:bg-primary"
+                      className="justify-between items-center active:bg-primary-focus hover:bg-primary hover:text-primary-content"
                       target="_blank"
                       rel="noreferrer"
                       href={e.linkSocial}
@@ -120,7 +120,7 @@ const Navbar = () => {
         </div>
         <span
           style={{ transform: `translateX(${completion - 100}%)` }}
-          class="absolute bg-primary-content h-1 w-full bottom-0"
+          className="absolute bg-primary-content h-1 w-full bottom-0"
         />
       </div>
     </div>

@@ -52,26 +52,26 @@ export const routeOptions = [
 ];
 
 export const routeNavbarOptions = [
-  { path: "/cards", element: <Cards />, label: "#1: Member Card" },
-  {
-    path: "/form-app",
-    element: <Appform />,
-    label: "#2: Form App",
-  },
+  // { path: "/cards", element: <Cards />, label: "#1: Member Card" },
+  // {
+  //   path: "/form-app",
+  //   element: <Appform />,
+  //   label: "#2: Form App",
+  // },
   {
     path: "/zikr-app",
     element: <Zikirapp />,
-    label: "#3: Zikr App",
+    label: "Zikr App",
   },
   {
     path: "/to-do-list-app",
     element: <ToDo />,
-    label: "#4: To Do List App",
+    label: "To Do List App",
   },
   {
     path: "/financial-tracker-app",
     element: <Expense />,
-    label: "#5: Financial Tracker App",
+    label: "Financial Tracker App",
   },
   {
     path: "/reviews",

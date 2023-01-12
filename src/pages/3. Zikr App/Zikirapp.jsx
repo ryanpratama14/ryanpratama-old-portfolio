@@ -5,7 +5,7 @@ import useLocalStrorage from "../LocalStorage";
 
 function Zikirapp() {
   useEffect(() => {
-    document.title = "#3: Zikr App";
+    document.title = "Zikr App";
   }, []);
   const [num, setNum] = useLocalStrorage("zikirNum", 0);
   const [doa, setDoa] = useLocalStrorage("zikirDoa", "سُـبْحانَ الله");
@@ -24,7 +24,7 @@ function Zikirapp() {
   return (
     <section
       id="zikr-app"
-      class="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
+      className="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
     >
       <Toaster
         toastOptions={{
@@ -33,19 +33,19 @@ function Zikirapp() {
         }}
       />
       {/* TITLE */}
-      <div class="text-center font-bold text-primary-content text-4xl sm:text-5xl my-20">
+      <div className="text-center font-bold text-primary-content text-4xl sm:text-5xl my-20">
         <h1>
           Welcome to Zikr App!
-          <h2 class="text-3xl sm:text-4xl">Pray, Pray, Pray. </h2>
+          <h2 className="text-3xl sm:text-4xl">Pray, Pray, Pray. </h2>
         </h1>
       </div>
 
-      <div class="text-center">
-        <p class="mb-2 text-primary-content">{num}</p>
-        <p class="text-5xl text-primary-content">{doa}</p>
+      <div className="text-center">
+        <p className="mb-2 text-primary-content">{num}</p>
+        <p className="text-5xl text-primary-content">{doa}</p>
       </div>
       {/* BUTTON */}
-      <div class="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
         <button
           onClick={() => {
             setTotalNum(totalNum + 1);
@@ -67,7 +67,7 @@ function Zikirapp() {
               notifySuccess2();
             }
           }}
-          class="btn btn-success w-64  my-6"
+          className="btn btn-success w-64  my-6"
         >
           {zikir}
         </button>
@@ -78,12 +78,12 @@ function Zikirapp() {
             setZikir("Start");
             setDoa("سُـبْحانَ الله");
           }}
-          class="btn btn-error w-64 mb-6"
+          className="btn btn-error w-64 mb-6"
         >
           Reset
         </button>
       </div>
-      <div class="text-center mt-20">
+      <div className="text-center mt-20">
         <h1 className="font-bold sm:text-5xl text-4xl">
           <span className=" ">
             Declare your faith{" "}
