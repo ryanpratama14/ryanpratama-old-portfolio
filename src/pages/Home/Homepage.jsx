@@ -110,7 +110,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <Marquee speed={80} gradient={false}>
+        <Marquee speed={100} gradient={false} direction="right">
           <Skills />
         </Marquee>
         {/* CAROUSEL */}
