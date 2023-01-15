@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <div className="from-accent to-accent-focus bg-gradient-to-b text-secondary-content">
+    <div className="from-secondary to-secondary-focus bg-gradient-to-b text-secondary-content">
       <footer className="footer footer-center p-4 sm:md:lg:text-base">
         <div>
           <p>

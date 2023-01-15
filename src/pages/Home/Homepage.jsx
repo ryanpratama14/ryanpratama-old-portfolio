@@ -8,7 +8,7 @@ const Homepage = () => {
   return (
     <section
       id="homepage"
-      className="w-full px-[8vw] md:px-[4vw] -mt-[4rem] pt-[4rem] pb-[20rem] from-primary via-secondary to-accent bg-gradient-to-b"
+      className="w-full px-[8vw] md:px-[4vw] -mt-[4rem] pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b"
     >
       <div className="w-full flex justify-between items-center flex-wrap md:px-[2vw]">
         <div className="w-full lg:w-[55%]">

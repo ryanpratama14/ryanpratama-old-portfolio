@@ -3,7 +3,7 @@ import React from "react";
 const BackgroundDaisy = () => {
   return (
     <svg
-      className="fill-accent col-start-1 row-start-1 h-auto w-full flex "
+      className="fill-secondary col-start-1 row-start-1 h-auto w-full flex "
       width="1600"
       height="595"
       viewBox="0 0 1600 595"

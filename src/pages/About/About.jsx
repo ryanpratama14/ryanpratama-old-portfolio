@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary via-secondary to-accent text-primary-content bg-gradient-to-b"
+      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b text-primary-content"
     >
       {/* TITLE */}
       <div className="font-bold sm:text-5xl text-4xl  my-20 text-center">
