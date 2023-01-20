@@ -33,7 +33,7 @@ export default function Routing() {
         >
           <Navbar />
           <Routes>
-            {routeOptions.map((e) => {
+            {routeOptions?.map((e) => {
               return <Route path={e.path} element={e.element} />;
             })}
           </Routes>

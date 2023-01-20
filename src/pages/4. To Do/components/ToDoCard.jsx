@@ -13,7 +13,7 @@ const ToDoCard = ({
 }) => {
   const [counter, setCounter] = useState(0);
   return (
-    <div className="text-primary-content shadow-2xl rounded-xl w-96 my-3 md:m-3 p-6 overflow-hidden from-primary via-secondary to-accent bg-gradient-to-br background-animation">
+    <div className="text-primary-content shadow-2xl rounded-xl w-96 my-3 md:m-3 p-6 overflow-hidden from-primary to-secondary bg-gradient-to-br background-animation">
       <div className="flex items-center border-neutral border-b-2 mb-2 pb-2">
         <img
           className="w-12 h-12 relative object-cover"

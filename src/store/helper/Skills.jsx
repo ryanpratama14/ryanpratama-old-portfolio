@@ -33,7 +33,7 @@ const Skills = () => {
     <section className="bg-transparent py-12 w-[50%]">
       <div className="container mx-auto">
         <div className="flex justify-around gap-2">
-          {skills.map((e, index) => {
+          {skills?.map((e) => {
             return (
               <div className="flex items-center justify-center">
                 <Icon

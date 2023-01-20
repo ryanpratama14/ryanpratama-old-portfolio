@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Declare = () => {
   useEffect(() => {
-    document.title = "#3: Declare Your Shahada";
+    document.title = "Declare Your Shahada";
   }, []);
   const [word, setWord] = useState("أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ");
   const [button, setButton] = useState("Next");

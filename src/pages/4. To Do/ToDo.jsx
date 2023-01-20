@@ -18,14 +18,14 @@ const ToDo = () => {
     {
       name: "World Cup 2022 Final",
       task: "France vs. Argentina",
-      date: "2022-18-12",
+      date: "2022-12-18",
       time: "22:00",
       isDone: true,
     },
     {
       name: "Full-Stack Engineer",
       task: "Mastering ReactJS",
-      date: "2023-30-01",
+      date: "2023-01-30",
       time: "22:45",
       isDone: false,
     },

@@ -14,7 +14,6 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
-  let activeClassName = "bg-primary  text-primary-content my-0.5";
   return (
     <div
       className="
@@ -46,12 +45,14 @@ const Navbar = () => {
               className="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-100 text-base-content"
             >
               <li>
-                {routeNavbarOptions.map((e) => {
+                {routeNavbarOptions?.map((e) => {
                   return (
                     <NavLink
                       to={e.path}
                       className={({ isActive }) =>
-                        isActive ? activeClassName : "my-0.5"
+                        isActive
+                          ? "bg-primary text-primary-content my-0.5"
+                          : "my-0.5"
                       }
                       onClick={() => {
                         scrollToTop();
@@ -99,7 +100,7 @@ const Navbar = () => {
               className="mt-3 p-2 bg-base-100 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
             >
               <li>
-                {linkSocial.map((e) => {
+                {linkSocial?.map((e) => {
                   return (
                     <a
                       className="justify-between items-center active:bg-primary-focus hover:bg-primary hover:text-primary-content"
