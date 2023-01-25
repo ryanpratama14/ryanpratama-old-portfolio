@@ -1,4 +1,4 @@
-import App from "../../App";
+import Homepage from "../../pages/Home/Homepage";
 import Cards from "../../pages/1. Member Card/Cards";
 import Appform from "../../pages/2. Form App/Appform";
 import Zikirapp from "../../pages/3. Zikr App/Zikirapp";
@@ -11,11 +11,11 @@ import Reviews from "../../pages/Reviews/Reviews";
 export const routeOptions = [
   {
     path: "/",
-    element: <App />,
+    element: <Homepage />,
   },
   {
     path: "*",
-    element: <App />,
+    element: <Homepage />,
   },
   { path: "/cards", element: <Cards />, label: "#1: Member Card" },
   {
