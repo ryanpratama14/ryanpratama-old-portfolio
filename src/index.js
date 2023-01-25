@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Instagram from "./components/Instagram";
 import HireMe from "./components/HireMe";
 import LoadToTop from "./components/LoadToTop";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 import Loading from "react-fullscreen-loading";
 import { themeChange } from "theme-change";
@@ -24,7 +24,7 @@ export default function Routing() {
     };
   }, []);
   return (
-    <HashRouter>
+    <BrowserRouter>
       {loading ? (
         <motion.div
           initial={{ opacity: 0.5 }}
@@ -45,7 +45,7 @@ export default function Routing() {
       ) : (
         <Loading loading background="bg-primary"></Loading>
       )}
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
