@@ -27,6 +27,7 @@ const Header = () => {
             I'm Ryan
           </h1>
           <motion.div
+            className="flex justify-between"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 1 }}
@@ -41,10 +42,10 @@ const Header = () => {
               <br />
               developer<span className="text-primary-content">.</span>
             </h1>
-            {/* <Icon
+            <Icon
               icon="mdi:laptop-account"
               className="hidden max-sm:flex w-24 h-24 sm:w-32 sm:h-32 text-primary-content"
-            /> */}
+            />
           </motion.div>
           {/* i have a passion.. */}
           <motion.div
