@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import React from "react";
 import Marquee from "react-fast-marquee";
@@ -40,6 +41,10 @@ const Header = () => {
               <br />
               developer<span className="text-primary-content">.</span>
             </h1>
+            {/* <Icon
+              icon="mdi:laptop-account"
+              className="hidden max-sm:flex w-24 h-24 sm:w-32 sm:h-32 text-primary-content"
+            /> */}
           </motion.div>
           {/* i have a passion.. */}
           <motion.div
