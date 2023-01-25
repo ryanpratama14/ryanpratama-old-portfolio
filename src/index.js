@@ -12,7 +12,7 @@ import Loading from "react-fullscreen-loading";
 import { themeChange } from "theme-change";
 import { routeOptions } from "./store/helper/Routes";
 
-export default function Routing() {
+const Routing = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     themeChange(false);
@@ -46,7 +46,7 @@ export default function Routing() {
       )}
     </BrowserRouter>
   );
-}
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
