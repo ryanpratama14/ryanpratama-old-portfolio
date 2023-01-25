@@ -5,11 +5,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import useLocalStrorage from "../LocalStorage";
 import ToDoCard from "./components/ToDoCard";
+import { Helmet } from "react-helmet";
 
-const ToDo = () => {
-  useEffect(() => {
-    document.title = "To Do List App";
-  }, []);
+const ToDo = ({ title }) => {
   const [name, setName] = useState("");
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
@@ -67,6 +65,9 @@ const ToDo = () => {
       id="to-do-list-app"
       className="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",

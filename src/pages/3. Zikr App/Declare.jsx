@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-const Declare = () => {
-  useEffect(() => {
-    document.title = "Declare Your Shahada";
-  }, []);
+const Declare = ({ title }) => {
   const [word, setWord] = useState("أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰ");
   const [button, setButton] = useState("Next");
-  // const openInNewTab = (url) => {
-  //   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-  //   if (newWindow) newWindow.opener = null;
-  // };
-
   const navigate = useNavigate();
   const notifySuccess2 = () =>
     toast("Welcome, brother!", {
@@ -24,6 +17,9 @@ const Declare = () => {
       id="zikr-app/declare"
       className="-mt-[4rem] w-full pt-[4rem] pb-[20rem] px-[8vw] md:px-[4vw] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",

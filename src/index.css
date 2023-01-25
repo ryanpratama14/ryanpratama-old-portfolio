@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hides scroll bar */
 html {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 html::-webkit-scrollbar {
-  /* WebKit */
   width: 0;
   height: 0;
+}
+
+.background-animation {
+  background-size: 400% 400%;
+  animation: bg-animation 3s infinite ease-in-out;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: 0 30%;
+  }
+  30% {
+    background-position: 80% 80%;
+  }
+  100% {
+    background-position: 0% 30%;
+  }
 }

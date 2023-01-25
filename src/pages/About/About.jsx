@@ -1,14 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from "react-helmet";
 
-const About = () => {
-  useEffect(() => {
-    document.title = "faoTech: About";
-  }, []);
+const About = ({ title }) => {
   return (
     <section
       id="about"
       className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b text-primary-content"
     >
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       {/* TITLE */}
       <div className="font-bold sm:text-5xl text-4xl  my-20 text-center">
         <h1>Meet our CEO</h1>

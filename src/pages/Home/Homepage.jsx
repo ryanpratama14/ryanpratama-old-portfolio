@@ -1,11 +1,16 @@
-import { react, useEffect } from "react";
+import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "./components/Header/Header";
 
-const Homepage = () => {
-  useEffect(() => {
-    document.title = "Ryan's React App";
-  }, []);
-  return <Header />;
+const Homepage = ({ title }) => {
+  return (
+    <>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
+      <Header />
+    </>
+  );
 };
 
 export default Homepage;

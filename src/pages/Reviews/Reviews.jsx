@@ -1,15 +1,16 @@
-import { React, useEffect } from "react";
+import React from "react";
+import { Helmet } from "react-helmet";
 import Review from "./components/Review";
 
-const Reviews = () => {
-  useEffect(() => {
-    document.title = "faoTech: Reviews";
-  }, []);
+const Reviews = ({ title }) => {
   return (
     <section
       id="reviews"
       className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="font-bold sm:text-5xl text-4xl my-20 text-center">
         <h1 className="text-4xl font-bold sm:text-5xl">
           Read trusted reviews <br /> from our students

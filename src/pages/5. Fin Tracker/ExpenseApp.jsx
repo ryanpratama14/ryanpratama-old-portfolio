@@ -2,12 +2,9 @@ import { React, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import ExpenseCard from "./components/ExpenseCard";
 import useLocalStrorage from "../LocalStorage";
+import { Helmet } from "react-helmet";
 
-const Expense = () => {
-  useEffect(() => {
-    document.title = "Financial Tracker App";
-  }, []);
-
+const Expense = ({ title }) => {
   const [amount, setAmount] = useState();
   const [desc, setDesc] = useState();
   const [date, setDate] = useState();
@@ -79,6 +76,9 @@ const Expense = () => {
       id="financial-tracker-app"
       className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",

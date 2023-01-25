@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from "react-helmet";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import useLocalStrorage from "../LocalStorage";
 
-function Zikirapp() {
-  useEffect(() => {
-    document.title = "Zikr App";
-  }, []);
+function Zikirapp({ title }) {
   const [num, setNum] = useLocalStrorage("zikirNum", 0);
   const [doa, setDoa] = useLocalStrorage("zikirDoa", "سُـبْحانَ الله");
   const [totalNum, setTotalNum] = useLocalStrorage("zikirTotalNum", 0);
@@ -26,6 +24,9 @@ function Zikirapp() {
       id="zikr-app"
       className="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
     >
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",
