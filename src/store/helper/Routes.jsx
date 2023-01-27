@@ -11,38 +11,38 @@ import Reviews from "../../pages/Reviews/Reviews";
 export const routeOptions = [
   {
     path: "/",
-    element: <Homepage title={"Ryan's React App"} />,
+    element: <Homepage title="Ryan's React App" />,
   },
   {
     path: "*",
-    element: <Homepage title={"Ryan's React App"} />,
+    element: <Homepage title="Ryan's React App" />,
   },
-  { path: "/cards", element: <Cards title={"Member Card"} /> },
+  { path: "/cards", element: <Cards title="Member Card" /> },
   {
     path: "/form-app",
-    element: <Appform title={"Form App"} />,
+    element: <Appform title="Form App" />,
   },
   {
     path: "/zikr-app",
-    element: <Zikirapp title={"Zikr App"} />,
+    element: <Zikirapp title="Zikr App" />,
   },
   {
     path: "/zikr-app/declare",
-    element: <Declare title={"Declare Your Shahada"} />,
+    element: <Declare title="Declare Your Shahada" />,
   },
   {
     path: "/to-do-list-app",
-    element: <ToDo title={"To Do List App"} />,
+    element: <ToDo title="To Do List App" />,
   },
   {
     path: "/financial-tracker-app",
-    element: <Expense title={"Financial Tracker App"} />,
+    element: <Expense title="Financial Tracker App" />,
   },
   {
     path: "/reviews",
-    element: <Reviews title={"faoTech: Reviews"} />,
+    element: <Reviews title="faoTech: Reviews" />,
   },
-  { path: "/about", element: <About title={"faoTech: About"} /> },
+  { path: "/about", element: <About title="faoTech: About" /> },
 ];
 
 export const routeNavbarOptions = [

@@ -12,7 +12,7 @@ import Loading from "react-fullscreen-loading";
 import { themeChange } from "theme-change";
 import { routeOptions } from "./store/helper/Routes";
 
-const Routing = () => {
+const Index = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     themeChange(false);
@@ -51,6 +51,6 @@ const Routing = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Routing />
+    <Index />
   </React.StrictMode>
 );
