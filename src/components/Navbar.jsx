@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="navbar flex justify-center items-center">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabindex="0" className="btn btn-ghost btn-circle">
+            <label tabindex="0" className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -88,7 +88,7 @@ const Navbar = () => {
               tabindex="0"
               className="btn btn-ghost btn-circle avatar flex items-center"
             >
-              <div className="w-16 rounded-full">
+              <div className="rounded-full">
                 <img
                   alt="ryan display profile"
                   src={require("./components/ryanpratama.jpeg")}

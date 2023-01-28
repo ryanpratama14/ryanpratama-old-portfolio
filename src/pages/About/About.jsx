@@ -3,10 +3,7 @@ import { Helmet } from "react-helmet";
 
 const About = ({ title }) => {
   return (
-    <section
-      id="about"
-      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b text-primary-content"
-    >
+    <section id="about" className="styleIt">
       <Helmet>
         <title>{title}</title>
       </Helmet>

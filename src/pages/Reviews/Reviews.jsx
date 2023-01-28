@@ -4,10 +4,7 @@ import Review from "./components/Review";
 
 const Reviews = ({ title }) => {
   return (
-    <section
-      id="reviews"
-      className="-mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
-    >
+    <section id="reviews" className="styleIt">
       <Helmet>
         <title>{title}</title>
       </Helmet>

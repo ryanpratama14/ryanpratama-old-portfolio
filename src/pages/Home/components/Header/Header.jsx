@@ -7,7 +7,7 @@ import CarouselItem from "./components/CarouselItem";
 
 const Header = () => {
   return (
-    <section className="w-full px-[8vw] md:px-[4vw] -mt-[4rem] pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b">
+    <section className="styleIt">
       <div className="w-full flex justify-between items-center flex-wrap md:px-[2vw]">
         <div className="w-full lg:w-[55%]">
           <h1 className=" sm:text-5xl text-4xl  font-bold text-center sm:text-left pb-12 pt-20 text-primary-content">

@@ -11,6 +11,12 @@ html::-webkit-scrollbar {
   height: 0;
 }
 
+@layer components {
+  .styleIt {
+    @apply -mt-[4rem] px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b w-full text-primary-content;
+  }
+}
+
 .background-animation {
   background-size: 400% 400%;
   animation: bg-animation 3s infinite ease-in-out;

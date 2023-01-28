@@ -20,10 +20,7 @@ function Zikirapp({ title }) {
     });
 
   return (
-    <section
-      id="zikr-app"
-      className="-mt-[4rem] w-full px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
-    >
+    <section id="zikr-app" className="styleIt">
       <Helmet>
         <title>{title}</title>
       </Helmet>

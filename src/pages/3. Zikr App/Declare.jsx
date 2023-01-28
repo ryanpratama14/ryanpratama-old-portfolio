@@ -13,10 +13,7 @@ const Declare = ({ title }) => {
     });
 
   return (
-    <section
-      id="zikr-app/declare"
-      className="-mt-[4rem] w-full pt-[4rem] pb-[20rem] px-[8vw] md:px-[4vw] from-primary to-secondary text-primary-content bg-gradient-to-b"
-    >
+    <section id="zikr-app/declare" className="styleIt">
       <Helmet>
         <title>{title}</title>
       </Helmet>

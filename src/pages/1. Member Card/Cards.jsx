@@ -17,10 +17,7 @@ function Cards() {
   }, []);
 
   return (
-    <section
-      id="cards"
-      className="pb-[20rem] -mt-[4rem] px-[8vw] md:px-[4vw] w-full pt-[4rem] from-primary to-secondary text-primary-content bg-gradient-to-b"
-    >
+    <section id="cards" className="styleIt">
       <Toaster
         toastOptions={{
           className: "font-semibold bg-primary text-primary-content",
