@@ -21,9 +21,9 @@ const ToDo = ({ title }) => {
       isDone: true,
     },
     {
-      name: "Full-Stack Engineer",
-      task: "Mastering ReactJS",
-      date: "2023-01-30",
+      name: "Front-end Engineering",
+      task: "Mastering React Redux",
+      date: "2023-02-30",
       time: "22:45",
       isDone: false,
     },
