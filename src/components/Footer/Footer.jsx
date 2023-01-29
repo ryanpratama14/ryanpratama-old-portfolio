@@ -1,6 +1,6 @@
 import React from "react";
-import { linkSocial } from "../store/helper/NavbarSocial";
-import BackgroundDaisy from "./BackgroundDaisy";
+import { linkSocial } from "../../store/helper/NavbarSocial";
+import BackgroundDaisy from "./components/BackgroundDaisy";
 import { Icon } from "@iconify/react";
 
 const Footer = () => {

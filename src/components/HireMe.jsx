@@ -13,7 +13,7 @@ const Instagram = () => {
         >
           <img
             alt="hire me"
-            src={require("./components/hireme.png")}
+            src={require("./assets/hireme.png")}
             className="w-[60px]"
           />
         </a>

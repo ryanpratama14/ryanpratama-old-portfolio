@@ -1,12 +1,24 @@
-import React from "react";
-import ThemeChanger from "./ThemeChanger";
-import useReadingProgress from "./UseReadingProgress";
+import React, { useEffect, useRef, useState } from "react";
+import ThemeChanger from "./components/ThemeChanger";
 import { NavLink } from "react-router-dom";
-import { linkSocial } from "../store/helper/NavbarSocial";
-import { routeNavbarOptions } from "../store/helper/Routes";
-import { Icon } from "@iconify/react";
+import { routeNavbarOptions } from "../../store/helper/Routes";
+import SocialMedia from "./components/SocialMedia";
+import useReadingProgress from "./components/UseReadingProgress";
 
 const Navbar = () => {
+  const [dropdownOpened, setDropdownOpened] = useState(false);
+  const dropdownMenu = useRef(null);
+  const dropdownMenuButton = useRef(null);
+  useEffect(() => {
+    if (!dropdownOpened) {
+      document.activeElement.blur();
+    } else if (
+      dropdownOpened &&
+      !dropdownMenu.current.contains(document.activeElement)
+    ) {
+      setDropdownOpened(false);
+    }
+  }, [dropdownOpened]);
   const completion = useReadingProgress();
   const scrollToTop = () => {
     window.scrollTo({
@@ -23,8 +35,22 @@ const Navbar = () => {
     >
       <div className="navbar flex justify-center items-center">
         <div className="navbar-start">
-          <div className="dropdown">
-            <label tabindex="0" className="btn btn-ghost">
+          <div ref={dropdownMenu} className="dropdown">
+            <label
+              ref={dropdownMenuButton}
+              onBlur={(e) => {
+                setDropdownOpened(false);
+              }}
+              onClick={(e) => {
+                if (dropdownOpened) {
+                  setDropdownOpened(false);
+                } else {
+                  setDropdownOpened(true);
+                }
+              }}
+              tabindex="0"
+              className="btn btn-ghost"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -41,6 +67,12 @@ const Navbar = () => {
               </svg>
             </label>
             <ul
+              onBlur={(e) => {
+                dropdownMenuButton.current.focus();
+              }}
+              onFocus={(e) => {
+                setDropdownOpened(true);
+              }}
               tabindex="0"
               className="font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 drop-1 bg-base-100 text-base-content"
             >
@@ -54,8 +86,17 @@ const Navbar = () => {
                           ? "bg-primary text-primary-content my-0.5"
                           : "my-0.5"
                       }
-                      onClick={() => {
+                      ref={dropdownMenuButton}
+                      onBlur={(e) => {
+                        setDropdownOpened(false);
+                      }}
+                      onClick={(e) => {
                         scrollToTop();
+                        if (dropdownOpened) {
+                          setDropdownOpened(false);
+                        } else {
+                          setDropdownOpened(true);
+                        }
                       }}
                     >
                       {e.label}
@@ -83,41 +124,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <ThemeChanger />
-          <div className="dropdown dropdown-end ml-1">
-            <label
-              tabindex="0"
-              className="btn btn-ghost btn-circle avatar flex items-center"
-            >
-              <div className="rounded-full">
-                <img
-                  alt="ryan display profile"
-                  src={require("./components/ryanpratama.jpeg")}
-                />
-              </div>
-            </label>
-            <ul
-              tabindex="0"
-              className="mt-3 p-2 bg-base-100 shadow menu menu-compact dropdown-content rounded-box w-48 drop-2 text-base-content font-bold"
-            >
-              <li>
-                {linkSocial?.map((e) => {
-                  return (
-                    <a
-                      className="justify-between items-center active:bg-primary-focus hover:bg-primary hover:text-primary-content"
-                      target="_blank"
-                      rel="noreferrer"
-                      href={e.linkSocial}
-                    >
-                      {e.socialMedia}{" "}
-                      <span>
-                        <Icon icon={e.label} width="25" height="25" />
-                      </span>
-                    </a>
-                  );
-                })}
-              </li>
-            </ul>
-          </div>
+          <SocialMedia />
         </div>
         <span
           style={{ transform: `translateX(${completion - 100}%)` }}

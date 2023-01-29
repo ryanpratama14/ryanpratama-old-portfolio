@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Instagram from "./components/Instagram";
 import HireMe from "./components/HireMe";
 import LoadToTop from "./components/LoadToTop";
@@ -11,6 +10,7 @@ import { motion } from "framer-motion";
 import Loading from "react-fullscreen-loading";
 import { themeChange } from "theme-change";
 import { routeOptions } from "./store/helper/Routes";
+import Navbar from "./components/Navbar/Navbar";
 
 const Index = () => {
   const [loading, setLoading] = useState(false);

@@ -1,14 +1,42 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { themeChange } from "theme-change";
-import { dataTheme } from "../store/helper/DataTheme";
+import { dataTheme } from "../../../store/helper/DataTheme";
 
 const ThemeChanger = () => {
+  const [themeMenuOpened, setThemeMenuOpened] = useState(false);
+  const themeMenu = useRef(null);
+  const themeMenuButton = useRef(null);
+  useEffect(() => {
+    if (!themeMenuOpened) {
+      document.activeElement.blur();
+    } else if (
+      themeMenuOpened &&
+      !themeMenu.current.contains(document.activeElement)
+    ) {
+      setThemeMenuOpened(false);
+    }
+  }, [themeMenuOpened]);
   useEffect(() => {
     themeChange(false);
   }, []);
   return (
-    <div title="Change Theme" class="dropdown dropdown-end">
-      <div tabIndex="0" class="btn gap-1 btn-ghost" data-choose-theme>
+    <div ref={themeMenu} title="Change Theme" class="dropdown dropdown-end">
+      <div
+        ref={themeMenuButton}
+        onBlur={(e) => {
+          setThemeMenuOpened(false);
+        }}
+        onClick={(e) => {
+          if (themeMenuOpened) {
+            setThemeMenuOpened(false);
+          } else {
+            setThemeMenuOpened(true);
+          }
+        }}
+        tabIndex="0"
+        class="btn gap-1 btn-ghost"
+        data-choose-theme
+      >
         <svg
           width="20"
           height="20"
