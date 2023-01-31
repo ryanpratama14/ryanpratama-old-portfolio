@@ -31,7 +31,7 @@ function Zikirapp({ title }) {
         }}
       />
       {/* TITLE */}
-      <div className="text-center font-bold text-primary-content text-4xl sm:text-5xl my-20">
+      <div className="titleIt">
         <h1>
           Welcome to Zikr App!
           <h2 className="text-3xl sm:text-4xl">Pray, Pray, Pray. </h2>

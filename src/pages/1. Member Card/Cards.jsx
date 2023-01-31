@@ -25,7 +25,7 @@ function Cards() {
         }}
       />
       {/* TITLE  */}
-      <div className="my-20 text-center font-bold sm:text-5xl text-4xl text-primary-content">
+      <div className="titleIt">
         <h1>
           faoTech
           <br />

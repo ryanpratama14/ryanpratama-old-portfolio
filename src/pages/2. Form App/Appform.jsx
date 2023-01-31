@@ -75,7 +75,7 @@ function Appform() {
         }}
       />
       {/* This is Title */}
-      <div className="font-bold sm:text-5xl text-4xl text-primary-content my-20 text-center">
+      <div className="titleIt">
         <h1>
           Passionate about programming?
           <br />

@@ -8,8 +8,8 @@ const Reviews = ({ title }) => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <div className="font-bold sm:text-5xl text-4xl my-20 text-center">
-        <h1 className="text-4xl font-bold sm:text-5xl">
+      <div className="titleIt">
+        <h1>
           Read trusted reviews <br /> from our students
         </h1>
       </div>

@@ -83,7 +83,7 @@ const Expense = ({ title }) => {
         }}
       />
       {/* TITLE */}
-      <div className="text-center my-20 font-bold sm:text-5xl text-4xl text-primary-content">
+      <div className="titleIt">
         <h1>
           Welcome to
           <br />

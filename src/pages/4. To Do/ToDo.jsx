@@ -72,7 +72,7 @@ const ToDo = ({ title }) => {
         }}
       />
       {/* TITLE */}
-      <div className="text-center font-bold sm:text-5xl text-4xl tracking-tight my-20">
+      <div className="titleIt">
         <h1>
           Welcome to
           <br />

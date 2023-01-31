@@ -10,7 +10,7 @@ const Header = () => {
     <section className="styleIt">
       <div className="w-full flex justify-between items-center flex-wrap md:px-[2vw]">
         <div className="w-full lg:w-[55%]">
-          <h1 className=" sm:text-5xl text-4xl  font-bold text-center sm:text-left pb-12 pt-20 text-primary-content">
+          <h1 className="titleHomepage">
             {/* <motion.div
               initial="hidden"
               whileInView="visible"

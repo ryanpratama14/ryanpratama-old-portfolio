@@ -15,6 +15,12 @@ html::-webkit-scrollbar {
   .styleIt {
     @apply -mt-[4rem] px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b w-full text-primary-content;
   }
+  .titleIt {
+    @apply text-center font-bold sm:text-5xl text-4xl my-20;
+  }
+  .titleHomepage {
+    @apply sm:text-5xl text-4xl  font-bold text-center sm:text-left pb-12 pt-12 sm:pt-20 text-primary-content;
+  }
 }
 
 .background-animation {

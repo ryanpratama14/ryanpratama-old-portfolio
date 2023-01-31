@@ -8,7 +8,7 @@ const About = ({ title }) => {
         <title>{title}</title>
       </Helmet>
       {/* TITLE */}
-      <div className="font-bold sm:text-5xl text-4xl  my-20 text-center">
+      <div className="titleIt">
         <h1>Meet our CEO</h1>
       </div>
       <div className="flex justify-center items-center">

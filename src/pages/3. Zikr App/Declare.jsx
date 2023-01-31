@@ -24,7 +24,7 @@ const Declare = ({ title }) => {
         }}
       />
 
-      <div className="font-bold sm:text-5xl text-4xl text-center my-20">
+      <div className="titleIt">
         <h1>
           Declare your <span>Shahada</span>
         </h1>
