@@ -1,6 +1,6 @@
 import React from "react";
 import InputFieldCenter from "./components/InputFieldCenter";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useState } from "react";
 import { useEffect } from "react";
 import useLocalStrorage from "../LocalStorage";
@@ -65,12 +65,7 @@ const ToDo = ({ title }) => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Toaster
-        toastOptions={{
-          className: "font-semibold bg-primary text-primary-content",
-          duration: 1300,
-        }}
-      />
+
       {/* TITLE */}
       <div className="titleIt">
         <h1>

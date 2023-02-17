@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const Declare = ({ title }) => {
@@ -17,12 +17,6 @@ const Declare = ({ title }) => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Toaster
-        toastOptions={{
-          className: "font-semibold bg-primary text-primary-content",
-          duration: 1300,
-        }}
-      />
 
       <div className="titleIt">
         <h1>

@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import ExpenseCard from "./components/ExpenseCard";
 import useLocalStrorage from "../LocalStorage";
 import { Helmet } from "react-helmet";
@@ -76,12 +76,7 @@ const Expense = ({ title }) => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Toaster
-        toastOptions={{
-          className: "font-semibold bg-primary text-primary-content",
-          duration: 1300,
-        }}
-      />
+
       {/* TITLE */}
       <div className="titleIt">
         <h1>

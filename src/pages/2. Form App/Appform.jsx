@@ -1,5 +1,5 @@
 import { React, useEffect, useState, useRef } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 
 function Appform() {
@@ -68,12 +68,6 @@ function Appform() {
 
   return (
     <section id="form-app" className="styleIt">
-      <Toaster
-        toastOptions={{
-          className: "font-semibold bg-primary text-primary-content",
-          duration: 1300,
-        }}
-      />
       {/* This is Title */}
       <div className="titleIt">
         <h1>

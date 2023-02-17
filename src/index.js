@@ -11,6 +11,7 @@ import Loading from "react-fullscreen-loading";
 import { themeChange } from "theme-change";
 import { routeOptions } from "./store/helper/Routes";
 import Navbar from "./components/Navbar/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const Index = () => {
   const [loading, setLoading] = useState(false);
@@ -31,6 +32,12 @@ const Index = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
+          <Toaster
+            toastOptions={{
+              className: "font-semibold bg-primary text-primary-content",
+              duration: 1300,
+            }}
+          />
           <Navbar />
           <Routes>
             {routeOptions?.map((e) => {

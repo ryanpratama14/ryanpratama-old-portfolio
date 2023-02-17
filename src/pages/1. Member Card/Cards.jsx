@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Card from "./components/Card";
 import InputField from "./components/InputField";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import useLocalStrorage from "../LocalStorage";
 
 function Cards() {
@@ -18,12 +18,6 @@ function Cards() {
 
   return (
     <section id="cards" className="styleIt">
-      <Toaster
-        toastOptions={{
-          className: "font-semibold bg-primary text-primary-content",
-          duration: 1300,
-        }}
-      />
       {/* TITLE  */}
       <div className="titleIt">
         <h1>

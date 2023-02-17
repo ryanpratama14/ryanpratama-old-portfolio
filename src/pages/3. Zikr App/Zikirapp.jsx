@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import useLocalStrorage from "../LocalStorage";
 
@@ -24,12 +24,7 @@ function Zikirapp({ title }) {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Toaster
-        toastOptions={{
-          className: "font-semibold bg-primary text-primary-content",
-          duration: 1300,
-        }}
-      />
+
       {/* TITLE */}
       <div className="titleIt">
         <h1>
