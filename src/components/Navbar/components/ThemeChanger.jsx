@@ -24,9 +24,7 @@ const ThemeChanger = () => {
             d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
           ></path>
         </svg>
-        <span class="hidden md:inline normal-case text-base font-bold">
-          Theme
-        </span>
+        <span class="hidden md:inline normal-case p font-bold">Theme</span>
         <svg
           width="12px"
           height="12px"
@@ -37,7 +35,7 @@ const ThemeChanger = () => {
           <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
         </svg>
       </div>
-      <div class="dropdown-content bg-base-100 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] w-52 overflow-y-auto shadow-2xl mt-16">
+      <div class="w-48 sm:w-52 dropdown-content bg-base-100 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] overflow-y-auto shadow-2xl mt-16">
         <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
           {dataTheme.map((e) => {
             return (
@@ -50,15 +48,13 @@ const ThemeChanger = () => {
                   data-theme={e.theme}
                   class="bg-base-100 text-base-content w-full cursor-pointer"
                 >
-                  <div class="grid grid-cols-5 grid-rows-3">
-                    <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                      <div class="flex-grow text-sm font-bold">{e.theme}</div>
-                      <div class="flex flex-shrink-0 flex-wrap gap-1">
-                        <div class="bg-primary w-2 rounded"></div>
-                        <div class="bg-secondary w-2 rounded"></div>
-                        <div class="bg-accent w-2 rounded"></div>
-                        <div class="bg-neutral w-2 rounded"></div>
-                      </div>
+                  <div class="flex flex-row justify-between px-4 py-3">
+                    <p class="pSmaller font-bold">{e.theme}</p>
+                    <div class="flex gap-1">
+                      <div class="bg-primary w-[0.4rem] rounded"></div>
+                      <div class="bg-secondary w-[0.4rem] rounded"></div>
+                      <div class="bg-accent w-[0.4rem] rounded"></div>
+                      <div class="bg-neutral w-[0.4rem] rounded"></div>
                     </div>
                   </div>
                 </div>

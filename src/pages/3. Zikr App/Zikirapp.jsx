@@ -35,7 +35,7 @@ function Zikirapp({ title }) {
 
       <div className="text-center">
         <p className="mb-2 text-primary-content">{num}</p>
-        <p className="text-5xl text-primary-content">{doa}</p>
+        <label className="text-5xl text-primary-content">{doa}</label>
       </div>
       {/* BUTTON */}
       <div className="flex flex-col justify-center items-center">
@@ -77,7 +77,7 @@ function Zikirapp({ title }) {
         </button>
       </div>
       <div className="text-center mt-20">
-        <h1 className="font-bold sm:text-5xl text-4xl">
+        <h1 className="font-bold">
           <span className=" ">
             Declare your faith{" "}
             <span

@@ -91,11 +91,11 @@ const Expense = ({ title }) => {
         <div className="w-full sm:w-[25rem]">
           <div className="p-6 rounded-lg shadow-2xl from-base-100 via-base-200 to-base-300 bg-gradient-to-tl background-animation">
             <div className="flex justify-between items-center">
-              <h3 className="font-extrabold  text-2xl text-base-content tracking-tight">
+              <h2 className="font-extrabold text-base-content tracking-tight">
                 BALANCE
                 <br />
                 {income - expense} USD
-              </h3>
+              </h2>
 
               <button
                 className="btn btn-secondary-focus"
@@ -107,7 +107,7 @@ const Expense = ({ title }) => {
             {isAddTxnVisible && (
               <div className="w-full text-center">
                 <div className="mt-4">
-                  <label className="block mb-2 text-m font-medium text-secondary-focus text-center">
+                  <label className="block mb-2 font-medium text-secondary-focus text-center">
                     Amount
                   </label>
                   <input
@@ -121,7 +121,7 @@ const Expense = ({ title }) => {
                   />
                 </div>
                 <div className="mt-4">
-                  <label className="block mb-2 text-m font-medium text-secondary-focus text-center">
+                  <label className="block mb-2 font-medium text-secondary-focus text-center">
                     Date
                   </label>
                   <input
@@ -135,7 +135,7 @@ const Expense = ({ title }) => {
                   />
                 </div>
                 <div className="mt-4">
-                  <label className="block mb-2 text-m font-medium text-secondary-focus text-center">
+                  <label className="block mb-2 font-medium text-secondary-focus text-center">
                     Description
                   </label>
                   <input
@@ -212,13 +212,13 @@ const Expense = ({ title }) => {
               className="mb-6 flex flex-wrap justify-between items-center w-full border-b-4  border-secondary-focus
 "
             >
-              <p className=" text-xl font-semibold text-success">${income}</p>
-              <p className=" text-xl font-semibold text-error">${expense}</p>
+              <p className=" font-semibold text-success">${income}</p>
+              <p className=" font-semibold text-error">${expense}</p>
             </div>
             <div className="flex justify-end items-center mt-2">
-              <h3 className="text-xl font-bold leading-none text-base-content">
+              <p className="font-bold leading-none text-base-content">
                 History
-              </h3>
+              </p>
             </div>
             <input
               placeholder="Search transaction..."

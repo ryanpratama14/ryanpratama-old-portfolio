@@ -26,8 +26,8 @@ const Declare = ({ title }) => {
 
       <div>
         <div className="text-center mt-32">
-          <p className="text-2xl mb-6 text-primary-content">repeat:</p>
-          <p className="text-5xl text-primary-content">{word}</p>
+          <p className="pBigger mb-6 text-primary-content">repeat:</p>
+          <label className="text-5xl text-primary-content">{word}</label>
         </div>
         <div className="flex flex-col flex-wrap justify-center items-center text-center">
           <button
@@ -46,7 +46,7 @@ const Declare = ({ title }) => {
         </div>
       </div>
       <div className="text-center mt-32">
-        <h2 className="text-4xl font-bold sm:text-5xl">
+        <h1 className="font-bold">
           <span
             onClick={() => {
               navigate("/zikr-app");
@@ -63,7 +63,7 @@ const Declare = ({ title }) => {
             {" "}
             Zikr App
           </span>
-        </h2>
+        </h1>
       </div>
     </section>
   );

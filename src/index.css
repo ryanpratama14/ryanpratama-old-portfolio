@@ -11,15 +11,36 @@ html::-webkit-scrollbar {
   height: 0;
 }
 
+@layer base {
+  h1 {
+    @apply text-4xl sm:text-5xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  p {
+    @apply text-lg;
+  }
+}
+
 @layer components {
+  .pSmaller {
+    @apply text-base;
+  }
+  .p {
+    @apply text-lg;
+  }
+  .h2 {
+    @apply text-2xl;
+  }
   .styleIt {
     @apply -mt-[4rem] px-[8vw] md:px-[4vw] pt-[4rem] pb-[20rem] from-primary to-secondary bg-gradient-to-b w-full text-primary-content;
   }
   .titleIt {
-    @apply text-center font-bold sm:text-5xl text-4xl my-20;
+    @apply text-center font-bold my-20;
   }
   .titleHomepage {
-    @apply sm:text-5xl text-4xl  font-bold text-center sm:text-left pb-12 pt-12 sm:pt-20 text-primary-content;
+    @apply font-bold text-center sm:text-left pb-12 pt-12 sm:pt-20 text-primary-content;
   }
 }
 

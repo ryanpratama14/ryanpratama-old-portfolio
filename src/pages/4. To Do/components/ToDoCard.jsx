@@ -21,23 +21,19 @@ const ToDoCard = ({
           src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png"
         />
         <div className="pl-3">
-          <div className="font-extrabold  text-2xl  tracking-tighter">
-            {nameProps}
-          </div>
+          <h2 className="font-extrabold tracking-tighter">{nameProps}</h2>
         </div>
       </div>
       <div className="w-full">
-        <p className="font-extrabold text-2xl mb-2">{taskProps}</p>
+        <h2 className="font-extrabold mb-2">{taskProps}</h2>
         <p
           style={{ textDecoration: todo.isDone ? "line-through" : "" }}
-          className="text-lg font-bold"
+          className="font-bold"
         >
           📆 {dateProps}
           <br />⏰ {timeProps}
         </p>
-        <p className="text-left text-lg">
-          {todo.isDone ? "🙌" : "💪 on progress..."}
-        </p>
+        <p className="text-left">{todo.isDone ? "🙌" : "💪 on progress..."}</p>
       </div>
       <div className="card-actions justify-between mt-4">
         <button

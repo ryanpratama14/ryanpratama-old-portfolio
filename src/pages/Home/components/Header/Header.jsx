@@ -37,7 +37,7 @@ const Header = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <h1 className="background-animation text-5xl sm:text-6xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-primary-content to-secondary-focus drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">
+            <h1 className="background-animation  font-bold text-left text-transparent bg-clip-text bg-gradient-to-br from-primary-content to-secondary-focus drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">
               Front-end
               <br />
               developer<span className="text-primary-content">.</span>
@@ -58,10 +58,10 @@ const Header = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <h2 className="text-xl sm:text-2xl mt-6 text-primary-content w-full sm:w-[70%]">
+            <p className="mt-6 text-primary-content w-full sm:w-[70%]">
               I have a passion for creating visually appealing and user-friendly
               websites and web applications.
-            </h2>
+            </p>
           </motion.div>
           {/* DETAILS */}
           <div className="w-full flex justify-between mt-12 text-primary-content">
@@ -76,11 +76,11 @@ const Header = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
               >
-                <h3 className="sm:text-lg">
+                <p>
                   I have had the opportunity to work on a variety of projects
                   and have gained valuable experience collaborating with
                   designers and back end developers.
-                </h3>
+                </p>
               </motion.div>
             </div>
             <div className="w-[45%]">
@@ -95,17 +95,15 @@ const Header = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
               >
-                <h3 className="sm:text-lg">
+                <p>
                   I am excited to continue growing and learning in my career as
                   a front-end developer.
-                </h3>
+                </p>
                 <a
                   href="https://t.me/ryanpratama14"
                   target="_blank"
                   rel="noreferrer"
                   className="shadow-xl btn btn-primary w-full sm:w-[70%] lg:w-[65%] mt-6 sm:mt-6 md:mt-0 relative group overflow-hidden"
-                  //               className="hidden md:flex lg:mt-0 btn text-[1rem] lg:text-[1.3rem]  hover:bg-white normal-case font-semibold rounded-lg border-none bg-white text-[#4C6BDC] w-40 group
-                  // relative items-center overflow-hidden"
                 >
                   Contact Me
                 </a>

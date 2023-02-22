@@ -19,8 +19,8 @@ const About = ({ title }) => {
             alt="profile"
           />
           <div className="-mt-6 flex flex-col justify-between rounded-lg px-10 py-12 text-center shadow-xl w-full sm:w-[30rem] mx-auto">
-            <p className="font-bold text-2xl md:text-3xl ">Fakhrul Oktavian</p>
-            <p className="mt-0.5 md:text-lg text-primary-content font-bold ">
+            <h2 className="font-bold ">Fakhrul Oktavian</h2>
+            <p className=" mt-0.5 text-primary-content font-bold ">
               Instructor
             </p>
             {/* Social Media */}
@@ -66,7 +66,7 @@ const About = ({ title }) => {
               </a>
             </div>
             {/* End of social media */}
-            <p className="mt-4 text-lg md:text-xl text-primary-content font-semibold">
+            <p className="mt-4 text-primary-content font-semibold">
               "For me, it matters that we drive tech as an equalizing force, as
               an enabler for everyone around the world. Feel free to join."
             </p>

@@ -25,29 +25,29 @@ const ExpenseCard = ({
                   removeExpense(index);
                   toast.error("Deleted");
                 }}
-                className="btn-primary btn-ghost w-6 h-6 text-s font-extrabold rounded-lg items-center"
+                className="btn-primary btn-ghost w-6 h-6  font-extrabold rounded-lg items-center"
               >
                 ⛔️
               </button>
-              <p className="ml-0.5 text-s font-extrabold text-base-content truncate">
+              <p className="ml-0.5  font-extrabold text-base-content truncate">
                 {descProps}
               </p>
             </div>
 
             <div className="flex items-center space-x-4 border-secondary border-b-2">
               <div className="flex-1 min-w-0">
-                <p className="text-sm text-base-content truncate">
+                <p className="pSmaller text-base-content truncate">
                   {dateProps}
                 </p>
               </div>
 
-              <div
+              <p
                 className={`${
                   payload.type === "EXPENSE" ? "text-error" : "text-success"
                 } inline-flex items-center text-base font-semibold`}
               >
                 {payload.type === "EXPENSE" ? "-" : "+"}${amountProps}
-              </div>
+              </p>
             </div>
           </li>
         </ul>

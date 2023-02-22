@@ -56,7 +56,7 @@ const SocialMedia = () => {
           {linkSocial?.map((e) => {
             return (
               <a
-                className="justify-between items-center active:bg-primary-focus hover:bg-primary hover:text-primary-content"
+                className="pSmaller justify-between items-center active:bg-primary-focus hover:bg-primary hover:text-primary-content"
                 target="_blank"
                 rel="noreferrer"
                 href={e.linkSocial}

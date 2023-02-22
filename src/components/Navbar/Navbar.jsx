@@ -83,8 +83,8 @@ const Navbar = () => {
                       to={e.path}
                       className={({ isActive }) =>
                         isActive
-                          ? "bg-primary text-primary-content my-0.5"
-                          : "my-0.5"
+                          ? "bg-primary text-primary-content my-0.5 pSmaller "
+                          : "my-0.5 pSmaller"
                       }
                       ref={dropdownMenuButton}
                       onBlur={(e) => {
@@ -112,8 +112,8 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "btn btn-ghost normal-case font-bold text-2xl"
-                : "btn btn-ghost normal-case font-bold text-2xl"
+                ? "btn btn-ghost normal-case font-bold h2"
+                : "btn btn-ghost normal-case font-bold h2"
             }
             onClick={() => {
               scrollToTop();

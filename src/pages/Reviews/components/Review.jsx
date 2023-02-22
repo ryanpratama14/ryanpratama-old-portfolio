@@ -19,8 +19,8 @@ const Review = ({
       />
 
       <div className="-mt-6 flex flex-col justify-between rounded-lg px-10 py-12 text-center shadow-xl w-full md:w-72 lg:h-[25rem]">
-        <p className="font-bold  text-2xl ">{nameProps}</p>
-        <p className="mt-0.5 text-s  text-primary-content font-bold ">
+        <h2 className="font-bold ">{nameProps}</h2>
+        <p className=" mt-0.5 text-primary-content font-bold ">
           {occupationProps}
         </p>
         {/* Social Media */}
@@ -66,7 +66,7 @@ const Review = ({
           </a>
         </div>
         {/* End of social media */}
-        <p className="mt-4 text-lg text-primary-content font-semibold">
+        <p className="mt-4 text-primary-content font-semibold">
           "{quoteProps}"
         </p>
 
