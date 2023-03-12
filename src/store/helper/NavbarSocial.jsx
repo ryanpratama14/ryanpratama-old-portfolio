@@ -10,6 +10,11 @@ export const linkSocial = [
     label: "uil-github",
   },
   {
+    linkSocial: "https://wakatime.com/@ryanpratama14",
+    socialMedia: "WakaTime",
+    label: "logos:wakatime",
+  },
+  {
     linkSocial: "https://www.linkedin.com/in/ryanpratama14/",
     socialMedia: "LinkedIn",
     label: "uil:linkedin",

@@ -49,7 +49,7 @@ const Navbar = () => {
                 }
               }}
               tabindex="0"
-              className="btn btn-ghost"
+              className="btn btn-ghost focus:border-0 focus:outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
